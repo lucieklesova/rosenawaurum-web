@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Rosenaw Aurum – chovatelská stanice zlatých retrívrů</title>
+    <meta
+      name="description"
+      content="Rosenaw Aurum – moderní, rodinná chovatelská stanice zlatých retrívrů s důrazem na zdraví, povahu a každodenní život se psy."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--
+      Struktura / "wireframe" jedno-stránkového webu:
+      - Header: logo + hlavní navigace + přepínač jazyka (CZ/EN)
+      - Hero sekce: velká fotografie, krátký claim, tlačítka na O nás / Štěňata / Kontakt
+      - Sekce O nás: osobní příběh, filozofie chovu
+      - Sekce Naše feny: karty fen (aktuálně Alma jako první chovná fena)
+      - Sekce Štěňata: informace o odchovu, aktuální a plánované vrhy, archiv
+      - Sekce Galerie: grid fotografií, rozdělený do tematických alb
+      - Sekce Novinky: několik posledních aktualit
+      - Sekce Dokumenty: stručný výpis typů dokumentů, později odkazy na PDF
+      - Sekce Kontakt: kontaktní informace a formulář
+      - Footer: copyright + základní odkazy
+      - Obrázky:
+        - Hero:  images/hero-alma.jpg (vodorovná fotka 4:3 nebo 16:9)
+        - Alma:  images/alma-profile.jpg (spíš na šířku, může být i 4:3)
+        - Galerie: images/gallery-*.jpg (např. gallery-girls-1.jpg atd.)
+    -->
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="logo">
+          <span class="logo-main">Rosenaw Aurum</span>
+          <span class="logo-sub" data-i18n="logoSubtitle">
+            chovatelská stanice zlatých retrívrů
+          </span>
+        </div>
+        <nav class="main-nav" aria-label="Primary">
+          <a href="#home" data-i18n="navHome">Domů</a>
+          <a href="#about" data-i18n="navAbout">O nás</a>
+          <a href="#girls" data-i18n="navGirls">Naše feny</a>
+          <a href="#puppies" data-i18n="navPuppies">Štěňata</a>
+          <a href="#gallery" data-i18n="navGallery">Galerie</a>
+          <a href="#news" data-i18n="navNews">Novinky</a>
+          <a href="#documents" data-i18n="navDocs">Dokumenty</a>
+          <a href="#contact" data-i18n="navContact">Kontakt</a>
+        </nav>
+        <div class="lang-switch" aria-label="Language switcher">
+          <button
+            class="lang-btn lang-btn--active"
+            data-lang="cs"
+            type="button"
+          >
+            CZ
+          </button>
+          <span>/</span>
+          <button class="lang-btn" data-lang="en" type="button">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- HOME / HERO -->
+      <section id="home" class="section section-hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <p class="overline" data-i18n="heroOverline">
+              Chovatelská stanice FCI
+            </p>
+            <h1 data-i18n="heroTitle">
+              Zlatí retrívři, kteří jsou součástí rodiny
+            </h1>
+            <p class="hero-subtitle" data-i18n="heroSubtitle">
+              Rosenaw Aurum je malá rodinná chovatelská stanice zlatých
+              retrívrů, kde je důraz na zdraví, povahu a každodenní život se
+              psem stejně důležitý jako výstavy a zkoušky.
+            </p>
+            <div class="hero-actions">
+              <a href="#about" class="btn btn-primary" data-i18n="heroCtaAbout">
+                Poznat naši filozofii
+              </a>
+              <a
+                href="#puppies"
+                class="btn btn-outline"
+                data-i18n="heroCtaPuppies"
+              >
+                Informace o štěňatech
+              </a>
+            </div>
+            <p class="hero-status" data-i18n="heroStatus">
+              První vrh Rosenaw Aurum plánujeme po dokončení všech zdravotních
+              vyšetření a zkoušek naší fenky.
+            </p>
+          </div>
+          <div class="hero-image">
+            <figure class="hero-photo">
+              <img
+                src="images/hero-alma.png"
+                alt="Zlatý retrívr Alma odpočívající v přírodě"
+              />
+              <figcaption class="hero-photo-caption" data-i18n="heroPhotoLabel">
+                Sem můžete nahrát svou oblíbenou fotografii Almy nebo zlatého
+                retrívra (soubor <code>images/hero-alma.jpg</code>).
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="container hero-cards">
+          <article class="info-card">
+            <h3 data-i18n="cardAboutTitle">O stanici</h3>
+            <p data-i18n="cardAboutText">
+              Příběh jedné rodiny, která propadla kouzlu zlatých retrívrů –
+              od prvního psa Dexíka až po vysněnou fenečku Almu.
+            </p>
+            <a href="#about" class="card-link" data-i18n="cardMore">
+              Více o nás
+            </a>
+          </article>
+          <article class="info-card">
+            <h3 data-i18n="cardGirlsTitle">Naše feny</h3>
+            <p data-i18n="cardGirlsText">
+              Představujeme naše zlaté dámy – jejich rodokmen, zdraví, úspěchy a
+              především povahu a život s námi.
+            </p>
+            <a href="#girls" class="card-link" data-i18n="cardMoreGirls">
+              Prohlédnout profily
+            </a>
+          </article>
+          <article class="info-card">
+            <h3 data-i18n="cardPuppiesTitle">Štěňata</h3>
+            <p data-i18n="cardPuppiesText">
+              Od prvního nadechnutí až po odchod do nových domovů – jak
+              přistupujeme k odchovu a socializaci štěňátek.
+            </p>
+            <a
+              href="#puppies"
+              class="card-link"
+              data-i18n="cardMorePuppies"
+            >
+              Jak u nás rostou štěňata
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <div class="container section-inner two-column">
+          <div>
+            <h2 data-i18n="aboutTitle">O chovatelské stanici Rosenaw Aurum</h2>
+            <p data-i18n="aboutIntro1">
+              Za jménem Rosenaw Aurum stojí naše rodina a zlatí retrívři, kteří
+              s námi sdílejí každodenní radosti i starosti. Prvním z nich byl
+              Dexík – zlatý retrívr bez průkazu původu, který nás svou
+              přátelskou povahou naučil, jak výjimečné toto plemeno je.
+            </p>
+            <p data-i18n="aboutIntro2">
+              Po jeho odchodu k nám do života vstoupila Alma, vysněná fenečka s
+              průkazem původu, se kterou jsme se vydali na cestu k chovu
+              zlatých retrívrů s důrazem na zdraví, povahu, pracovní vlohy a
+              rodinný život. Alminka je pes do každé nepohody – plave, běhá po
+              horách, dovádí s dětmi, ale zároveň dokáže tiše ležet vedle
+              nemocného v pelíšku.
+            </p>
+            <p data-i18n="aboutPhilosophy">
+              Naším cílem je odchovávat vyrovnané, zdravé a společenské psy,
+              kteří se budou cítit stejně dobře na výstavním kruhu, při práci
+              v poli i uprostřed rodinného obýváku.
+            </p>
+          </div>
+          <aside class="aside-card">
+            <h3 data-i18n="aboutBreederTitle">Chovatelka</h3>
+            <p data-i18n="aboutBreederText">
+              Jmenuji se Lucie Klesová a psi mě provázejí od dětství. Zlatí
+              retrívři jsou pro mě kombinací klidu, radosti a nevyčerpatelné
+              ochoty spolupracovat. V chovu se opírám o zdraví, povahu a
+              respekt k jednotlivým psím osobnostem.
+            </p>
+            <p data-i18n="aboutLinkAlma">
+              Podrobnější příběh Almy najdete na stránce
+              mateřské chovatelské stanice Bohemica Aurum a na našem blogu.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <!-- GIRLS -->
+      <section id="girls" class="section section-muted">
+        <div class="container">
+          <header class="section-header">
+            <h2 data-i18n="girlsTitle">Naše feny</h2>
+            <p data-i18n="girlsIntro">
+              Postupně zde najdete všechny naše zlaté dámy – od mladých nadějí
+              po zkušené chovné feny a psí seniorky.
+            </p>
+          </header>
+
+          <div class="girls-grid">
+            <!-- Alma card – vzor pro další fenky -->
+            <article class="dog-card">
+              <figure class="dog-photo-wrapper">
+                <img
+                  class="dog-photo"
+                  src="images/alma-profile.jpg"
+                  alt="Alma Bohemica Aurum – zlatý retrívr, portrét"
+                />
+                <figcaption class="dog-photo-caption" data-i18n="almaPhotoLabel">
+                  Zde může být portrét Almy (soubor
+                  <code>images/alma-profile.jpg</code>).
+                </figcaption>
+              </figure>
+              <div class="dog-content">
+                <h3>Alma Bohemica Aurum</h3>
+                <p class="dog-meta" data-i18n="almaBasic">
+                  nar. 27. 1. 2024 &nbsp;•&nbsp; zlatý retrívr, fena
+                </p>
+                <p class="dog-text" data-i18n="almaPersonality">
+                  Alminka je naše vysněná fenečka zlatého retrívra. Do života
+                  k nám vtrhla jako velká voda a velmi rychle se z ní stal pes
+                  do každé situace – parťák na výlety, dovolené, sport i klidné
+                  večery doma.
+                </p>
+
+                <div class="dog-data">
+                  <div>
+                    <h4 data-i18n="almaHealthTitle">Zdraví</h4>
+                    <p data-i18n="almaHealthText">
+                      Výška 56 cm, chrup úplný nůžkový. Oči GR-PRA1 N/N,
+                      DR-PRA2 N/N, PRA N/N. ICT N/P, ICT-2 N/N, NCL N/N, GRMD
+                      Xn/Xn. HD B, ED 0/0, OCD negativní, SA negativní, LTV 0.
+                    </p>
+                  </div>
+                  <div>
+                    <h4 data-i18n="almaTitlesTitle">Ocenění a zkoušky</h4>
+                    <p data-i18n="almaTitlesText">
+                      Třída štěňat: VN1, Jubilejní vítěz štěně. Třída dorostu:
+                      VN1, VN2. Třída mladých: 2× VD, 2× V, V2. Zkoušky: OVVR –
+                      232 b., plný počet.
+                    </p>
+                  </div>
+                </div>
+
+                <p class="dog-text" data-i18n="almaFuture">
+                  Do budoucna bychom Almě rádi dopřáli několik vrhů štěňat,
+                  která ponesou její laskavou povahu, pracovní chuť a radost ze
+                  života dál.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PUPPIES -->
+      <section id="puppies" class="section">
+        <div class="container">
+          <header class="section-header">
+            <h2 data-i18n="puppiesTitle">Štěňata Rosenaw Aurum</h2>
+            <p data-i18n="puppiesIntro">
+              Štěně je pro nás plnohodnotný člen rodiny. Od prvních dnů je v
+              úzkém kontaktu s námi, dětmi i běžným chodem domácnosti, aby bylo
+              na nový domov co nejlépe připravené.
+            </p>
+          </header>
+
+          <div class="puppies-layout">
+            <div class="puppies-main">
+              <h3 data-i18n="puppiesApproachTitle">Jak u nás rostou štěňata</h3>
+              <p data-i18n="puppiesApproachText1">
+                Štěňata odchováváme v rodinném prostředí. Postupně poznávají
+                různé zvuky, povrchy, lidi i situace – od klidných večerů na
+                gauči po výlety po zahradě a krátké výjezdy autem. Důraz
+                klademe na to, aby se cítila bezpečně a zároveň měla možnost
+                objevovat svět.
+              </p>
+              <p data-i18n="puppiesApproachText2">
+                Novým majitelům rádi poradíme s péčí, výchovou i výcvikem. Naše
+                štěňata od nás neodcházejí s prázdnou – odvážejí si kus našeho
+                srdce a my s nimi zůstáváme v kontaktu po celý jejich život.
+              </p>
+
+              <h3 data-i18n="puppiesPackTitle">Co si štěně od nás odváží</h3>
+              <ul class="list" data-i18n="puppiesPackList">
+                <li>kupní smlouva a průkaz původu FCI</li>
+                <li>očkovací průkaz / pet pas s platným očkováním a odčervením</li>
+                <li>startovací balíček krmiva a oblíbenou hračku</li>
+                <li>podrobné informace k péči v prvních týdnech a měsících</li>
+              </ul>
+            </div>
+
+            <aside class="aside-card puppies-aside">
+              <h3 data-i18n="puppiesStatusTitle">Aktuální vrhy</h3>
+              <p class="status-pill status-pill--planned" data-i18n="puppiesStatus">
+                První vrh Rosenaw Aurum je v přípravě – sledujte prosím naše
+                novinky.
+              </p>
+              <h4 data-i18n="puppiesPlannedTitle">Plánované vrhy</h4>
+              <p data-i18n="puppiesPlannedText">
+                Jakmile budeme mít potvrzené termíny a krytí, zveřejníme zde
+                detailní informace o plánovaných vrzích včetně rodičů,
+                zdravotních vyšetření a předpokládaného typu štěňat.
+              </p>
+            </aside>
+          </div>
+
+          <div class="archive">
+            <h3 data-i18n="puppiesArchiveTitle">Archiv vrhů</h3>
+            <p data-i18n="puppiesArchiveText">
+              Po jednotlivých vrzích zde najdete přehled rodičů, data narození
+              a odkazy na fotogalerie. V tuto chvíli ještě žádné odchované vrhy
+              nemáme.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section id="gallery" class="section section-muted">
+        <div class="container">
+          <header class="section-header">
+            <h2 data-i18n="galleryTitle">Galerie</h2>
+            <p data-i18n="galleryIntro">
+              Momentky z našeho každodenního života, výletů, tréninků i prvních
+              výstav. Fotografie postupně doplníme.
+            </p>
+          </header>
+
+          <div class="gallery-tabs">
+            <button
+              type="button"
+              class="gallery-tab gallery-tab--active"
+              data-gallery-filter="all"
+              data-i18n="galleryFilterAll"
+            >
+              Vše
+            </button>
+            <button
+              type="button"
+              class="gallery-tab"
+              data-gallery-filter="girls"
+              data-i18n="galleryFilterGirls"
+            >
+              Naše feny
+            </button>
+            <button
+              type="button"
+              class="gallery-tab"
+              data-gallery-filter="puppies"
+              data-i18n="galleryFilterPuppies"
+            >
+              Štěňata
+            </button>
+            <button
+              type="button"
+              class="gallery-tab"
+              data-gallery-filter="shows"
+              data-i18n="galleryFilterShows"
+            >
+              Výstavy & zkoušky
+            </button>
+            <button
+              type="button"
+              class="gallery-tab"
+              data-gallery-filter="life"
+              data-i18n="galleryFilterLife"
+            >
+              Ze života s námi
+            </button>
+          </div>
+
+          <div class="gallery-grid">
+            <!-- Reálné fotky – stačí doplnit soubory do složky images/ a případně přidat další bloky -->
+            <figure
+              class="gallery-item"
+              data-gallery-category="girls"
+            >
+              <img
+                class="gallery-photo"
+                src="images/gallery-girls-1.jpg"
+                alt="Alma běží po louce"
+              />
+              <figcaption class="gallery-caption" data-i18n="galleryPlaceholderGirls">
+                Fotografie Almy v pohybu na louce
+              </figcaption>
+            </figure>
+
+            <figure
+              class="gallery-item"
+              data-gallery-category="life"
+            >
+              <img
+                class="gallery-photo"
+                src="images/gallery-life-1.jpg"
+                alt="Rodina se zlatým retrívrem na dovolené"
+              />
+              <figcaption class="gallery-caption" data-i18n="galleryPlaceholderLife">
+                Společná fotografie s rodinou na dovolené
+              </figcaption>
+            </figure>
+
+            <figure
+              class="gallery-item"
+              data-gallery-category="shows"
+            >
+              <img
+                class="gallery-photo"
+                src="images/gallery-shows-1.jpg"
+                alt="Alma ve výstavním kruhu ve třídě mladých"
+              />
+              <figcaption class="gallery-caption" data-i18n="galleryPlaceholderShows">
+                Výstavní kruh – třída mladých
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- NEWS -->
+      <section id="news" class="section">
+        <div class="container">
+          <header class="section-header">
+            <h2 data-i18n="newsTitle">Novinky & blog</h2>
+            <p data-i18n="newsIntro">
+              Krátké zprávy o našich psech, plánovaných vrzích, výstavách,
+              zkouškách a drobných radostech ze společného života.
+            </p>
+          </header>
+
+          <div class="news-list">
+            <article class="news-item">
+              <p class="news-meta" data-i18n="newsItem1Meta">
+                2025 &nbsp;•&nbsp; První kroky Rosenaw Aurum
+              </p>
+              <h3 data-i18n="newsItem1Title">Zrození chovatelské stanice</h3>
+              <p data-i18n="newsItem1Text">
+                Po pečlivém rozhodování a prvních zkušenostech s Almou jsme se
+                rozhodli udělat další krok a založit chovatelskou stanici
+                Rosenaw Aurum. Naším snem je odchovávat zlaté retrívry, kteří
+                budou dělat radost svým rodinám mnoho let.
+              </p>
+            </article>
+
+            <article class="news-item">
+              <p class="news-meta" data-i18n="newsItem2Meta">
+                2024 &nbsp;•&nbsp; Alma Bohemica Aurum
+              </p>
+              <h3 data-i18n="newsItem2Title">Alma přichází domů</h3>
+              <p data-i18n="newsItem2Text">
+                Alminka se k nám přistěhovala krátce poté, co nás opustil náš
+                dlouholetý parťák Dexík. Na truchlení nebyl čas – malé štěně
+                převrátilo naši domácnost vzhůru nohama a přineslo do ní novou
+                energii a radost.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- DOCUMENTS -->
+      <section id="documents" class="section section-muted">
+        <div class="container">
+          <header class="section-header">
+            <h2 data-i18n="docsTitle">Dokumenty</h2>
+            <p data-i18n="docsIntro">
+              Postupně zde najdete ke stažení vybrané dokumenty související s
+              naším chovem – rodokmeny, zdravotní výsledky, smlouvy a další
+              informace.
+            </p>
+          </header>
+
+          <ul class="docs-list">
+            <li data-i18n="docsItem1">
+              Vzor kupní smlouvy pro štěňata Rosenaw Aurum (PDF)
+            </li>
+            <li data-i18n="docsItem2">
+              Základní přehled zdravotních vyšetření našich fen (PDF)
+            </li>
+            <li data-i18n="docsItem3">
+              Doporučení k péči o štěně v prvním roce života (PDF)
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+        <div class="container section-inner two-column">
+          <div>
+            <h2 data-i18n="contactTitle">Kontakt</h2>
+            <p data-i18n="contactIntro">
+              Máte zájem o štěně z našeho chovu nebo se jen chcete na něco
+              zeptat? Napište nám – rádi se ozveme zpět.
+            </p>
+
+            <div class="contact-details">
+              <p>
+                <strong data-i18n="contactNameLabel">Jméno:</strong>
+                Lucie Klesová
+              </p>
+              <p>
+                <strong>E‑mail:</strong>
+                <a href="mailto:lucie@klesova.cz">lucie@klesova.cz</a>
+              </p>
+              <p>
+                <strong data-i18n="contactPhoneLabel">Telefon:</strong>
+                <a href="tel:+420724913409">+420 724 913 409</a>
+              </p>
+              <p data-i18n="contactRegion">
+                Česká republika – bližší informace o lokalitě na vyžádání.
+              </p>
+            </div>
+          </div>
+
+          <form class="contact-form">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="name" data-i18n="formNameLabel">Jméno</label>
+                <input
+                  id="name"
+                  type="text"
+                  name="name"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+              <div class="form-field">
+                <label for="email">E‑mail</label>
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="phone" data-i18n="formPhoneLabel">Telefon</label>
+                <input
+                  id="phone"
+                  type="tel"
+                  name="phone"
+                  autocomplete="tel"
+                />
+              </div>
+              <div class="form-field">
+                <label for="topic" data-i18n="formTopicLabel">Téma zprávy</label>
+                <select id="topic" name="topic">
+                  <option value="puppies" data-i18n="formTopicPuppies">
+                    Zájem o štěně
+                  </option>
+                  <option value="visit" data-i18n="formTopicVisit">
+                    Domluva návštěvy
+                  </option>
+                  <option value="other" data-i18n="formTopicOther">
+                    Jiný dotaz
+                  </option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="message" data-i18n="formMessageLabel"
+                >Zpráva</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+
+            <p class="form-note" data-i18n="formNote">
+              Odesláním zprávy souhlasíte se zpracováním uvedených údajů za
+              účelem odpovědi na váš dotaz. Údaje neposkytujeme třetím stranám.
+            </p>
+
+            <button type="submit" class="btn btn-primary" data-i18n="formSubmit">
+              Odeslat zprávu
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-copy">
+          <span>&copy; Rosenaw Aurum</span>
+          <span data-i18n="footerRights">Všechna práva vyhrazena.</span>
+        </p>
+        <p class="footer-note" data-i18n="footerCredit">
+          Design inspirován jednoduchostí a elegancí zlatých retrívrů.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
