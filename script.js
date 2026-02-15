@@ -14,9 +14,9 @@ const translations = {
     navContact: "Kontakt",
 
     heroOverline: "Chovatelská stanice FCI",
-    heroTitle: "Zlatí retrívři, kteří jsou součástí rodiny",
+    heroTitle: "Z Beskyd. Ze srdce. Do rodiny.",
     heroSubtitle:
-      "Rosenaw Aurum je malá rodinná chovatelská stanice zlatých retrívrů, kde je důraz na zdraví, povahu a každodenní život se psem stejně důležitý jako výstavy a zkoušky.",
+      "Rosenaw Aurum je malá rodinná chovatelská stanice z Rožnova pod Radhoštěm, kde jsou zlatí retrívři plnohodnotnými členy našeho života. Vyrůstají s námi doma, doprovázejí nás na cestách, sdílejí každodenní radosti i tiché večery. Nechováme ve velkém. Nechováme pro čísla. Chováme s respektem ke zdraví, vyrovnané povaze a ušlechtilé eleganci tohoto výjimečného plemene. Každé štěně od nás odchází tam, kam patří – do rodiny.",
     heroCtaAbout: "Poznat naši filozofii",
     heroCtaPuppies: "Informace o štěňatech",
     heroStatus:

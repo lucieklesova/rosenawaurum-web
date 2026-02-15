@@ -17,7 +17,7 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
   color: #1f2933;
-  background-color: #f9fafb;
+  background-color: #ffffff;
   line-height: 1.6;
 }
 
@@ -146,7 +146,7 @@ a:hover {
 
 .section-hero {
   position: relative;
-  padding-top: 5.5rem;
+  padding-top: 2rem;
   padding-bottom: 3.5rem;
     /* Velká fotka v pozadí, která splývá do ztracena směrem k textu */
     background:
@@ -205,6 +205,8 @@ a:hover {
 .hero-text h1 {
   font-size: clamp(2rem, 3vw, 2.6rem);
   margin: 0 0 0.75rem;
+  white-space: nowrap;
+  color: #2d4a2d;
 }
 
 .overline {
@@ -243,6 +245,138 @@ a:hover {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.5rem;
   margin-top: 3rem;
+}
+
+/* Hero karty – brand system */
+.hero-cards .info-card {
+  display: block;
+  text-decoration: none;
+  color: #2F2F2F;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border-radius: 22px;
+  padding: 1.75rem 1.85rem;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+  border: none;
+  border-bottom: 1px solid #7A1E2C;
+  transition: all 0.3s ease;
+}
+
+.hero-cards .info-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Glossy – diagonální odlesk shora */
+.hero-cards .info-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 22px;
+  background: linear-gradient(
+    165deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0.18) 28%,
+    rgba(255, 255, 255, 0.05) 50%,
+    transparent 65%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Glossy půlkruh – zesvětlení horní části karty */
+.hero-cards .info-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 62%;
+  border-radius: 22px 22px 45% 45% / 22px 22px 22px 22px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.72) 0%,
+    rgba(255, 255, 255, 0.55) 35%,
+    rgba(255, 255, 255, 0.2) 70%,
+    transparent 100%
+  );
+  box-shadow:
+    inset 0 3px 28px 2px rgba(255, 255, 255, 0.45),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.55),
+    inset -6px -4px 18px -8px rgba(255, 255, 255, 0.12);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-cards .info-card h3,
+.hero-cards .info-card p {
+  position: relative;
+  z-index: 1;
+}
+
+/* O stanici – lesní fotka (světlejší) + glossy půlkruh zůstává */
+.hero-card--green {
+  background-color: #B9C6B5;
+  background-image: url("images/forest button.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-card--green:hover {
+  background-color: #ACB9A8;
+  background-image: url("images/forest button.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-card--green h3,
+.hero-card--green p {
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9);
+}
+
+/* Naše feny – Champagne Gold (~20 % světlejší) */
+.hero-card--gold {
+  background-color: #E3D2B4;
+  background-image: url("images/brown button.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-card--gold:hover {
+  background-color: #D7C5A5;
+  background-image: url("images/brown button.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-card--gold h3,
+.hero-card--gold p {
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9);
+}
+
+/* Štěňata – Dusty Blue (~20 % světlejší) */
+.hero-card--blue {
+  background-color: #C7D1E0;
+  background-image: url("images/blue button.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-card--blue:hover {
+  background-color: #B9C5D5;
+  background-image: url("images/blue button.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-card--blue h3,
+.hero-card--blue p {
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9);
+}
+
+.hero-cards .info-card h3,
+.hero-cards .info-card p {
+  color: #2F2F2F;
 }
 
 /* ---------------------------------------------
@@ -708,7 +842,11 @@ textarea:focus {
   }
 
   .section-hero {
-    padding-top: 4.5rem;
+    padding-top: 2rem;
+  }
+
+  .hero-text h1 {
+    white-space: normal;
   }
 
   .hero-cards {
