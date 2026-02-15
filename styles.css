@@ -317,14 +317,14 @@ a:hover {
 /* O stanici – lesní fotka (světlejší) + glossy půlkruh zůstává */
 .hero-card--green {
   background-color: #B9C6B5;
-  background-image: url("images/forest button.jpg");
+  background-image: url("images/about_us_button.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .hero-card--green:hover {
   background-color: #ACB9A8;
-  background-image: url("images/forest button.jpg");
+  background-image: url("images/about_us_button.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -337,14 +337,14 @@ a:hover {
 /* Naše feny – Champagne Gold (~20 % světlejší) */
 .hero-card--gold {
   background-color: #E3D2B4;
-  background-image: url("images/brown button.jpg");
+  background-image: url("images/alma_button.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .hero-card--gold:hover {
   background-color: #D7C5A5;
-  background-image: url("images/brown button.jpg");
+  background-image: url("images/alma_button.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -357,16 +357,18 @@ a:hover {
 /* Štěňata – Dusty Blue (~20 % světlejší) */
 .hero-card--blue {
   background-color: #C7D1E0;
-  background-image: url("images/blue button.jpg");
-  background-size: cover;
+  background-image: url("images/alma_puppy_button.jpg");
+  background-size: 100% auto;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-card--blue:hover {
   background-color: #B9C5D5;
-  background-image: url("images/blue button.jpg");
-  background-size: cover;
+  background-image: url("images/alma_puppy_button.jpg");
+  background-size: 100% auto;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-card--blue h3,
