@@ -50,6 +50,9 @@
           <a href="#documents" data-i18n="navDocs">Dokumenty</a>
           <a href="#contact" data-i18n="navContact">Kontakt</a>
         </nav>
+        <a href="https://www.instagram.com/almamygoldenlove" target="_blank" rel="noopener noreferrer" class="header-social" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
         <div class="lang-switch" aria-label="Language switcher">
           <button
             class="lang-btn lang-btn--active"
@@ -213,30 +216,47 @@
                   večery doma.
                 </p>
 
-                <div class="dog-data">
-                  <div>
+                <div class="dog-stats">
+                  <div class="dog-stat-card">
+                    <div class="dog-stat-icon">
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                    </div>
                     <h4 data-i18n="almaHealthTitle">Zdraví</h4>
-                    <p data-i18n="almaHealthText">
-                      Výška 56 cm, chrup úplný nůžkový. Oči GR-PRA1 N/N,
-                      DR-PRA2 N/N, PRA N/N. ICT N/P, ICT-2 N/N, NCL N/N, GRMD
-                      Xn/Xn. HD B, ED 0/0, OCD negativní, SA negativní, LTV 0.
-                    </p>
+                    <ul class="dog-stat-list" data-i18n="almaHealthList">
+                      <li>Výška 56 cm, chrup úplný nůžkový</li>
+                      <li>GR-PRA1 N/N, DR-PRA2 N/N, PRA N/N</li>
+                      <li>ICT N/P, ICT-2 N/N, NCL N/N, GRMD Xn/Xn</li>
+                      <li>HD B, ED 0/0</li>
+                      <li>OCD negativní, SA negativní, LTV 0</li>
+                    </ul>
                   </div>
-                  <div>
+
+                  <div class="dog-stat-card">
+                    <div class="dog-stat-icon">
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5C7 4 7 7 7 7"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5C17 4 17 7 17 7"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+                    </div>
                     <h4 data-i18n="almaTitlesTitle">Ocenění a zkoušky</h4>
-                    <p data-i18n="almaTitlesText">
-                      Třída štěňat: VN1, Jubilejní vítěz štěně. Třída dorostu:
-                      VN1, VN2. Třída mladých: 2× VD, 2× V, V2. Zkoušky: OVVR –
-                      232 b., plný počet.
-                    </p>
+                    <ul class="dog-stat-list" data-i18n="almaTitlesList">
+                      <li>Třída štěňat: VN1, Jubilejní vítěz štěně</li>
+                      <li>Třída dorostu: VN1, VN2</li>
+                      <li>Třída mladých: 2× VD, 2× V, V2</li>
+                      <li>OVVR – 232 b., plný počet</li>
+                    </ul>
+                  </div>
+
+                  <div class="dog-stat-card">
+                    <div class="dog-stat-icon">
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="4" r="2"/><circle cx="5" cy="12" r="2"/><circle cx="19" cy="12" r="2"/><circle cx="2" cy="20" r="2"/><circle cx="8" cy="20" r="2"/><circle cx="16" cy="20" r="2"/><circle cx="22" cy="20" r="2"/><path d="M12 6v2l-7 4M12 8l7 4M5 14v2l-3 4M5 14v2l3 4M19 14v2l-3 4M19 14v2l3 4"/></svg>
+                    </div>
+                    <h4 data-i18n="almaPedigreeTitle">Rodokmen</h4>
+                    <ul class="dog-stat-list" data-i18n="almaPedigreeList">
+                      <li>Otec: SPA CH Brandon de Ria Vela</li>
+                      <li>Matka: Lolipop Dorado Blanco</li>
+                      <li>Majitel: Lucie Klesová</li>
+                      <li>Chovatel: Ing. František Vacek, Bohemica Aurum</li>
+                    </ul>
                   </div>
                 </div>
-
-                <p class="dog-text" data-i18n="almaFuture">
-                  Do budoucna bychom Almě rádi dopřáli několik vrhů štěňat,
-                  která ponesou její laskavou povahu, pracovní chuť a radost ze
-                  života dál.
-                </p>
               </div>
             </article>
           </div>
@@ -288,9 +308,9 @@
               </p>
               <h4 data-i18n="puppiesPlannedTitle">Plánované vrhy</h4>
               <p data-i18n="puppiesPlannedText">
-                Jakmile budeme mít potvrzené termíny a krytí, zveřejníme zde
-                detailní informace o plánovaných vrzích včetně rodičů,
-                zdravotních vyšetření a předpokládaného typu štěňat.
+                První vrh naší Alminky plánujeme na jaro 2027. Podrobnosti
+                o krytím pejskovi a dalších informacích zveřejníme, jakmile
+                budeme mít vše potvrzené.
               </p>
             </aside>
           </div>
@@ -476,33 +496,49 @@
 
       <!-- CONTACT -->
       <section id="contact" class="section">
-        <div class="container section-inner two-column">
-          <div>
-            <h2 data-i18n="contactTitle">Kontakt</h2>
-            <p data-i18n="contactIntro">
-              Máte zájem o štěně z našeho chovu nebo se jen chcete na něco
-              zeptat? Napište nám – rádi se ozveme zpět.
-            </p>
+        <div class="container contact-header">
+          <h2 data-i18n="contactTitle">Kontakt</h2>
+          <p class="contact-subtitle" data-i18n="contactIntro">
+            Máte zájem o štěně z našeho chovu nebo se jen chcete na něco
+            zeptat? Napište nám – rádi se ozveme zpět.
+          </p>
+        </div>
 
-            <div class="contact-details">
-              <p>
-                <strong data-i18n="contactNameLabel">Jméno:</strong>
-                Lucie Klesová
-              </p>
-              <p>
-                <strong>E‑mail:</strong>
-                <a href="mailto:lucie@klesova.cz">lucie@klesova.cz</a>
-              </p>
-              <p>
-                <strong data-i18n="contactPhoneLabel">Telefon:</strong>
-                <a href="tel:+420724913409">+420 724 913 409</a>
-              </p>
-              <p data-i18n="contactRegion">
-                Česká republika – bližší informace o lokalitě na vyžádání.
-              </p>
+        <div class="container contact-cards">
+          <a href="mailto:lucie@klesova.cz" class="contact-card contact-card--link">
+            <div class="contact-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
             </div>
+            <span class="contact-card-label">E-mail</span>
+            <span class="contact-card-value">lucie@klesova.cz</span>
+          </a>
+
+          <a href="tel:+420724913409" class="contact-card contact-card--link">
+            <div class="contact-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <span class="contact-card-label" data-i18n="contactPhoneLabel">Telefon</span>
+            <span class="contact-card-value">+420 724 913 409</span>
+          </a>
+
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <span class="contact-card-label" data-i18n="contactLocationLabel">Lokalita</span>
+            <span class="contact-card-value">Vigantice, CZ</span>
           </div>
 
+          <a href="https://www.instagram.com/almamygoldenlove" target="_blank" rel="noopener noreferrer" class="contact-card contact-card--link">
+            <div class="contact-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </div>
+            <span class="contact-card-label">Instagram</span>
+            <span class="contact-card-value">@almamygoldenlove</span>
+          </a>
+        </div>
+
+        <div class="container contact-bottom">
           <form class="contact-form">
             <div class="form-row">
               <div class="form-field">
@@ -554,9 +590,7 @@
             </div>
 
             <div class="form-field">
-              <label for="message" data-i18n="formMessageLabel"
-                >Zpráva</label
-              >
+              <label for="message" data-i18n="formMessageLabel">Zpráva</label>
               <textarea
                 id="message"
                 name="message"
@@ -574,21 +608,69 @@
               Odeslat zprávu
             </button>
           </form>
+
+          <div class="contact-map">
+            <iframe
+              src="https://maps.google.com/maps?q=Vigantice,+Czech+Republic&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="container footer-inner">
-        <p class="footer-copy">
-          <span>&copy; Rosenaw Aurum</span>
-          <span data-i18n="footerRights">Všechna práva vyhrazena.</span>
-        </p>
-        <p class="footer-note" data-i18n="footerCredit">
-          Design inspirován jednoduchostí a elegancí zlatých retrívrů.
-        </p>
+      <div class="container footer-columns">
+        <div class="footer-col">
+          <h4 data-i18n="footerNavTitle">Navigace</h4>
+          <ul class="footer-nav">
+            <li><a href="#home" data-i18n="navHome">Domů</a></li>
+            <li><a href="#about" data-i18n="navAbout">O nás</a></li>
+            <li><a href="#girls" data-i18n="navGirls">Naše feny</a></li>
+            <li><a href="#puppies" data-i18n="navPuppies">Štěňata</a></li>
+            <li><a href="#gallery" data-i18n="navGallery">Galerie</a></li>
+            <li><a href="#news" data-i18n="navNews">Novinky</a></li>
+            <li><a href="#documents" data-i18n="navDocs">Dokumenty</a></li>
+            <li><a href="#contact" data-i18n="navContact">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footerContactTitle">Kontakt</h4>
+          <p>Lucie Klesová</p>
+          <p><a href="mailto:lucie@klesova.cz">lucie@klesova.cz</a></p>
+          <p><a href="tel:+420724913409">+420 724 913 409</a></p>
+          <p>Vigantice, CZ</p>
+          <p class="footer-social">
+            <a href="https://www.instagram.com/almamygoldenlove" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              <span>@almamygoldenlove</span>
+            </a>
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footerAboutTitle">O stanici</h4>
+          <p data-i18n="footerAboutText">
+            Rosenaw Aurum — chovatelská stanice zlatých retrívrů.
+            Chováme s láskou, péčí a respektem k plemeni.
+          </p>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <span>&copy; 2025 Rosenaw Aurum — </span>
+        <span data-i18n="footerRights">Všechna práva vyhrazena.</span>
       </div>
     </footer>
+
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close" aria-label="Zavřít">&times;</button>
+      <img class="lightbox-img" id="lightbox-img" src="" alt="" />
+    </div>
 
     <script src="script.js"></script>
   </body>

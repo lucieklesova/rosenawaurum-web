@@ -57,13 +57,14 @@ const translations = {
     almaPersonality:
       "Alminka je naše vysněná fenečka zlatého retrívra. Do života k nám vtrhla jako velká voda a velmi rychle se z ní stal pes do každé situace – parťák na výlety, dovolené, sport i klidné večery doma.",
     almaHealthTitle: "Zdraví",
-    almaHealthText:
-      "Výška 56 cm, chrup úplný nůžkový. Oči GR-PRA1 N/N, DR-PRA2 N/N, PRA N/N. ICT N/P, ICT-2 N/N, NCL N/N, GRMD Xn/Xn. HD B, ED 0/0, OCD negativní, SA negativní, LTV 0.",
+    almaHealthList:
+      "Výška 56 cm, chrup úplný nůžkový;GR-PRA1 N/N, DR-PRA2 N/N, PRA N/N;ICT N/P, ICT-2 N/N, NCL N/N, GRMD Xn/Xn;HD B, ED 0/0;OCD negativní, SA negativní, LTV 0",
     almaTitlesTitle: "Ocenění a zkoušky",
-    almaTitlesText:
-      "Třída štěňat: VN1, Jubilejní vítěz štěně. Třída dorostu: VN1, VN2. Třída mladých: 2× VD, 2× V, V2. Zkoušky: OVVR – 232 b., plný počet.",
-    almaFuture:
-      "Do budoucna bychom Almě rádi dopřáli několik vrhů štěňat, která ponesou její laskavou povahu, pracovní chuť a radost ze života dál.",
+    almaTitlesList:
+      "Třída štěňat: VN1, Jubilejní vítěz štěně;Třída dorostu: VN1, VN2;Třída mladých: 2× VD, 2× V, V2;OVVR – 232 b., plný počet",
+    almaPedigreeTitle: "Rodokmen",
+    almaPedigreeList:
+      "Otec: SPA CH Brandon de Ria Vela;Matka: Lolipop Dorado Blanco;Majitel: Lucie Klesová;Chovatel: Ing. František Vacek, Bohemica Aurum",
 
     puppiesTitle: "Štěňata Rosenaw Aurum",
     puppiesIntro:
@@ -81,7 +82,7 @@ const translations = {
       "První vrh Rosenaw Aurum je v přípravě – sledujte prosím naše novinky.",
     puppiesPlannedTitle: "Plánované vrhy",
     puppiesPlannedText:
-      "Jakmile budeme mít potvrzené termíny a krytí, zveřejníme zde detailní informace o plánovaných vrzích včetně rodičů, zdravotních vyšetření a předpokládaného typu štěňat.",
+      "První vrh naší Alminky plánujeme na jaro 2027. Podrobnosti o krytím pejskovi a dalších informacích zveřejníme, jakmile budeme mít vše potvrzené.",
     puppiesArchiveTitle: "Archiv vrhů",
     puppiesArchiveText:
       "Po jednotlivých vrzích zde najdete přehled rodičů, data narození a odkazy na fotogalerie. V tuto chvíli ještě žádné odchované vrhy nemáme.",
@@ -120,10 +121,9 @@ const translations = {
     contactTitle: "Kontakt",
     contactIntro:
       "Máte zájem o štěně z našeho chovu nebo se jen chcete na něco zeptat? Napište nám – rádi se ozveme zpět.",
-    contactNameLabel: "Jméno:",
-    contactPhoneLabel: "Telefon:",
-    contactRegion:
-      "Česká republika – bližší informace o lokalitě na vyžádání.",
+    contactNameLabel: "Jméno",
+    contactPhoneLabel: "Telefon",
+    contactLocationLabel: "Lokalita",
 
     formNameLabel: "Jméno",
     formPhoneLabel: "Telefon",
@@ -136,9 +136,12 @@ const translations = {
       "Odesláním zprávy souhlasíte se zpracováním uvedených údajů za účelem odpovědi na váš dotaz. Údaje neposkytujeme třetím stranám.",
     formSubmit: "Odeslat zprávu",
 
+    footerNavTitle: "Navigace",
+    footerContactTitle: "Kontakt",
+    footerAboutTitle: "O stanici",
+    footerAboutText:
+      "Rosenaw Aurum — chovatelská stanice zlatých retrívrů. Chováme s láskou, péčí a respektem k plemeni.",
     footerRights: "Všechna práva vyhrazena.",
-    footerCredit:
-      "Design inspirován jednoduchostí a elegancí zlatých retrívrů.",
   },
 
   en: {
@@ -197,13 +200,14 @@ const translations = {
     almaPersonality:
       "Alma is our long‑awaited Golden girl. She brought new energy and joy into our home and quickly became a dog for every occasion – a companion for trips, holidays, sports and quiet evenings on the sofa.",
     almaHealthTitle: "Health",
-    almaHealthText:
-      "Height 56 cm, full scissor bite. Eyes GR-PRA1 N/N, DR-PRA2 N/N, PRA N/N. ICT N/P, ICT-2 N/N, NCL N/N, GRMD Xn/Xn. Hips HD B, elbows ED 0/0, OCD clear, SA clear, LTV 0.",
+    almaHealthList:
+      "Height 56 cm, full scissor bite;GR-PRA1 N/N, DR-PRA2 N/N, PRA N/N;ICT N/P, ICT-2 N/N, NCL N/N, GRMD Xn/Xn;Hips HD B, elbows ED 0/0;OCD clear, SA clear, LTV 0",
     almaTitlesTitle: "Titles and tests",
-    almaTitlesText:
-      "Puppy class: Very promising 1, Jubilee winner – puppy. Minor puppy class: Very promising 1, 2. Junior class: 2× Very good, 2× Excellent, Excellent 2. Working test: OVVR – 232 points, full score.",
-    almaFuture:
-      "In the future we would love Alma to have a few litters carrying on her kind nature, working drive and joy of life.",
+    almaTitlesList:
+      "Puppy class: Very promising 1, Jubilee winner – puppy;Minor puppy class: Very promising 1, 2;Junior class: 2× Very good, 2× Excellent, Excellent 2;OVVR – 232 points, full score",
+    almaPedigreeTitle: "Pedigree",
+    almaPedigreeList:
+      "Sire: SPA CH Brandon de Ria Vela;Dam: Lolipop Dorado Blanco;Owner: Lucie Klesová;Breeder: Ing. František Vacek, Bohemica Aurum",
 
     puppiesTitle: "Rosenaw Aurum puppies",
     puppiesIntro:
@@ -221,7 +225,7 @@ const translations = {
       "Our first Rosenaw Aurum litter is in preparation – please follow our news section for updates.",
     puppiesPlannedTitle: "Planned litters",
     puppiesPlannedText:
-      "As soon as we have confirmed mating dates and sires, we will publish detailed information including parents, health results and expected type of puppies.",
+      "We are planning Alma's first litter for spring 2027. We will share details about the sire and other information once everything is confirmed.",
     puppiesArchiveTitle: "Litter archive",
     puppiesArchiveText:
       "For each litter you will find information about parents, dates of birth and links to photo galleries. At the moment we have no litters bred yet.",
@@ -260,9 +264,9 @@ const translations = {
     contactTitle: "Contact",
     contactIntro:
       "Interested in a puppy from our kennel or just want to ask something? Send us a message – we will get back to you.",
-    contactNameLabel: "Name:",
-    contactPhoneLabel: "Phone:",
-    contactRegion: "Czech Republic – more precise location on request.",
+    contactNameLabel: "Name",
+    contactPhoneLabel: "Phone",
+    contactLocationLabel: "Location",
 
     formNameLabel: "Name",
     formPhoneLabel: "Phone",
@@ -275,8 +279,12 @@ const translations = {
       "By sending this message you agree that we process the provided data in order to answer your enquiry. We do not share your data with third parties.",
     formSubmit: "Send message",
 
+    footerNavTitle: "Navigation",
+    footerContactTitle: "Contact",
+    footerAboutTitle: "About us",
+    footerAboutText:
+      "Rosenaw Aurum — Golden Retriever breeding kennel. We breed with love, care and respect for the breed.",
     footerRights: "All rights reserved.",
-    footerCredit: "Design inspired by the simplicity and elegance of Goldens.",
   },
 };
 
@@ -290,8 +298,8 @@ function setLanguage(lang) {
     const value = dict[key];
     if (!value) return;
 
-    if (key === "puppiesPackList") {
-      // Speciální případ: seznam, rozdělený středníkem
+    if (el.tagName === "UL" || el.tagName === "OL") {
+      // Seznamy: hodnota rozdělená středníkem → <li> prvky
       const items = value.split(";");
       el.innerHTML = "";
       items.forEach((item) => {
@@ -364,9 +372,38 @@ function setupContactForm() {
   });
 }
 
+function setupLightbox() {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  if (!lightbox || !lightboxImg) return;
+
+  document.querySelectorAll(".dog-photo-wrapper, .gallery-item").forEach((el) => {
+    el.addEventListener("click", () => {
+      const img = el.querySelector("img");
+      if (!img) return;
+      lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt;
+      lightbox.classList.add("lightbox--open");
+    });
+  });
+
+  lightbox.addEventListener("click", () => {
+    lightbox.classList.remove("lightbox--open");
+    lightboxImg.src = "";
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      lightbox.classList.remove("lightbox--open");
+      lightboxImg.src = "";
+    }
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   setupLanguageSwitch();
   setupGalleryFilter();
   setupContactForm();
+  setupLightbox();
 });
 
