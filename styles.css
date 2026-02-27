@@ -14,10 +14,25 @@ html {
 
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
+  font-weight: 400;
   color: #501616;
   background-color: #ffffff;
+}
+
+h1 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 600;
+}
+
+h2, h3, h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+strong, b {
+  font-weight: 500;
   line-height: 1.6;
 }
 
@@ -63,29 +78,34 @@ a:hover {
 }
 
 .logo {
-  display: flex;
-  flex-direction: column;
-  gap: 0.1rem;
-  /* posun loga cca o 15 % doleva vůči zbytku obsahu */
-  transform: translateX(-15%);
+  display: block;
+  text-decoration: none;
 }
 
 .logo-main {
+  font-family: "Playfair Display", Georgia, serif;
   font-weight: 600;
+  font-size: 1.05rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  font-size: 0.95rem;
+  color: #7F1719;
 }
 
-.logo-sub {
-  font-size: 0.8rem;
-  color: #6b7280;
+.logo-accent {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 400;
+  font-size: 1.05rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #CC8F3D;
 }
 
 .main-nav {
   display: flex;
   gap: 1.25rem;
+  font-family: "Raleway", sans-serif;
   font-size: 0.9rem;
+  font-weight: 400;
 }
 
 .main-nav a {
@@ -144,6 +164,25 @@ a:hover {
   text-decoration: none;
 }
 
+/* Odkazy v obsahových textech – viditelné, podtržené, s hover efektem */
+.section p a,
+.section li a,
+.aside-card a,
+.dog-content a {
+  color: #93252E;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.section p a:hover,
+.section li a:hover,
+.aside-card a:hover,
+.dog-content a:hover {
+  color: #DC9783;
+  text-decoration-color: #DC9783;
+}
+
 /* ---------------------------------------------
    SEKCE – ZÁKLAD
 --------------------------------------------- */
@@ -158,20 +197,17 @@ a:hover {
 
 .section-hero {
   position: relative;
-  padding-top: 2rem;
-  padding-bottom: 3.5rem;
-    /* Velká fotka v pozadí, která splývá do ztracena směrem k textu */
-    background:
-    linear-gradient(
-      to right,
-      #f9fafb 0%,
-      #f9fafb 10%,
-      rgba(249, 250, 251, 0.75) 5%,
-      rgba(249, 250, 251, 0.35) 5%,
-      rgba(249, 250, 251, 0) 82%
+  padding-top: 0;
+  padding-bottom: 5rem;
+  background:
+    radial-gradient(
+      ellipse 65% 85% at 78% 42%,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0) 35%,
+      rgba(255, 255, 255, 0.55) 65%,
+      #ffffff 100%
     ),
-    /* posunuto výš a ještě více doleva; formát souboru může být PNG nebo JPG, důležité je jméno */
-    url("images/hero-alma.png") no-repeat 70% 25%/700px auto;
+    url("images/hero-alma.png") no-repeat 78% 18%/900px auto;
   overflow: hidden;
 }
 
@@ -207,48 +243,83 @@ a:hover {
 
 .hero-inner {
   display: grid;
-  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1.3fr);
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.3fr);
   gap: 3.5rem;
   align-items: center;
   position: relative;
   z-index: 1;
 }
 
-.hero-text h1 {
-  font-size: clamp(2rem, 3vw, 2.6rem);
-  margin: 0 0 0.75rem;
-  white-space: nowrap;
-  color: #93252E;
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 
-.overline {
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-  font-size: 0.7rem;
-  color: #9ca3af;
-  margin: 0 0 0.75rem;
+.hero-logo-mountains {
+  position: relative;
+  margin-bottom: 0rem;
+  overflow: hidden;
+}
+
+.hero-logo {
+  height: 185px;
+  width: auto;
+  display: block;
+  margin-left: -3rem;
+  position: relative;
+  z-index: 1;
+  margin-bottom: -3rem;
+}
+
+.hero-mountains {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 0;
+}
+
+.hero-text h1 {
+  font-family: "Outfit", sans-serif;
+  font-size: clamp(2.6rem, 4.5vw, 3.8rem);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+  margin: 0 0 2.5rem;
+  white-space: nowrap;
+  color: #501616;
 }
 
 .hero-subtitle {
-  color: #4b5563;
-  margin: 0 0 1.5rem;
-  max-width: 30rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  color: #6b7280;
+  margin: 0 0 3rem;
+  max-width: 28rem;
+  line-height: 2;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
 }
 
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-bottom: 1.25rem;
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
 }
 
 .hero-status {
-  font-size: 0.85rem;
-  color: #6b7280;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 0.8rem;
+  color: #9ca3af;
+  letter-spacing: 0.02em;
+  line-height: 1.7;
 }
 
 .hero-image {
-  /* Hero fotku teď řeší pozadí celé sekce, samotný blok necháme skrytý */
   display: none;
 }
 
@@ -256,142 +327,50 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.5rem;
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 
-/* Hero karty – brand system */
+/* Hero karty – sjednocený styl s ostatními rámečky + obrázky na hover */
 .hero-cards .info-card {
   display: block;
   text-decoration: none;
-  color: #2F2F2F;
+  color: #501616;
   cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  border-radius: 22px;
-  padding: 1.75rem 1.85rem;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
-  border: none;
-  border-bottom: 1px solid #93252E;
-  transition: all 0.3s ease;
+  border-radius: 1rem;
+  padding: 1.5rem 1.6rem;
+  background-color: #ffffff;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 14px 40px rgba(15, 23, 42, 0.05);
+  border-bottom: 2px solid #501616;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.4s ease;
 }
 
 .hero-cards .info-card:hover {
-  transform: translateY(-6px);
-}
-
-/* Glossy – diagonální odlesk shora */
-.hero-cards .info-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 22px;
-  background: linear-gradient(
-    165deg,
-    rgba(255, 255, 255, 0.5) 0%,
-    rgba(255, 255, 255, 0.18) 28%,
-    rgba(255, 255, 255, 0.05) 50%,
-    transparent 65%
-  );
-  pointer-events: none;
-  z-index: 0;
-}
-
-/* Glossy půlkruh – zesvětlení horní části karty */
-.hero-cards .info-card::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 62%;
-  border-radius: 22px 22px 45% 45% / 22px 22px 22px 22px;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.72) 0%,
-    rgba(255, 255, 255, 0.55) 35%,
-    rgba(255, 255, 255, 0.2) 70%,
-    transparent 100%
-  );
-  box-shadow:
-    inset 0 3px 28px 2px rgba(255, 255, 255, 0.45),
-    inset 0 1px 0 0 rgba(255, 255, 255, 0.55),
-    inset -6px -4px 18px -8px rgba(255, 255, 255, 0.12);
-  pointer-events: none;
-  z-index: 0;
-}
-
-.hero-cards .info-card h3,
-.hero-cards .info-card p {
-  position: relative;
-  z-index: 1;
-}
-
-/* O stanici – lesní fotka (světlejší) + glossy půlkruh zůstává */
-.hero-card--green {
-  background-color: #B9C6B5;
-  background-image: url("images/about_us_button.jpg");
-  background-size: cover;
-  background-position: center;
+  transform: translateY(-4px);
+  box-shadow: 0 18px 50px rgba(15, 23, 42, 0.1);
 }
 
 .hero-card--green:hover {
-  background-color: #ACB9A8;
   background-image: url("images/about_us_button.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.hero-card--green h3,
-.hero-card--green p {
-  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9);
-}
-
-/* Naše feny – Champagne Gold (~20 % světlejší) */
-.hero-card--gold {
-  background-color: #E3D2B4;
-  background-image: url("images/alma_button.jpg");
-  background-size: cover;
-  background-position: center;
+  color: #2F2F2F;
 }
 
 .hero-card--gold:hover {
-  background-color: #D7C5A5;
   background-image: url("images/alma_button.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.hero-card--gold h3,
-.hero-card--gold p {
-  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9);
-}
-
-/* Štěňata – Dusty Blue (~20 % světlejší) */
-.hero-card--blue {
-  background-color: #C7D1E0;
-  background-image: url("images/alma_puppy_button.jpg");
-  background-size: 100% auto;
-  background-position: center;
-  background-repeat: no-repeat;
+  color: #2F2F2F;
 }
 
 .hero-card--blue:hover {
-  background-color: #B9C5D5;
   background-image: url("images/alma_puppy_button.jpg");
-  background-size: 100% auto;
-  background-position: center;
-  background-repeat: no-repeat;
+  color: #2F2F2F;
 }
 
-.hero-card--blue h3,
-.hero-card--blue p {
+.hero-cards .info-card:hover h3,
+.hero-cards .info-card:hover p {
   text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9);
 }
 
-.hero-cards .info-card h3,
-.hero-cards .info-card p {
-  color: #2F2F2F;
-}
 
 /* ---------------------------------------------
    KARTY A ASIDE BOXY
@@ -405,7 +384,23 @@ a:hover {
   border-radius: 1rem;
   padding: 1.5rem 1.6rem;
   box-shadow: 0 14px 40px rgba(15, 23, 42, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.aside-card:hover,
+.dog-stat-card:hover,
+.news-item:hover,
+.docs-note:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 50px rgba(15, 23, 42, 0.1);
+}
+
+.aside-card,
+.dog-stat-card,
+.news-item {
+  border-bottom: 2px solid #501616;
+}
+
 
 .info-card h3 {
   margin: 0 0 0.5rem;
@@ -448,21 +443,23 @@ a:hover {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.6rem 1.2rem;
+  padding: 0.7rem 1.6rem;
   border-radius: 999px;
-  font-size: 0.9rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.82rem;
   font-weight: 500;
+  letter-spacing: 0.04em;
   border: 1px solid transparent;
   cursor: pointer;
-  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease,
-    box-shadow 0.15s ease, transform 0.05s ease;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease,
+    box-shadow 0.2s ease, transform 0.1s ease;
 }
 
 .btn-primary {
-  background: #93252E;
+  background: #501616;
   color: #FDFDFD;
-  border-color: #93252E;
-  box-shadow: 0 12px 30px rgba(147, 37, 46, 0.3);
+  border-color: #501616;
+  box-shadow: 0 4px 16px rgba(80, 22, 22, 0.15);
 }
 
 .btn-primary:hover {
@@ -498,6 +495,12 @@ a:hover {
   grid-template-columns: minmax(0, 1.1fr) minmax(0, 2fr);
   gap: 1.75rem;
   align-items: flex-start;
+}
+
+.dog-photos {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .dog-photo-wrapper {
@@ -556,6 +559,7 @@ a:hover {
   background: #FDFDFD;
   border-radius: 1rem;
   box-shadow: 0 4px 20px rgba(80, 22, 22, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .dog-stat-icon {
@@ -758,6 +762,39 @@ a:hover {
    DOKUMENTY
 --------------------------------------------- */
 
+#documents .section-header p {
+  max-width: none;
+}
+
+.docs-columns {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1.5rem 3rem;
+  margin-bottom: 2rem;
+}
+
+.docs-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.docs-group {
+  margin-bottom: 0;
+}
+
+.docs-group h3 {
+  font-size: 1.1rem;
+  margin: 0 0 0.3rem;
+  color: #501616;
+}
+
+.docs-group-meta {
+  font-size: 0.8rem;
+  color: #6b7280;
+  margin: 0 0 0.6rem;
+}
+
 .docs-list {
   list-style: none;
   padding: 0;
@@ -766,8 +803,52 @@ a:hover {
   color: #4b5563;
 }
 
-.docs-list li + li {
-  margin-top: 0.3rem;
+.docs-list li {
+  padding: 0.45rem 0;
+  border-bottom: 1px solid rgba(80, 22, 22, 0.08);
+}
+
+.docs-list li:last-child {
+  border-bottom: none;
+}
+
+.docs-list a {
+  display: block;
+}
+
+.docs-note {
+  margin-top: 1.5rem;
+  padding: 1.5rem 1.6rem;
+  background: #ffffff;
+  border-radius: 1rem;
+  border-bottom: 2px solid #501616;
+  box-shadow: 0 14px 40px rgba(15, 23, 42, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.docs-note h3 {
+  font-size: 1.1rem;
+  margin: 0 0 1.2rem;
+  color: #501616;
+}
+
+.docs-note-item + .docs-note-item {
+  margin-top: 1.2rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid rgba(80, 22, 22, 0.08);
+}
+
+.docs-note-item h4 {
+  font-size: 0.95rem;
+  margin: 0 0 0.4rem;
+  color: #501616;
+}
+
+.docs-note-item p {
+  margin: 0;
+  font-size: 0.88rem;
+  color: #4b5563;
+  line-height: 1.7;
 }
 
 /* ---------------------------------------------
@@ -802,6 +883,7 @@ a:hover {
   align-items: center;
   text-align: center;
   padding: 1.4rem 1rem;
+  border-bottom: 2px solid #501616;
   background: #ffffff;
   border-radius: 1rem;
   box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
@@ -1040,11 +1122,11 @@ textarea:focus {
     background:
       linear-gradient(
         to bottom,
-        rgba(249, 250, 251, 0.96) 0%,
-        rgba(249, 250, 251, 0.9) 26%,
-        rgba(249, 250, 251, 0.6) 45%,
-        rgba(249, 250, 251, 0.15) 70%,
-        rgba(249, 250, 251, 0) 100%
+        rgba(255, 255, 255, 0.96) 0%,
+        rgba(255, 255, 255, 0.9) 26%,
+        rgba(255, 255, 255, 0.6) 45%,
+        rgba(255, 255, 255, 0.15) 70%,
+        rgba(255, 255, 255, 0) 100%
       ),
       url("images/hero-alma.jpg") no-repeat center 20%/130% auto;
   }
@@ -1054,6 +1136,10 @@ textarea:focus {
   }
 
   .two-column {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .docs-columns {
     grid-template-columns: minmax(0, 1fr);
   }
 
@@ -1092,11 +1178,22 @@ textarea:focus {
   }
 
   .section-hero {
-    padding-top: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
   }
 
   .hero-text h1 {
     white-space: normal;
+    font-size: clamp(1.8rem, 6vw, 2.4rem);
+  }
+
+  .hero-subtitle {
+    line-height: 1.8;
+    margin-bottom: 2rem;
+  }
+
+  .hero-mountains {
+    max-width: 90%;
   }
 
   .hero-cards {

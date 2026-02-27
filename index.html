@@ -11,6 +11,9 @@
       name="description"
       content="Rosenaw Aurum – moderní, rodinná chovatelská stanice zlatých retrívrů s důrazem na zdraví, povahu a každodenní život se psy."
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&family=Playfair+Display:wght@400;600;700&family=Raleway:wght@300;400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -34,12 +37,9 @@
 
     <header class="site-header">
       <div class="container header-inner">
-        <div class="logo">
-          <span class="logo-main">Rosenaw Aurum</span>
-          <span class="logo-sub" data-i18n="logoSubtitle">
-            chovatelská stanice zlatých retrívrů
-          </span>
-        </div>
+        <a href="#home" class="logo">
+          <span class="logo-main">Rosenaw</span> <span class="logo-accent">Aurum</span>
+        </a>
         <nav class="main-nav" aria-label="Primary">
           <a href="#home" data-i18n="navHome">Domů</a>
           <a href="#about" data-i18n="navAbout">O nás</a>
@@ -72,15 +72,31 @@
       <section id="home" class="section section-hero">
         <div class="container hero-inner">
           <div class="hero-text">
-            <p class="overline" data-i18n="heroOverline">
-              Chovatelská stanice FCI
-            </p>
+            <div class="hero-logo-mountains">
+              <img src="images/logo.png" alt="Rosenaw Aurum" class="hero-logo" />
+              <svg class="hero-mountains" width="100%" height="180" viewBox="0 0 1600 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="ridgeGradient" x1="0" y1="0" x2="1600" y2="0" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#6b5550" stop-opacity="0"/>
+                  <stop offset="18%" stop-color="#6b5550" stop-opacity="0.35"/>
+                  <stop offset="50%" stop-color="#6b5550" stop-opacity="0.65"/>
+                  <stop offset="82%" stop-color="#6b5550" stop-opacity="0.35"/>
+                  <stop offset="100%" stop-color="#6b5550" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <!-- Hlavní realistický profil Radhoště -->
+              <path d="M0 125 L200 120 L350 112 L500 102 L650 90 L720 82 L770 70 L810 58 L845 50 L880 46 L910 48 L940 55 L980 68 L1040 82 L1150 96 L1300 110 L1450 120 L1600 116" stroke="url(#ridgeGradient)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              <!-- Jemná sekundární hloubková linie -->
+              <path d="M300 130 L550 120 L750 112 L900 115 L1150 125" stroke="url(#ridgeGradient)" stroke-width="0.8" stroke-linecap="round" fill="none" opacity="0.5"/>
+            </svg>
+            </div>
             <h1 data-i18n="heroTitle">
               Z Beskyd. Ze srdce. Do rodiny.
             </h1>
-            <p class="hero-subtitle" data-i18n="heroSubtitle">
-              Rosenaw Aurum je malá rodinná chovatelská stanice z Rožnova pod Radhoštěm, kde jsou zlatí retrívři plnohodnotnými členy našeho života. Vyrůstají s námi doma, doprovázejí nás na cestách, sdílejí každodenní radosti i tiché večery.
-              Nechováme ve velkém. Nechováme pro čísla. Chováme s respektem ke zdraví, vyrovnané povaze a ušlechtilé eleganci tohoto výjimečného plemene. Každé štěně od nás odchází tam, kam patří – do rodiny.
+            <p class="hero-subtitle" data-i18n="heroSubtitle" data-i18n-html>
+              Malá rodinná chovatelská stanice z Rožnova pod Radhoštěm.<br>
+              Zdraví. Povaha. Elegance.<br>
+              Každé štěně odchází tam, kam patří – do rodiny.
             </p>
             <div class="hero-actions">
               <a href="#about" class="btn btn-primary" data-i18n="heroCtaAbout">
@@ -143,24 +159,24 @@
         <div class="container section-inner two-column">
           <div>
             <h2 data-i18n="aboutTitle">O chovatelské stanici Rosenaw Aurum</h2>
-            <p data-i18n="aboutIntro1">
-              Za jménem Rosenaw Aurum stojí naše rodina a zlatí retrívři, kteří
+            <p data-i18n="aboutIntro1" data-i18n-html>
+              Za jménem <strong>Rosenaw Aurum</strong> stojí naše rodina a zlatí retrívři, kteří
               s námi sdílejí každodenní radosti i starosti. Prvním z nich byl
-              Dexík – zlatý retrívr bez průkazu původu, který nás svou
+              <strong>Dexík</strong> – zlatý retrívr bez průkazu původu, který nás svou
               přátelskou povahou naučil, jak výjimečné toto plemeno je.
             </p>
-            <p data-i18n="aboutIntro2">
-              Po jeho odchodu k nám do života vstoupila Alma, vysněná fenečka s
+            <p data-i18n="aboutIntro2" data-i18n-html>
+              Po jeho odchodu k nám do života vstoupila <strong>Alma</strong>, vysněná fenečka s
               průkazem původu, se kterou jsme se vydali na cestu k chovu
-              zlatých retrívrů s důrazem na zdraví, povahu, pracovní vlohy a
-              rodinný život. Alminka je pes do každé nepohody – plave, běhá po
+              zlatých retrívrů s důrazem na <strong>zdraví, povahu, pracovní vlohy a
+              rodinný život</strong>. Alminka je pes do každé nepohody – plave, běhá po
               horách, dovádí s dětmi, ale zároveň dokáže tiše ležet vedle
               nemocného v pelíšku.
             </p>
-            <p data-i18n="aboutPhilosophy">
-              Naším cílem je odchovávat vyrovnané, zdravé a společenské psy,
+            <p data-i18n="aboutPhilosophy" data-i18n-html>
+              Naším cílem je odchovávat <strong>vyrovnané, zdravé a společenské psy</strong>,
               kteří se budou cítit stejně dobře na výstavním kruhu, při práci
-              v poli i uprostřed rodinného obýváku.
+              v poli i uprostřed rodinného obýváku. Naše chovatelská stanice Rosenaw Aurum je od [datum] registrovaná u <a href="https://www.fci.be/" target="_blank" rel="noopener noreferrer">Mezinárodní kynologické federace FCI</a> pod číslem 832/23 a jsme členy <a href="https://www.kchls.cz/" target="_blank" rel="noopener noreferrer">Klubu chovatelů loveckých slídičů (KCHLS)</a> i <a href="https://www.retriever-klub.cz/" target="_blank" rel="noopener noreferrer">Retriever Klubu (RK CZ)</a>.
             </p>
           </div>
           <aside class="aside-card">
@@ -171,9 +187,9 @@
               ochoty spolupracovat. V chovu se opírám o zdraví, povahu a
               respekt k jednotlivým psím osobnostem.
             </p>
-            <p data-i18n="aboutLinkAlma">
+            <p data-i18n="aboutLinkAlma" data-i18n-html>
               Podrobnější příběh Almy najdete na stránce
-              mateřské chovatelské stanice Bohemica Aurum a na našem blogu.
+              mateřské chovatelské stanice <a href="https://www.bohemica-aurum.cz/" target="_blank" rel="noopener noreferrer">Bohemica Aurum</a> a na našem <a href="https://www.instagram.com/almamygoldenlove" target="_blank" rel="noopener noreferrer">Instagramu</a>.
             </p>
           </aside>
         </div>
@@ -193,24 +209,37 @@
           <div class="girls-grid">
             <!-- Alma card – vzor pro další fenky -->
             <article class="dog-card">
-              <figure class="dog-photo-wrapper">
-                <img
-                  class="dog-photo"
-                  src="images/alma-profile.jpg"
-                  alt="Alma Bohemica Aurum – zlatý retrívr, portrét"
-                />
-                <figcaption class="dog-photo-caption" data-i18n="almaPhotoLabel">
-                  Zde může být portrét Almy (soubor
-                  <code>images/alma-profile.jpg</code>).
-                </figcaption>
-              </figure>
+              <div class="dog-photos">
+                <figure class="dog-photo-wrapper">
+                  <img
+                    class="dog-photo"
+                    src="images/alma-profile.jpg"
+                    alt="Alma Bohemica Aurum – zlatý retrívr, portrét"
+                  />
+                  <figcaption class="dog-photo-caption" data-i18n="almaPhotoLabel">
+                    Zde může být portrét Almy (soubor
+                    <code>images/alma-profile.jpg</code>).
+                  </figcaption>
+                </figure>
+                <figure class="dog-photo-wrapper">
+                  <img
+                    class="dog-photo"
+                    src="images/alma-profile-2.jpg"
+                    alt="Alma Bohemica Aurum – zlatý retrívr"
+                  />
+                  <figcaption class="dog-photo-caption" data-i18n="almaPhoto2Label">
+                    Druhá fotografie Almy (soubor
+                    <code>images/alma-profile-2.jpg</code>).
+                  </figcaption>
+                </figure>
+              </div>
               <div class="dog-content">
                 <h3>Alma Bohemica Aurum</h3>
                 <p class="dog-meta" data-i18n="almaBasic">
                   nar. 27. 1. 2024 &nbsp;•&nbsp; zlatý retrívr, fena
                 </p>
-                <p class="dog-text" data-i18n="almaPersonality">
-                  Alminka je naše vysněná fenečka zlatého retrívra. Do života
+                <p class="dog-text" data-i18n="almaPersonality" data-i18n-html>
+                  <strong>Alminka</strong> je naše vysněná fenečka zlatého retrívra. Do života
                   k nám vtrhla jako velká voda a velmi rychle se z ní stal pes
                   do každé situace – parťák na výlety, dovolené, sport i klidné
                   večery doma.
@@ -249,11 +278,11 @@
                       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="4" r="2"/><circle cx="5" cy="12" r="2"/><circle cx="19" cy="12" r="2"/><circle cx="2" cy="20" r="2"/><circle cx="8" cy="20" r="2"/><circle cx="16" cy="20" r="2"/><circle cx="22" cy="20" r="2"/><path d="M12 6v2l-7 4M12 8l7 4M5 14v2l-3 4M5 14v2l3 4M19 14v2l-3 4M19 14v2l3 4"/></svg>
                     </div>
                     <h4 data-i18n="almaPedigreeTitle">Rodokmen</h4>
-                    <ul class="dog-stat-list" data-i18n="almaPedigreeList">
-                      <li>Otec: SPA CH Brandon de Ria Vela</li>
-                      <li>Matka: Lolipop Dorado Blanco</li>
-                      <li>Majitel: Lucie Klesová</li>
-                      <li>Chovatel: Ing. František Vacek, Bohemica Aurum</li>
+                    <ul class="dog-stat-list" data-i18n="almaPedigreeList" data-i18n-html>
+                      <li><strong>Otec:</strong> SPA CH Brandon de Ria Vela</li>
+                      <li><strong>Matka:</strong> Lolipop Dorado Blanco</li>
+                      <li><strong>Majitel:</strong> Lucie Klesová</li>
+                      <li><strong>Chovatel:</strong> Ing. František Vacek, <a href="https://www.bohemica-aurum.cz/" target="_blank" rel="noopener noreferrer">Bohemica Aurum</a></li>
                     </ul>
                   </div>
                 </div>
@@ -444,10 +473,10 @@
                 2025 &nbsp;•&nbsp; První kroky Rosenaw Aurum
               </p>
               <h3 data-i18n="newsItem1Title">Zrození chovatelské stanice</h3>
-              <p data-i18n="newsItem1Text">
+              <p data-i18n="newsItem1Text" data-i18n-html>
                 Po pečlivém rozhodování a prvních zkušenostech s Almou jsme se
                 rozhodli udělat další krok a založit chovatelskou stanici
-                Rosenaw Aurum. Naším snem je odchovávat zlaté retrívry, kteří
+                <strong>Rosenaw Aurum</strong>. Naším snem je odchovávat zlaté retrívry, kteří
                 budou dělat radost svým rodinám mnoho let.
               </p>
             </article>
@@ -457,9 +486,9 @@
                 2024 &nbsp;•&nbsp; Alma Bohemica Aurum
               </p>
               <h3 data-i18n="newsItem2Title">Alma přichází domů</h3>
-              <p data-i18n="newsItem2Text">
-                Alminka se k nám přistěhovala krátce poté, co nás opustil náš
-                dlouholetý parťák Dexík. Na truchlení nebyl čas – malé štěně
+              <p data-i18n="newsItem2Text" data-i18n-html>
+                <strong>Alminka</strong> se k nám přistěhovala krátce poté, co nás opustil náš
+                dlouholetý parťák <strong>Dexík</strong>. Na truchlení nebyl čas – malé štěně
                 převrátilo naši domácnost vzhůru nohama a přineslo do ní novou
                 energii a radost.
               </p>
@@ -473,24 +502,137 @@
         <div class="container">
           <header class="section-header">
             <h2 data-i18n="docsTitle">Dokumenty</h2>
-            <p data-i18n="docsIntro">
-              Postupně zde najdete ke stažení vybrané dokumenty související s
-              naším chovem – rodokmeny, zdravotní výsledky, smlouvy a další
-              informace.
+            <p data-i18n="docsIntro" data-i18n-html>
+              Zde najdete kompletní zdravotní dokumentaci naší fenky <strong>Almy Bohemica Aurum</strong>.
+              Transparentnost výsledků je pro nás samozřejmostí – chceme, aby si každý zájemce
+              o štěně mohl vše ověřit.
             </p>
           </header>
 
-          <ul class="docs-list">
-            <li data-i18n="docsItem1">
-              Vzor kupní smlouvy pro štěňata Rosenaw Aurum (PDF)
-            </li>
-            <li data-i18n="docsItem2">
-              Základní přehled zdravotních vyšetření našich fen (PDF)
-            </li>
-            <li data-i18n="docsItem3">
-              Doporučení k péči o štěně v prvním roce života (PDF)
-            </li>
-          </ul>
+          <div class="docs-columns">
+
+          <div class="docs-col">
+          <!-- Rodokmen -->
+          <div class="docs-group">
+            <h3 data-i18n="docsPedigreeTitle">Rodokmen</h3>
+            <ul class="docs-list">
+              <li>
+                <a href="documents/ALMA_PEDIGREE.pdf" target="_blank" rel="noopener noreferrer" data-i18n="docsPedigree" data-i18n-html>
+                  <strong>Průkaz původu FCI</strong> – Alma Bohemica Aurum, ČLP/GR/25733
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- RTG vyšetření -->
+          <div class="docs-group">
+            <h3 data-i18n="docsXrayTitle">RTG vyšetření</h3>
+            <p class="docs-group-meta" data-i18n="docsXrayMeta">Vyšetřeno 3. 2. 2025, MVDr Marek Pepřík, Opava</p>
+            <ul class="docs-list">
+              <li>
+                <a href="documents/ALMA_DKK,DLK.pdf" target="_blank" rel="noopener noreferrer" data-i18n="docsHdEd" data-i18n-html>
+                  <strong>DKK + DLK</strong> – HD B (hraniční), ED 0/0 (bez nálezu)
+                </a>
+              </li>
+              <li>
+                <a href="documents/ALMA_SA,LTV.pdf" target="_blank" rel="noopener noreferrer" data-i18n="docsSaLtv" data-i18n-html>
+                  <strong>SA + LTV</strong> – spondylóza 0 (negativní), LTV 0 (negativní)
+                </a>
+              </li>
+              <li>
+                <a href="documents/ALMA_OCD.pdf" target="_blank" rel="noopener noreferrer" data-i18n="docsOcd" data-i18n-html>
+                  <strong>OCD ramenních kloubů</strong> – nepostižen (obě končetiny clear)
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          </div><!-- /docs-col levý -->
+
+          <div class="docs-col">
+          <!-- Genetické testy -->
+          <div class="docs-group">
+            <h3 data-i18n="docsGeneticsTitle">Genetické testy</h3>
+            <p class="docs-group-meta" data-i18n="docsGeneticsMeta">Laboratoř Genomia, Plzeň, květen 2025</p>
+            <ul class="docs-list">
+              <li>
+                <a href="documents/PRA1.pdf" target="_blank" rel="noopener noreferrer" data-i18n="docsGrpra1" data-i18n-html>
+                  <strong>GR-PRA1</strong> – N/N (čistá, bez mutace)
+                </a>
+              </li>
+              <li>
+                <a href="documents/PRA2.pdf" target="_blank" rel="noopener noreferrer" data-i18n="docsGrpra2" data-i18n-html>
+                  <strong>GR-PRA2</strong> – N/N (čistá, bez mutace)
+                </a>
+              </li>
+              <li>
+                <a href="documents/PRA.pdf" target="_blank" rel="noopener noreferrer" data-i18n="docsPra" data-i18n-html>
+                  <strong>PRA-prcd</strong> – N/N (čistá, bez mutace)
+                </a>
+              </li>
+              <li>
+                <a href="documents/ICT1.pdf" target="_blank" rel="noopener noreferrer" data-i18n="docsIct1" data-i18n-html>
+                  <strong>ICT-1 (ichtyóza 1)</strong> – N/P (přenašečka) ⚠
+                </a>
+              </li>
+              <li>
+                <a href="documents/ICT2.pdf" target="_blank" rel="noopener noreferrer" data-i18n="docsIct2" data-i18n-html>
+                  <strong>ICT-2 (ichtyóza 2)</strong> – N/N (čistá, bez mutace)
+                </a>
+              </li>
+              <li>
+                <a href="documents/NCL.pdf" target="_blank" rel="noopener noreferrer" data-i18n="docsNcl" data-i18n-html>
+                  <strong>NCL (neuronální ceroidní lipofuscinóza)</strong> – N/N (čistá, bez mutace)
+                </a>
+              </li>
+              <li>
+                <a href="documents/GRMD.pdf" target="_blank" rel="noopener noreferrer" data-i18n="docsGrmd" data-i18n-html>
+                  <strong>GRMD (muskulární dystrofie)</strong> – Xn/Xn (čistá)
+                </a>
+              </li>
+            </ul>
+          </div>
+          </div><!-- /docs-col pravý -->
+
+          </div><!-- /docs-columns -->
+
+          <!-- Vysvětlení neideálních výsledků -->
+          <div class="docs-note">
+            <h3 data-i18n="docsNoteTitle">Co znamenají naše výsledky pro chov</h3>
+
+            <div class="docs-note-item">
+              <h4 data-i18n="docsNoteHdTitle">HD B (hraniční dysplazie kyčlí)</h4>
+              <p data-i18n="docsNoteHdText" data-i18n-html>
+                Stupeň <strong>HD B</strong> znamená téměř normální kyčelní klouby s minimálními
+                odchylkami. Pro chov je plně akceptovatelný. Abychom maximalizovali šanci
+                na nejlepší výsledky u štěňat, <strong>budeme vybírat krycího psa výhradně
+                s HD A</strong> (bez nálezu) a ideálně s prokazatelně dobrými výsledky v linii.
+              </p>
+            </div>
+
+            <div class="docs-note-item">
+              <h4 data-i18n="docsNoteIctTitle">ICT-1 N/P (přenašečka ichtyózy 1)</h4>
+              <p data-i18n="docsNoteIctText" data-i18n-html>
+                Alma je <strong>přenašečka</strong> ichtyózy 1 – sama je zcela zdravá, ale nese
+                jednu kopii mutovaného genu. Ichtyóza 1 je recesivní onemocnění kůže,
+                které se projeví pouze u jedinců s oběma kopiemi mutace (P/P).
+                Proto <strong>krycí pes musí být testován jako N/N</strong> (čistý).
+                Při krytí N/P × N/N bude 50 % štěňat čistých (N/N) a 50 % přenašečů (N/P)
+                – <strong>žádné štěně nemůže onemocnět</strong>.
+                Více o ichtyóze si můžete přečíst v <a href="https://www.bohemica-aurum.cz/l/ichtyoza-seminarni-prace/" target="_blank" rel="noopener noreferrer">seminární práci chovatelky stanice Bohemica Aurum</a>.
+              </p>
+            </div>
+
+            <div class="docs-note-item">
+              <h4 data-i18n="docsNoteStrategyTitle">Naše strategie výběru krycího psa</h4>
+              <p data-i18n="docsNoteStrategyText" data-i18n-html>
+                Při výběru krycího psa pro Almu klademe důraz na: <strong>HD A</strong> (bez nálezu),
+                <strong>ED 0/0</strong>, kompletní genetické testy s výsledkem <strong>N/N u ICT-1</strong>,
+                vyrovnanou povahu, kvalitní rodokmen a typickou stavbu těla. Všechny
+                zdravotní výsledky krycího psa budou rovněž zveřejněny na těchto stránkách.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 

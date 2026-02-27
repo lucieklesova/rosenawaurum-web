@@ -16,7 +16,7 @@ const translations = {
     heroOverline: "Chovatelská stanice FCI",
     heroTitle: "Z Beskyd. Ze srdce. Do rodiny.",
     heroSubtitle:
-      "Rosenaw Aurum je malá rodinná chovatelská stanice z Rožnova pod Radhoštěm, kde jsou zlatí retrívři plnohodnotnými členy našeho života. Vyrůstají s námi doma, doprovázejí nás na cestách, sdílejí každodenní radosti i tiché večery. Nechováme ve velkém. Nechováme pro čísla. Chováme s respektem ke zdraví, vyrovnané povaze a ušlechtilé eleganci tohoto výjimečného plemene. Každé štěně od nás odchází tam, kam patří – do rodiny.",
+      "Malá rodinná chovatelská stanice z Rožnova pod Radhoštěm.<br>Zdraví. Povaha. Elegance.<br>Každé štěně odchází tam, kam patří – do rodiny.",
     heroCtaAbout: "Poznat naši filozofii",
     heroCtaPuppies: "Informace o štěňatech",
     heroStatus:
@@ -38,24 +38,25 @@ const translations = {
 
     aboutTitle: "O chovatelské stanici Rosenaw Aurum",
     aboutIntro1:
-      "Za jménem Rosenaw Aurum stojí naše rodina a zlatí retrívři, kteří s námi sdílejí každodenní radosti i starosti. Prvním z nich byl Dexík – zlatý retrívr bez průkazu původu, který nás svou přátelskou povahou naučil, jak výjimečné toto plemeno je.",
+      'Za jménem <strong>Rosenaw Aurum</strong> stojí naše rodina a zlatí retrívři, kteří s námi sdílejí každodenní radosti i starosti. Prvním z nich byl <strong>Dexík</strong> – zlatý retrívr bez průkazu původu, který nás svou přátelskou povahou naučil, jak výjimečné toto plemeno je.',
     aboutIntro2:
-      "Po jeho odchodu k nám do života vstoupila Alma, vysněná fenečka s průkazem původu, se kterou jsme se vydali na cestu k chovu zlatých retrívrů s důrazem na zdraví, povahu, pracovní vlohy a rodinný život. Alminka je pes do každé nepohody – plave, běhá po horách, dovádí s dětmi, ale zároveň dokáže tiše ležet vedle nemocného v pelíšku.",
+      'Po jeho odchodu k nám do života vstoupila <strong>Alma</strong>, vysněná fenečka s průkazem původu, se kterou jsme se vydali na cestu k chovu zlatých retrívrů s důrazem na <strong>zdraví, povahu, pracovní vlohy a rodinný život</strong>. Alminka je pes do každé nepohody – plave, běhá po horách, dovádí s dětmi, ale zároveň dokáže tiše ležet vedle nemocného v pelíšku.',
     aboutPhilosophy:
-      "Naším cílem je odchovávat vyrovnané, zdravé a společenské psy, kteří se budou cítit stejně dobře na výstavním kruhu, při práci v poli i uprostřed rodinného obýváku.",
+      'Naším cílem je odchovávat <strong>vyrovnané, zdravé a společenské psy</strong>, kteří se budou cítit stejně dobře na výstavním kruhu, při práci v poli i uprostřed rodinného obýváku. Naše chovatelská stanice Rosenaw Aurum je od [datum] registrovaná u <a href="https://www.fci.be/" target="_blank" rel="noopener noreferrer">Mezinárodní kynologické federace FCI</a> pod číslem 832/23 a jsme členy <a href="https://www.kchls.cz/" target="_blank" rel="noopener noreferrer">Klubu chovatelů loveckých slídičů (KCHLS)</a> i <a href="https://www.retriever-klub.cz/" target="_blank" rel="noopener noreferrer">Retriever Klubu (RK CZ)</a>.',
     aboutBreederTitle: "Chovatelka",
     aboutBreederText:
       "Jmenuji se Lucie Klesová a psi mě provázejí od dětství. Zlatí retrívři jsou pro mě kombinací klidu, radosti a nevyčerpatelné ochoty spolupracovat. V chovu se opírám o zdraví, povahu a respekt k jednotlivým psím osobnostem.",
     aboutLinkAlma:
-      "Podrobnější příběh Almy najdete na stránce mateřské chovatelské stanice Bohemica Aurum a na našem blogu.",
+      'Podrobnější příběh Almy najdete na stránce mateřské chovatelské stanice <a href="https://www.bohemica-aurum.cz/" target="_blank" rel="noopener noreferrer">Bohemica Aurum</a> a na našem <a href="https://www.instagram.com/almamygoldenlove" target="_blank" rel="noopener noreferrer">Instagramu</a>.',
 
     girlsTitle: "Naše feny",
     girlsIntro:
       "Postupně zde najdete všechny naše zlaté dámy – od mladých nadějí po zkušené chovné feny a psí seniorky.",
     almaPhotoLabel: "Fotografie Almy – Alma Bohemica Aurum",
+    almaPhoto2Label: "Fotografie Almy – Alma Bohemica Aurum",
     almaBasic: "nar. 27. 1. 2024 • zlatý retrívr, fena",
     almaPersonality:
-      "Alminka je naše vysněná fenečka zlatého retrívra. Do života k nám vtrhla jako velká voda a velmi rychle se z ní stal pes do každé situace – parťák na výlety, dovolené, sport i klidné večery doma.",
+      '<strong>Alminka</strong> je naše vysněná fenečka zlatého retrívra. Do života k nám vtrhla jako velká voda a velmi rychle se z ní stal pes do každé situace – parťák na výlety, dovolené, sport i klidné večery doma.',
     almaHealthTitle: "Zdraví",
     almaHealthList:
       "Výška 56 cm, chrup úplný nůžkový;GR-PRA1 N/N, DR-PRA2 N/N, PRA N/N;ICT N/P, ICT-2 N/N, NCL N/N, GRMD Xn/Xn;HD B, ED 0/0;OCD negativní, SA negativní, LTV 0",
@@ -64,7 +65,7 @@ const translations = {
       "Třída štěňat: VN1, Jubilejní vítěz štěně;Třída dorostu: VN1, VN2;Třída mladých: 2× VD, 2× V, V2;OVVR – 232 b., plný počet",
     almaPedigreeTitle: "Rodokmen",
     almaPedigreeList:
-      "Otec: SPA CH Brandon de Ria Vela;Matka: Lolipop Dorado Blanco;Majitel: Lucie Klesová;Chovatel: Ing. František Vacek, Bohemica Aurum",
+      '<strong>Otec:</strong> SPA CH Brandon de Ria Vela;<strong>Matka:</strong> Lolipop Dorado Blanco;<strong>Majitel:</strong> Lucie Klesová;<strong>Chovatel:</strong> Ing. František Vacek, <a href="https://www.bohemica-aurum.cz/" target="_blank" rel="noopener noreferrer">Bohemica Aurum</a>',
 
     puppiesTitle: "Štěňata Rosenaw Aurum",
     puppiesIntro:
@@ -105,18 +106,38 @@ const translations = {
     newsItem1Meta: "2025 • První kroky Rosenaw Aurum",
     newsItem1Title: "Zrození chovatelské stanice",
     newsItem1Text:
-      "Po pečlivém rozhodování a prvních zkušenostech s Almou jsme se rozhodli udělat další krok a založit chovatelskou stanici Rosenaw Aurum. Naším snem je odchovávat zlaté retrívry, kteří budou dělat radost svým rodinám mnoho let.",
+      'Po pečlivém rozhodování a prvních zkušenostech s Almou jsme se rozhodli udělat další krok a založit chovatelskou stanici <strong>Rosenaw Aurum</strong>. Naším snem je odchovávat zlaté retrívry, kteří budou dělat radost svým rodinám mnoho let.',
     newsItem2Meta: "2024 • Alma Bohemica Aurum",
     newsItem2Title: "Alma přichází domů",
     newsItem2Text:
-      "Alminka se k nám přistěhovala krátce poté, co nás opustil náš dlouholetý parťák Dexík. Na truchlení nebyl čas – malé štěně převrátilo naši domácnost vzhůru nohama a přineslo do ní novou energii a radost.",
+      '<strong>Alminka</strong> se k nám přistěhovala krátce poté, co nás opustil náš dlouholetý parťák <strong>Dexík</strong>. Na truchlení nebyl čas – malé štěně převrátilo naši domácnost vzhůru nohama a přineslo do ní novou energii a radost.',
 
     docsTitle: "Dokumenty",
     docsIntro:
-      "Postupně zde najdete ke stažení vybrané dokumenty související s naším chovem – rodokmeny, zdravotní výsledky, smlouvy a další informace.",
-    docsItem1: "Vzor kupní smlouvy pro štěňata Rosenaw Aurum (PDF)",
-    docsItem2: "Základní přehled zdravotních vyšetření našich fen (PDF)",
-    docsItem3: "Doporučení k péči o štěně v prvním roce života (PDF)",
+      'Zde najdete kompletní zdravotní dokumentaci naší fenky <strong>Almy Bohemica Aurum</strong>. Transparentnost výsledků je pro nás samozřejmostí – chceme, aby si každý zájemce o štěně mohl vše ověřit.',
+    docsPedigreeTitle: "Rodokmen",
+    docsPedigree: '<strong>Průkaz původu FCI</strong> – Alma Bohemica Aurum, ČLP/GR/25733',
+    docsXrayTitle: "RTG vyšetření",
+    docsXrayMeta: "Vyšetřeno 3. 2. 2025, MVDr Marek Pepřík, Opava",
+    docsHdEd: '<strong>DKK + DLK</strong> – HD B (hraniční), ED 0/0 (bez nálezu)',
+    docsSaLtv: '<strong>SA + LTV</strong> – spondylóza 0 (negativní), LTV 0 (negativní)',
+    docsOcd: '<strong>OCD ramenních kloubů</strong> – nepostižen (obě končetiny clear)',
+    docsGeneticsTitle: "Genetické testy",
+    docsGeneticsMeta: "Laboratoř Genomia, Plzeň, květen 2025",
+    docsGrpra1: '<strong>GR-PRA1</strong> – N/N (čistá, bez mutace)',
+    docsGrpra2: '<strong>GR-PRA2</strong> – N/N (čistá, bez mutace)',
+    docsPra: '<strong>PRA-prcd</strong> – N/N (čistá, bez mutace)',
+    docsIct1: '<strong>ICT-1 (ichtyóza 1)</strong> – N/P (přenašečka) ⚠',
+    docsIct2: '<strong>ICT-2 (ichtyóza 2)</strong> – N/N (čistá, bez mutace)',
+    docsNcl: '<strong>NCL (neuronální ceroidní lipofuscinóza)</strong> – N/N (čistá, bez mutace)',
+    docsGrmd: '<strong>GRMD (muskulární dystrofie)</strong> – Xn/Xn (čistá)',
+    docsNoteTitle: "Co znamenají naše výsledky pro chov",
+    docsNoteHdTitle: "HD B (hraniční dysplazie kyčlí)",
+    docsNoteHdText: 'Stupeň <strong>HD B</strong> znamená téměř normální kyčelní klouby s minimálními odchylkami. Pro chov je plně akceptovatelný. Abychom maximalizovali šanci na nejlepší výsledky u štěňat, <strong>budeme vybírat krycího psa výhradně s HD A</strong> (bez nálezu) a ideálně s prokazatelně dobrými výsledky v linii.',
+    docsNoteIctTitle: "ICT-1 N/P (přenašečka ichtyózy 1)",
+    docsNoteIctText: 'Alma je <strong>přenašečka</strong> ichtyózy 1 – sama je zcela zdravá, ale nese jednu kopii mutovaného genu. Ichtyóza 1 je recesivní onemocnění kůže, které se projeví pouze u jedinců s oběma kopiemi mutace (P/P). Proto <strong>krycí pes musí být testován jako N/N</strong> (čistý). Při krytí N/P × N/N bude 50 % štěňat čistých (N/N) a 50 % přenašečů (N/P) – <strong>žádné štěně nemůže onemocnět</strong>. Více o ichtyóze si můžete přečíst v <a href="https://www.bohemica-aurum.cz/l/ichtyoza-seminarni-prace/" target="_blank" rel="noopener noreferrer">seminární práci chovatelky stanice Bohemica Aurum</a>.',
+    docsNoteStrategyTitle: "Naše strategie výběru krycího psa",
+    docsNoteStrategyText: 'Při výběru krycího psa pro Almu klademe důraz na: <strong>HD A</strong> (bez nálezu), <strong>ED 0/0</strong>, kompletní genetické testy s výsledkem <strong>N/N u ICT-1</strong>, vyrovnanou povahu, kvalitní rodokmen a typickou stavbu těla. Všechny zdravotní výsledky krycího psa budou rovněž zveřejněny na těchto stránkách.',
 
     contactTitle: "Kontakt",
     contactIntro:
@@ -158,7 +179,7 @@ const translations = {
     heroOverline: "FCI registered kennel",
     heroTitle: "Golden retrievers as part of the family",
     heroSubtitle:
-      "Rosenaw Aurum is a small family Golden Retriever kennel that values health, temperament and everyday life with dogs just as much as shows and working tests.",
+      "A small family kennel from Rožnov pod Radhoštěm.<br>Health. Temperament. Elegance.<br>Every puppy leaves for where it belongs – a loving family.",
     heroCtaAbout: "Our philosophy",
     heroCtaPuppies: "Puppy information",
     heroStatus:
@@ -181,24 +202,25 @@ const translations = {
 
     aboutTitle: "About Rosenaw Aurum",
     aboutIntro1:
-      "Rosenaw Aurum is all about our family and the Golden Retrievers who share everyday joys and worries with us. It all started with Dexík, a Golden Retriever without a pedigree, whose kind nature showed us how special this breed really is.",
+      'It all started with <strong>Dexík</strong>, a Golden Retriever without a pedigree, whose kind nature showed us how special this breed really is. <strong>Rosenaw Aurum</strong> is all about our family and the Golden Retrievers who share everyday joys and worries with us.',
     aboutIntro2:
-      "After he passed away, Alma came into our lives – our dream girl with a pedigree, with whom we started our journey towards breeding Golden Retrievers with a focus on health, temperament, working ability and family life.",
+      'After he passed away, <strong>Alma</strong> came into our lives – our dream girl with a pedigree, with whom we started our journey towards breeding Golden Retrievers with a focus on <strong>health, temperament, working ability and family life</strong>.',
     aboutPhilosophy:
-      "Our goal is to breed well-balanced, healthy and social dogs that feel equally comfortable in the show ring, in the field and in the middle of a family living room.",
+      'Our goal is to breed <strong>well-balanced, healthy and social dogs</strong> that feel equally comfortable in the show ring, in the field and in the middle of a family living room. Our kennel Rosenaw Aurum is registered with the <a href="https://www.fci.be/" target="_blank" rel="noopener noreferrer">Fédération Cynologique Internationale (FCI)</a> and we are members of <a href="https://www.kchls.cz/" target="_blank" rel="noopener noreferrer">KCHLS</a> and the <a href="https://www.retriever-klub.cz/" target="_blank" rel="noopener noreferrer">Retriever Klub CZ</a>.',
     aboutBreederTitle: "The breeder",
     aboutBreederText:
       "My name is Lucie Klesová and dogs have been part of my life since childhood. Golden Retrievers combine peace, joy and an endless willingness to cooperate. In breeding I focus on health, temperament and respect for each dog's individuality.",
     aboutLinkAlma:
-      "You can find more about Alma on the website of her home kennel Bohemica Aurum and on our blog (in Czech).",
+      'You can find more about Alma on the website of her home kennel <a href="https://www.bohemica-aurum.cz/" target="_blank" rel="noopener noreferrer">Bohemica Aurum</a> and on our <a href="https://www.instagram.com/almamygoldenlove" target="_blank" rel="noopener noreferrer">Instagram</a>.',
 
     girlsTitle: "Our girls",
     girlsIntro:
       "Here you will gradually find all our Golden girls – from young hopes to experienced brood bitches and seniors.",
     almaPhotoLabel: "Photo of Alma – Alma Bohemica Aurum",
+    almaPhoto2Label: "Photo of Alma – Alma Bohemica Aurum",
     almaBasic: "born 27 January 2024 • Golden Retriever, female",
     almaPersonality:
-      "Alma is our long‑awaited Golden girl. She brought new energy and joy into our home and quickly became a dog for every occasion – a companion for trips, holidays, sports and quiet evenings on the sofa.",
+      '<strong>Alma</strong> is our long‑awaited Golden girl. She brought new energy and joy into our home and quickly became a dog for every occasion – a companion for trips, holidays, sports and quiet evenings on the sofa.',
     almaHealthTitle: "Health",
     almaHealthList:
       "Height 56 cm, full scissor bite;GR-PRA1 N/N, DR-PRA2 N/N, PRA N/N;ICT N/P, ICT-2 N/N, NCL N/N, GRMD Xn/Xn;Hips HD B, elbows ED 0/0;OCD clear, SA clear, LTV 0",
@@ -207,7 +229,7 @@ const translations = {
       "Puppy class: Very promising 1, Jubilee winner – puppy;Minor puppy class: Very promising 1, 2;Junior class: 2× Very good, 2× Excellent, Excellent 2;OVVR – 232 points, full score",
     almaPedigreeTitle: "Pedigree",
     almaPedigreeList:
-      "Sire: SPA CH Brandon de Ria Vela;Dam: Lolipop Dorado Blanco;Owner: Lucie Klesová;Breeder: Ing. František Vacek, Bohemica Aurum",
+      '<strong>Sire:</strong> SPA CH Brandon de Ria Vela;<strong>Dam:</strong> Lolipop Dorado Blanco;<strong>Owner:</strong> Lucie Klesová;<strong>Breeder:</strong> Ing. František Vacek, <a href="https://www.bohemica-aurum.cz/" target="_blank" rel="noopener noreferrer">Bohemica Aurum</a>',
 
     puppiesTitle: "Rosenaw Aurum puppies",
     puppiesIntro:
@@ -248,18 +270,38 @@ const translations = {
     newsItem1Meta: "2025 • First steps of Rosenaw Aurum",
     newsItem1Title: "The kennel is born",
     newsItem1Text:
-      "After careful consideration and our first experiences with Alma we decided to take the next step and establish the Rosenaw Aurum kennel. Our dream is to breed Golden Retrievers that will bring joy to their families for many years.",
+      'After careful consideration and our first experiences with Alma we decided to take the next step and establish the <strong>Rosenaw Aurum</strong> kennel. Our dream is to breed Golden Retrievers that will bring joy to their families for many years.',
     newsItem2Meta: "2024 • Alma Bohemica Aurum",
     newsItem2Title: "Alma comes home",
     newsItem2Text:
-      "Alma joined our family shortly after our long‑time companion Dexík passed away. There was no time to grieve – a small puppy turned our home upside down and brought new life and energy.",
+      '<strong>Alma</strong> joined our family shortly after our long‑time companion <strong>Dexík</strong> passed away. There was no time to grieve – a small puppy turned our home upside down and brought new life and energy.',
 
     docsTitle: "Documents",
     docsIntro:
-      "Here you will gradually find selected documents related to our breeding – pedigrees, health results, contracts and more.",
-    docsItem1: "Sample puppy purchase contract (PDF, Czech)",
-    docsItem2: "Overview of our females' health tests (PDF)",
-    docsItem3: "Puppy care recommendations – first year (PDF, Czech)",
+      'Here you will find the complete health documentation of our female <strong>Alma Bohemica Aurum</strong>. Transparency is a given for us – we want every potential puppy owner to be able to verify everything.',
+    docsPedigreeTitle: "Pedigree",
+    docsPedigree: '<strong>FCI Certified Pedigree</strong> – Alma Bohemica Aurum, ČLP/GR/25733',
+    docsXrayTitle: "X-ray examinations",
+    docsXrayMeta: "Examined 3 Feb 2025, MVDr Marek Pepřík, Opava",
+    docsHdEd: '<strong>HD + ED</strong> – HD B (borderline), ED 0/0 (clear)',
+    docsSaLtv: '<strong>SA + LTV</strong> – spondylosis 0 (clear), LTV 0 (clear)',
+    docsOcd: '<strong>OCD shoulder joints</strong> – clear (both limbs)',
+    docsGeneticsTitle: "Genetic tests",
+    docsGeneticsMeta: "Genomia laboratory, Plzeň, May 2025",
+    docsGrpra1: '<strong>GR-PRA1</strong> – N/N (clear, no mutation)',
+    docsGrpra2: '<strong>GR-PRA2</strong> – N/N (clear, no mutation)',
+    docsPra: '<strong>PRA-prcd</strong> – N/N (clear, no mutation)',
+    docsIct1: '<strong>ICT-1 (ichthyosis 1)</strong> – N/P (carrier) ⚠',
+    docsIct2: '<strong>ICT-2 (ichthyosis 2)</strong> – N/N (clear, no mutation)',
+    docsNcl: '<strong>NCL (neuronal ceroid lipofuscinosis)</strong> – N/N (clear, no mutation)',
+    docsGrmd: '<strong>GRMD (muscular dystrophy)</strong> – Xn/Xn (clear)',
+    docsNoteTitle: "What our results mean for breeding",
+    docsNoteHdTitle: "HD B (borderline hip dysplasia)",
+    docsNoteHdText: '<strong>HD B</strong> means near-normal hip joints with minimal irregularities. It is fully acceptable for breeding. To maximise the chance of the best results in puppies, <strong>we will select a stud dog exclusively with HD A</strong> (clear) and ideally with proven good results in his line.',
+    docsNoteIctTitle: "ICT-1 N/P (ichthyosis 1 carrier)",
+    docsNoteIctText: 'Alma is a <strong>carrier</strong> of ichthyosis 1 – she is completely healthy herself, but carries one copy of the mutated gene. Ichthyosis 1 is a recessive skin condition that only affects dogs with two copies of the mutation (P/P). Therefore, <strong>the stud dog must be tested as N/N</strong> (clear). In an N/P × N/N mating, 50% of puppies will be clear (N/N) and 50% carriers (N/P) – <strong>no puppy can be affected</strong>. You can read more about ichthyosis in a <a href="https://www.bohemica-aurum.cz/l/ichtyoza-seminarni-prace/" target="_blank" rel="noopener noreferrer">seminar paper by the breeder of Bohemica Aurum kennel</a> (in Czech).',
+    docsNoteStrategyTitle: "Our stud dog selection strategy",
+    docsNoteStrategyText: 'When selecting a stud dog for Alma, we focus on: <strong>HD A</strong> (clear), <strong>ED 0/0</strong>, complete genetic tests with <strong>N/N for ICT-1</strong>, balanced temperament, quality pedigree and typical conformation. All health results of the stud dog will also be published on this website.',
 
     contactTitle: "Contact",
     contactIntro:
@@ -304,9 +346,15 @@ function setLanguage(lang) {
       el.innerHTML = "";
       items.forEach((item) => {
         const li = document.createElement("li");
-        li.textContent = item.trim();
+        if (el.hasAttribute("data-i18n-html")) {
+          li.innerHTML = item.trim();
+        } else {
+          li.textContent = item.trim();
+        }
         el.appendChild(li);
       });
+    } else if (el.hasAttribute("data-i18n-html")) {
+      el.innerHTML = value;
     } else {
       el.textContent = value;
     }
