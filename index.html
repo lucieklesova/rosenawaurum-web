@@ -46,14 +46,16 @@
           <a href="#girls" data-i18n="navGirls">Naše feny</a>
           <a href="#puppies" data-i18n="navPuppies">Štěňata</a>
           <a href="#gallery" data-i18n="navGallery">Galerie</a>
-          <a href="#news" data-i18n="navNews">Novinky</a>
+          <a href="#news" data-i18n="navNews">Aktuality</a>
+
           <a href="#documents" data-i18n="navDocs">Dokumenty</a>
           <a href="#contact" data-i18n="navContact">Kontakt</a>
         </nav>
-        <a href="https://www.instagram.com/almamygoldenlove" target="_blank" rel="noopener noreferrer" class="header-social" aria-label="Instagram">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-        </a>
-        <div class="lang-switch" aria-label="Language switcher">
+        <div class="header-right">
+          <a href="https://www.instagram.com/almamygoldenlove" target="_blank" rel="noopener noreferrer" class="header-instagram" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <div class="lang-switch" aria-label="Language switcher">
           <button
             class="lang-btn lang-btn--active"
             data-lang="cs"
@@ -63,94 +65,90 @@
           </button>
           <span>/</span>
           <button class="lang-btn" data-lang="en" type="button">EN</button>
+          </div>
         </div>
+      </div>
+      <div class="header-ornament">
+        <svg width="100%" height="16" viewBox="0 0 1200 16" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M0 8 Q150 2 300 8 Q450 14 600 8 Q750 2 900 8 Q1050 14 1200 8" stroke="#c4a882" stroke-width="0.8" fill="none" opacity="0.45"/>
+          <path d="M0 8 Q150 13 300 8 Q450 3 600 8 Q750 13 900 8 Q1050 3 1200 8" stroke="#c4a882" stroke-width="0.6" fill="none" opacity="0.3"/>
+          <path d="M0 8 Q200 4 400 8 Q600 12 800 8 Q1000 4 1200 8" stroke="#c4a882" stroke-width="0.5" fill="none" opacity="0.2"/>
+        </svg>
       </div>
     </header>
 
     <main>
       <!-- HOME / HERO -->
       <section id="home" class="section section-hero">
-        <div class="container hero-inner">
-          <div class="hero-text">
-            <div class="hero-logo-mountains">
-              <img src="images/logo.png" alt="Rosenaw Aurum" class="hero-logo" />
-              <svg class="hero-mountains" width="100%" height="180" viewBox="0 0 1600 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <defs>
-                <linearGradient id="ridgeGradient" x1="0" y1="0" x2="1600" y2="0" gradientUnits="userSpaceOnUse">
-                  <stop offset="0%" stop-color="#6b5550" stop-opacity="0"/>
-                  <stop offset="18%" stop-color="#6b5550" stop-opacity="0.35"/>
-                  <stop offset="50%" stop-color="#6b5550" stop-opacity="0.65"/>
-                  <stop offset="82%" stop-color="#6b5550" stop-opacity="0.35"/>
-                  <stop offset="100%" stop-color="#6b5550" stop-opacity="0"/>
-                </linearGradient>
-              </defs>
-              <!-- Hlavní realistický profil Radhoště -->
-              <path d="M0 125 L200 120 L350 112 L500 102 L650 90 L720 82 L770 70 L810 58 L845 50 L880 46 L910 48 L940 55 L980 68 L1040 82 L1150 96 L1300 110 L1450 120 L1600 116" stroke="url(#ridgeGradient)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-              <!-- Jemná sekundární hloubková linie -->
-              <path d="M300 130 L550 120 L750 112 L900 115 L1150 125" stroke="url(#ridgeGradient)" stroke-width="0.8" stroke-linecap="round" fill="none" opacity="0.5"/>
-            </svg>
+        <div class="hero-overlay">
+          <div class="container hero-inner">
+            <div class="hero-text">
+              <h1 data-i18n="heroTitle">
+                Rodinný chov zlatých retrívrů s&nbsp;respektem k&nbsp;životu.
+              </h1>
+              <p class="hero-subtitle" data-i18n="heroSubtitle" data-i18n-html>
+                Malá chovatelská stanice FCI z&nbsp;Rožnova pod Radhoštěm.<br>
+                Štěňata vyrůstají doma, mezi lidmi, s&nbsp;důrazem na zdraví,
+                vyrovnanou povahu a pevné zázemí.
+              </p>
+              <div class="hero-actions">
+                <a href="#puppies" class="btn btn-primary btn-paw" data-i18n="heroCtaPuppies">
+                  <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22c-1.5 0-2.7-1.2-2.7-2.7 0-1.1.7-2.1 1.7-2.5-.2-.7-.7-1.3-1.3-1.7-.8-.5-1.7-.8-2.7-.8-1.5 0-2.7-1.2-2.7-2.7S5.5 9 7 9c.6 0 1.2.2 1.6.6.5-.9.8-1.9.8-3C9.4 4.5 11 3 12 3s2.6 1.5 2.6 3.6c0 1.1.3 2.1.8 3 .4-.4 1-.6 1.6-.6 1.5 0 2.7 1.2 2.7 2.7s-1.2 2.7-2.7 2.7c-1 0-1.9.3-2.7.8-.6.4-1.1 1-1.3 1.7 1 .4 1.7 1.4 1.7 2.5 0 1.4-1.2 2.6-2.7 2.6z"/></svg>
+                  Aktuální / plánovaný vrh
+                </a>
+                <a href="#about" class="btn btn-outline" data-i18n="heroCtaAbout">
+                  Poznat náš přístup
+                </a>
+              </div>
             </div>
-            <h1 data-i18n="heroTitle">
-              Z Beskyd. Ze srdce. Do rodiny.
-            </h1>
-            <p class="hero-subtitle" data-i18n="heroSubtitle" data-i18n-html>
-              Malá rodinná chovatelská stanice z Rožnova pod Radhoštěm.<br>
-              Zdraví. Povaha. Elegance.<br>
-              Každé štěně odchází tam, kam patří – do rodiny.
-            </p>
-            <div class="hero-actions">
-              <a href="#about" class="btn btn-primary" data-i18n="heroCtaAbout">
-                Poznat naši filozofii
-              </a>
-              <a
-                href="#puppies"
-                class="btn btn-outline"
-                data-i18n="heroCtaPuppies"
-              >
-                Informace o štěňatech
-              </a>
-            </div>
-            <p class="hero-status" data-i18n="heroStatus">
-              První vrh Rosenaw Aurum plánujeme po dokončení všech zdravotních
-              vyšetření a zkoušek naší fenky.
-            </p>
-          </div>
-          <div class="hero-image">
-            <figure class="hero-photo">
-              <img
-                src="images/hero-alma.png"
-                alt="Zlatý retrívr Alma odpočívající v přírodě"
-              />
-              <figcaption class="hero-photo-caption" data-i18n="heroPhotoLabel">
-                Sem můžete nahrát svou oblíbenou fotografii Almy nebo zlatého
-                retrívra (soubor <code>images/hero-alma.jpg</code>).
-              </figcaption>
-            </figure>
           </div>
         </div>
+      </section>
 
-        <div class="container hero-cards">
-          <a href="#about" class="info-card hero-card-link hero-card--green">
-            <h3 data-i18n="cardAboutTitle">O stanici</h3>
-            <p data-i18n="cardAboutText">
-              Příběh jedné rodiny, která propadla kouzlu zlatých retrívrů –
-              od prvního psa Dexíka až po vysněnou fenečku Almu.
-            </p>
-          </a>
-          <a href="#girls" class="info-card hero-card-link hero-card--gold">
-            <h3 data-i18n="cardGirlsTitle">Naše feny</h3>
-            <p data-i18n="cardGirlsText">
-              Představujeme naše zlaté dámy – jejich rodokmen, zdraví, úspěchy a
-              především povahu a život s námi.
-            </p>
-          </a>
-          <a href="#puppies" class="info-card hero-card-link hero-card--blue">
-            <h3 data-i18n="cardPuppiesTitle">Štěňata</h3>
-            <p data-i18n="cardPuppiesText">
-              Od prvního nadechnutí až po odchod do nových domovů – jak
-              přistupujeme k odchovu a socializaci štěňátek.
-            </p>
-          </a>
+      <!-- PROČ PRÁVĚ MY? -->
+      <section id="why-us" class="section section-why-us">
+        <div class="container">
+          <header class="section-header section-header--center">
+            <h2 data-i18n="whyUsTitle">Proč právě my?</h2>
+            <span class="section-header-line"></span>
+          </header>
+
+          <div class="stepper">
+            <!-- Propojovací linie -->
+            <div class="stepper-line">
+              <div class="stepper-line-fill"></div>
+            </div>
+
+            <!-- Krok 1 -->
+            <a href="#puppies" class="stepper-card" data-stepper="1">
+              <div class="stepper-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              </div>
+              <h3 data-i18n="whyUsHomeTitle">Domácí prostředí</h3>
+              <p data-i18n="whyUsHomeText">Štěňata vyrůstají s námi doma, ne v kotci.</p>
+              <span class="stepper-link" data-i18n="whyUsHomeLink">Více o štěňatech &rarr;</span>
+            </a>
+
+            <!-- Krok 2 -->
+            <a href="#documents" class="stepper-card" data-stepper="2">
+              <div class="stepper-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+              </div>
+              <h3 data-i18n="whyUsHealthTitle">Zdraví na prvním místě</h3>
+              <p data-i18n="whyUsHealthText">Pečlivé testy, veterinární péče, odpovědný výběr spojení.</p>
+              <span class="stepper-link" data-i18n="whyUsHealthLink">Zdravotní dokumentace &rarr;</span>
+            </a>
+
+            <!-- Krok 3 -->
+            <a href="#contact" class="stepper-card" data-stepper="3">
+              <div class="stepper-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <h3 data-i18n="whyUsContactTitle">Doživotní kontakt</h3>
+              <p data-i18n="whyUsContactText">Zůstáváme v kontaktu se všemi našimi psími rodinami.</p>
+              <span class="stepper-link" data-i18n="whyUsContactLink">Napište nám &rarr;</span>
+            </a>
+          </div>
         </div>
       </section>
 
@@ -456,11 +454,11 @@
         </div>
       </section>
 
-      <!-- NEWS -->
+      <!-- NEWS (teaser – max 2–3 položky, zbytek na aktuality.html) -->
       <section id="news" class="section">
         <div class="container">
           <header class="section-header">
-            <h2 data-i18n="newsTitle">Novinky & blog</h2>
+            <h2 data-i18n="newsTitle">Aktuality</h2>
             <p data-i18n="newsIntro">
               Krátké zprávy o našich psech, plánovaných vrzích, výstavách,
               zkouškách a drobných radostech ze společného života.
@@ -493,6 +491,10 @@
                 energii a radost.
               </p>
             </article>
+          </div>
+
+          <div class="news-cta">
+            <a href="aktuality.html" class="btn btn-outline" data-i18n="newsAllLink">Všechny aktuality &rarr;</a>
           </div>
         </div>
       </section>
@@ -774,7 +776,7 @@
             <li><a href="#girls" data-i18n="navGirls">Naše feny</a></li>
             <li><a href="#puppies" data-i18n="navPuppies">Štěňata</a></li>
             <li><a href="#gallery" data-i18n="navGallery">Galerie</a></li>
-            <li><a href="#news" data-i18n="navNews">Novinky</a></li>
+            <li><a href="#news" data-i18n="navNews">Aktuality</a></li>
             <li><a href="#documents" data-i18n="navDocs">Dokumenty</a></li>
             <li><a href="#contact" data-i18n="navContact">Kontakt</a></li>
           </ul>

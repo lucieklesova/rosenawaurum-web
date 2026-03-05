@@ -9,32 +9,26 @@ const translations = {
     navGirls: "Naše feny",
     navPuppies: "Štěňata",
     navGallery: "Galerie",
-    navNews: "Novinky",
+    navNews: "Aktuality",
     navDocs: "Dokumenty",
     navContact: "Kontakt",
 
-    heroOverline: "Chovatelská stanice FCI",
-    heroTitle: "Z Beskyd. Ze srdce. Do rodiny.",
+    heroTitle: "Rodinný chov zlatých retrívrů s\u00a0respektem k\u00a0životu.",
     heroSubtitle:
-      "Malá rodinná chovatelská stanice z Rožnova pod Radhoštěm.<br>Zdraví. Povaha. Elegance.<br>Každé štěně odchází tam, kam patří – do rodiny.",
-    heroCtaAbout: "Poznat naši filozofii",
-    heroCtaPuppies: "Informace o štěňatech",
-    heroStatus:
-      "První vrh Rosenaw Aurum plánujeme po dokončení všech zdravotních vyšetření a zkoušek naší fenky.",
-    heroPhotoLabel: "Sem přijde vaše oblíbená fotografie Almy / retrívra",
+      "Malá chovatelská stanice FCI z\u00a0Rožnova pod Radhoštěm.<br>Štěňata vyrůstají doma, mezi lidmi, s\u00a0důrazem na zdraví, vyrovnanou povahu a pevné zázemí.",
+    heroCtaAbout: "Poznat náš přístup",
+    heroCtaPuppies: "Aktuální / plánovaný vrh",
 
-    cardAboutTitle: "O stanici",
-    cardAboutText:
-      "Příběh jedné rodiny, která propadla kouzlu zlatých retrívrů – od prvního psa Dexíka až po vysněnou fenečku Almu.",
-    cardMore: "Více o nás",
-    cardGirlsTitle: "Naše feny",
-    cardGirlsText:
-      "Představujeme naše zlaté dámy – jejich rodokmen, zdraví, úspěchy a především povahu a život s námi.",
-    cardMoreGirls: "Prohlédnout profily",
-    cardPuppiesTitle: "Štěňata",
-    cardPuppiesText:
-      "Od prvního nadechnutí až po odchod do nových domovů – jak přistupujeme k odchovu a socializaci štěňátek.",
-    cardMorePuppies: "Jak u nás rostou štěňata",
+    whyUsTitle: "Proč právě my?",
+    whyUsHomeTitle: "Domácí prostředí",
+    whyUsHomeText: "Štěňata vyrůstají s námi doma, ne v kotci.",
+    whyUsHealthTitle: "Zdraví na prvním místě",
+    whyUsHealthText: "Pečlivé testy, veterinární péče, odpovědný výběr spojení.",
+    whyUsHomeLink: "Více o štěňatech →",
+    whyUsHealthLink: "Zdravotní dokumentace →",
+    whyUsContactTitle: "Doživotní kontakt",
+    whyUsContactText: "Zůstáváme v kontaktu se všemi našimi psími rodinami.",
+    whyUsContactLink: "Napište nám →",
 
     aboutTitle: "O chovatelské stanici Rosenaw Aurum",
     aboutIntro1:
@@ -100,9 +94,12 @@ const translations = {
     galleryPlaceholderLife: "Společná fotografie s rodinou na dovolené",
     galleryPlaceholderShows: "Výstavní kruh – třída mladých",
 
-    newsTitle: "Novinky & blog",
+    newsTitle: "Aktuality",
     newsIntro:
       "Krátké zprávy o našich psech, plánovaných vrzích, výstavách, zkouškách a drobných radostech ze společného života.",
+    newsAllLink: "Všechny aktuality \u2192",
+    newsPageTitle: "Aktuality",
+    newsBackLink: "\u2190 Zpět na hlavní stránku",
     newsItem1Meta: "2025 • První kroky Rosenaw Aurum",
     newsItem1Title: "Zrození chovatelské stanice",
     newsItem1Text:
@@ -176,29 +173,22 @@ const translations = {
     navDocs: "Documents",
     navContact: "Contact",
 
-    heroOverline: "FCI registered kennel",
-    heroTitle: "Golden retrievers as part of the family",
+    heroTitle: "Family breeding of golden retrievers with\u00a0respect for life.",
     heroSubtitle:
-      "A small family kennel from Rožnov pod Radhoštěm.<br>Health. Temperament. Elegance.<br>Every puppy leaves for where it belongs – a loving family.",
-    heroCtaAbout: "Our philosophy",
-    heroCtaPuppies: "Puppy information",
-    heroStatus:
-      "Our first Rosenaw Aurum litter is planned after completing all health checks and working tests of our female.",
-    heroPhotoLabel:
-      "Place for your favourite photo of Alma or your Golden Retriever",
+      "A small FCI kennel from Rožnov pod Radhoštěm.<br>Puppies grow up at home, among people, with focus on health, balanced temperament and a solid foundation.",
+    heroCtaAbout: "Our approach",
+    heroCtaPuppies: "Current / planned litter",
 
-    cardAboutTitle: "About the kennel",
-    cardAboutText:
-      "The story of one family that fell in love with Golden Retrievers – from our first dog Dexík to our dream girl Alma.",
-    cardMore: "Read more",
-    cardGirlsTitle: "Our girls",
-    cardGirlsText:
-      "Meet our Golden ladies – their pedigrees, health results, achievements and above all their personalities.",
-    cardMoreGirls: "View profiles",
-    cardPuppiesTitle: "Puppies",
-    cardPuppiesText:
-      "From the first breath to leaving for new homes – how we raise and socialise our puppies.",
-    cardMorePuppies: "How our puppies grow",
+    whyUsTitle: "Why choose us?",
+    whyUsHomeTitle: "Home environment",
+    whyUsHomeText: "Our puppies grow up with us at home, not in a kennel.",
+    whyUsHealthTitle: "Health comes first",
+    whyUsHealthText: "Thorough testing, veterinary care, responsible pairing.",
+    whyUsHomeLink: "More about puppies →",
+    whyUsHealthLink: "Health documentation →",
+    whyUsContactTitle: "Lifetime contact",
+    whyUsContactText: "We stay in touch with all our dog families.",
+    whyUsContactLink: "Get in touch →",
 
     aboutTitle: "About Rosenaw Aurum",
     aboutIntro1:
@@ -264,9 +254,12 @@ const translations = {
     galleryPlaceholderLife: "Family photo from a holiday trip",
     galleryPlaceholderShows: "Show ring – junior class",
 
-    newsTitle: "News & blog",
+    newsTitle: "News",
     newsIntro:
       "Short updates about our dogs, planned litters, shows, working tests and small joys of everyday life.",
+    newsAllLink: "All news \u2192",
+    newsPageTitle: "News",
+    newsBackLink: "\u2190 Back to homepage",
     newsItem1Meta: "2025 • First steps of Rosenaw Aurum",
     newsItem1Title: "The kennel is born",
     newsItem1Text:
@@ -448,10 +441,104 @@ function setupLightbox() {
   });
 }
 
+function setupStepper() {
+  const cards = document.querySelectorAll(".stepper-card");
+  const lineFill = document.querySelector(".stepper-line-fill");
+  if (!cards.length || !lineFill) return;
+
+  const total = cards.length;
+
+  function setLine(step) {
+    const pct = ((step - 1) / (total - 1)) * 100;
+    lineFill.style.width = pct + "%";
+  }
+
+  // Na mobilu bez animace
+  if (window.innerWidth <= 960) {
+    cards.forEach((c) => c.classList.add("is-active"));
+    lineFill.style.width = "100%";
+    return;
+  }
+
+  let scrollActivated = 0;
+  let hoverFadeTimeout = null;
+
+  // Scroll animace
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const card = entry.target;
+          const step = parseInt(card.dataset.stepper, 10);
+          const delay = (step - 1) * 600;
+
+          setTimeout(() => {
+            card.classList.add("is-active");
+            scrollActivated = Math.max(scrollActivated, step);
+            setLine(scrollActivated);
+            // Po aktivaci všech kroků — linie zmizí
+            if (scrollActivated >= total) {
+              setTimeout(() => {
+                lineFill.classList.add("is-done");
+              }, 800);
+            }
+          }, delay);
+
+          observer.unobserve(card);
+        }
+      });
+    },
+    { threshold: 0.3 }
+  );
+
+  cards.forEach((card) => observer.observe(card));
+
+  // Hover animace — vybarví linii až po hover kartu
+  cards.forEach((card) => {
+    card.addEventListener("mouseenter", () => {
+      // Zrušit případný timeout na skrytí
+      if (hoverFadeTimeout) clearTimeout(hoverFadeTimeout);
+      lineFill.classList.remove("is-done");
+
+      // Spustit celou sekvenci od začátku
+      // Reset: všechny karty deaktivovat, linie na 0
+      cards.forEach((c) => c.classList.remove("is-active"));
+      lineFill.style.transition = "none";
+      lineFill.style.width = "0%";
+      // Force reflow
+      void lineFill.offsetWidth;
+      lineFill.style.transition = "";
+
+      // Postupně aktivovat karty 1 → 2 → 3
+      cards.forEach((c) => {
+        const s = parseInt(c.dataset.stepper, 10);
+        setTimeout(() => {
+          c.classList.add("is-active");
+          setLine(s);
+          // Po poslední kartě — fade out
+          if (s >= total) {
+            hoverFadeTimeout = setTimeout(() => {
+              lineFill.classList.add("is-done");
+            }, 800);
+          }
+        }, (s - 1) * 500);
+      });
+
+      // Aktualizovat scroll stav
+      scrollActivated = total;
+    });
+
+    card.addEventListener("mouseleave", () => {
+      // Nechat doběhnout animaci, neresetovat
+    });
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   setupLanguageSwitch();
   setupGalleryFilter();
   setupContactForm();
   setupLightbox();
+  setupStepper();
 });
 

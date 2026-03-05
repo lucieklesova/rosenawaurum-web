@@ -14,26 +14,49 @@ html {
 
 body {
   margin: 0;
-  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+  font-family: "Raleway", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
   font-weight: 400;
-  color: #501616;
+  font-size: 0.92rem;
+  line-height: 1.75;
+  color: #3a2a1a;
   background-color: #ffffff;
 }
 
 h1 {
   font-family: "Playfair Display", Georgia, serif;
-  font-weight: 600;
+  font-weight: 400;
+  line-height: 1.25;
 }
 
-h2, h3, h4 {
-  font-family: "Raleway", sans-serif;
+h2 {
+  font-family: "Playfair Display", Georgia, serif;
   font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.3;
+}
+
+h3 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+h4 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 400;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+p {
+  line-height: 1.75;
+  margin: 0 0 0.75rem;
 }
 
 strong, b {
   font-weight: 500;
-  line-height: 1.6;
 }
 
 img {
@@ -48,6 +71,10 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+ul, ol {
+  line-height: 1.75;
 }
 
 .container {
@@ -67,7 +94,6 @@ a:hover {
   z-index: 20;
   background: rgba(253, 253, 253, 0.92);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(80, 22, 22, 0.06);
 }
 
 .header-inner {
@@ -88,7 +114,7 @@ a:hover {
   font-size: 1.05rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #7F1719;
+  color: #3a2a1a;
 }
 
 .logo-accent {
@@ -97,21 +123,21 @@ a:hover {
   font-size: 1.05rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #CC8F3D;
+  color: #c4a882;
 }
 
 .main-nav {
   display: flex;
   gap: 1.25rem;
   font-family: "Raleway", sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   font-weight: 400;
 }
 
 .main-nav a {
   position: relative;
   padding-bottom: 0.2rem;
-  color: #4b5563;
+  color: #5a4a3a;
 }
 
 .main-nav a::after {
@@ -121,7 +147,7 @@ a:hover {
   bottom: 0;
   width: 0;
   height: 2px;
-  background: #DC9783;
+  background: #c4a882;
   transition: width 0.2s ease;
 }
 
@@ -134,7 +160,7 @@ a:hover {
   align-items: center;
   gap: 0.25rem;
   font-size: 0.8rem;
-  color: #6b7280;
+  color: #8a7e72;
 }
 
 .lang-btn {
@@ -144,32 +170,53 @@ a:hover {
   padding: 0.15rem 0.35rem;
   border-radius: 999px;
   font-size: 0.8rem;
-  color: #6b7280;
+  font-family: "Raleway", sans-serif;
+  color: #8a7e72;
 }
 
 .lang-btn--active {
-  background: #93252E;
+  background: #3a2a1a;
   color: #FDFDFD;
 }
 
-.header-social {
+/* Header right group (Instagram + lang switch) */
+.header-right {
   display: flex;
   align-items: center;
-  color: #6b7280;
+  gap: 0.75rem;
+}
+
+.header-instagram {
+  display: flex;
+  align-items: center;
+  color: #8a7e72;
   transition: color 0.15s ease;
 }
 
-.header-social:hover {
-  color: #93252E;
+.header-instagram:hover {
+  color: #c4a882;
   text-decoration: none;
 }
 
-/* Odkazy v obsahových textech – viditelné, podtržené, s hover efektem */
+/* Header ornament – full-width decorative divider */
+.header-ornament {
+  display: block;
+  width: 100%;
+  line-height: 0;
+}
+
+.header-ornament svg {
+  display: block;
+  width: 100%;
+  height: 16px;
+}
+
+/* Odkazy v obsahových textech */
 .section p a,
 .section li a,
 .aside-card a,
 .dog-content a {
-  color: #93252E;
+  color: #8a6d4b;
   text-decoration: underline;
   text-underline-offset: 2px;
   transition: color 0.2s ease, text-decoration-color 0.2s ease;
@@ -179,8 +226,8 @@ a:hover {
 .section li a:hover,
 .aside-card a:hover,
 .dog-content a:hover {
-  color: #DC9783;
-  text-decoration-color: #DC9783;
+  color: #c4a882;
+  text-decoration-color: #c4a882;
 }
 
 /* ---------------------------------------------
@@ -188,42 +235,33 @@ a:hover {
 --------------------------------------------- */
 
 .section {
-  padding: 4.5rem 0;
+  padding: 4rem 0;
 }
 
 .section-muted {
-  background: #faf6f3;
+  background: #faf7f4;
 }
 
 .section-hero {
   position: relative;
-  padding-top: 0;
-  padding-bottom: 5rem;
-  background:
-    radial-gradient(
-      ellipse 65% 85% at 78% 42%,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 0) 35%,
-      rgba(255, 255, 255, 0.55) 65%,
-      #ffffff 100%
-    ),
-    url("images/hero-alma.png") no-repeat 78% 18%/900px auto;
+  padding: 0;
+  background: url("images/hero-alma.png") no-repeat 15% center / auto 100%;
+  min-height: 55vh;
   overflow: hidden;
 }
 
 .section-header {
   text-align: left;
-  margin-bottom: 2.25rem;
+  margin-bottom: 2rem;
 }
 
 .section-header h2 {
-  font-size: 1.8rem;
-  margin: 0 0 0.75rem;
+  margin: 0 0 0.5rem;
 }
 
 .section-header p {
   margin: 0;
-  color: #4b5563;
+  color: #6b5e52;
   max-width: 36rem;
 }
 
@@ -241,136 +279,205 @@ a:hover {
    HERO
 --------------------------------------------- */
 
+.hero-overlay {
+  display: flex;
+  align-items: center;
+  min-height: 55vh;
+}
+
 .hero-inner {
-  display: grid;
-  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.3fr);
-  gap: 3.5rem;
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
   position: relative;
   z-index: 1;
+  padding: 3rem 0;
 }
 
 .hero-text {
+  max-width: 620px;
   display: flex;
   flex-direction: column;
-  gap: 0;
-}
-
-.hero-logo-mountains {
-  position: relative;
-  margin-bottom: 0rem;
-  overflow: hidden;
-}
-
-.hero-logo {
-  height: 185px;
-  width: auto;
-  display: block;
-  margin-left: -3rem;
-  position: relative;
-  z-index: 1;
-  margin-bottom: -3rem;
-}
-
-.hero-mountains {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  position: relative;
-  z-index: 0;
 }
 
 .hero-text h1 {
-  font-family: "Outfit", sans-serif;
-  font-size: clamp(2.6rem, 4.5vw, 3.8rem);
-  font-weight: 400;
-  letter-spacing: -0.025em;
-  line-height: 1.15;
-  margin: 0 0 2.5rem;
-  white-space: nowrap;
-  color: #501616;
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  letter-spacing: -0.01em;
+  margin: 0 0 1.25rem;
+  color: #3a2a1a;
 }
 
 .hero-subtitle {
-  font-family: "Raleway", sans-serif;
   font-weight: 300;
-  color: #6b7280;
-  margin: 0 0 3rem;
-  max-width: 28rem;
-  line-height: 2;
+  color: #5a4a3a;
+  margin: 0 0 2rem;
+  max-width: 500px;
+  line-height: 1.85;
   font-size: 0.95rem;
-  letter-spacing: 0.01em;
 }
 
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.25rem;
-  margin-bottom: 2.5rem;
+  gap: 1rem;
 }
 
-.hero-status {
-  font-family: "Raleway", sans-serif;
-  font-weight: 300;
-  font-size: 0.8rem;
-  color: #9ca3af;
-  letter-spacing: 0.02em;
-  line-height: 1.7;
+.btn-paw {
+  gap: 0.5rem;
 }
 
-.hero-image {
-  display: none;
+.btn-icon {
+  flex-shrink: 0;
 }
 
-.hero-cards {
+/* ---------------------------------------------
+   PROČ PRÁVĚ MY? — STEPPER
+--------------------------------------------- */
+
+.section-why-us {
+  padding: 3rem 0 2.5rem;
+  background: #fdfbf8;
+}
+
+.section-header--center {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-header-line {
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: #c4a882;
+  margin-top: 0.5rem;
+  border-radius: 1px;
+}
+
+/* Stepper layout */
+.stepper {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.5rem;
-  margin-top: 5rem;
+  gap: 0;
+  margin-top: 2.5rem;
+  position: relative;
 }
 
-/* Hero karty – sjednocený styl s ostatními rámečky + obrázky na hover */
-.hero-cards .info-card {
-  display: block;
+/* Horizontální propojovací linie — prochází ikonami */
+.stepper-line {
+  position: absolute;
+  top: 26px;
+  left: calc(16.666%);
+  right: calc(16.666%);
+  height: 2px;
+  background: transparent;
+  z-index: 0;
+}
+
+.stepper-line-fill {
+  width: 0%;
+  height: 100%;
+  background: #c4a882;
+  border-radius: 1px;
+  transition: width 1.2s ease, opacity 1s ease;
+  opacity: 0.6;
+}
+
+.stepper-line-fill.is-done {
+  opacity: 0;
+  transition: opacity 1.5s ease 0.3s;
+}
+
+/* Karta stepperu */
+.stepper-card {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   text-decoration: none;
-  color: #501616;
-  cursor: pointer;
+  color: inherit;
+  padding: 0 1.2rem 1.5rem;
   border-radius: 1rem;
-  padding: 1.5rem 1.6rem;
-  background-color: #ffffff;
-  background-size: cover;
-  background-position: center;
-  box-shadow: 0 14px 40px rgba(15, 23, 42, 0.05);
-  border-bottom: 2px solid #501616;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.4s ease;
+  transition: transform 0.8s ease, box-shadow 0.8s ease, opacity 1s ease;
+  opacity: 0.4;
+  transform: scale(0.95) translateY(8px);
 }
 
-.hero-cards .info-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 18px 50px rgba(15, 23, 42, 0.1);
+/* Aktivní stav — scroll i hover */
+.stepper-card.is-active,
+.stepper-card:hover {
+  opacity: 1;
+  transform: scale(1) translateY(0);
 }
 
-.hero-card--green:hover {
-  background-image: url("images/about_us_button.jpg");
-  color: #2F2F2F;
+.stepper-card:hover {
+  text-decoration: none;
+  transform: scale(1.03) translateY(-2px);
+  box-shadow: 0 12px 36px rgba(80, 60, 40, 0.08);
 }
 
-.hero-card--gold:hover {
-  background-image: url("images/alma_button.jpg");
-  color: #2F2F2F;
+/* Ikona — linie prochází středem */
+.stepper-icon {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5ede4;
+  border-radius: 50%;
+  color: #d0c0aa;
+  margin-bottom: 0.75rem;
+  transition: color 0.8s ease, background 0.8s ease, box-shadow 0.8s ease;
+  position: relative;
+  z-index: 2;
 }
 
-.hero-card--blue:hover {
-  background-image: url("images/alma_puppy_button.jpg");
-  color: #2F2F2F;
+.stepper-card.is-active .stepper-icon,
+.stepper-card:hover .stepper-icon {
+  color: #b08d6a;
+  background: #f0e5d6;
+  box-shadow: 0 4px 16px rgba(196, 168, 130, 0.25);
 }
 
-.hero-cards .info-card:hover h3,
-.hero-cards .info-card:hover p {
-  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9);
+/* Texty */
+.stepper-card h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0 0 0.3rem;
+  color: #3a2a1a;
 }
 
+.stepper-card p {
+  font-size: 0.86rem;
+  color: #6b5e52;
+  line-height: 1.65;
+  margin: 0 0 0.75rem;
+}
+
+/* CTA odkaz */
+.stepper-link {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #c4a882;
+  letter-spacing: 0.02em;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 0.6s ease 0.4s, transform 0.6s ease 0.4s, color 0.15s ease;
+}
+
+.stepper-card.is-active .stepper-link,
+.stepper-card:hover .stepper-link {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stepper-card:hover .stepper-link {
+  color: #8a6d4b;
+}
 
 /* ---------------------------------------------
    KARTY A ASIDE BOXY
@@ -398,26 +505,23 @@ a:hover {
 .aside-card,
 .dog-stat-card,
 .news-item {
-  border-bottom: 2px solid #501616;
+  border-bottom: 2px solid #c4a882;
 }
-
 
 .info-card h3 {
   margin: 0 0 0.5rem;
-  font-size: 1.05rem;
 }
 
 .info-card p {
   margin: 0 0 0.75rem;
-  font-size: 0.9rem;
-  color: #4b5563;
+  color: #6b5e52;
 }
 
 .card-link {
   font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 0.16em;
-  color: #DC9783;
+  color: #b08d6a;
 }
 
 .card-link:hover {
@@ -431,8 +535,7 @@ a:hover {
 
 .aside-card p {
   margin-top: 0;
-  font-size: 0.9rem;
-  color: #4b5563;
+  color: #6b5e52;
 }
 
 /* ---------------------------------------------
@@ -456,28 +559,28 @@ a:hover {
 }
 
 .btn-primary {
-  background: #501616;
-  color: #FDFDFD;
-  border-color: #501616;
-  box-shadow: 0 4px 16px rgba(80, 22, 22, 0.15);
+  background: #f5f0ea;
+  color: #5a4a3a;
+  border-color: #e0d5c8;
+  box-shadow: 0 2px 8px rgba(80, 60, 40, 0.08);
 }
 
 .btn-primary:hover {
-  background: #501616;
-  border-color: #501616;
+  background: #ede5da;
+  border-color: #d0c4b5;
   transform: translateY(-1px);
 }
 
 .btn-outline {
   background: transparent;
-  color: #501616;
-  border-color: rgba(80, 22, 22, 0.3);
+  color: #5a4a3a;
+  border-color: #c4a882;
 }
 
 .btn-outline:hover {
-  border-color: #93252E;
-  color: #93252E;
-  background: rgba(147, 37, 46, 0.04);
+  border-color: #a08060;
+  color: #3a2a1a;
+  background: rgba(196, 168, 130, 0.08);
 }
 
 /* ---------------------------------------------
@@ -507,7 +610,7 @@ a:hover {
   border-radius: 1.25rem;
   overflow: hidden;
   background: radial-gradient(circle at top left, #fef6e7, #ffffff);
-  box-shadow: 0 14px 40px rgba(80, 22, 22, 0.12);
+  box-shadow: 0 14px 40px rgba(80, 60, 40, 0.1);
   cursor: pointer;
 }
 
@@ -527,20 +630,19 @@ a:hover {
   margin: 0;
   padding: 0.55rem 0.9rem 0.75rem;
   font-size: 0.78rem;
-  color: rgba(31, 41, 55, 0.78);
+  color: #8a7e72;
   background: linear-gradient(to top, rgba(249, 250, 251, 0.96), transparent);
 }
 
 .dog-meta {
   margin: 0.25rem 0 0.6rem;
   font-size: 0.85rem;
-  color: #6b7280;
+  color: #8a7e72;
 }
 
 .dog-text {
   margin: 0 0 0.7rem;
-  font-size: 0.9rem;
-  color: #4b5563;
+  color: #6b5e52;
 }
 
 .dog-stats {
@@ -558,7 +660,7 @@ a:hover {
   padding: 1.4rem 1.2rem;
   background: #FDFDFD;
   border-radius: 1rem;
-  box-shadow: 0 4px 20px rgba(80, 22, 22, 0.06);
+  box-shadow: 0 4px 20px rgba(80, 60, 40, 0.06);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -568,16 +670,15 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fdf0eb;
+  background: #f5ede4;
   border-radius: 50%;
-  color: #DC9783;
+  color: #b08d6a;
   margin-bottom: 0.7rem;
 }
 
 .dog-stat-card h4 {
   margin: 0 0 0.6rem;
-  font-size: 0.9rem;
-  color: #501616;
+  color: #3a2a1a;
 }
 
 .dog-stat-list {
@@ -585,8 +686,8 @@ a:hover {
   padding: 0;
   margin: 0;
   font-size: 0.8rem;
-  color: #4b5563;
-  line-height: 1.6;
+  color: #6b5e52;
+  line-height: 1.65;
   text-align: left;
   width: 100%;
 }
@@ -604,7 +705,7 @@ a:hover {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #DC9783;
+  background: #c4a882;
 }
 
 /* ---------------------------------------------
@@ -616,7 +717,7 @@ a:hover {
   grid-template-columns: minmax(0, 2.1fr) minmax(0, 1.4fr);
   gap: 2rem;
   align-items: flex-start;
-  margin-bottom: 2.25rem;
+  margin-bottom: 2rem;
 }
 
 .puppies-main h3 {
@@ -627,15 +728,13 @@ a:hover {
 .puppies-main p {
   margin-top: 0;
   margin-bottom: 0.75rem;
-  font-size: 0.92rem;
-  color: #4b5563;
+  color: #6b5e52;
 }
 
 .list {
   padding-left: 1.1rem;
   margin: 0.4rem 0 0;
-  color: #4b5563;
-  font-size: 0.9rem;
+  color: #6b5e52;
 }
 
 .list li + li {
@@ -653,8 +752,8 @@ a:hover {
 }
 
 .status-pill--planned {
-  background: #fef3c7;
-  color: #92400e;
+  background: #f5ede4;
+  color: #8a6d4b;
 }
 
 .archive h3 {
@@ -664,8 +763,7 @@ a:hover {
 
 .archive p {
   margin: 0;
-  font-size: 0.9rem;
-  color: #4b5563;
+  color: #6b5e52;
 }
 
 /* ---------------------------------------------
@@ -681,18 +779,19 @@ a:hover {
 
 .gallery-tab {
   border-radius: 999px;
-  border: 1px solid rgba(148, 163, 184, 0.6);
+  border: 1px solid rgba(196, 168, 130, 0.5);
   background: transparent;
   padding: 0.4rem 0.9rem;
   font-size: 0.8rem;
+  font-family: "Raleway", sans-serif;
   cursor: pointer;
-  color: #4b5563;
+  color: #6b5e52;
 }
 
 .gallery-tab--active {
-  background: #93252E;
+  background: #3a2a1a;
   color: #FDFDFD;
-  border-color: #93252E;
+  border-color: #3a2a1a;
 }
 
 .gallery-grid {
@@ -713,7 +812,7 @@ a:hover {
   object-fit: cover;
   border-radius: 0.9rem;
   display: block;
-  box-shadow: 0 10px 30px rgba(80, 22, 22, 0.16);
+  box-shadow: 0 10px 30px rgba(80, 60, 40, 0.12);
   transition: transform 0.3s ease;
 }
 
@@ -726,7 +825,7 @@ a:hover {
   margin: 0.4rem 0 0;
   padding: 0.25rem 0.4rem 0.1rem;
   font-size: 0.78rem;
-  color: #4b5563;
+  color: #8a7e72;
 }
 
 /* ---------------------------------------------
@@ -743,19 +842,30 @@ a:hover {
   font-size: 0.78rem;
   text-transform: uppercase;
   letter-spacing: 0.16em;
-  color: #9ca3af;
-  margin: 0 0 0.45rem;
+  color: #a09689;
+  margin: 0 0 0.35rem;
 }
 
 .news-item h3 {
-  margin: 0 0 0.45rem;
-  font-size: 1.02rem;
+  margin: 0 0 0.35rem;
 }
 
 .news-item p {
   margin: 0;
-  font-size: 0.9rem;
-  color: #4b5563;
+  color: #6b5e52;
+}
+
+.news-cta {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.news-back {
+  margin-top: 2.5rem;
+}
+
+.news-list--full .news-item {
+  max-width: none;
 }
 
 /* ---------------------------------------------
@@ -784,14 +894,13 @@ a:hover {
 }
 
 .docs-group h3 {
-  font-size: 1.1rem;
   margin: 0 0 0.3rem;
-  color: #501616;
+  color: #3a2a1a;
 }
 
 .docs-group-meta {
   font-size: 0.8rem;
-  color: #6b7280;
+  color: #8a7e72;
   margin: 0 0 0.6rem;
 }
 
@@ -799,13 +908,12 @@ a:hover {
   list-style: none;
   padding: 0;
   margin: 0;
-  font-size: 0.9rem;
-  color: #4b5563;
+  color: #6b5e52;
 }
 
 .docs-list li {
   padding: 0.45rem 0;
-  border-bottom: 1px solid rgba(80, 22, 22, 0.08);
+  border-bottom: 1px solid rgba(196, 168, 130, 0.2);
 }
 
 .docs-list li:last-child {
@@ -821,34 +929,30 @@ a:hover {
   padding: 1.5rem 1.6rem;
   background: #ffffff;
   border-radius: 1rem;
-  border-bottom: 2px solid #501616;
+  border-bottom: 2px solid #c4a882;
   box-shadow: 0 14px 40px rgba(15, 23, 42, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .docs-note h3 {
-  font-size: 1.1rem;
   margin: 0 0 1.2rem;
-  color: #501616;
+  color: #3a2a1a;
 }
 
 .docs-note-item + .docs-note-item {
   margin-top: 1.2rem;
   padding-top: 1.2rem;
-  border-top: 1px solid rgba(80, 22, 22, 0.08);
+  border-top: 1px solid rgba(196, 168, 130, 0.2);
 }
 
 .docs-note-item h4 {
-  font-size: 0.95rem;
   margin: 0 0 0.4rem;
-  color: #501616;
+  color: #3a2a1a;
 }
 
 .docs-note-item p {
   margin: 0;
-  font-size: 0.88rem;
-  color: #4b5563;
-  line-height: 1.7;
+  color: #6b5e52;
 }
 
 /* ---------------------------------------------
@@ -865,7 +969,7 @@ a:hover {
 }
 
 .contact-subtitle {
-  color: #4b5563;
+  color: #6b5e52;
   max-width: 32rem;
   margin: 0 auto;
 }
@@ -883,7 +987,7 @@ a:hover {
   align-items: center;
   text-align: center;
   padding: 1.4rem 1rem;
-  border-bottom: 2px solid #501616;
+  border-bottom: 2px solid #c4a882;
   background: #ffffff;
   border-radius: 1rem;
   box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
@@ -903,9 +1007,9 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fdf0eb;
+  background: #f5ede4;
   border-radius: 50%;
-  color: #DC9783;
+  color: #b08d6a;
   margin-bottom: 0.7rem;
 }
 
@@ -913,14 +1017,14 @@ a:hover {
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  color: #9ca3af;
+  color: #a09689;
   margin-bottom: 0.2rem;
 }
 
 .contact-card-value {
   font-size: 0.9rem;
   font-weight: 500;
-  color: #501616;
+  color: #3a2a1a;
 }
 
 .contact-bottom {
@@ -952,34 +1056,35 @@ a:hover {
 
 .form-field label {
   font-size: 0.85rem;
-  color: #4b5563;
+  color: #6b5e52;
 }
 
 input,
 select,
 textarea {
   border-radius: 0.7rem;
-  border: 1px solid #d1d5db;
+  border: 1px solid #d8cfc4;
   padding: 0.35rem 0.6rem;
   font-family: inherit;
   font-size: 0.9rem;
+  line-height: 1.75;
   transition: border-color 0.1s ease, box-shadow 0.1s ease,
     background-color 0.1s ease;
-  background-color: #f9fafb;
+  background-color: #faf7f4;
 }
 
 input:focus,
 select:focus,
 textarea:focus {
   outline: none;
-  border-color: #DC9783;
-  box-shadow: 0 0 0 1px rgba(220, 151, 131, 0.4);
+  border-color: #c4a882;
+  box-shadow: 0 0 0 1px rgba(196, 168, 130, 0.4);
   background-color: #ffffff;
 }
 
 .form-note {
   font-size: 0.8rem;
-  color: #6b7280;
+  color: #8a7e72;
   margin: 0 0 0.9rem;
 }
 
@@ -1002,10 +1107,10 @@ textarea:focus {
 
 .site-footer {
   padding: 3rem 0 0;
-  background: #501616;
-  color: #cbd5e1;
+  background: #3a2a1a;
+  color: #d4c8ba;
   font-size: 0.85rem;
-  line-height: 1.7;
+  line-height: 1.75;
 }
 
 .footer-columns {
@@ -1016,7 +1121,7 @@ textarea:focus {
 }
 
 .footer-col h4 {
-  color: #EBC09E;
+  color: #c4a882;
   font-size: 0.9rem;
   margin: 0 0 0.8rem;
   text-transform: uppercase;
@@ -1028,13 +1133,13 @@ textarea:focus {
 }
 
 .footer-col a {
-  color: #cbd5e1;
+  color: #d4c8ba;
   text-decoration: none;
   transition: color 0.15s ease;
 }
 
 .footer-col a:hover {
-  color: #EBC09E;
+  color: #c4a882;
 }
 
 .footer-nav {
@@ -1058,7 +1163,7 @@ textarea:focus {
   padding: 1.2rem 0;
   text-align: center;
   font-size: 0.8rem;
-  color: #6b7280;
+  color: #8a7e72;
 }
 
 /* ---------------------------------------------
@@ -1114,25 +1219,38 @@ textarea:focus {
     display: none;
   }
 
-  .hero-inner {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 2.5rem;
-  }
   .section-hero {
-    background:
-      linear-gradient(
-        to bottom,
-        rgba(255, 255, 255, 0.96) 0%,
-        rgba(255, 255, 255, 0.9) 26%,
-        rgba(255, 255, 255, 0.6) 45%,
-        rgba(255, 255, 255, 0.15) 70%,
-        rgba(255, 255, 255, 0) 100%
-      ),
-      url("images/hero-alma.jpg") no-repeat center 20%/130% auto;
+    min-height: 50vh;
+    background-position: left center;
   }
 
-  .hero-cards {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .hero-overlay {
+    min-height: 50vh;
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.85) 0%,
+      rgba(255, 255, 255, 0.7) 40%,
+      rgba(255, 255, 255, 0.5) 70%,
+      rgba(255, 255, 255, 0.3) 100%
+    );
+  }
+
+  .hero-inner {
+    justify-content: flex-start;
+  }
+
+  .stepper {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+  }
+
+  .stepper-line {
+    display: none;
+  }
+
+  .stepper-card {
+    opacity: 1;
+    transform: none;
   }
 
   .two-column {
@@ -1174,30 +1292,23 @@ textarea:focus {
 
 @media (max-width: 640px) {
   .section {
-    padding: 3.5rem 0;
+    padding: 3rem 0;
   }
 
   .section-hero {
-    padding-top: 3rem;
-    padding-bottom: 4rem;
+    min-height: 45vh;
+  }
+
+  .hero-overlay {
+    min-height: 45vh;
   }
 
   .hero-text h1 {
-    white-space: normal;
-    font-size: clamp(1.8rem, 6vw, 2.4rem);
+    font-size: clamp(1.6rem, 5vw, 2.2rem);
   }
 
   .hero-subtitle {
-    line-height: 1.8;
-    margin-bottom: 2rem;
-  }
-
-  .hero-mountains {
-    max-width: 90%;
-  }
-
-  .hero-cards {
-    grid-template-columns: minmax(0, 1fr);
+    margin-bottom: 1.5rem;
   }
 
   .form-row {
@@ -1217,4 +1328,3 @@ textarea:focus {
     gap: 1.5rem;
   }
 }
-
