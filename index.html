@@ -11,12 +11,15 @@
       name="description"
       content="Rosenaw Aurum – moderní, rodinná chovatelská stanice zlatých retrívrů s důrazem na zdraví, povahu a každodenní život se psy."
     />
+    <meta name="theme-color" content="#ffffff" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&family=Playfair+Display:wght@400;600;700&family=Raleway:wght@300;400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <link rel="stylesheet" href="styles.css?v=39" />
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Přejít na obsah</a>
     <!--
       Struktura / "wireframe" jedno-stránkového webu:
       - Header: logo + hlavní navigace + přepínač jazyka (CZ/EN)
@@ -30,9 +33,11 @@
       - Sekce Kontakt: kontaktní informace a formulář
       - Footer: copyright + základní odkazy
       - Obrázky:
-        - Hero:  images/hero-alma.jpg (vodorovná fotka 4:3 nebo 16:9)
-        - Alma:  images/alma-profile.jpg (spíš na šířku, může být i 4:3)
-        - Galerie: images/gallery-*.jpg (např. gallery-girls-1.jpg atd.)
+        - Hero:    images/hero/hero-background.png
+        - Psi:     images/dogs/alma-portrait.jpg, alma-outdoor.jpg
+        - Galerie: images/gallery/nase-holky-1.jpg, zivot-1.jpg, vystavy-1.jpg
+        - Štěňata: images/puppies/alma-stene.jpg
+        - Novinky: images/news/placeholder.svg (+ reálné fotky)
     -->
 
     <header class="site-header">
@@ -40,15 +45,13 @@
         <a href="#home" class="logo">
           <span class="logo-main">Rosenaw</span> <span class="logo-accent">Aurum</span>
         </a>
-        <nav class="main-nav" aria-label="Primary">
+        <nav class="main-nav" id="main-nav" aria-label="Primary">
           <a href="#home" data-i18n="navHome">Domů</a>
           <a href="#about" data-i18n="navAbout">O nás</a>
           <a href="#girls" data-i18n="navGirls">Naše feny</a>
           <a href="#puppies" data-i18n="navPuppies">Štěňata</a>
           <a href="#gallery" data-i18n="navGallery">Galerie</a>
           <a href="#news" data-i18n="navNews">Aktuality</a>
-
-          <a href="#documents" data-i18n="navDocs">Dokumenty</a>
           <a href="#contact" data-i18n="navContact">Kontakt</a>
         </nav>
         <div class="header-right">
@@ -66,6 +69,11 @@
           <span>/</span>
           <button class="lang-btn" data-lang="en" type="button">EN</button>
           </div>
+          <button class="hamburger" id="hamburger" type="button" aria-label="Menu" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
         </div>
       </div>
       <div class="header-ornament">
@@ -77,7 +85,7 @@
       </div>
     </header>
 
-    <main>
+    <main id="main-content">
       <!-- HOME / HERO -->
       <section id="home" class="section section-hero">
         <div class="hero-overlay">
@@ -86,14 +94,37 @@
               <h1 data-i18n="heroTitle">
                 Rodinný chov zlatých retrívrů s&nbsp;respektem k&nbsp;životu.
               </h1>
-              <p class="hero-subtitle" data-i18n="heroSubtitle" data-i18n-html>
-                Malá chovatelská stanice FCI z&nbsp;Rožnova pod Radhoštěm.<br>
-                Štěňata vyrůstají doma, mezi lidmi, s&nbsp;důrazem na zdraví,
-                vyrovnanou povahu a pevné zázemí.
-              </p>
+              <div class="hero-content-row">
+                <p class="hero-subtitle" data-i18n="heroSubtitle" data-i18n-html>
+                  Malá chovatelská stanice FCI z&nbsp;Rožnova pod Radhoštěm.<br>
+                  Štěňata vyrůstají doma, mezi lidmi, s&nbsp;důrazem na zdraví,<br>
+                  vyrovnanou povahu a pevné zázemí.
+                </p>
+                <div class="hero-map">
+                  <svg width="140" height="81" viewBox="0 0 220 130" preserveAspectRatio="xMidYMid meet" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Mapa České republiky – Vigantice">
+                    <path d="M89.2,11.7L89.9,11.7L91.0,11.4L94.7,11.6L94.8,11.2L94.8,9.4L94.7,9.3L94.7,9.1L94.7,8.8L94.9,8.7L95.1,8.3L95.2,8.0L95.2,6.6L94.7,5.9L94.2,5.5L94.0,4.9L94.0,4.9L94.2,4.7L94.3,4.6L94.6,4.5L94.7,4.5L95.2,4.1L95.4,3.9L95.4,3.5L96.0,4.0L97.6,4.4L97.9,4.9L98.3,5.3L98.7,5.5L99.1,5.4L99.2,4.9L99.2,4.9L99.5,4.2L99.9,3.9L100.3,4.1L100.5,4.9L100.8,5.6L102.6,5.7L103.4,6.1L103.9,6.9L103.9,7.4L103.6,7.9L103.4,8.9L103.5,9.6L103.8,10.5L104.2,11.3L104.5,11.8L105.2,12.3L105.8,12.6L106.2,13.0L106.7,13.9L106.7,14.4L106.6,14.9L106.5,15.4L106.7,15.8L107.1,16.0L107.2,16.0L107.5,15.6L107.8,15.1L108.1,14.7L109.4,14.6L115.9,16.8L116.3,17.1L116.7,17.7L116.9,17.9L117.2,18.1L119.9,17.4L120.7,17.5L120.8,17.8L120.9,18.1L122.5,20.9L122.7,21.0L123.6,20.9L125.5,20.2L126.0,20.3L126.4,20.7L126.9,21.5L127.2,22.2L127.3,22.9L127.2,23.5L126.8,23.9L126.7,24.0L126.7,24.2L126.7,24.3L126.8,24.5L128.1,24.2L130.1,22.3L131.5,22.5L132.5,23.2L133.0,23.5L133.6,23.3L133.9,22.8L134.1,22.2L134.4,21.7L134.8,21.6L136.0,21.6L137.0,21.9L138.0,22.5L140.7,25.3L141.0,26.3L140.0,26.7L140.1,27.1L140.1,27.3L140.0,27.4L139.9,27.7L139.9,28.0L139.8,28.3L139.8,28.6L139.9,28.6L139.6,29.0L139.0,29.6L138.7,30.1L138.1,30.2L137.1,29.9L136.6,30.1L136.3,30.7L135.8,31.1L135.3,31.5L134.8,31.9L134.7,32.0L134.4,32.1L134.1,32.2L134.3,32.7L134.4,32.9L133.7,32.7L133.5,33.5L133.8,34.4L134.8,34.6L135.2,35.9L135.4,36.2L135.8,36.5L136.0,36.5L136.3,36.3L136.6,36.2L138.1,36.2L138.4,36.3L138.6,36.7L138.6,37.2L138.6,37.6L138.7,38.1L139.3,38.8L140.7,39.4L141.4,39.9L141.8,40.5L142.6,42.0L143.2,42.7L143.5,43.4L144.5,44.4L144.8,45.4L145.2,47.1L145.5,47.7L146.1,48.5L147.2,49.5L148.5,50.2L149.8,50.1L150.9,48.7L151.5,48.2L152.0,47.7L152.2,47.0L152.8,46.1L153.6,45.5L154.2,45.4L154.8,45.4L155.2,45.3L155.6,45.2L155.9,45.0L156.4,44.2L156.8,43.9L157.1,43.9L157.7,44.2L158.0,44.1L158.0,43.9L158.0,43.3L158.1,43.2L158.6,43.2L158.8,43.3L158.9,43.6L159.3,44.2L159.6,44.3L159.9,43.9L159.8,43.2L159.4,42.7L159.4,41.4L159.0,40.5L158.4,39.9L157.7,39.4L157.1,38.8L156.7,37.8L156.5,36.8L156.1,35.8L155.1,34.3L155.1,33.6L156.0,33.1L156.7,33.2L157.6,33.7L158.1,34.0L158.8,33.9L162.1,34.8L162.5,35.1L163.2,35.7L163.6,35.9L164.0,35.9L165.1,35.7L165.4,35.8L165.4,36.0L165.4,36.5L165.7,37.2L165.9,37.6L166.2,37.9L167.3,38.7L168.1,38.9L169.5,38.8L170.2,39.1L169.6,39.4L169.7,39.5L169.8,39.7L170.0,39.9L170.1,40.0L170.1,40.6L170.1,41.3L170.3,41.8L170.8,42.1L171.2,41.2L171.8,41.2L172.5,41.7L172.8,42.7L173.0,42.8L173.2,42.8L173.4,42.8L173.5,42.7L174.5,41.5L176.0,41.4L178.9,41.9L179.6,41.7L180.2,41.2L181.1,39.9L181.3,39.5L181.3,39.2L181.6,39.0L182.1,39.2L182.3,39.4L182.9,40.2L183.0,40.3L183.0,40.4L183.0,40.6L182.9,40.7L182.5,41.7L182.4,42.2L182.5,42.7L182.9,43.0L183.4,43.9L183.1,44.7L182.4,45.3L181.1,46.1L180.2,46.4L178.6,46.5L178.3,46.7L178.0,47.2L178.1,47.5L179.7,49.5L180.2,49.8L180.5,49.7L180.8,49.5L181.1,49.5L181.6,49.6L182.4,50.0L182.9,50.1L182.9,50.2L182.9,50.2L182.9,50.2L182.9,50.3L182.6,50.5L182.4,50.8L182.6,51.1L182.9,51.4L183.2,51.8L183.5,52.4L183.6,53.0L183.8,53.6L184.2,54.1L186.3,56.2L187.5,56.5L188.7,56.1L189.6,55.2L190.1,55.1L191.5,55.1L192.5,54.7L192.6,54.5L192.6,54.0L192.4,53.7L192.1,53.7L191.8,53.7L191.7,53.7L191.5,52.5L192.0,52.7L192.6,52.8L194.4,54.0L194.2,54.9L194.6,55.4L196.7,55.8L197.1,56.1L198.1,57.0L198.5,57.1L199.3,57.3L199.7,57.6L199.8,57.9L200.0,58.7L200.2,59.0L200.8,59.5L201.3,59.4L202.2,58.6L202.2,58.5L202.1,58.5L202.1,58.5L202.0,58.5L203.3,58.3L204.5,58.7L206.9,60.1L207.7,60.1L208.9,59.3L209.3,59.6L209.6,60.5L209.5,61.2L209.6,61.9L210.5,62.3L209.6,63.4L209.6,64.7L210.2,66.2L211.0,67.8L211.3,69.3L211.5,69.7L211.9,70.0L212.9,70.1L213.3,70.2L213.7,70.5L214.4,71.3L214.8,71.5L215.3,71.5L215.7,71.3L216.2,71.2L216.7,71.6L216.9,72.0L217.0,73.7L217.2,74.2L217.6,75.1L217.8,75.5L218.2,77.7L218.3,78.7L218.1,79.5L216.8,79.6L216.2,79.8L214.9,81.0L214.0,81.1L213.1,80.8L212.1,80.3L211.8,80.2L211.6,80.3L210.7,80.8L209.3,80.5L208.6,81.0L208.5,81.4L208.4,82.3L208.2,82.8L208.0,83.0L206.9,83.6L205.5,85.3L204.8,85.8L203.8,85.6L203.8,88.0L203.0,88.6L201.9,89.6L197.5,91.3L196.6,92.2L195.9,93.5L195.2,95.0L194.8,96.7L194.7,98.0L194.7,98.3L194.8,100.6L194.5,101.7L193.9,102.8L192.9,103.8L191.9,104.3L190.1,104.1L189.4,104.2L188.7,104.7L188.3,105.6L188.1,106.3L187.9,107.9L187.6,108.6L187.0,109.2L186.4,109.2L185.7,109.1L184.9,109.2L184.4,109.7L183.2,111.6L182.7,112.1L176.6,114.6L175.4,114.5L174.4,113.4L173.9,113.1L173.2,113.4L172.6,113.8L172.0,114.2L171.4,114.3L167.8,112.4L166.2,112.0L164.8,112.3L163.0,113.6L162.7,114.1L162.6,115.0L162.1,115.6L161.0,116.6L160.2,118.0L158.6,122.9L158.3,123.6L157.7,124.2L157.7,125.2L156.6,123.8L156.1,120.5L155.3,119.4L154.8,119.3L153.6,119.8L153.0,119.9L152.4,119.6L151.2,118.8L150.7,118.7L149.5,118.7L149.0,118.6L148.6,118.3L148.4,117.7L148.2,117.0L148.0,116.4L147.3,116.1L146.7,116.1L144.8,115.5L144.3,115.1L144.0,115.0L143.7,115.1L143.2,115.3L142.8,115.3L141.9,115.2L141.3,115.6L139.7,118.5L139.3,118.8L138.8,119.0L138.7,118.9L138.2,118.5L137.6,118.6L137.5,118.7L133.0,118.0L130.1,118.2L128.4,117.4L125.2,115.0L125.1,114.7L125.1,114.4L125.0,114.2L124.4,114.3L124.4,113.8L124.2,113.5L123.8,113.5L123.4,113.6L123.7,113.2L123.4,113.2L123.2,113.1L122.9,112.8L122.3,112.8L122.0,112.7L121.8,112.4L121.8,111.8L121.5,111.7L120.6,111.7L120.3,111.7L119.1,112.4L118.6,112.5L117.9,112.5L117.1,112.4L114.6,110.9L112.7,110.1L112.0,109.8L110.5,108.4L109.7,108.0L108.3,107.5L106.8,106.7L106.1,106.5L104.6,106.5L104.4,106.4L104.3,106.1L104.1,105.9L103.9,105.9L103.7,106.1L103.6,106.8L103.6,107.0L103.1,107.6L102.9,107.7L100.5,108.4L99.8,108.4L100.1,107.7L100.1,107.0L100.0,106.3L99.7,105.6L97.2,105.4L95.4,104.7L94.7,104.8L94.6,104.9L94.6,105.1L94.6,105.3L94.6,105.6L94.2,106.6L94.2,108.1L94.3,109.6L94.3,111.0L93.6,114.2L93.4,114.8L93.3,115.2L93.4,115.5L93.5,115.9L93.7,116.2L93.8,116.3L93.4,117.2L92.7,117.2L91.0,116.5L89.4,116.3L88.9,116.5L88.7,117.0L88.6,117.6L88.3,118.2L88.1,119.1L86.4,120.7L85.8,121.7L85.7,123.0L85.7,124.6L85.5,125.9L85.4,126.0L84.9,126.6L84.4,126.5L84.1,126.2L83.9,125.7L83.6,125.2L83.4,125.2L82.9,125.4L82.7,125.3L82.5,125.1L82.5,124.8L82.5,124.5L82.3,124.3L81.8,124.3L80.8,124.8L80.3,124.9L80.0,124.8L78.7,124.1L77.9,123.2L77.5,123.5L76.7,125.5L76.2,126.1L74.6,126.8L74.0,127.3L73.7,127.4L73.4,127.5L70.2,126.3L65.7,125.8L64.6,125.3L64.3,125.1L63.8,124.3L63.6,124.1L63.5,123.4L63.6,123.2L63.7,123.2L63.9,122.7L64.0,122.6L64.1,122.6L64.3,122.6L64.4,122.3L64.3,122.0L64.1,121.8L63.8,121.7L63.7,121.6L63.5,121.2L63.0,120.3L62.7,120.0L60.5,118.8L59.8,118.2L59.2,117.7L58.6,117.3L57.3,117.0L56.7,116.3L55.2,113.1L54.5,111.9L54.0,111.6L52.8,111.5L52.2,111.2L51.6,110.6L51.2,109.8L50.8,108.9L50.7,107.9L50.1,108.0L49.6,107.7L49.0,107.2L48.5,106.9L47.9,106.8L47.7,106.7L47.3,106.9L47.0,107.5L46.7,108.4L45.9,108.0L44.9,107.2L44.0,106.3L43.5,105.6L43.5,104.2L43.2,103.3L41.8,101.9L40.8,100.5L40.4,100.2L39.8,99.9L37.8,99.8L36.9,99.3L36.4,98.4L36.0,97.4L33.0,93.2L32.6,93.0L32.6,93.0L31.6,91.7L31.4,91.3L31.4,90.8L31.2,90.4L30.6,90.1L29.8,89.2L29.3,88.8L28.7,88.5L27.5,88.1L27.0,88.3L27.2,88.9L26.6,89.0L24.7,88.7L24.1,88.5L23.6,87.9L22.5,85.5L21.9,84.8L20.4,84.1L19.8,83.6L19.4,82.9L19.3,82.1L19.2,80.4L19.1,79.6L18.9,79.4L18.5,79.4L18.2,79.3L17.8,78.9L17.6,78.5L17.4,78.1L17.2,77.5L17.1,76.9L16.9,75.8L16.7,75.2L16.3,74.9L15.6,74.4L15.2,74.0L15.2,73.9L15.4,73.5L15.2,73.4L15.1,73.3L15.4,72.7L15.3,72.0L15.1,71.5L14.7,71.3L13.6,70.7L13.0,70.4L12.6,70.0L11.9,69.0L11.6,68.4L11.4,67.8L11.8,67.1L13.2,66.5L13.6,66.0L13.8,65.1L13.8,64.1L14.0,63.4L14.7,63.6L14.9,62.8L15.6,61.4L15.8,60.6L16.0,59.7L15.8,59.3L15.3,59.1L14.0,58.3L14.0,57.8L14.2,57.1L14.1,56.4L13.6,55.9L12.5,55.7L11.9,55.2L11.9,55.2L7.1,52.6L7.0,52.3L7.0,51.8L6.9,51.3L6.6,50.8L6.2,50.4L5.6,50.1L5.2,49.7L4.9,48.9L4.9,48.2L5.1,47.0L5.0,46.3L4.8,45.7L4.4,45.1L3.6,44.3L2.1,43.3L1.7,42.7L2.1,42.0L2.4,41.8L2.6,41.6L2.7,41.0L2.6,40.2L2.3,39.8L1.6,39.0L2.4,39.1L4.0,39.2L4.5,39.6L4.8,40.1L4.8,41.0L4.8,41.3L5.2,41.7L5.7,41.8L6.6,41.8L6.8,42.0L7.0,42.1L7.0,42.4L6.8,42.7L6.7,42.7L6.7,42.7L6.7,42.7L6.6,42.7L6.5,42.8L6.5,42.9L6.5,43.1L6.6,43.2L7.2,43.7L7.3,43.9L7.5,44.3L7.5,44.6L7.5,44.8L7.9,46.2L8.2,46.7L8.8,46.8L9.2,46.5L9.2,46.0L9.0,45.5L8.9,44.8L9.1,43.9L9.2,43.5L9.9,42.7L10.0,41.9L10.2,41.5L10.6,41.2L10.9,40.8L11.9,39.0L12.2,38.7L13.2,38.1L13.6,37.8L13.7,37.7L14.0,37.7L14.1,37.7L14.2,37.5L14.1,37.3L14.1,37.1L14.1,37.0L14.2,36.8L14.3,36.5L14.4,36.3L14.7,36.1L15.5,35.3L16.8,34.9L19.2,34.7L20.9,35.1L21.3,35.0L21.7,34.7L22.4,33.6L22.8,33.2L23.3,33.0L23.8,32.9L24.4,33.0L24.6,32.9L25.1,32.6L25.4,32.6L25.7,32.7L28.6,34.5L29.7,34.5L30.0,34.3L30.6,33.6L31.1,33.0L31.3,32.1L31.5,30.1L31.8,29.9L32.0,29.8L32.3,29.9L32.5,30.1L32.8,30.2L33.1,30.2L33.4,30.2L33.7,30.1L33.7,30.1L33.7,30.1L34.7,29.8L36.4,29.9L37.2,29.3L37.6,28.4L38.6,25.6L39.3,25.6L39.8,26.0L40.3,26.2L41.0,25.9L41.3,24.9L41.6,24.6L42.7,23.7L43.0,23.5L43.0,23.3L43.0,23.2L43.4,23.4L43.6,23.6L44.1,24.3L44.3,24.6L45.0,25.0L45.6,24.8L46.1,24.3L46.7,23.6L47.0,23.4L47.2,23.2L47.2,22.9L47.1,22.5L47.6,22.1L48.0,21.5L48.1,20.9L47.7,20.1L49.0,19.3L50.5,19.0L53.4,19.0L54.0,18.9L55.2,18.5L55.9,18.4L57.4,18.6L58.0,18.4L58.9,17.9L59.1,17.9L59.3,17.8L59.5,17.5L59.5,17.2L59.4,16.9L59.4,16.4L59.5,15.9L59.8,15.6L60.1,15.6L60.4,15.7L60.8,15.6L61.1,15.4L61.6,14.7L61.9,14.5L62.6,14.4L63.8,14.5L64.4,14.5L69.3,12.2L69.8,11.8L70.4,10.9L70.7,10.6L71.8,10.4L74.4,10.6L75.3,9.8L75.5,8.5L74.6,8.0L73.4,7.7L72.6,6.9L72.6,6.3L72.9,6.2L73.0,6.1L72.3,5.8L71.2,5.7L70.9,5.4L71.2,4.9L71.7,3.5L72.5,2.7L73.5,2.5L74.7,2.9L74.9,3.1L75.1,3.4L75.3,3.7L75.6,3.9L76.0,3.9L76.9,3.5L78.1,3.5L78.4,3.4L78.7,2.7L78.9,3.1L78.9,3.4L79.1,3.7L79.4,4.1L79.8,4.4L80.6,4.6L81.1,4.9L81.4,5.4L81.7,5.8L81.8,6.3L81.7,7.0L81.4,7.6L81.1,8.3L80.9,9.0L81.3,9.2L83.0,8.5L83.4,8.5L83.6,9.1L83.4,9.8L82.9,11.0L82.8,11.9L82.9,12.3L84.0,12.6L84.5,12.9L85.7,13.8L86.9,14.1L87.6,14.1L88.1,13.9L88.4,13.6L88.7,13.0Z"
+                                        fill="rgba(196,168,130,0.18)"
+                                        stroke="#c4a882"
+                                        stroke-width="1.2"
+                                        stroke-linejoin="round"
+                                      />
+                    <!-- Vigantice -->
+                    <a href="#contact" style="cursor:pointer">
+                      <circle cx="195.3" cy="82.7" r="5" fill="#c4a882" opacity="0.35">
+                        <animate attributeName="r" values="5;14;5" dur="2s" repeatCount="indefinite"/>
+                        <animate attributeName="opacity" values="0.35;0;0.35" dur="2s" repeatCount="indefinite"/>
+                      </circle>
+                      <circle cx="195.3" cy="82.7" r="3.5" fill="#3a2a1a">
+                        <title>Vigantice – kontakt</title>
+                      </circle>
+                      <circle cx="195.3" cy="82.7" r="1.5" fill="#c4a882"/>
+                    </a>
+                  </svg>
+                </div>
+              </div>
               <div class="hero-actions">
                 <a href="#puppies" class="btn btn-primary btn-paw" data-i18n="heroCtaPuppies">
-                  <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22c-1.5 0-2.7-1.2-2.7-2.7 0-1.1.7-2.1 1.7-2.5-.2-.7-.7-1.3-1.3-1.7-.8-.5-1.7-.8-2.7-.8-1.5 0-2.7-1.2-2.7-2.7S5.5 9 7 9c.6 0 1.2.2 1.6.6.5-.9.8-1.9.8-3C9.4 4.5 11 3 12 3s2.6 1.5 2.6 3.6c0 1.1.3 2.1.8 3 .4-.4 1-.6 1.6-.6 1.5 0 2.7 1.2 2.7 2.7s-1.2 2.7-2.7 2.7c-1 0-1.9.3-2.7.8-.6.4-1.1 1-1.3 1.7 1 .4 1.7 1.4 1.7 2.5 0 1.4-1.2 2.6-2.7 2.6z"/></svg>
+                  <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 22c-1.5 0-2.7-1.2-2.7-2.7 0-1.1.7-2.1 1.7-2.5-.2-.7-.7-1.3-1.3-1.7-.8-.5-1.7-.8-2.7-.8-1.5 0-2.7-1.2-2.7-2.7S5.5 9 7 9c.6 0 1.2.2 1.6.6.5-.9.8-1.9.8-3C9.4 4.5 11 3 12 3s2.6 1.5 2.6 3.6c0 1.1.3 2.1.8 3 .4-.4 1-.6 1.6-.6 1.5 0 2.7 1.2 2.7 2.7s-1.2 2.7-2.7 2.7c-1 0-1.9.3-2.7.8-.6.4-1.1 1-1.3 1.7 1 .4 1.7 1.4 1.7 2.5 0 1.4-1.2 2.6-2.7 2.6z"/></svg>
                   Aktuální / plánovaný vrh
                 </a>
                 <a href="#about" class="btn btn-outline" data-i18n="heroCtaAbout">
@@ -106,7 +137,7 @@
       </section>
 
       <!-- PROČ PRÁVĚ MY? -->
-      <section id="why-us" class="section section-why-us">
+      <section id="why-us" class="section section-why-us" data-animate>
         <div class="container">
           <header class="section-header section-header--center">
             <h2 data-i18n="whyUsTitle">Proč právě my?</h2>
@@ -114,7 +145,7 @@
           </header>
 
           <div class="stepper">
-            <!-- Propojovací linie -->
+            <!-- Propojovací linie — psí stopy -->
             <div class="stepper-line">
               <div class="stepper-line-fill"></div>
             </div>
@@ -130,7 +161,7 @@
             </a>
 
             <!-- Krok 2 -->
-            <a href="#documents" class="stepper-card" data-stepper="2">
+            <a href="alma-dokumenty.html" class="stepper-card" data-stepper="2">
               <div class="stepper-icon">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
               </div>
@@ -153,7 +184,7 @@
       </section>
 
       <!-- ABOUT -->
-      <section id="about" class="section">
+      <section id="about" class="section" data-animate>
         <div class="container section-inner two-column">
           <div>
             <h2 data-i18n="aboutTitle">O chovatelské stanici Rosenaw Aurum</h2>
@@ -174,11 +205,14 @@
             <p data-i18n="aboutPhilosophy" data-i18n-html>
               Naším cílem je odchovávat <strong>vyrovnané, zdravé a společenské psy</strong>,
               kteří se budou cítit stejně dobře na výstavním kruhu, při práci
-              v poli i uprostřed rodinného obýváku. Naše chovatelská stanice Rosenaw Aurum je od [datum] registrovaná u <a href="https://www.fci.be/" target="_blank" rel="noopener noreferrer">Mezinárodní kynologické federace FCI</a> pod číslem 832/23 a jsme členy <a href="https://www.kchls.cz/" target="_blank" rel="noopener noreferrer">Klubu chovatelů loveckých slídičů (KCHLS)</a> i <a href="https://www.retriever-klub.cz/" target="_blank" rel="noopener noreferrer">Retriever Klubu (RK CZ)</a>.
+              v poli i uprostřed rodinného obýváku. Naše chovatelská stanice Rosenaw Aurum je registrovaná u <a href="https://www.fci.be/" target="_blank" rel="noopener noreferrer">Mezinárodní kynologické federace FCI</a> pod číslem 832/23 a jsme členy <a href="https://www.kchls.cz/" target="_blank" rel="noopener noreferrer">Klubu chovatelů loveckých slídičů (KCHLS)</a> i <a href="https://www.retriever-klub.cz/" target="_blank" rel="noopener noreferrer">Retriever Klubu (RK CZ)</a>.
             </p>
           </div>
           <aside class="aside-card">
             <h3 data-i18n="aboutBreederTitle">Chovatelka</h3>
+            <div class="breeder-photo-wrapper">
+              <img class="breeder-photo" src="images/breeder-placeholder.jpg" alt="Lucie Klesová" width="200" height="200" loading="lazy" />
+            </div>
             <p data-i18n="aboutBreederText">
               Jmenuji se Lucie Klesová a psi mě provázejí od dětství. Zlatí
               retrívři jsou pro mě kombinací klidu, radosti a nevyčerpatelné
@@ -194,116 +228,234 @@
       </section>
 
       <!-- GIRLS -->
-      <section id="girls" class="section section-muted">
+      <section id="girls" class="section section-muted" data-animate>
         <div class="container">
-          <header class="section-header">
+          <header class="section-header section-header--center">
             <h2 data-i18n="girlsTitle">Naše feny</h2>
+            <span class="section-header-line"></span>
             <p data-i18n="girlsIntro">
               Postupně zde najdete všechny naše zlaté dámy – od mladých nadějí
               po zkušené chovné feny a psí seniorky.
             </p>
           </header>
 
-          <div class="girls-grid">
-            <!-- Alma card – vzor pro další fenky -->
-            <article class="dog-card">
-              <div class="dog-photos">
-                <figure class="dog-photo-wrapper">
-                  <img
-                    class="dog-photo"
-                    src="images/alma-profile.jpg"
-                    alt="Alma Bohemica Aurum – zlatý retrívr, portrét"
-                  />
-                  <figcaption class="dog-photo-caption" data-i18n="almaPhotoLabel">
-                    Zde může být portrét Almy (soubor
-                    <code>images/alma-profile.jpg</code>).
-                  </figcaption>
-                </figure>
-                <figure class="dog-photo-wrapper">
-                  <img
-                    class="dog-photo"
-                    src="images/alma-profile-2.jpg"
-                    alt="Alma Bohemica Aurum – zlatý retrívr"
-                  />
-                  <figcaption class="dog-photo-caption" data-i18n="almaPhoto2Label">
-                    Druhá fotografie Almy (soubor
-                    <code>images/alma-profile-2.jpg</code>).
-                  </figcaption>
-                </figure>
-              </div>
-              <div class="dog-content">
-                <h3>Alma Bohemica Aurum</h3>
-                <p class="dog-meta" data-i18n="almaBasic">
-                  nar. 27. 1. 2024 &nbsp;•&nbsp; zlatý retrívr, fena
-                </p>
+          <!-- ===== ALMA ===== -->
+          <div class="dog-intro">
+            <h3>Alma Bohemica Aurum</h3>
+            <p class="dog-meta" data-i18n="almaBasic">
+              nar. 27. 1. 2024 &nbsp;•&nbsp; zlatý retrívr, fena &nbsp;•&nbsp; ČLP/GR/25733
+            </p>
+          </div>
+
+          <!-- Profil — řádky: média vlevo, karta vpravo -->
+          <div class="dog-profile-rows">
+
+            <!-- Řádek 1: Foto + Povaha -->
+            <div class="dog-profile-row">
+              <figure class="dog-photo-wrapper">
+                <a href="images/dogs/alma-portrait.jpg" class="glightbox" data-gallery="dogs" data-glightbox="title: Alma Bohemica Aurum – portrét">
+                  <img class="dog-photo" src="images/dogs/alma-portrait.jpg" alt="Alma Bohemica Aurum – portrét" width="600" height="450" />
+                </a>
+              </figure>
+              <div class="dog-profile-card" data-animate>
+                <div class="dog-profile-card-header">
+                  <div class="stepper-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                  </div>
+                  <h4 data-i18n="almaCharacterTitle">Povaha</h4>
+                </div>
                 <p class="dog-text" data-i18n="almaPersonality" data-i18n-html>
                   <strong>Alminka</strong> je naše vysněná fenečka zlatého retrívra. Do života
                   k nám vtrhla jako velká voda a velmi rychle se z ní stal pes
                   do každé situace – parťák na výlety, dovolené, sport i klidné
                   večery doma.
                 </p>
+                <div class="dog-traits">
+                  <span class="dog-trait" data-i18n="almaTrait1">Přátelská</span>
+                  <span class="dog-trait" data-i18n="almaTrait2">Učenlivá</span>
+                  <span class="dog-trait" data-i18n="almaTrait3">Aktivní</span>
+                  <span class="dog-trait" data-i18n="almaTrait4">Klidná doma</span>
+                  <span class="dog-trait" data-i18n="almaTrait5">Miluje vodu</span>
+                  <span class="dog-trait" data-i18n="almaTrait6">Ráda aportuje</span>
+                </div>
+              </div>
+            </div>
 
-                <div class="dog-stats">
-                  <div class="dog-stat-card">
-                    <div class="dog-stat-icon">
-                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
-                    </div>
-                    <h4 data-i18n="almaHealthTitle">Zdraví</h4>
-                    <ul class="dog-stat-list" data-i18n="almaHealthList">
-                      <li>Výška 56 cm, chrup úplný nůžkový</li>
-                      <li>GR-PRA1 N/N, DR-PRA2 N/N, PRA N/N</li>
-                      <li>ICT N/P, ICT-2 N/N, NCL N/N, GRMD Xn/Xn</li>
-                      <li>HD B, ED 0/0</li>
-                      <li>OCD negativní, SA negativní, LTV 0</li>
-                    </ul>
+            <!-- Řádek 2: Foto + Zdraví -->
+            <div class="dog-profile-row">
+              <figure class="dog-photo-wrapper">
+                <a href="images/dogs/alma-outdoor.jpg" class="glightbox" data-gallery="dogs" data-glightbox="title: Alma Bohemica Aurum – venku">
+                  <img class="dog-photo" src="images/dogs/alma-outdoor.jpg" alt="Alma Bohemica Aurum – venku" width="600" height="450" />
+                </a>
+              </figure>
+              <div class="dog-profile-card" data-animate>
+                <div class="dog-profile-card-header">
+                  <div class="stepper-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.5 12h3.5l2-4 3 8 2-4h6"/></svg>
                   </div>
+                  <h4 data-i18n="almaHealthTitle">Zdraví</h4>
+                  <a href="alma-dokumenty.html" class="dog-docs-inline" data-i18n="almaDocsLink">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                    Zdravotní dokumentace &rarr;
+                  </a>
+                </div>
 
-                  <div class="dog-stat-card">
-                    <div class="dog-stat-icon">
-                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5C7 4 7 7 7 7"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5C17 4 17 7 17 7"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
-                    </div>
-                    <h4 data-i18n="almaTitlesTitle">Ocenění a zkoušky</h4>
-                    <ul class="dog-stat-list" data-i18n="almaTitlesList">
-                      <li>Třída štěňat: VN1, Jubilejní vítěz štěně</li>
-                      <li>Třída dorostu: VN1, VN2</li>
-                      <li>Třída mladých: 2× VD, 2× V, V2</li>
-                      <li>OVVR – 232 b., plný počet</li>
-                    </ul>
+                <h5 class="health-category" data-i18n="healthCatRtg">RTG vyšetření</h5>
+                <div class="health-badges">
+                  <span class="health-badge health-badge--ok"><strong>HD (DKK)</strong> B/B</span>
+                  <span class="health-badge health-badge--ok"><strong>ED (DLK)</strong> 0/0</span>
+                  <span class="health-badge health-badge--ok"><strong>OCD</strong> <span data-i18n="healthNeg">neg.</span></span>
+                  <span class="health-badge health-badge--ok"><strong>SA</strong> <span data-i18n="healthNeg">neg.</span></span>
+                  <span class="health-badge health-badge--ok"><strong>LTV</strong> 0</span>
+                </div>
+
+                <h5 class="health-category" data-i18n="healthCatDna">Genetické (DNA) testy</h5>
+                <div class="health-badges">
+                  <span class="health-badge health-badge--ok"><strong>PRA</strong> N/N</span>
+                  <span class="health-badge health-badge--warn"><strong>ICT-A</strong> N/P</span>
+                  <span class="health-badge health-badge--ok"><strong>ICT-2</strong> N/N</span>
+                  <span class="health-badge health-badge--ok"><strong>NCL</strong> N/N</span>
+                  <span class="health-badge health-badge--ok"><strong>GRMD</strong> Xn/Xn</span>
+                </div>
+
+                <p class="dog-health-meta">
+                  <strong data-i18n="almaHeightLabel">Výška:</strong> 56 cm &nbsp;•&nbsp;
+                  <strong data-i18n="almaBiteLabel">Chrup:</strong> <span data-i18n="almaBiteValue">úplný nůžkový</span> &nbsp;•&nbsp;
+                  <strong>COI:</strong> 1.99 % <small>(10 gen.)</small>
+                </p>
+              </div>
+            </div>
+
+            <!-- Řádek 3: Video + Výstavy a zkoušky -->
+            <div class="dog-profile-row">
+              <div class="dog-photo-wrapper dog-video-wrapper">
+                <video class="lazy-video" muted loop playsinline preload="none">
+                  <source data-src="images/dogs/alma-video.MP4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="dog-profile-card" data-animate>
+                <div class="dog-profile-card-header">
+                  <div class="stepper-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5C7 4 7 7 7 7"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5C17 4 17 7 17 7"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
                   </div>
+                  <h4 data-i18n="almaTitlesTitle">Výstavy a zkoušky</h4>
+                </div>
 
-                  <div class="dog-stat-card">
-                    <div class="dog-stat-icon">
-                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="4" r="2"/><circle cx="5" cy="12" r="2"/><circle cx="19" cy="12" r="2"/><circle cx="2" cy="20" r="2"/><circle cx="8" cy="20" r="2"/><circle cx="16" cy="20" r="2"/><circle cx="22" cy="20" r="2"/><path d="M12 6v2l-7 4M12 8l7 4M5 14v2l-3 4M5 14v2l3 4M19 14v2l-3 4M19 14v2l3 4"/></svg>
-                    </div>
-                    <h4 data-i18n="almaPedigreeTitle">Rodokmen</h4>
-                    <ul class="dog-stat-list" data-i18n="almaPedigreeList" data-i18n-html>
-                      <li><strong>Otec:</strong> SPA CH Brandon de Ria Vela</li>
-                      <li><strong>Matka:</strong> Lolipop Dorado Blanco</li>
-                      <li><strong>Majitel:</strong> Lucie Klesová</li>
-                      <li><strong>Chovatel:</strong> Ing. František Vacek, <a href="https://www.bohemica-aurum.cz/" target="_blank" rel="noopener noreferrer">Bohemica Aurum</a></li>
-                    </ul>
+                <h5 class="health-category" data-i18n="titlesCatShows">Výstavy</h5>
+                <div class="result-chips">
+                  <div class="result-chip">
+                    <span class="result-chip-label" data-i18n="almaTitlePuppy">Třída štěňat</span>
+                    <span class="result-chip-value">VN1, Jubilejní vítěz</span>
+                  </div>
+                  <div class="result-chip">
+                    <span class="result-chip-label" data-i18n="almaTitleJunior">Třída dorostu</span>
+                    <span class="result-chip-value">VN1, VN2</span>
+                  </div>
+                  <div class="result-chip">
+                    <span class="result-chip-label" data-i18n="almaTitleYoung">Třída mladých</span>
+                    <span class="result-chip-value">2× VD, 2× V, V2</span>
+                  </div>
+                </div>
+
+                <h5 class="health-category" data-i18n="titlesCatTrials">Pracovní zkoušky</h5>
+                <div class="result-chips">
+                  <div class="result-chip">
+                    <span class="result-chip-label">OVVR</span>
+                    <span class="result-chip-value">232 b., plný počet</span>
+                  </div>
+                  <div class="result-chip result-chip--pending">
+                    <span class="result-chip-label">CT</span>
+                    <span class="result-chip-value" data-i18n="almaTitlePrep">v přípravě</span>
+                  </div>
+                  <div class="result-chip result-chip--pending">
+                    <span class="result-chip-label">WT</span>
+                    <span class="result-chip-value" data-i18n="almaTitlePrep">v přípravě</span>
                   </div>
                 </div>
               </div>
-            </article>
+            </div>
+
           </div>
+
+          <!-- RODOKMEN — full width card -->
+          <div class="dog-pedigree-card">
+              <h4 class="dog-pedigree-title" data-i18n="almaPedigreeTitle">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="4" r="2"/><circle cx="5" cy="12" r="2"/><circle cx="19" cy="12" r="2"/><circle cx="2" cy="20" r="2"/><circle cx="8" cy="20" r="2"/><circle cx="16" cy="20" r="2"/><circle cx="22" cy="20" r="2"/><path d="M12 6v2l-7 4M12 8l7 4M5 14v2l-3 4M5 14v2l3 4M19 14v2l-3 4M19 14v2l3 4"/></svg>
+                Rodokmen
+              </h4>
+
+              <div class="pedigree">
+                <!-- Generation 0 — subject -->
+                <div class="pedigree-col pedigree-col--subject">
+                  <a href="https://k9-data.org/dog/detail/500000091" target="_blank" rel="noopener noreferrer" class="pedigree-node pedigree-node--subject">
+                    <strong>Alma Bohemica Aurum</strong>
+                    <span>* 27. 1. 2024</span>
+                    <span>COI 1.99 %</span>
+                  </a>
+                </div>
+                <!-- Generation 1 — parents -->
+                <div class="pedigree-col">
+                  <a href="https://k9-data.org/dog/detail/1197855" target="_blank" rel="noopener noreferrer" class="pedigree-node pedigree-node--sire">
+                    <strong>SPA CH Brandon de Ria Vela</strong>
+                    <span>* 2021</span>
+                  </a>
+                  <a href="https://k9-data.org/dog/detail/1319465" target="_blank" rel="noopener noreferrer" class="pedigree-node pedigree-node--dam">
+                    <strong>Lollipop Dorado Blanco</strong>
+                    <span>* 2021</span>
+                  </a>
+                </div>
+                <!-- Generation 2 — grandparents -->
+                <div class="pedigree-col">
+                  <a href="https://k9-data.org/dog/detail/937000" target="_blank" rel="noopener noreferrer" class="pedigree-node pedigree-node--sire">
+                    <strong>GCHG Tamarack He Likes It</strong>
+                    <span>* 2018</span>
+                  </a>
+                  <a href="https://k9-data.org/dog/detail/889044" target="_blank" rel="noopener noreferrer" class="pedigree-node pedigree-node--dam">
+                    <strong>Khaleesi de Ria Vela</strong>
+                    <span>* 2017</span>
+                  </a>
+                  <a href="https://k9-data.org/dog/detail/708107" target="_blank" rel="noopener noreferrer" class="pedigree-node pedigree-node--sire">
+                    <strong>JCH CH CZ Right Hunter Grace N Favor</strong>
+                    <span>* 2015</span>
+                  </a>
+                  <a href="https://k9-data.org/dog/detail/844036" target="_blank" rel="noopener noreferrer" class="pedigree-node pedigree-node--dam">
+                    <strong>Ginger Dorado Blanco</strong>
+                    <span>* 2016</span>
+                  </a>
+                </div>
+                <!-- Generation 3 — great-grandparents -->
+                <div class="pedigree-col pedigree-col--ggp">
+                  <a href="https://k9-data.org/dog/detail/443535" target="_blank" rel="noopener noreferrer" class="pedigree-node pedigree-node--sire"><strong>CanCH Madisons It's In The Cards</strong></a>
+                  <a href="https://k9-data.org/dog/detail/548545" target="_blank" rel="noopener noreferrer" class="pedigree-node pedigree-node--dam"><strong>GCHS Tamarack's Warm And Fuzzy</strong></a>
+                  <a href="https://k9-data.org/dog/detail/415541" target="_blank" rel="noopener noreferrer" class="pedigree-node pedigree-node--sire"><strong>SPA CH Califa de Ria Vela</strong></a>
+                  <a href="https://k9-data.org/dog/detail/611733" target="_blank" rel="noopener noreferrer" class="pedigree-node pedigree-node--dam"><strong>SPA JCH Sweet Lorraine de Ria Vela</strong></a>
+                  <a href="https://k9-data.org/dog/detail/497176" target="_blank" rel="noopener noreferrer" class="pedigree-node pedigree-node--sire"><strong>Herwildy's Michelangelo</strong></a>
+                  <a href="https://k9-data.org/dog/detail/559336" target="_blank" rel="noopener noreferrer" class="pedigree-node pedigree-node--dam"><strong>WW'16 Virago Rocket Iz Stolitsy Urala</strong></a>
+                  <a href="https://k9-data.org/dog/detail/470914" target="_blank" rel="noopener noreferrer" class="pedigree-node pedigree-node--sire"><strong>GrandCH CZ Bonett Bride To Dorado Blanco</strong></a>
+                  <a href="https://k9-data.org/dog/detail/556625" target="_blank" rel="noopener noreferrer" class="pedigree-node pedigree-node--dam"><strong>CH CZ Volente Deo Princess and the Pea</strong></a>
+                </div>
+              </div>
+
+          </div>
+
         </div>
       </section>
 
       <!-- PUPPIES -->
-      <section id="puppies" class="section">
+      <section id="puppies" class="section" data-animate>
         <div class="container">
-          <header class="section-header">
+          <header class="section-header section-header--center">
             <h2 data-i18n="puppiesTitle">Štěňata Rosenaw Aurum</h2>
-            <p data-i18n="puppiesIntro">
-              Štěně je pro nás plnohodnotný člen rodiny. Od prvních dnů je v
-              úzkém kontaktu s námi, dětmi i běžným chodem domácnosti, aby bylo
-              na nový domov co nejlépe připravené.
-            </p>
+            <span class="section-header-line"></span>
           </header>
 
           <div class="puppies-layout">
             <div class="puppies-main">
+              <p data-i18n="puppiesIntro">
+                Štěně je pro nás plnohodnotný člen rodiny. Od prvních dnů je v
+                úzkém kontaktu s námi, dětmi i běžným chodem domácnosti, aby bylo
+                na nový domov co nejlépe připravené.
+              </p>
               <h3 data-i18n="puppiesApproachTitle">Jak u nás rostou štěňata</h3>
               <p data-i18n="puppiesApproachText1">
                 Štěňata odchováváme v rodinném prostředí. Postupně poznávají
@@ -327,37 +479,35 @@
               </ul>
             </div>
 
-            <aside class="aside-card puppies-aside">
-              <h3 data-i18n="puppiesStatusTitle">Aktuální vrhy</h3>
-              <p class="status-pill status-pill--planned" data-i18n="puppiesStatus">
-                První vrh Rosenaw Aurum je v přípravě – sledujte prosím naše
-                novinky.
-              </p>
-              <h4 data-i18n="puppiesPlannedTitle">Plánované vrhy</h4>
-              <p data-i18n="puppiesPlannedText">
-                První vrh naší Alminky plánujeme na jaro 2027. Podrobnosti
-                o krytím pejskovi a dalších informacích zveřejníme, jakmile
-                budeme mít vše potvrzené.
-              </p>
-            </aside>
+            <div class="puppies-sidebar">
+              <!-- Plánovaný vrh -->
+              <div class="planned-litter">
+                <span class="planned-litter-label" data-i18n="puppiesPlannedLabel">Očekáváme</span>
+                <h3 class="planned-litter-date">Jaro / léto 2027</h3>
+                <span class="planned-litter-line"></span>
+                <p class="planned-litter-desc" data-i18n="puppiesPlannedText">
+                  Chystáme první vrh naší Alminky. Podrobnosti o krycím pejskovi zveřejníme, jakmile budeme mít vše potvrzené.
+                </p>
+                <a href="#contact" class="btn btn-primary" data-i18n="puppiesPlannedCta">Mám zájem o štěně</a>
+              </div>
+
+              <figure class="gallery-item puppies-photo">
+                <a href="images/puppies/alma-stene.jpg" class="glightbox" data-glightbox="title: Štěňata Golden Retriever">
+                  <img class="gallery-photo" src="images/puppies/alma-stene.jpg" alt="Štěňata Golden Retriever" loading="lazy" width="600" height="400" />
+                </a>
+              </figure>
+            </div>
           </div>
 
-          <div class="archive">
-            <h3 data-i18n="puppiesArchiveTitle">Archiv vrhů</h3>
-            <p data-i18n="puppiesArchiveText">
-              Po jednotlivých vrzích zde najdete přehled rodičů, data narození
-              a odkazy na fotogalerie. V tuto chvíli ještě žádné odchované vrhy
-              nemáme.
-            </p>
-          </div>
         </div>
       </section>
 
       <!-- GALLERY -->
-      <section id="gallery" class="section section-muted">
+      <section id="gallery" class="section section-muted" data-animate>
         <div class="container">
-          <header class="section-header">
+          <header class="section-header section-header--center">
             <h2 data-i18n="galleryTitle">Galerie</h2>
+            <span class="section-header-line"></span>
             <p data-i18n="galleryIntro">
               Momentky z našeho každodenního života, výletů, tréninků i prvních
               výstav. Fotografie postupně doplníme.
@@ -384,14 +534,6 @@
             <button
               type="button"
               class="gallery-tab"
-              data-gallery-filter="puppies"
-              data-i18n="galleryFilterPuppies"
-            >
-              Štěňata
-            </button>
-            <button
-              type="button"
-              class="gallery-tab"
               data-gallery-filter="shows"
               data-i18n="galleryFilterShows"
             >
@@ -405,92 +547,365 @@
             >
               Ze života s námi
             </button>
+            <button
+              type="button"
+              class="gallery-tab"
+              data-gallery-filter="videos"
+              data-i18n="galleryFilterVideos"
+            >
+              Videa
+            </button>
           </div>
 
           <div class="gallery-grid">
-            <!-- Reálné fotky – stačí doplnit soubory do složky images/ a případně přidat další bloky -->
-            <figure
-              class="gallery-item"
-              data-gallery-category="girls"
-            >
-              <img
-                class="gallery-photo"
-                src="images/gallery-girls-1.jpg"
-                alt="Alma běží po louce"
-              />
-              <figcaption class="gallery-caption" data-i18n="galleryPlaceholderGirls">
-                Fotografie Almy v pohybu na louce
-              </figcaption>
+            <!-- Fotky z almamygoldenlove.cz -->
+            <figure class="gallery-item" data-gallery-category="girls">
+              <a href="images/gallery/alma/DSC03404-Edit-Edit.jpeg" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/DSC03404-Edit-Edit.jpeg" alt="Alma" width="600" height="400" loading="lazy" />
+              </a>
             </figure>
 
-            <figure
-              class="gallery-item"
-              data-gallery-category="life"
-            >
-              <img
-                class="gallery-photo"
-                src="images/gallery-life-1.jpg"
-                alt="Rodina se zlatým retrívrem na dovolené"
-              />
-              <figcaption class="gallery-caption" data-i18n="galleryPlaceholderLife">
-                Společná fotografie s rodinou na dovolené
-              </figcaption>
+            <figure class="gallery-item" data-gallery-category="girls">
+              <a href="images/gallery/alma/DSC03327edit3.jpeg" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/DSC03327edit3.jpeg" alt="Alma" width="600" height="400" loading="lazy" />
+              </a>
             </figure>
 
-            <figure
-              class="gallery-item"
-              data-gallery-category="shows"
-            >
-              <img
-                class="gallery-photo"
-                src="images/gallery-shows-1.jpg"
-                alt="Alma ve výstavním kruhu ve třídě mladých"
-              />
-              <figcaption class="gallery-caption" data-i18n="galleryPlaceholderShows">
-                Výstavní kruh – třída mladých
-              </figcaption>
+            <figure class="gallery-item" data-gallery-category="girls">
+              <a href="images/gallery/alma/DSC03347-Edit.jpeg" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/DSC03347-Edit.jpeg" alt="Alma" width="600" height="400" loading="lazy" />
+              </a>
+            </figure>
+
+            <figure class="gallery-item" data-gallery-category="girls">
+              <a href="images/gallery/alma/DSC03373-Edit.jpeg" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/DSC03373-Edit.jpeg" alt="Alma" width="600" height="400" loading="lazy" />
+              </a>
+            </figure>
+
+            <figure class="gallery-item" data-gallery-category="girls">
+              <a href="images/gallery/alma/DSC03397-Edit.jpeg" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/DSC03397-Edit.jpeg" alt="Alma" width="600" height="400" loading="lazy" />
+              </a>
+            </figure>
+
+            <figure class="gallery-item" data-gallery-category="girls">
+              <a href="images/gallery/alma/DSC03527-Edit.jpeg" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/DSC03527-Edit.jpeg" alt="Alma" width="600" height="400" loading="lazy" />
+              </a>
+            </figure>
+
+            <figure class="gallery-item" data-gallery-category="girls">
+              <a href="images/gallery/alma/DSC03564-Edit.jpeg" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/DSC03564-Edit.jpeg" alt="Alma" width="600" height="400" loading="lazy" />
+              </a>
+            </figure>
+
+            <figure class="gallery-item" data-gallery-category="girls">
+              <a href="images/gallery/alma/DSC03581-Edit_1.jpeg" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/DSC03581-Edit_1.jpeg" alt="Alma" width="600" height="400" loading="lazy" />
+              </a>
+            </figure>
+
+            <figure class="gallery-item" data-gallery-category="girls">
+              <a href="images/gallery/alma/DSC03609-Edit-2.jpeg" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/DSC03609-Edit-2.jpeg" alt="Alma" width="600" height="400" loading="lazy" />
+              </a>
+            </figure>
+
+            <figure class="gallery-item" data-gallery-category="girls">
+              <a href="images/gallery/alma/DSC03609-Edit_snow.jpeg" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/DSC03609-Edit_snow.jpeg" alt="Alma" width="600" height="400" loading="lazy" />
+              </a>
+            </figure>
+
+            <figure class="gallery-item" data-gallery-category="girls">
+              <a href="images/gallery/alma/DSC_1485.jpeg" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/DSC_1485.jpeg" alt="Alma" width="600" height="400" loading="lazy" />
+              </a>
+            </figure>
+
+            <figure class="gallery-item" data-gallery-category="girls">
+              <a href="images/gallery/alma/DSC_1495.jpeg" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/DSC_1495.jpeg" alt="Alma" width="600" height="400" loading="lazy" />
+              </a>
+            </figure>
+
+            <figure class="gallery-item" data-gallery-category="girls">
+              <a href="images/gallery/alma/IMG_8370.jpeg" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/IMG_8370.jpeg" alt="Alma" width="600" height="400" loading="lazy" />
+              </a>
+            </figure>
+
+            <figure class="gallery-item" data-gallery-category="life">
+              <a href="images/gallery/alma/05f32385-b44c-4fce-b91f-9ac189c4e824.jpeg" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/05f32385-b44c-4fce-b91f-9ac189c4e824.jpeg" alt="Alma" width="600" height="400" loading="lazy" />
+              </a>
+            </figure>
+
+            <figure class="gallery-item" data-gallery-category="life">
+              <a href="images/gallery/alma/0662c10d-e333-4f7a-81da-7d40ce30f745.jpeg" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/0662c10d-e333-4f7a-81da-7d40ce30f745.jpeg" alt="Alma" width="600" height="400" loading="lazy" />
+              </a>
+            </figure>
+
+            <figure class="gallery-item" data-gallery-category="life">
+              <a href="images/gallery/alma/0cf694ce-2a31-47dd-9818-54f414f42db3.jpeg" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/0cf694ce-2a31-47dd-9818-54f414f42db3.jpeg" alt="Alma" width="600" height="400" loading="lazy" />
+              </a>
+            </figure>
+
+            <figure class="gallery-item" data-gallery-category="life">
+              <a href="images/gallery/alma/23f10035-1303-4b55-91e0-cb88e0b9a851.jpeg" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/23f10035-1303-4b55-91e0-cb88e0b9a851.jpeg" alt="Alma" width="600" height="400" loading="lazy" />
+              </a>
+            </figure>
+
+            <figure class="gallery-item" data-gallery-category="life">
+              <a href="images/gallery/alma/368053c0-eaab-40ab-a86e-13a5551c245f.jpeg" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/368053c0-eaab-40ab-a86e-13a5551c245f.jpeg" alt="Alma" width="600" height="400" loading="lazy" />
+              </a>
+            </figure>
+
+            <figure class="gallery-item" data-gallery-category="life">
+              <a href="images/gallery/alma/3ebb576d-bc52-4354-8657-ce691d85f2c2.jpeg" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/3ebb576d-bc52-4354-8657-ce691d85f2c2.jpeg" alt="Alma" width="600" height="400" loading="lazy" />
+              </a>
+            </figure>
+
+            <figure class="gallery-item" data-gallery-category="life">
+              <a href="images/gallery/alma/44940c9f-d649-487e-acdf-57e79dccaac2.jpeg" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/44940c9f-d649-487e-acdf-57e79dccaac2.jpeg" alt="Alma" width="600" height="400" loading="lazy" />
+              </a>
+            </figure>
+
+            <figure class="gallery-item" data-gallery-category="life">
+              <a href="images/gallery/alma/54dee110-4d6b-4e89-8f8e-f690a9145c88.jpeg" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/54dee110-4d6b-4e89-8f8e-f690a9145c88.jpeg" alt="Alma" width="600" height="400" loading="lazy" />
+              </a>
+            </figure>
+
+            <figure class="gallery-item" data-gallery-category="life">
+              <a href="images/gallery/alma/6a3a71d1-ac4e-4193-ba1e-9e8ac17788c3.jpeg" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/6a3a71d1-ac4e-4193-ba1e-9e8ac17788c3.jpeg" alt="Alma" width="600" height="400" loading="lazy" />
+              </a>
+            </figure>
+
+            <figure class="gallery-item" data-gallery-category="life">
+              <a href="images/gallery/alma/70ac30d0-eb37-4e4e-a164-b1a083c9b79e.jpeg" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/70ac30d0-eb37-4e4e-a164-b1a083c9b79e.jpeg" alt="Alma" width="600" height="400" loading="lazy" />
+              </a>
+            </figure>
+
+            <figure class="gallery-item" data-gallery-category="life">
+              <a href="images/gallery/alma/7b6a56db-308c-424e-8346-07f883612ee6.jpeg" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/7b6a56db-308c-424e-8346-07f883612ee6.jpeg" alt="Alma" width="600" height="400" loading="lazy" />
+              </a>
+            </figure>
+
+            <figure class="gallery-item" data-gallery-category="life">
+              <a href="images/gallery/alma/8a58f7df-3e22-4091-a485-09e463a682c9.jpeg" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/8a58f7df-3e22-4091-a485-09e463a682c9.jpeg" alt="Alma" width="600" height="400" loading="lazy" />
+              </a>
+            </figure>
+
+            <figure class="gallery-item" data-gallery-category="life">
+              <a href="images/gallery/alma/935067df-d835-4b89-b615-6e8cc1b4a018.jpeg" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/935067df-d835-4b89-b615-6e8cc1b4a018.jpeg" alt="Alma" width="600" height="400" loading="lazy" />
+              </a>
+            </figure>
+
+            <figure class="gallery-item" data-gallery-category="life">
+              <a href="images/gallery/alma/9869e7c1-24e2-462c-88ce-68cae5f9fc44.jpeg" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/9869e7c1-24e2-462c-88ce-68cae5f9fc44.jpeg" alt="Alma" width="600" height="400" loading="lazy" />
+              </a>
+            </figure>
+
+            <figure class="gallery-item" data-gallery-category="life">
+              <a href="images/gallery/alma/9aae7b49-4a1a-462d-b328-ebaf966f64f5.jpeg" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/9aae7b49-4a1a-462d-b328-ebaf966f64f5.jpeg" alt="Alma" width="600" height="400" loading="lazy" />
+              </a>
+            </figure>
+
+            <figure class="gallery-item" data-gallery-category="life">
+              <a href="images/gallery/alma/a5ef3d93-4b52-445d-8537-e25f1d7a8027.jpeg" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/a5ef3d93-4b52-445d-8537-e25f1d7a8027.jpeg" alt="Alma" width="600" height="400" loading="lazy" />
+              </a>
+            </figure>
+
+            <figure class="gallery-item" data-gallery-category="life">
+              <a href="images/gallery/alma/b8d3e45a-cab3-4caf-ace1-85534303834c.jpeg" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/b8d3e45a-cab3-4caf-ace1-85534303834c.jpeg" alt="Alma" width="600" height="400" loading="lazy" />
+              </a>
+            </figure>
+
+            <figure class="gallery-item" data-gallery-category="life">
+              <a href="images/gallery/alma/c4248f88-b585-43eb-b3df-59d6b6c6beb9.jpeg" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/c4248f88-b585-43eb-b3df-59d6b6c6beb9.jpeg" alt="Alma" width="600" height="400" loading="lazy" />
+              </a>
+            </figure>
+
+            <figure class="gallery-item" data-gallery-category="life">
+              <a href="images/gallery/alma/cd6ff27a-0d87-47b3-89df-f84aee7d03d6.jpeg" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/cd6ff27a-0d87-47b3-89df-f84aee7d03d6.jpeg" alt="Alma" width="600" height="400" loading="lazy" />
+              </a>
+            </figure>
+
+            <figure class="gallery-item" data-gallery-category="life">
+              <a href="images/gallery/alma/ced55062-4f5a-4698-9215-b82c439a234e.jpeg" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/ced55062-4f5a-4698-9215-b82c439a234e.jpeg" alt="Alma" width="600" height="400" loading="lazy" />
+              </a>
+            </figure>
+
+            <figure class="gallery-item" data-gallery-category="life">
+              <a href="images/gallery/alma/e81650ec-6e17-4064-8e3a-3549442499ad.jpeg" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/e81650ec-6e17-4064-8e3a-3549442499ad.jpeg" alt="Alma" width="600" height="400" loading="lazy" />
+              </a>
+            </figure>
+
+            <figure class="gallery-item" data-gallery-category="life">
+              <a href="images/gallery/alma/f475ad30-e585-41aa-bdac-122abce6e42c.jpeg" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/f475ad30-e585-41aa-bdac-122abce6e42c.jpeg" alt="Alma" width="600" height="400" loading="lazy" />
+              </a>
+            </figure>
+
+            <figure class="gallery-item" data-gallery-category="shows">
+              <a href="images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.43.jpeg" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.43.jpeg" alt="Alma" width="600" height="400" loading="lazy" />
+              </a>
+            </figure>
+
+            <figure class="gallery-item" data-gallery-category="shows">
+              <a href="images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.43_1.jpeg" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.43_1.jpeg" alt="Alma" width="600" height="400" loading="lazy" />
+              </a>
+            </figure>
+
+            <figure class="gallery-item" data-gallery-category="shows">
+              <a href="images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.44.jpeg" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.44.jpeg" alt="Alma" width="600" height="400" loading="lazy" />
+              </a>
+            </figure>
+
+            <figure class="gallery-item" data-gallery-category="shows">
+              <a href="images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.44_1.jpeg" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.44_1.jpeg" alt="Alma" width="600" height="400" loading="lazy" />
+              </a>
+            </figure>
+
+            <figure class="gallery-item" data-gallery-category="shows">
+              <a href="images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.45.jpeg" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.45.jpeg" alt="Alma" width="600" height="400" loading="lazy" />
+              </a>
+            </figure>
+
+            <figure class="gallery-item" data-gallery-category="shows">
+              <a href="images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.46.jpeg" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.46.jpeg" alt="Alma" width="600" height="400" loading="lazy" />
+              </a>
+            </figure>
+
+            <!-- Videa -->
+            <figure class="gallery-item gallery-item--video" data-gallery-category="videos">
+              <a href="#vid1" class="glightbox" data-gallery="videos" data-glightbox="type: inline;">
+                <video class="gallery-video" muted loop playsinline preload="metadata">
+                  <source src="images/gallery/videos/4232f43c-1c72-4304-bbbf-789544b5ab56.MP4" type="video/mp4" />
+                </video>
+              </a>
+              <div id="vid1" class="glightbox-video-inline" style="display:none;"><video controls loop playsinline style="width:100%;max-height:80vh;"><source src="images/gallery/videos/4232f43c-1c72-4304-bbbf-789544b5ab56.MP4" type="video/mp4" /></video></div>
+            </figure>
+
+            <figure class="gallery-item gallery-item--video" data-gallery-category="videos">
+              <a href="#vid2" class="glightbox" data-gallery="videos" data-glightbox="type: inline;">
+                <video class="gallery-video" muted loop playsinline preload="metadata">
+                  <source src="images/gallery/videos/IMG_1405.mp4" type="video/mp4" />
+                </video>
+              </a>
+              <div id="vid2" class="glightbox-video-inline" style="display:none;"><video controls loop playsinline style="width:100%;max-height:80vh;"><source src="images/gallery/videos/IMG_1405.mp4" type="video/mp4" /></video></div>
+            </figure>
+
+            <figure class="gallery-item gallery-item--video" data-gallery-category="videos">
+              <a href="#vid3" class="glightbox" data-gallery="videos" data-glightbox="type: inline;">
+                <video class="gallery-video" muted loop playsinline preload="metadata">
+                  <source src="images/gallery/videos/IMG_8712.mp4" type="video/mp4" />
+                </video>
+              </a>
+              <div id="vid3" class="glightbox-video-inline" style="display:none;"><video controls loop playsinline style="width:100%;max-height:80vh;"><source src="images/gallery/videos/IMG_8712.mp4" type="video/mp4" /></video></div>
+            </figure>
+
+            <figure class="gallery-item gallery-item--video" data-gallery-category="videos">
+              <a href="#vid4" class="glightbox" data-gallery="videos" data-glightbox="type: inline;">
+                <video class="gallery-video" muted loop playsinline preload="metadata">
+                  <source src="images/gallery/videos/IMG_9435.mp4" type="video/mp4" />
+                </video>
+              </a>
+              <div id="vid4" class="glightbox-video-inline" style="display:none;"><video controls loop playsinline style="width:100%;max-height:80vh;"><source src="images/gallery/videos/IMG_9435.mp4" type="video/mp4" /></video></div>
+            </figure>
+
+            <figure class="gallery-item gallery-item--video" data-gallery-category="videos">
+              <a href="#vid5" class="glightbox" data-gallery="videos" data-glightbox="type: inline;">
+                <video class="gallery-video" muted loop playsinline preload="metadata">
+                  <source src="images/gallery/videos/IMG_9711.mp4" type="video/mp4" />
+                </video>
+              </a>
+              <div id="vid5" class="glightbox-video-inline" style="display:none;"><video controls loop playsinline style="width:100%;max-height:80vh;"><source src="images/gallery/videos/IMG_9711.mp4" type="video/mp4" /></video></div>
             </figure>
           </div>
+
+          <button type="button" class="gallery-show-more btn btn-outline" data-i18n="galleryShowMore">Zobrazit více fotek</button>
         </div>
       </section>
 
       <!-- NEWS (teaser – max 2–3 položky, zbytek na aktuality.html) -->
-      <section id="news" class="section">
+      <section id="news" class="section" data-animate>
         <div class="container">
-          <header class="section-header">
+          <header class="section-header section-header--center">
             <h2 data-i18n="newsTitle">Aktuality</h2>
-            <p data-i18n="newsIntro">
-              Krátké zprávy o našich psech, plánovaných vrzích, výstavách,
-              zkouškách a drobných radostech ze společného života.
-            </p>
+            <span class="section-header-line"></span>
           </header>
 
-          <div class="news-list">
-            <article class="news-item">
-              <p class="news-meta" data-i18n="newsItem1Meta">
-                2025 &nbsp;•&nbsp; První kroky Rosenaw Aurum
+          <div class="blog-grid blog-grid--3">
+            <a href="aktuality/ovvr.html" class="blog-card">
+              <div class="blog-card-img">
+                <img src="images/news/ovvr-637CA040-F7F1-42F4-AF26-5702A78FC122-5.jpeg" alt="OVVR zkouška" width="600" height="400" loading="lazy" />
+              </div>
+              <div class="blog-card-date">
+                <span class="blog-card-month">Čvn</span>
+                <span class="blog-card-day">01</span>
+              </div>
+              <h3 class="blog-card-title">Alminka zvládla OVVR na jedničku</h3>
+              <p class="blog-card-excerpt">
+                Na zkoušce vrozených vloh retrivrů v Ústí u Hranic Alminka zvládla všech šest disciplín na plný počet bodů.
               </p>
-              <h3 data-i18n="newsItem1Title">Zrození chovatelské stanice</h3>
-              <p data-i18n="newsItem1Text" data-i18n-html>
-                Po pečlivém rozhodování a prvních zkušenostech s Almou jsme se
-                rozhodli udělat další krok a založit chovatelskou stanici
-                <strong>Rosenaw Aurum</strong>. Naším snem je odchovávat zlaté retrívry, kteří
-                budou dělat radost svým rodinám mnoho let.
-              </p>
-            </article>
+            </a>
 
-            <article class="news-item">
-              <p class="news-meta" data-i18n="newsItem2Meta">
-                2024 &nbsp;•&nbsp; Alma Bohemica Aurum
+            <a href="aktuality/humpolec.html" class="blog-card">
+              <div class="blog-card-img">
+                <img src="images/news/humpolec-WhatsApp_Image_2025-05-15_at_00.48.43_1-8.jpeg" alt="Výstava v Humpolci" width="600" height="400" loading="lazy" />
+              </div>
+              <div class="blog-card-date">
+                <span class="blog-card-month">Kvě</span>
+                <span class="blog-card-day">16</span>
+              </div>
+              <h3 class="blog-card-title">Alminka se předvedla v Humpolci</h3>
+              <p class="blog-card-excerpt">
+                Na Klubové a Speciální výstavě retrieverů v Humpolci si Alminka oba dny odnesla hodnocení Výborná. Konkurence 30 fen!
               </p>
-              <h3 data-i18n="newsItem2Title">Alma přichází domů</h3>
-              <p data-i18n="newsItem2Text" data-i18n-html>
-                <strong>Alminka</strong> se k nám přistěhovala krátce poté, co nás opustil náš
-                dlouholetý parťák <strong>Dexík</strong>. Na truchlení nebyl čas – malé štěně
-                převrátilo naši domácnost vzhůru nohama a přineslo do ní novou
-                energii a radost.
+            </a>
+
+            <a href="aktuality/narozeniny.html" class="blog-card">
+              <div class="blog-card-img">
+                <img src="images/news/narozeniny-IMG_1830_Copy.jpeg" alt="Alminka slaví 1. narozeniny" width="600" height="400" loading="lazy" />
+              </div>
+              <div class="blog-card-date">
+                <span class="blog-card-month">Led</span>
+                <span class="blog-card-day">27</span>
+              </div>
+              <h3 class="blog-card-title">Alminka slaví 1. narozeniny</h3>
+              <p class="blog-card-excerpt">
+                Dort, dárky a malá oslava s kamarády. Milá Alminko, přejeme Ti hlavně hodně zdravíčka!
               </p>
-            </article>
+            </a>
           </div>
 
           <div class="news-cta">
@@ -499,191 +914,59 @@
         </div>
       </section>
 
-      <!-- DOCUMENTS -->
-      <section id="documents" class="section section-muted">
-        <div class="container">
-          <header class="section-header">
-            <h2 data-i18n="docsTitle">Dokumenty</h2>
-            <p data-i18n="docsIntro" data-i18n-html>
-              Zde najdete kompletní zdravotní dokumentaci naší fenky <strong>Almy Bohemica Aurum</strong>.
-              Transparentnost výsledků je pro nás samozřejmostí – chceme, aby si každý zájemce
-              o štěně mohl vše ověřit.
-            </p>
-          </header>
-
-          <div class="docs-columns">
-
-          <div class="docs-col">
-          <!-- Rodokmen -->
-          <div class="docs-group">
-            <h3 data-i18n="docsPedigreeTitle">Rodokmen</h3>
-            <ul class="docs-list">
-              <li>
-                <a href="documents/ALMA_PEDIGREE.pdf" target="_blank" rel="noopener noreferrer" data-i18n="docsPedigree" data-i18n-html>
-                  <strong>Průkaz původu FCI</strong> – Alma Bohemica Aurum, ČLP/GR/25733
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <!-- RTG vyšetření -->
-          <div class="docs-group">
-            <h3 data-i18n="docsXrayTitle">RTG vyšetření</h3>
-            <p class="docs-group-meta" data-i18n="docsXrayMeta">Vyšetřeno 3. 2. 2025, MVDr Marek Pepřík, Opava</p>
-            <ul class="docs-list">
-              <li>
-                <a href="documents/ALMA_DKK,DLK.pdf" target="_blank" rel="noopener noreferrer" data-i18n="docsHdEd" data-i18n-html>
-                  <strong>DKK + DLK</strong> – HD B (hraniční), ED 0/0 (bez nálezu)
-                </a>
-              </li>
-              <li>
-                <a href="documents/ALMA_SA,LTV.pdf" target="_blank" rel="noopener noreferrer" data-i18n="docsSaLtv" data-i18n-html>
-                  <strong>SA + LTV</strong> – spondylóza 0 (negativní), LTV 0 (negativní)
-                </a>
-              </li>
-              <li>
-                <a href="documents/ALMA_OCD.pdf" target="_blank" rel="noopener noreferrer" data-i18n="docsOcd" data-i18n-html>
-                  <strong>OCD ramenních kloubů</strong> – nepostižen (obě končetiny clear)
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          </div><!-- /docs-col levý -->
-
-          <div class="docs-col">
-          <!-- Genetické testy -->
-          <div class="docs-group">
-            <h3 data-i18n="docsGeneticsTitle">Genetické testy</h3>
-            <p class="docs-group-meta" data-i18n="docsGeneticsMeta">Laboratoř Genomia, Plzeň, květen 2025</p>
-            <ul class="docs-list">
-              <li>
-                <a href="documents/PRA1.pdf" target="_blank" rel="noopener noreferrer" data-i18n="docsGrpra1" data-i18n-html>
-                  <strong>GR-PRA1</strong> – N/N (čistá, bez mutace)
-                </a>
-              </li>
-              <li>
-                <a href="documents/PRA2.pdf" target="_blank" rel="noopener noreferrer" data-i18n="docsGrpra2" data-i18n-html>
-                  <strong>GR-PRA2</strong> – N/N (čistá, bez mutace)
-                </a>
-              </li>
-              <li>
-                <a href="documents/PRA.pdf" target="_blank" rel="noopener noreferrer" data-i18n="docsPra" data-i18n-html>
-                  <strong>PRA-prcd</strong> – N/N (čistá, bez mutace)
-                </a>
-              </li>
-              <li>
-                <a href="documents/ICT1.pdf" target="_blank" rel="noopener noreferrer" data-i18n="docsIct1" data-i18n-html>
-                  <strong>ICT-1 (ichtyóza 1)</strong> – N/P (přenašečka) ⚠
-                </a>
-              </li>
-              <li>
-                <a href="documents/ICT2.pdf" target="_blank" rel="noopener noreferrer" data-i18n="docsIct2" data-i18n-html>
-                  <strong>ICT-2 (ichtyóza 2)</strong> – N/N (čistá, bez mutace)
-                </a>
-              </li>
-              <li>
-                <a href="documents/NCL.pdf" target="_blank" rel="noopener noreferrer" data-i18n="docsNcl" data-i18n-html>
-                  <strong>NCL (neuronální ceroidní lipofuscinóza)</strong> – N/N (čistá, bez mutace)
-                </a>
-              </li>
-              <li>
-                <a href="documents/GRMD.pdf" target="_blank" rel="noopener noreferrer" data-i18n="docsGrmd" data-i18n-html>
-                  <strong>GRMD (muskulární dystrofie)</strong> – Xn/Xn (čistá)
-                </a>
-              </li>
-            </ul>
-          </div>
-          </div><!-- /docs-col pravý -->
-
-          </div><!-- /docs-columns -->
-
-          <!-- Vysvětlení neideálních výsledků -->
-          <div class="docs-note">
-            <h3 data-i18n="docsNoteTitle">Co znamenají naše výsledky pro chov</h3>
-
-            <div class="docs-note-item">
-              <h4 data-i18n="docsNoteHdTitle">HD B (hraniční dysplazie kyčlí)</h4>
-              <p data-i18n="docsNoteHdText" data-i18n-html>
-                Stupeň <strong>HD B</strong> znamená téměř normální kyčelní klouby s minimálními
-                odchylkami. Pro chov je plně akceptovatelný. Abychom maximalizovali šanci
-                na nejlepší výsledky u štěňat, <strong>budeme vybírat krycího psa výhradně
-                s HD A</strong> (bez nálezu) a ideálně s prokazatelně dobrými výsledky v linii.
-              </p>
-            </div>
-
-            <div class="docs-note-item">
-              <h4 data-i18n="docsNoteIctTitle">ICT-1 N/P (přenašečka ichtyózy 1)</h4>
-              <p data-i18n="docsNoteIctText" data-i18n-html>
-                Alma je <strong>přenašečka</strong> ichtyózy 1 – sama je zcela zdravá, ale nese
-                jednu kopii mutovaného genu. Ichtyóza 1 je recesivní onemocnění kůže,
-                které se projeví pouze u jedinců s oběma kopiemi mutace (P/P).
-                Proto <strong>krycí pes musí být testován jako N/N</strong> (čistý).
-                Při krytí N/P × N/N bude 50 % štěňat čistých (N/N) a 50 % přenašečů (N/P)
-                – <strong>žádné štěně nemůže onemocnět</strong>.
-                Více o ichtyóze si můžete přečíst v <a href="https://www.bohemica-aurum.cz/l/ichtyoza-seminarni-prace/" target="_blank" rel="noopener noreferrer">seminární práci chovatelky stanice Bohemica Aurum</a>.
-              </p>
-            </div>
-
-            <div class="docs-note-item">
-              <h4 data-i18n="docsNoteStrategyTitle">Naše strategie výběru krycího psa</h4>
-              <p data-i18n="docsNoteStrategyText" data-i18n-html>
-                Při výběru krycího psa pro Almu klademe důraz na: <strong>HD A</strong> (bez nálezu),
-                <strong>ED 0/0</strong>, kompletní genetické testy s výsledkem <strong>N/N u ICT-1</strong>,
-                vyrovnanou povahu, kvalitní rodokmen a typickou stavbu těla. Všechny
-                zdravotní výsledky krycího psa budou rovněž zveřejněny na těchto stránkách.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <!-- CONTACT -->
-      <section id="contact" class="section">
+      <section id="contact" class="section section-muted" data-animate>
         <div class="container contact-header">
           <h2 data-i18n="contactTitle">Kontakt</h2>
+          <span class="section-header-line"></span>
           <p class="contact-subtitle" data-i18n="contactIntro">
             Máte zájem o štěně z našeho chovu nebo se jen chcete na něco
             zeptat? Napište nám – rádi se ozveme zpět.
           </p>
         </div>
 
-        <div class="container contact-cards">
-          <a href="mailto:lucie@klesova.cz" class="contact-card contact-card--link">
-            <div class="contact-card-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        <div class="container">
+          <div class="stepper stepper--contact">
+            <div class="stepper-line">
+              <div class="stepper-line-fill"></div>
             </div>
-            <span class="contact-card-label">E-mail</span>
-            <span class="contact-card-value">lucie@klesova.cz</span>
-          </a>
 
-          <a href="tel:+420724913409" class="contact-card contact-card--link">
-            <div class="contact-card-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            </div>
-            <span class="contact-card-label" data-i18n="contactPhoneLabel">Telefon</span>
-            <span class="contact-card-value">+420 724 913 409</span>
-          </a>
+            <a href="mailto:lucie@klesova.cz" class="stepper-card" data-stepper="1">
+              <div class="stepper-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </div>
+              <h3>E-mail</h3>
+              <p>lucie@klesova.cz</p>
+            </a>
 
-          <div class="contact-card">
-            <div class="contact-card-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <a href="tel:+420724913409" class="stepper-card" data-stepper="2">
+              <div class="stepper-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <h3 data-i18n="contactPhoneLabel">Telefon</h3>
+              <p>+420 724 913 409</p>
+            </a>
+
+            <div class="stepper-card" data-stepper="3">
+              <div class="stepper-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <h3 data-i18n="contactLocationLabel">Lokalita</h3>
+              <p>Vigantice, CZ</p>
             </div>
-            <span class="contact-card-label" data-i18n="contactLocationLabel">Lokalita</span>
-            <span class="contact-card-value">Vigantice, CZ</span>
+
+            <a href="https://www.instagram.com/almamygoldenlove" target="_blank" rel="noopener noreferrer" class="stepper-card" data-stepper="4">
+              <div class="stepper-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </div>
+              <h3>Instagram</h3>
+              <p>@almamygoldenlove</p>
+            </a>
           </div>
-
-          <a href="https://www.instagram.com/almamygoldenlove" target="_blank" rel="noopener noreferrer" class="contact-card contact-card--link">
-            <div class="contact-card-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-            </div>
-            <span class="contact-card-label">Instagram</span>
-            <span class="contact-card-value">@almamygoldenlove</span>
-          </a>
         </div>
 
         <div class="container contact-bottom">
-          <form class="contact-form">
+          <form class="contact-form" action="https://formspree.io/f/xjgavwvy" method="POST">
             <div class="form-row">
               <div class="form-field">
                 <label for="name" data-i18n="formNameLabel">Jméno</label>
@@ -740,6 +1023,7 @@
                 name="message"
                 rows="4"
                 required
+                autocomplete="off"
               ></textarea>
             </div>
 
@@ -756,6 +1040,7 @@
           <div class="contact-map">
             <iframe
               src="https://maps.google.com/maps?q=Vigantice,+Czech+Republic&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              title="Mapa – Vigantice, Česká republika"
               style="border:0;"
               allowfullscreen=""
               loading="lazy"
@@ -766,6 +1051,11 @@
       </section>
     </main>
 
+    <div class="footer-transition">
+      <svg viewBox="0 0 1200 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M0 60 Q300 0 600 30 Q900 60 1200 10 L1200 60 Z" fill="#3a2a1a"/>
+      </svg>
+    </div>
     <footer class="site-footer">
       <div class="container footer-columns">
         <div class="footer-col">
@@ -777,7 +1067,7 @@
             <li><a href="#puppies" data-i18n="navPuppies">Štěňata</a></li>
             <li><a href="#gallery" data-i18n="navGallery">Galerie</a></li>
             <li><a href="#news" data-i18n="navNews">Aktuality</a></li>
-            <li><a href="#documents" data-i18n="navDocs">Dokumenty</a></li>
+            <li><a href="alma-dokumenty.html" data-i18n="navDocs">Dokumenty</a></li>
             <li><a href="#contact" data-i18n="navContact">Kontakt</a></li>
           </ul>
         </div>
@@ -806,16 +1096,12 @@
       </div>
 
       <div class="container footer-bottom">
-        <span>&copy; 2025 Rosenaw Aurum — </span>
+        <span>&copy; 2025–2026 Rosenaw Aurum — </span>
         <span data-i18n="footerRights">Všechna práva vyhrazena.</span>
       </div>
     </footer>
 
-    <div class="lightbox" id="lightbox">
-      <button class="lightbox-close" aria-label="Zavřít">&times;</button>
-      <img class="lightbox-img" id="lightbox-img" src="" alt="" />
-    </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

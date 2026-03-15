@@ -7,8 +7,8 @@
     <meta name="description" content="Novinky a aktuality z chovatelské stanice zlatých retrívrů Rosenaw Aurum." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&family=Playfair+Display:wght@400;600;700&family=Raleway:wght@300;400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=39" />
   </head>
   <body>
     <header class="site-header">
@@ -23,7 +23,6 @@
           <a href="index.html#puppies" data-i18n="navPuppies">Štěňata</a>
           <a href="index.html#gallery" data-i18n="navGallery">Galerie</a>
           <a href="aktuality.html" data-i18n="navNews" class="active">Aktuality</a>
-          <a href="index.html#documents" data-i18n="navDocs">Dokumenty</a>
           <a href="index.html#contact" data-i18n="navContact">Kontakt</a>
         </nav>
         <div class="header-right">
@@ -36,6 +35,9 @@
             <button class="lang-btn" data-lang="en" type="button">EN</button>
           </div>
         </div>
+        <button class="hamburger" type="button" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
       </div>
       <div class="header-ornament">
         <svg width="100%" height="16" viewBox="0 0 1200 16" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -49,47 +51,105 @@
     <main>
       <section class="section">
         <div class="container">
-          <header class="section-header">
+          <header class="section-header section-header--center">
             <h2 data-i18n="newsPageTitle">Aktuality</h2>
-            <p data-i18n="newsIntro">
-              Krátké zprávy o našich psech, plánovaných vrzích, výstavách,
-              zkouškách a drobných radostech ze společného života.
-            </p>
+            <span class="section-header-line"></span>
           </header>
 
-          <div class="news-list news-list--full">
-            <article class="news-item">
-              <p class="news-meta" data-i18n="newsItem1Meta">
-                2025 &nbsp;•&nbsp; První kroky Rosenaw Aurum
-              </p>
-              <h3 data-i18n="newsItem1Title">Zrození chovatelské stanice</h3>
-              <p data-i18n="newsItem1Text" data-i18n-html>
-                Po pečlivém rozhodování a prvních zkušenostech s Almou jsme se
-                rozhodli udělat další krok a založit chovatelskou stanici
-                <strong>Rosenaw Aurum</strong>. Naším snem je odchovávat zlaté retrívry, kteří
-                budou dělat radost svým rodinám mnoho let.
-              </p>
-            </article>
+          <!-- Masonry grid kartiček -->
+          <div class="blog-grid">
 
-            <article class="news-item">
-              <p class="news-meta" data-i18n="newsItem2Meta">
-                2024 &nbsp;•&nbsp; Alma Bohemica Aurum
+            <!-- 1. Bordovice -->
+            <a href="aktuality/bordovice.html" class="blog-card">
+              <div class="blog-card-img">
+                <img src="images/news/bordovice-524205512.jpeg" alt="Výstava v Bordovicích" loading="lazy" />
+              </div>
+              <div class="blog-card-date">
+                <span class="blog-card-month">Čvc</span>
+                <span class="blog-card-day">26</span>
+              </div>
+              <h3 class="blog-card-title">Alminka s maminkou na výstavě v Bordovicích</h3>
+              <p class="blog-card-excerpt">
+                Na oblastní klubové výstavě Hubertka 2025 se naposledy ve třídě mladých předvedla naše Alma. Hodnocení V2 a krásný posudek.
               </p>
-              <h3 data-i18n="newsItem2Title">Alma přichází domů</h3>
-              <p data-i18n="newsItem2Text" data-i18n-html>
-                <strong>Alminka</strong> se k nám přistěhovala krátce poté, co nás opustil náš
-                dlouholetý parťák <strong>Dexík</strong>. Na truchlení nebyl čas – malé štěně
-                převrátilo naši domácnost vzhůru nohama a přineslo do ní novou
-                energii a radost.
-              </p>
-            </article>
-          </div>
+            </a>
 
-          <div class="news-back">
-            <a href="index.html" class="btn btn-outline" data-i18n="newsBackLink">&larr; Zpět na hlavní stránku</a>
+            <!-- 2. OVVR -->
+            <a href="aktuality/ovvr.html" class="blog-card">
+              <div class="blog-card-img">
+                <img src="images/news/ovvr-637CA040-F7F1-42F4-AF26-5702A78FC122-5.jpeg" alt="OVVR zkouška" loading="lazy" />
+              </div>
+              <div class="blog-card-date">
+                <span class="blog-card-month">Čvn</span>
+                <span class="blog-card-day">01</span>
+              </div>
+              <h3 class="blog-card-title">Alminka zvládla OVVR na jedničku</h3>
+              <p class="blog-card-excerpt">
+                Na zkoušce vrozených vloh retrivrů v Ústí u Hranic Alminka zvládla všech šest disciplín na plný počet bodů.
+              </p>
+            </a>
+
+            <!-- 3. Genetické testy -->
+            <a href="aktuality/geneticke-testy.html" class="blog-card">
+              <div class="blog-card-date">
+                <span class="blog-card-month">Kvě</span>
+                <span class="blog-card-day">30</span>
+              </div>
+              <h3 class="blog-card-title">Máme výsledky genetických testů</h3>
+              <p class="blog-card-excerpt">
+                Kompletní genetické testy na dědičná onemocnění. Alminka je zdravý pejsek – většina výsledků N/N.
+              </p>
+            </a>
+
+            <!-- 4. Humpolec -->
+            <a href="aktuality/humpolec.html" class="blog-card">
+              <div class="blog-card-img">
+                <img src="images/news/humpolec-WhatsApp_Image_2025-05-15_at_00.48.43_1-8.jpeg" alt="Výstava v Humpolci" loading="lazy" />
+              </div>
+              <div class="blog-card-date">
+                <span class="blog-card-month">Kvě</span>
+                <span class="blog-card-day">16</span>
+              </div>
+              <h3 class="blog-card-title">Alminka se předvedla v Humpolci</h3>
+              <p class="blog-card-excerpt">
+                Na Klubové a Speciální výstavě retrieverů v Humpolci si Alminka oba dny odnesla hodnocení Výborná. Konkurence 30 fen!
+              </p>
+            </a>
+
+            <!-- 5. RTG -->
+            <a href="aktuality/rtg-vysledky.html" class="blog-card">
+              <div class="blog-card-date">
+                <span class="blog-card-month">Úno</span>
+                <span class="blog-card-day">04</span>
+              </div>
+              <h3 class="blog-card-title">Máme výsledky RTG DKK, DLK, OCD</h3>
+              <p class="blog-card-excerpt">
+                Na Mezinárodní den Zlatých retrívrů jsme vyrazili na RTG. Výsledky: DKK B/B, DLK 0/0, OCD 0/0, SA a LTV clear.
+              </p>
+            </a>
+
+            <!-- 6. Narozeniny -->
+            <a href="aktuality/narozeniny.html" class="blog-card">
+              <div class="blog-card-img">
+                <img src="images/news/narozeniny-IMG_1830_Copy.jpeg" alt="Alminka slaví 1. narozeniny" loading="lazy" />
+              </div>
+              <div class="blog-card-date">
+                <span class="blog-card-month">Led</span>
+                <span class="blog-card-day">27</span>
+              </div>
+              <h3 class="blog-card-title">Alminka slaví 1. narozeniny</h3>
+              <p class="blog-card-excerpt">
+                Dort, dárky a malá oslava s kamarády. Milá Alminko, přejeme Ti hlavně hodně zdravíčka!
+              </p>
+            </a>
+
           </div>
         </div>
       </section>
+
+      <div class="container" style="padding-top: 2rem; padding-bottom: 3rem;">
+        <a href="index.html" class="btn btn-outline" data-i18n="newsBackLink">&larr; Zpět na hlavní stránku</a>
+      </div>
     </main>
 
     <footer class="site-footer">
@@ -103,7 +163,7 @@
             <li><a href="index.html#puppies" data-i18n="navPuppies">Štěňata</a></li>
             <li><a href="index.html#gallery" data-i18n="navGallery">Galerie</a></li>
             <li><a href="aktuality.html" data-i18n="navNews">Aktuality</a></li>
-            <li><a href="index.html#documents" data-i18n="navDocs">Dokumenty</a></li>
+            <li><a href="alma-dokumenty.html" data-i18n="navDocs">Dokumenty</a></li>
             <li><a href="index.html#contact" data-i18n="navContact">Kontakt</a></li>
           </ul>
         </div>
@@ -132,7 +192,7 @@
       </div>
 
       <div class="container footer-bottom">
-        <span>&copy; 2025 Rosenaw Aurum — </span>
+        <span>&copy; 2025–2026 Rosenaw Aurum — </span>
         <span data-i18n="footerRights">Všechna práva vyhrazena.</span>
       </div>
     </footer>

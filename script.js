@@ -3,7 +3,6 @@
 
 const translations = {
   cs: {
-    logoSubtitle: "chovatelská stanice zlatých retrívrů",
     navHome: "Domů",
     navAbout: "O nás",
     navGirls: "Naše feny",
@@ -15,7 +14,7 @@ const translations = {
 
     heroTitle: "Rodinný chov zlatých retrívrů s\u00a0respektem k\u00a0životu.",
     heroSubtitle:
-      "Malá chovatelská stanice FCI z\u00a0Rožnova pod Radhoštěm.<br>Štěňata vyrůstají doma, mezi lidmi, s\u00a0důrazem na zdraví, vyrovnanou povahu a pevné zázemí.",
+      "Malá chovatelská stanice FCI z\u00a0Rožnova pod Radhoštěm.<br>Štěňata vyrůstají doma, mezi lidmi, s\u00a0důrazem na zdraví,<br>vyrovnanou povahu a pevné zázemí.",
     heroCtaAbout: "Poznat náš přístup",
     heroCtaPuppies: "Aktuální / plánovaný vrh",
 
@@ -36,7 +35,7 @@ const translations = {
     aboutIntro2:
       'Po jeho odchodu k nám do života vstoupila <strong>Alma</strong>, vysněná fenečka s průkazem původu, se kterou jsme se vydali na cestu k chovu zlatých retrívrů s důrazem na <strong>zdraví, povahu, pracovní vlohy a rodinný život</strong>. Alminka je pes do každé nepohody – plave, běhá po horách, dovádí s dětmi, ale zároveň dokáže tiše ležet vedle nemocného v pelíšku.',
     aboutPhilosophy:
-      'Naším cílem je odchovávat <strong>vyrovnané, zdravé a společenské psy</strong>, kteří se budou cítit stejně dobře na výstavním kruhu, při práci v poli i uprostřed rodinného obýváku. Naše chovatelská stanice Rosenaw Aurum je od [datum] registrovaná u <a href="https://www.fci.be/" target="_blank" rel="noopener noreferrer">Mezinárodní kynologické federace FCI</a> pod číslem 832/23 a jsme členy <a href="https://www.kchls.cz/" target="_blank" rel="noopener noreferrer">Klubu chovatelů loveckých slídičů (KCHLS)</a> i <a href="https://www.retriever-klub.cz/" target="_blank" rel="noopener noreferrer">Retriever Klubu (RK CZ)</a>.',
+      'Naším cílem je odchovávat <strong>vyrovnané, zdravé a společenské psy</strong>, kteří se budou cítit stejně dobře na výstavním kruhu, při práci v poli i uprostřed rodinného obýváku. Naše chovatelská stanice Rosenaw Aurum je registrovaná u <a href="https://www.fci.be/" target="_blank" rel="noopener noreferrer">Mezinárodní kynologické federace FCI</a> pod číslem 832/23 a jsme členy <a href="https://www.kchls.cz/" target="_blank" rel="noopener noreferrer">Klubu chovatelů loveckých slídičů (KCHLS)</a> i <a href="https://www.retriever-klub.cz/" target="_blank" rel="noopener noreferrer">Retriever Klubu (RK CZ)</a>.',
     aboutBreederTitle: "Chovatelka",
     aboutBreederText:
       "Jmenuji se Lucie Klesová a psi mě provázejí od dětství. Zlatí retrívři jsou pro mě kombinací klidu, radosti a nevyčerpatelné ochoty spolupracovat. V chovu se opírám o zdraví, povahu a respekt k jednotlivým psím osobnostem.",
@@ -46,20 +45,34 @@ const translations = {
     girlsTitle: "Naše feny",
     girlsIntro:
       "Postupně zde najdete všechny naše zlaté dámy – od mladých nadějí po zkušené chovné feny a psí seniorky.",
-    almaPhotoLabel: "Fotografie Almy – Alma Bohemica Aurum",
-    almaPhoto2Label: "Fotografie Almy – Alma Bohemica Aurum",
-    almaBasic: "nar. 27. 1. 2024 • zlatý retrívr, fena",
+    almaBasic: "nar. 27. 1. 2024 • zlatý retrívr, fena • ČLP/GR/25733",
+    almaCharacterTitle: "Povaha",
     almaPersonality:
       '<strong>Alminka</strong> je naše vysněná fenečka zlatého retrívra. Do života k nám vtrhla jako velká voda a velmi rychle se z ní stal pes do každé situace – parťák na výlety, dovolené, sport i klidné večery doma.',
+    almaTrait1: "Přátelská",
+    almaTrait2: "Učenlivá",
+    almaTrait3: "Aktivní",
+    almaTrait4: "Klidná doma",
+    almaTrait5: "Miluje vodu",
+    almaTrait6: "Ráda aportuje",
     almaHealthTitle: "Zdraví",
-    almaHealthList:
-      "Výška 56 cm, chrup úplný nůžkový;GR-PRA1 N/N, DR-PRA2 N/N, PRA N/N;ICT N/P, ICT-2 N/N, NCL N/N, GRMD Xn/Xn;HD B, ED 0/0;OCD negativní, SA negativní, LTV 0",
-    almaTitlesTitle: "Ocenění a zkoušky",
-    almaTitlesList:
-      "Třída štěňat: VN1, Jubilejní vítěz štěně;Třída dorostu: VN1, VN2;Třída mladých: 2× VD, 2× V, V2;OVVR – 232 b., plný počet",
+    healthCatRtg: "RTG vyšetření",
+    healthCatDna: "Genetické (DNA) testy",
+    healthNeg: "neg.",
+    almaHeightLabel: "Výška:",
+    almaBiteLabel: "Chrup:",
+    almaBiteValue: "úplný nůžkový",
+    almaTitlesTitle: "Výstavy a zkoušky",
+    titlesCatShows: "Výstavy",
+    titlesCatTrials: "Pracovní zkoušky",
+    almaTitlePuppy: "Třída štěňat",
+    almaTitleJunior: "Třída dorostu",
+    almaTitleYoung: "Třída mladých",
+    almaTitlePrep: "v přípravě",
+    almaDocsLink: "Zdravotní dokumentace →",
     almaPedigreeTitle: "Rodokmen",
-    almaPedigreeList:
-      '<strong>Otec:</strong> SPA CH Brandon de Ria Vela;<strong>Matka:</strong> Lolipop Dorado Blanco;<strong>Majitel:</strong> Lucie Klesová;<strong>Chovatel:</strong> Ing. František Vacek, <a href="https://www.bohemica-aurum.cz/" target="_blank" rel="noopener noreferrer">Bohemica Aurum</a>',
+    almaK9dataLink: "Kompletní rodokmen na K9data.org →",
+    almaBreedingInfo: 'Chovatel: Ing. František Vacek, <a href="https://www.bohemica-aurum.cz/" target="_blank" rel="noopener noreferrer">Bohemica Aurum</a> • Majitel: Lucie Klesová',
 
     puppiesTitle: "Štěňata Rosenaw Aurum",
     puppiesIntro:
@@ -72,12 +85,10 @@ const translations = {
     puppiesPackTitle: "Co si štěně od nás odváží",
     puppiesPackList:
       "kupní smlouva a průkaz původu FCI; očkovací průkaz / pet pas s platným očkováním a odčervením; startovací balíček krmiva a oblíbenou hračku; podrobné informace k péči v prvních týdnech a měsících",
-    puppiesStatusTitle: "Aktuální vrhy",
-    puppiesStatus:
-      "První vrh Rosenaw Aurum je v přípravě – sledujte prosím naše novinky.",
-    puppiesPlannedTitle: "Plánované vrhy",
+    puppiesPlannedLabel: "Očekáváme",
     puppiesPlannedText:
-      "První vrh naší Alminky plánujeme na jaro 2027. Podrobnosti o krytím pejskovi a dalších informacích zveřejníme, jakmile budeme mít vše potvrzené.",
+      "Chystáme první vrh naší Alminky. Podrobnosti o krycím pejskovi zveřejníme, jakmile budeme mít vše potvrzené.",
+    puppiesPlannedCta: "Mám zájem o štěně",
     puppiesArchiveTitle: "Archiv vrhů",
     puppiesArchiveText:
       "Po jednotlivých vrzích zde najdete přehled rodičů, data narození a odkazy na fotogalerie. V tuto chvíli ještě žádné odchované vrhy nemáme.",
@@ -90,6 +101,8 @@ const translations = {
     galleryFilterPuppies: "Štěňata",
     galleryFilterShows: "Výstavy & zkoušky",
     galleryFilterLife: "Ze života s námi",
+    galleryFilterVideos: "Videa",
+    galleryShowMore: "Zobrazit více fotek",
     galleryPlaceholderGirls: "Fotografie Almy v pohybu na louce",
     galleryPlaceholderLife: "Společná fotografie s rodinou na dovolené",
     galleryPlaceholderShows: "Výstavní kruh – třída mladých",
@@ -100,15 +113,6 @@ const translations = {
     newsAllLink: "Všechny aktuality \u2192",
     newsPageTitle: "Aktuality",
     newsBackLink: "\u2190 Zpět na hlavní stránku",
-    newsItem1Meta: "2025 • První kroky Rosenaw Aurum",
-    newsItem1Title: "Zrození chovatelské stanice",
-    newsItem1Text:
-      'Po pečlivém rozhodování a prvních zkušenostech s Almou jsme se rozhodli udělat další krok a založit chovatelskou stanici <strong>Rosenaw Aurum</strong>. Naším snem je odchovávat zlaté retrívry, kteří budou dělat radost svým rodinám mnoho let.',
-    newsItem2Meta: "2024 • Alma Bohemica Aurum",
-    newsItem2Title: "Alma přichází domů",
-    newsItem2Text:
-      '<strong>Alminka</strong> se k nám přistěhovala krátce poté, co nás opustil náš dlouholetý parťák <strong>Dexík</strong>. Na truchlení nebyl čas – malé štěně převrátilo naši domácnost vzhůru nohama a přineslo do ní novou energii a radost.',
-
     docsTitle: "Dokumenty",
     docsIntro:
       'Zde najdete kompletní zdravotní dokumentaci naší fenky <strong>Almy Bohemica Aurum</strong>. Transparentnost výsledků je pro nás samozřejmostí – chceme, aby si každý zájemce o štěně mohl vše ověřit.',
@@ -139,7 +143,6 @@ const translations = {
     contactTitle: "Kontakt",
     contactIntro:
       "Máte zájem o štěně z našeho chovu nebo se jen chcete na něco zeptat? Napište nám – rádi se ozveme zpět.",
-    contactNameLabel: "Jméno",
     contactPhoneLabel: "Telefon",
     contactLocationLabel: "Lokalita",
 
@@ -163,7 +166,6 @@ const translations = {
   },
 
   en: {
-    logoSubtitle: "Golden Retriever kennel",
     navHome: "Home",
     navAbout: "About",
     navGirls: "Our Girls",
@@ -175,7 +177,7 @@ const translations = {
 
     heroTitle: "Family breeding of golden retrievers with\u00a0respect for life.",
     heroSubtitle:
-      "A small FCI kennel from Rožnov pod Radhoštěm.<br>Puppies grow up at home, among people, with focus on health, balanced temperament and a solid foundation.",
+      "A small FCI kennel from Rožnov pod Radhoštěm.<br>Puppies grow up at home, among people, with focus on health,<br>balanced temperament and a solid foundation.",
     heroCtaAbout: "Our approach",
     heroCtaPuppies: "Current / planned litter",
 
@@ -196,7 +198,7 @@ const translations = {
     aboutIntro2:
       'After he passed away, <strong>Alma</strong> came into our lives – our dream girl with a pedigree, with whom we started our journey towards breeding Golden Retrievers with a focus on <strong>health, temperament, working ability and family life</strong>.',
     aboutPhilosophy:
-      'Our goal is to breed <strong>well-balanced, healthy and social dogs</strong> that feel equally comfortable in the show ring, in the field and in the middle of a family living room. Our kennel Rosenaw Aurum is registered with the <a href="https://www.fci.be/" target="_blank" rel="noopener noreferrer">Fédération Cynologique Internationale (FCI)</a> and we are members of <a href="https://www.kchls.cz/" target="_blank" rel="noopener noreferrer">KCHLS</a> and the <a href="https://www.retriever-klub.cz/" target="_blank" rel="noopener noreferrer">Retriever Klub CZ</a>.',
+      'Our goal is to breed <strong>well-balanced, healthy and social dogs</strong> that feel equally comfortable in the show ring, in the field and in the middle of a family living room. Our kennel Rosenaw Aurum is registered with the <a href="https://www.fci.be/" target="_blank" rel="noopener noreferrer">Fédération Cynologique Internationale (FCI)</a> under number 832/23 and we are members of <a href="https://www.kchls.cz/" target="_blank" rel="noopener noreferrer">KCHLS</a> and the <a href="https://www.retriever-klub.cz/" target="_blank" rel="noopener noreferrer">Retriever Klub CZ</a>.',
     aboutBreederTitle: "The breeder",
     aboutBreederText:
       "My name is Lucie Klesová and dogs have been part of my life since childhood. Golden Retrievers combine peace, joy and an endless willingness to cooperate. In breeding I focus on health, temperament and respect for each dog's individuality.",
@@ -206,20 +208,34 @@ const translations = {
     girlsTitle: "Our girls",
     girlsIntro:
       "Here you will gradually find all our Golden girls – from young hopes to experienced brood bitches and seniors.",
-    almaPhotoLabel: "Photo of Alma – Alma Bohemica Aurum",
-    almaPhoto2Label: "Photo of Alma – Alma Bohemica Aurum",
-    almaBasic: "born 27 January 2024 • Golden Retriever, female",
+    almaBasic: "born 27 January 2024 • Golden Retriever, female • ČLP/GR/25733",
+    almaCharacterTitle: "Temperament",
     almaPersonality:
       '<strong>Alma</strong> is our long‑awaited Golden girl. She brought new energy and joy into our home and quickly became a dog for every occasion – a companion for trips, holidays, sports and quiet evenings on the sofa.',
+    almaTrait1: "Friendly",
+    almaTrait2: "Eager to learn",
+    almaTrait3: "Active",
+    almaTrait4: "Calm at home",
+    almaTrait5: "Loves water",
+    almaTrait6: "Loves to retrieve",
     almaHealthTitle: "Health",
-    almaHealthList:
-      "Height 56 cm, full scissor bite;GR-PRA1 N/N, DR-PRA2 N/N, PRA N/N;ICT N/P, ICT-2 N/N, NCL N/N, GRMD Xn/Xn;Hips HD B, elbows ED 0/0;OCD clear, SA clear, LTV 0",
-    almaTitlesTitle: "Titles and tests",
-    almaTitlesList:
-      "Puppy class: Very promising 1, Jubilee winner – puppy;Minor puppy class: Very promising 1, 2;Junior class: 2× Very good, 2× Excellent, Excellent 2;OVVR – 232 points, full score",
+    healthCatRtg: "X-ray examinations",
+    healthCatDna: "Genetic (DNA) tests",
+    healthNeg: "clear",
+    almaHeightLabel: "Height:",
+    almaBiteLabel: "Bite:",
+    almaBiteValue: "full scissor",
+    almaTitlesTitle: "Shows & trials",
+    titlesCatShows: "Shows",
+    titlesCatTrials: "Working trials",
+    almaTitlePuppy: "Puppy class",
+    almaTitleJunior: "Minor puppy",
+    almaTitleYoung: "Junior class",
+    almaTitlePrep: "in preparation",
+    almaDocsLink: "Health documentation →",
     almaPedigreeTitle: "Pedigree",
-    almaPedigreeList:
-      '<strong>Sire:</strong> SPA CH Brandon de Ria Vela;<strong>Dam:</strong> Lolipop Dorado Blanco;<strong>Owner:</strong> Lucie Klesová;<strong>Breeder:</strong> Ing. František Vacek, <a href="https://www.bohemica-aurum.cz/" target="_blank" rel="noopener noreferrer">Bohemica Aurum</a>',
+    almaK9dataLink: "Full pedigree on K9data.org →",
+    almaBreedingInfo: 'Breeder: Ing. František Vacek, <a href="https://www.bohemica-aurum.cz/" target="_blank" rel="noopener noreferrer">Bohemica Aurum</a> • Owner: Lucie Klesová',
 
     puppiesTitle: "Rosenaw Aurum puppies",
     puppiesIntro:
@@ -232,12 +248,12 @@ const translations = {
     puppiesPackTitle: "What your puppy leaves with",
     puppiesPackList:
       "purchase contract and FCI pedigree; vaccination card / pet passport; starter pack of food and a favourite toy; detailed written information for the first weeks and months",
-    puppiesStatusTitle: "Current litters",
-    puppiesStatus:
-      "Our first Rosenaw Aurum litter is in preparation – please follow our news section for updates.",
-    puppiesPlannedTitle: "Planned litters",
+    puppiesStatusTitle: "Planned litter",
+    puppiesStatusPill: "Spring/Summer 2027",
+    puppiesPlannedLabel: "Expecting",
     puppiesPlannedText:
-      "We are planning Alma's first litter for spring 2027. We will share details about the sire and other information once everything is confirmed.",
+      "We are preparing Alma's first litter. Details about the sire will be announced once confirmed.",
+    puppiesPlannedCta: "I'm interested in a puppy",
     puppiesArchiveTitle: "Litter archive",
     puppiesArchiveText:
       "For each litter you will find information about parents, dates of birth and links to photo galleries. At the moment we have no litters bred yet.",
@@ -250,6 +266,8 @@ const translations = {
     galleryFilterPuppies: "Puppies",
     galleryFilterShows: "Shows & tests",
     galleryFilterLife: "Everyday life",
+    galleryFilterVideos: "Videos",
+    galleryShowMore: "Show more photos",
     galleryPlaceholderGirls: "Alma running on a meadow",
     galleryPlaceholderLife: "Family photo from a holiday trip",
     galleryPlaceholderShows: "Show ring – junior class",
@@ -260,15 +278,6 @@ const translations = {
     newsAllLink: "All news \u2192",
     newsPageTitle: "News",
     newsBackLink: "\u2190 Back to homepage",
-    newsItem1Meta: "2025 • First steps of Rosenaw Aurum",
-    newsItem1Title: "The kennel is born",
-    newsItem1Text:
-      'After careful consideration and our first experiences with Alma we decided to take the next step and establish the <strong>Rosenaw Aurum</strong> kennel. Our dream is to breed Golden Retrievers that will bring joy to their families for many years.',
-    newsItem2Meta: "2024 • Alma Bohemica Aurum",
-    newsItem2Title: "Alma comes home",
-    newsItem2Text:
-      '<strong>Alma</strong> joined our family shortly after our long‑time companion <strong>Dexík</strong> passed away. There was no time to grieve – a small puppy turned our home upside down and brought new life and energy.',
-
     docsTitle: "Documents",
     docsIntro:
       'Here you will find the complete health documentation of our female <strong>Alma Bohemica Aurum</strong>. Transparency is a given for us – we want every potential puppy owner to be able to verify everything.',
@@ -299,7 +308,6 @@ const translations = {
     contactTitle: "Contact",
     contactIntro:
       "Interested in a puppy from our kennel or just want to ask something? Send us a message – we will get back to you.",
-    contactNameLabel: "Name",
     contactPhoneLabel: "Phone",
     contactLocationLabel: "Location",
 
@@ -377,6 +385,8 @@ function setupLanguageSwitch() {
 function setupGalleryFilter() {
   const tabs = document.querySelectorAll(".gallery-tab");
   const items = document.querySelectorAll(".gallery-item");
+  const grid = document.querySelector(".gallery-grid");
+  const showMoreBtn = document.querySelector(".gallery-show-more");
 
   tabs.forEach((tab) => {
     tab.addEventListener("click", () => {
@@ -385,14 +395,42 @@ function setupGalleryFilter() {
       tabs.forEach((t) => t.classList.remove("gallery-tab--active"));
       tab.classList.add("gallery-tab--active");
 
+      // When filtering, expand grid to show all matching items
+      // When "all", restore collapsed state (unless user already expanded)
+      if (filter !== "all") {
+        if (grid) grid.classList.add("gallery-grid--expanded");
+        if (showMoreBtn) showMoreBtn.style.display = "none";
+      } else {
+        if (grid && !grid.dataset.userExpanded) grid.classList.remove("gallery-grid--expanded");
+        if (showMoreBtn && !grid.dataset.userExpanded) showMoreBtn.style.display = "";
+      }
+
+      let delay = 0;
       items.forEach((item) => {
         const cat = item.getAttribute("data-gallery-category");
         if (filter === "all" || filter === cat) {
           item.style.display = "";
+          item.style.animationDelay = delay + "ms";
+          item.style.animation = "none";
+          void item.offsetWidth;
+          item.style.animation = "";
+          delay += 80;
         } else {
           item.style.display = "none";
         }
       });
+    });
+  });
+}
+
+function setupGalleryVideos() {
+  document.querySelectorAll(".gallery-item--video").forEach((item) => {
+    const video = item.querySelector("video");
+    if (!video) return;
+    item.addEventListener("mouseenter", () => video.play());
+    item.addEventListener("mouseleave", () => { video.pause(); video.currentTime = 0; });
+    item.addEventListener("click", () => {
+      if (video.paused) video.play(); else video.pause();
     });
   });
 }
@@ -403,142 +441,312 @@ function setupContactForm() {
 
   form.addEventListener("submit", (event) => {
     event.preventDefault();
-    // Minimalistický behavior: zatím jen poděkování v alertu.
-    alert(
-      document.documentElement.lang === "en"
-        ? "Thank you for your message. We will get back to you as soon as possible."
-        : "Děkujeme za zprávu. Ozveme se vám co nejdříve."
-    );
-    form.reset();
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const originalText = submitBtn.textContent;
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<span class="btn-spinner"></span>';
+
+    fetch(form.action, {
+      method: "POST",
+      body: new FormData(form),
+      headers: { Accept: "application/json" },
+    })
+      .then((response) => {
+        if (response.ok) {
+          submitBtn.innerHTML = '<span class="btn-check">\u2713</span>';
+          submitBtn.classList.add("btn--success");
+          setTimeout(() => {
+            form.reset();
+            submitBtn.disabled = false;
+            submitBtn.textContent = originalText;
+            submitBtn.classList.remove("btn--success");
+          }, 2000);
+        } else {
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalText;
+          alert(
+            document.documentElement.lang === "en"
+              ? "Something went wrong. Please try again or contact us by phone."
+              : "Něco se pokazilo. Zkuste to znovu nebo nás kontaktujte telefonicky."
+          );
+        }
+      })
+      .catch(() => {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalText;
+        alert(
+          document.documentElement.lang === "en"
+            ? "Something went wrong. Please try again or contact us by phone."
+            : "Něco se pokazilo. Zkuste to znovu nebo nás kontaktujte telefonicky."
+        );
+      });
   });
 }
 
 function setupLightbox() {
-  const lightbox = document.getElementById("lightbox");
-  const lightboxImg = document.getElementById("lightbox-img");
-  if (!lightbox || !lightboxImg) return;
-
-  document.querySelectorAll(".dog-photo-wrapper, .gallery-item").forEach((el) => {
-    el.addEventListener("click", () => {
-      const img = el.querySelector("img");
-      if (!img) return;
-      lightboxImg.src = img.src;
-      lightboxImg.alt = img.alt;
-      lightbox.classList.add("lightbox--open");
-    });
-  });
-
-  lightbox.addEventListener("click", () => {
-    lightbox.classList.remove("lightbox--open");
-    lightboxImg.src = "";
-  });
-
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") {
-      lightbox.classList.remove("lightbox--open");
-      lightboxImg.src = "";
-    }
+  if (typeof GLightbox === "undefined") return;
+  GLightbox({
+    selector: ".glightbox",
+    touchNavigation: true,
+    loop: true,
+    closeOnOutsideClick: true,
   });
 }
 
 function setupStepper() {
-  const cards = document.querySelectorAll(".stepper-card");
-  const lineFill = document.querySelector(".stepper-line-fill");
-  if (!cards.length || !lineFill) return;
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  // SVG tlapky — levá a pravá
+  var pawLeft = '<svg class="paw" viewBox="0 0 32 32" fill="currentColor"><ellipse cx="16" cy="21" rx="5" ry="4"/><ellipse cx="9.5" cy="12" rx="2.5" ry="3.2"/><ellipse cx="15" cy="9.5" rx="2.2" ry="3"/><ellipse cx="21" cy="10" rx="2.3" ry="3"/><ellipse cx="25" cy="14.5" rx="2" ry="2.8"/></svg>';
+  var pawRight = '<svg class="paw" viewBox="0 0 32 32" fill="currentColor"><ellipse cx="16" cy="21" rx="5" ry="4"/><ellipse cx="22.5" cy="12" rx="2.5" ry="3.2"/><ellipse cx="17" cy="9.5" rx="2.2" ry="3"/><ellipse cx="11" cy="10" rx="2.3" ry="3"/><ellipse cx="7" cy="14.5" rx="2" ry="2.8"/></svg>';
 
-  const total = cards.length;
+  var PAW_COUNT = 14;
+  var TRAIL_LEN = 3;      // kolik tlap je vidět současně
+  var STEP_DELAY = 180;   // ms mezi kroky
+  var WAVE_AMP = 10;      // amplituda zvlnění (px)
 
-  function setLine(step) {
-    const pct = ((step - 1) / (total - 1)) * 100;
-    lineFill.style.width = pct + "%";
-  }
+  document.querySelectorAll(".stepper").forEach(function (container) {
+    var cards = container.querySelectorAll(".stepper-card");
+    var lineFill = container.querySelector(".stepper-line-fill");
+    if (!cards.length || !lineFill) return;
 
-  // Na mobilu bez animace
-  if (window.innerWidth <= 960) {
-    cards.forEach((c) => c.classList.add("is-active"));
-    lineFill.style.width = "100%";
+    var total = cards.length;
+
+    // Vygeneruj tlapky a rozmísti je podél zvlněné cesty
+    lineFill.innerHTML = "";
+    for (var i = 0; i < PAW_COUNT; i++) {
+      var isLeft = i % 2 === 0;
+      var div = document.createElement("div");
+      div.innerHTML = isLeft ? pawLeft : pawRight;
+      var paw = div.firstChild;
+
+      // Horizontální pozice — rovnoměrně rozložené
+      var xPct = (i / (PAW_COUNT - 1)) * 100;
+      // Vertikální zvlnění — jedna celá sinusoida: nahoře → dole → nahoře
+      var wave = -Math.cos((i / (PAW_COUNT - 1)) * Math.PI * 2) * WAVE_AMP;
+      var sideOffset = isLeft ? -3 : 3;
+      var yPx = wave + sideOffset;
+      // Rotace — všechny směřují doprava, mírná variace
+      var baseRot = 90;
+      var variation = (Math.sin(i * 1.7) * 5);
+      var rot = baseRot + variation;
+      var scale = 0.9 + Math.sin(i * 2.3) * 0.1;
+
+      paw.style.left = xPct + "%";
+      paw.style.top = "50%";
+      paw.style.transform = "translate(-50%, -50%) translateY(" + yPx + "px) rotate(" + rot + "deg) scale(" + scale.toFixed(2) + ")";
+
+      lineFill.appendChild(paw);
+    }
+
+    var paws = lineFill.querySelectorAll(".paw");
+    var walkTimers = [];
+
+    // Animace chůze — tlapky se postupně objevují, starší mizí
+    function walkPawsUpTo(targetIdx) {
+      // Zruš předchozí timery
+      walkTimers.forEach(function(t) { clearTimeout(t); });
+      walkTimers = [];
+
+      for (var i = 0; i <= targetIdx; i++) {
+        (function(idx, delay) {
+          walkTimers.push(setTimeout(function() {
+            // Zobraz aktuální tlapku
+            paws[idx].classList.remove("is-fading", "is-gone");
+            paws[idx].classList.add("is-visible");
+            // Předchozí tlapky — fading trail
+            for (var j = 0; j < idx; j++) {
+              var age = idx - j;
+              if (age <= TRAIL_LEN) {
+                paws[j].classList.add("is-visible");
+                paws[j].classList.remove("is-gone");
+                if (age === TRAIL_LEN) {
+                  paws[j].classList.add("is-fading");
+                } else {
+                  paws[j].classList.remove("is-fading");
+                }
+              } else {
+                paws[j].classList.remove("is-visible", "is-fading");
+                paws[j].classList.add("is-gone");
+              }
+            }
+          }, delay));
+        })(i, i * STEP_DELAY);
+      }
+
+      // Po dokončení — nech trail ještě chvíli a pak zmiz
+      walkTimers.push(setTimeout(function() {
+        paws.forEach(function(p) {
+          p.classList.add("is-fading");
+        });
+      }, (targetIdx + 1) * STEP_DELAY + 800));
+
+      walkTimers.push(setTimeout(function() {
+        paws.forEach(function(p) {
+          p.classList.remove("is-visible", "is-fading");
+          p.classList.add("is-gone");
+        });
+      }, (targetIdx + 1) * STEP_DELAY + 1800));
+    }
+
+    function resetPaws() {
+      walkTimers.forEach(function(t) { clearTimeout(t); });
+      walkTimers = [];
+      paws.forEach(function(p) {
+        p.classList.remove("is-visible", "is-fading", "is-gone");
+      });
+    }
+
+    function showAllPawsStatic() {
+      paws.forEach(function(p) {
+        p.classList.add("is-visible");
+        p.classList.remove("is-fading", "is-gone");
+      });
+    }
+
+    // Na mobilu nebo při prefers-reduced-motion
+    if (window.innerWidth <= 960 || prefersReducedMotion) {
+      cards.forEach(function(c) { c.classList.add("is-active"); });
+      showAllPawsStatic();
+      return;
+    }
+
+    var scrollActivated = 0;
+
+    // Scroll animace
+    var observer = new IntersectionObserver(
+      function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            var card = entry.target;
+            var step = parseInt(card.dataset.stepper, 10);
+            var delay = (step - 1) * 600;
+
+            setTimeout(function() {
+              card.classList.add("is-active");
+              scrollActivated = Math.max(scrollActivated, step);
+              var target = Math.round((scrollActivated / total) * (PAW_COUNT - 1));
+              walkPawsUpTo(target);
+            }, delay);
+
+            observer.unobserve(card);
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    cards.forEach(function(card) { observer.observe(card); });
+
+    // Hover — replay celou animaci
+    cards.forEach(function(card) {
+      card.addEventListener("mouseenter", function() {
+        cards.forEach(function(c) { c.classList.remove("is-active"); });
+        resetPaws();
+
+        cards.forEach(function(c) {
+          var s = parseInt(c.dataset.stepper, 10);
+          setTimeout(function() {
+            c.classList.add("is-active");
+            var target = Math.round((s / total) * (PAW_COUNT - 1));
+            walkPawsUpTo(target);
+          }, (s - 1) * 500);
+        });
+
+        scrollActivated = total;
+      });
+    });
+  });
+}
+
+function setupHamburger() {
+  const btn = document.getElementById("hamburger");
+  const nav = document.getElementById("main-nav");
+  if (!btn || !nav) return;
+
+  btn.addEventListener("click", () => {
+    const open = nav.classList.toggle("is-open");
+    btn.classList.toggle("is-open", open);
+    btn.setAttribute("aria-expanded", open);
+    document.body.style.overflow = open ? "hidden" : "";
+  });
+
+  nav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      nav.classList.remove("is-open");
+      btn.classList.remove("is-open");
+      btn.setAttribute("aria-expanded", "false");
+      document.body.style.overflow = "";
+    });
+  });
+}
+
+function setupScrollAnimations() {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    document.querySelectorAll("[data-animate]").forEach((el) => {
+      el.classList.add("is-visible");
+    });
     return;
   }
 
-  let scrollActivated = 0;
-  let hoverFadeTimeout = null;
-
-  // Scroll animace
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          const card = entry.target;
-          const step = parseInt(card.dataset.stepper, 10);
-          const delay = (step - 1) * 600;
-
-          setTimeout(() => {
-            card.classList.add("is-active");
-            scrollActivated = Math.max(scrollActivated, step);
-            setLine(scrollActivated);
-            // Po aktivaci všech kroků — linie zmizí
-            if (scrollActivated >= total) {
-              setTimeout(() => {
-                lineFill.classList.add("is-done");
-              }, 800);
-            }
-          }, delay);
-
-          observer.unobserve(card);
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
         }
       });
     },
-    { threshold: 0.3 }
+    { threshold: 0.1 }
   );
 
-  cards.forEach((card) => observer.observe(card));
-
-  // Hover animace — vybarví linii až po hover kartu
-  cards.forEach((card) => {
-    card.addEventListener("mouseenter", () => {
-      // Zrušit případný timeout na skrytí
-      if (hoverFadeTimeout) clearTimeout(hoverFadeTimeout);
-      lineFill.classList.remove("is-done");
-
-      // Spustit celou sekvenci od začátku
-      // Reset: všechny karty deaktivovat, linie na 0
-      cards.forEach((c) => c.classList.remove("is-active"));
-      lineFill.style.transition = "none";
-      lineFill.style.width = "0%";
-      // Force reflow
-      void lineFill.offsetWidth;
-      lineFill.style.transition = "";
-
-      // Postupně aktivovat karty 1 → 2 → 3
-      cards.forEach((c) => {
-        const s = parseInt(c.dataset.stepper, 10);
-        setTimeout(() => {
-          c.classList.add("is-active");
-          setLine(s);
-          // Po poslední kartě — fade out
-          if (s >= total) {
-            hoverFadeTimeout = setTimeout(() => {
-              lineFill.classList.add("is-done");
-            }, 800);
-          }
-        }, (s - 1) * 500);
-      });
-
-      // Aktualizovat scroll stav
-      scrollActivated = total;
-    });
-
-    card.addEventListener("mouseleave", () => {
-      // Nechat doběhnout animaci, neresetovat
-    });
+  document.querySelectorAll("[data-animate]").forEach((el) => {
+    observer.observe(el);
   });
+}
+
+function setupGalleryShowMore() {
+  var btn = document.querySelector(".gallery-show-more");
+  var grid = document.querySelector(".gallery-grid");
+  if (!btn || !grid) return;
+  btn.addEventListener("click", function () {
+    grid.classList.add("gallery-grid--expanded");
+    grid.dataset.userExpanded = "true";
+    btn.style.display = "none";
+  });
+}
+
+function setupLazyVideos() {
+  var videos = document.querySelectorAll("video.lazy-video");
+  if (!videos.length) return;
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        var video = entry.target;
+        var sources = video.querySelectorAll("source[data-src]");
+        sources.forEach(function (s) {
+          s.src = s.dataset.src;
+          s.removeAttribute("data-src");
+        });
+        video.load();
+        video.play();
+        observer.unobserve(video);
+      }
+    });
+  }, { rootMargin: "200px" });
+  videos.forEach(function (v) { observer.observe(v); });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
   setupLanguageSwitch();
   setupGalleryFilter();
+  setupGalleryVideos();
+  setupGalleryShowMore();
+  setupLazyVideos();
   setupContactForm();
   setupLightbox();
   setupStepper();
+  setupHamburger();
+  setupScrollAnimations();
 });
 
