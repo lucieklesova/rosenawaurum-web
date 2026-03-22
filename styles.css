@@ -369,19 +369,16 @@ button:focus:not(:focus-visible) {
   pointer-events: none;
 }
 
-/* Noise texture */
-.section-muted::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
-  pointer-events: none;
-}
+/* Noise texture removed — feTurbulence was GPU-expensive and invisible at 0.03 opacity */
 
 .section-hero {
   position: relative;
   padding: 0;
-  background: url("images/hero/hero-background.png") no-repeat 15% center / auto 100%;
+  background: url("images/hero/hero-background.webp") no-repeat 15% center / auto 100%;
+  background-image: image-set(
+    url("images/hero/hero-background.webp") type("image/webp"),
+    url("images/hero/hero-background.png") type("image/png")
+  );
   min-height: 48vh;
   overflow: hidden;
   scroll-margin-top: 0;
@@ -646,6 +643,12 @@ button:focus:not(:focus-visible) {
   padding: 1.5rem 1.2rem;
   border-radius: 1rem;
   transition: transform 0.8s ease, box-shadow 0.8s ease, opacity 1s ease;
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+/* JS-animated state — start dimmed, animate in */
+.stepper-card.is-animatable {
   opacity: 0.4;
   transform: scale(0.95) translateY(8px);
 }
@@ -2201,9 +2204,60 @@ textarea:focus-visible {
 }
 
 /* ---------------------------------------------
-   LIGHTBOX
+   GALLERY FILTER ANIMATION
 --------------------------------------------- */
 
+.gallery-fade-in {
+  animation: galleryFadeIn 0.4s ease-out both;
+}
+
+@keyframes galleryFadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* ---------------------------------------------
+   COOKIE CONSENT BANNER
+--------------------------------------------- */
+
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background: var(--color-dark);
+  color: var(--color-footer-text);
+  padding: 1rem 1.5rem;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cookie-banner-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.cookie-banner-inner p {
+  flex: 1;
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  min-width: 250px;
+}
+
+.cookie-banner-inner a {
+  color: var(--color-gold);
+  text-decoration: underline;
+}
+
+.cookie-accept {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
 
 /* ---------------------------------------------
    REDUCED MOTION
@@ -2314,10 +2368,6 @@ textarea:focus-visible {
 
   .docs-columns {
     grid-template-columns: minmax(0, 1fr);
-  }
-
-  .contact-cards {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .contact-bottom {
@@ -2470,7 +2520,6 @@ textarea:focus-visible {
     padding: 1.5rem 1.3rem;
   }
 
-  .info-card,
   .aside-card,
   .news-item {
     padding: 1.2rem 1.1rem;

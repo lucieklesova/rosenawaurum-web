@@ -40,14 +40,14 @@
     <meta name="twitter:description" content="Rodinná chovatelská stanice zlatých retrívrů FCI v Beskydech." />
     <meta name="twitter:image" content="https://rosenawaurum.cz/images/dogs/alma-portrait.jpg" />
 
-    <!-- Preload hero image -->
-    <link rel="preload" as="image" href="images/hero/hero-background.png" />
+    <!-- Preload hero image (WebP) -->
+    <link rel="preload" as="image" href="images/hero/hero-background.webp" type="image/webp" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
-    <link rel="stylesheet" href="styles.css?v=40" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" integrity="sha384-GPAzSuZc0kFvdIev6wm9zg8gnafE8tLso7rsAYQfc9hAdWCpOcpcNI5W9lWkYcsd" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css?v=41" />
 
     <!-- Structured Data: LocalBusiness + WebSite -->
     <script type="application/ld+json">
@@ -1100,6 +1100,12 @@
               </div>
             </div>
 
+            <!-- Honeypot anti-spam -->
+            <div class="form-field" style="position:absolute;left:-9999px;" aria-hidden="true">
+              <label for="website">Website</label>
+              <input type="text" id="website" name="_gotcha" tabindex="-1" autocomplete="off" />
+            </div>
+
             <div class="form-field">
               <label for="message" data-i18n="formMessageLabel">Zpráva</label>
               <textarea
@@ -1111,9 +1117,10 @@
               ></textarea>
             </div>
 
-            <p class="form-note" data-i18n="formNote">
+            <p class="form-note">
               Odesláním zprávy souhlasíte se zpracováním uvedených údajů za
               účelem odpovědi na váš dotaz. Údaje neposkytujeme třetím stranám.
+              Více v <a href="ochrana-osobnich-udaju.html">zásadách ochrany osobních údajů</a>.
             </p>
 
             <button type="submit" class="btn btn-primary" data-i18n="formSubmit">
@@ -1186,7 +1193,16 @@
       </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <!-- Cookie consent banner -->
+    <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Cookie consent" style="display:none;">
+      <div class="cookie-banner-inner">
+        <p>Tento web používá Google Fonts pro zobrazení písma a Google Maps pro mapu. Tyto služby mohou zpracovávat vaši IP adresu.
+          <a href="ochrana-osobnich-udaju.html">Více informací</a>.</p>
+        <button type="button" class="btn btn-primary cookie-accept" id="cookie-accept">Rozumím</button>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js" integrity="sha384-MZZbZ6RXJudK43v1qY1zOWKOU2yfeBPatuFoKyHAaAgHTUZhwblRTc9CphTt4IGQ" crossorigin="anonymous"></script>
     <script src="script.js"></script>
   </body>
 </html>

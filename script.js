@@ -405,19 +405,24 @@ function setupGalleryFilter() {
         if (showMoreBtn && !grid.dataset.userExpanded) showMoreBtn.style.display = "";
       }
 
-      let delay = 0;
+      // Show/hide items, restart animation without layout thrashing
+      const visible = [];
       items.forEach((item) => {
         const cat = item.getAttribute("data-gallery-category");
         if (filter === "all" || filter === cat) {
           item.style.display = "";
-          item.style.animationDelay = delay + "ms";
-          item.style.animation = "none";
-          void item.offsetWidth;
-          item.style.animation = "";
-          delay += 80;
+          visible.push(item);
         } else {
           item.style.display = "none";
         }
+      });
+      requestAnimationFrame(() => {
+        visible.forEach((item, i) => {
+          item.style.animationDelay = (i * 80) + "ms";
+          item.classList.remove("gallery-fade-in");
+          void item.offsetWidth;
+          item.classList.add("gallery-fade-in");
+        });
       });
     });
   });
@@ -439,8 +444,16 @@ function setupContactForm() {
   const form = document.querySelector(".contact-form");
   if (!form) return;
 
+  let lastSubmit = 0;
+
   form.addEventListener("submit", (event) => {
     event.preventDefault();
+
+    // Rate limit: 10 seconds between submissions
+    const now = Date.now();
+    if (now - lastSubmit < 10000) return;
+    lastSubmit = now;
+
     const submitBtn = form.querySelector('button[type="submit"]');
     const originalText = submitBtn.textContent;
     submitBtn.disabled = true;
@@ -603,6 +616,9 @@ function setupStepper() {
       });
     }
 
+    // Add animatable class via JS so cards are visible without JS
+    cards.forEach(function(c) { c.classList.add("is-animatable"); });
+
     // Na mobilu nebo při prefers-reduced-motion
     if (window.innerWidth <= 960 || prefersReducedMotion) {
       cards.forEach(function(c) { c.classList.add("is-active"); });
@@ -737,6 +753,21 @@ function setupLazyVideos() {
   videos.forEach(function (v) { observer.observe(v); });
 }
 
+function setupCookieBanner() {
+  const banner = document.getElementById("cookie-banner");
+  const acceptBtn = document.getElementById("cookie-accept");
+  if (!banner || !acceptBtn) return;
+
+  if (!localStorage.getItem("cookieConsent")) {
+    banner.style.display = "";
+  }
+
+  acceptBtn.addEventListener("click", () => {
+    localStorage.setItem("cookieConsent", "accepted");
+    banner.style.display = "none";
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   setupLanguageSwitch();
   setupGalleryFilter();
@@ -748,5 +779,6 @@ document.addEventListener("DOMContentLoaded", () => {
   setupStepper();
   setupHamburger();
   setupScrollAnimations();
+  setupCookieBanner();
 });
 
