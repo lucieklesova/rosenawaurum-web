@@ -2508,3 +2508,94 @@ textarea:focus-visible {
     flex-shrink: 0;
   }
 }
+
+/* ---------------------------------------------
+   ARTICLE PAGE (O plemeni, etc.)
+--------------------------------------------- */
+
+.article-page {
+  padding-top: 2rem;
+}
+
+.article-container {
+  max-width: 740px;
+  margin: 0 auto;
+}
+
+.breadcrumb {
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.breadcrumb a {
+  color: var(--color-gold-dark);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb span[aria-hidden] {
+  margin: 0 0.4rem;
+  color: var(--color-border);
+}
+
+.article-header {
+  margin-bottom: 2rem;
+}
+
+.article-header h1 {
+  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  margin: 0 0 1rem;
+}
+
+.article-lead {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+}
+
+.article-body h2 {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 2rem 0 0.75rem;
+  color: var(--color-dark);
+}
+
+.article-body p {
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+}
+
+.article-body ul {
+  color: var(--color-text-secondary);
+  padding-left: 1.2rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.article-body li {
+  margin-bottom: 0.4rem;
+  line-height: 1.7;
+}
+
+.article-body a {
+  color: var(--color-gold-dark);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.article-body a:hover {
+  color: var(--color-gold);
+}
+
+.article-cta {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}

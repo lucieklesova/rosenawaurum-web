@@ -14,7 +14,7 @@ const translations = {
 
     heroTitle: "Rodinný chov zlatých retrívrů s\u00a0respektem k\u00a0životu.",
     heroSubtitle:
-      "Malá chovatelská stanice FCI z\u00a0Rožnova pod Radhoštěm.<br>Štěňata vyrůstají doma, mezi lidmi, s\u00a0důrazem na zdraví,<br>vyrovnanou povahu a pevné zázemí.",
+      "Malá chovatelská stanice FCI z\u00a0Beskyd, nedaleko Rožnova pod Radhoštěm. Štěňata vyrůstají doma, mezi lidmi, s\u00a0důrazem na zdraví, vyrovnanou povahu a\u00a0pevné zázemí.",
     heroCtaAbout: "Poznat náš přístup",
     heroCtaPuppies: "Aktuální / plánovaný vrh",
 
@@ -161,7 +161,7 @@ const translations = {
     footerContactTitle: "Kontakt",
     footerAboutTitle: "O stanici",
     footerAboutText:
-      "Rosenaw Aurum — chovatelská stanice zlatých retrívrů. Chováme s láskou, péčí a respektem k plemeni.",
+      "Rosenaw Aurum — rodinná chovatelská stanice zlatých retrívrů v Beskydech. Chováme s láskou, péčí a respektem k plemeni.",
     footerRights: "Všechna práva vyhrazena.",
   },
 
@@ -177,7 +177,7 @@ const translations = {
 
     heroTitle: "Family breeding of golden retrievers with\u00a0respect for life.",
     heroSubtitle:
-      "A small FCI kennel from Rožnov pod Radhoštěm.<br>Puppies grow up at home, among people, with focus on health,<br>balanced temperament and a solid foundation.",
+      "A small FCI kennel from the Beskydy Mountains, near Rožnov pod Radhoštěm. Puppies grow up at home, among people, with focus on health, balanced temperament and a\u00a0solid foundation.",
     heroCtaAbout: "Our approach",
     heroCtaPuppies: "Current / planned litter",
 
@@ -326,7 +326,7 @@ const translations = {
     footerContactTitle: "Contact",
     footerAboutTitle: "About us",
     footerAboutText:
-      "Rosenaw Aurum — Golden Retriever breeding kennel. We breed with love, care and respect for the breed.",
+      "Rosenaw Aurum — Golden Retriever breeding kennel in the Beskydy Mountains, Czech Republic. We breed with love, care and respect for the breed.",
     footerRights: "All rights reserved.",
   },
 };
@@ -496,13 +496,13 @@ function setupLightbox() {
 function setupStepper() {
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   // SVG tlapky — levá a pravá
-  var pawLeft = '<svg class="paw" viewBox="0 0 32 32" fill="currentColor"><ellipse cx="16" cy="21" rx="5" ry="4"/><ellipse cx="9.5" cy="12" rx="2.5" ry="3.2"/><ellipse cx="15" cy="9.5" rx="2.2" ry="3"/><ellipse cx="21" cy="10" rx="2.3" ry="3"/><ellipse cx="25" cy="14.5" rx="2" ry="2.8"/></svg>';
-  var pawRight = '<svg class="paw" viewBox="0 0 32 32" fill="currentColor"><ellipse cx="16" cy="21" rx="5" ry="4"/><ellipse cx="22.5" cy="12" rx="2.5" ry="3.2"/><ellipse cx="17" cy="9.5" rx="2.2" ry="3"/><ellipse cx="11" cy="10" rx="2.3" ry="3"/><ellipse cx="7" cy="14.5" rx="2" ry="2.8"/></svg>';
+  const pawLeft = '<svg class="paw" viewBox="0 0 32 32" fill="currentColor"><ellipse cx="16" cy="21" rx="5" ry="4"/><ellipse cx="9.5" cy="12" rx="2.5" ry="3.2"/><ellipse cx="15" cy="9.5" rx="2.2" ry="3"/><ellipse cx="21" cy="10" rx="2.3" ry="3"/><ellipse cx="25" cy="14.5" rx="2" ry="2.8"/></svg>';
+  const pawRight = '<svg class="paw" viewBox="0 0 32 32" fill="currentColor"><ellipse cx="16" cy="21" rx="5" ry="4"/><ellipse cx="22.5" cy="12" rx="2.5" ry="3.2"/><ellipse cx="17" cy="9.5" rx="2.2" ry="3"/><ellipse cx="11" cy="10" rx="2.3" ry="3"/><ellipse cx="7" cy="14.5" rx="2" ry="2.8"/></svg>';
 
-  var PAW_COUNT = 14;
-  var TRAIL_LEN = 3;      // kolik tlap je vidět současně
-  var STEP_DELAY = 180;   // ms mezi kroky
-  var WAVE_AMP = 10;      // amplituda zvlnění (px)
+  const PAW_COUNT = 14;
+  const TRAIL_LEN = 3;      // kolik tlap je vidět současně
+  const STEP_DELAY = 180;   // ms mezi kroky
+  const WAVE_AMP = 10;      // amplituda zvlnění (px)
 
   document.querySelectorAll(".stepper").forEach(function (container) {
     var cards = container.querySelectorAll(".stepper-card");
