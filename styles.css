@@ -163,37 +163,35 @@ button:focus:not(:focus-visible) {
   z-index: 20;
   background: rgba(253, 253, 253, 0.92);
   backdrop-filter: blur(10px);
+  overflow: visible;
 }
 
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.85rem 1.5rem;
+  padding: 0 1.5rem;
+  height: 50px;
 }
 
 .logo {
-  display: block;
+  display: flex;
+  align-items: flex-start;
   text-decoration: none;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 25;
+  align-self: flex-start;
+  margin-top: -8px;
 }
 
-.logo-main {
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 1.05rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--color-dark);
+.logo-img {
+  height: 200px;
+  width: auto;
+  display: block;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1));
 }
 
-.logo-accent {
-  font-family: var(--font-display);
-  font-weight: 400;
-  font-size: 1.05rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--color-gold);
-}
 
 .main-nav {
   display: flex;
@@ -470,7 +468,7 @@ button:focus:not(:focus-visible) {
 }
 
 .hero-text {
-  width: 58%;
+  width: 55%;
   display: flex;
   flex-direction: column;
   margin-left: auto;
@@ -503,13 +501,13 @@ button:focus:not(:focus-visible) {
   gap: 0.5rem;
 }
 
-.hero-content-row {
+.hero-title-row {
   display: flex;
   align-items: center;
   gap: 1.5rem;
 }
 
-.hero-content-row .hero-subtitle {
+.hero-title-row .hero-subtitle {
   margin: 0;
 }
 
@@ -519,7 +517,7 @@ button:focus:not(:focus-visible) {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 140px;
+  width: 160px;
 }
 
 .hero-map svg {
@@ -2193,6 +2191,14 @@ textarea:focus-visible {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
+}
+
+.footer-logo {
+  height: 240px;
+  width: auto;
+  display: block;
+  margin-top: 1rem;
+  opacity: 0.8;
 }
 
 .footer-bottom {

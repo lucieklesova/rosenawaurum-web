@@ -1,6 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#3a2a1a"/>
-  <text x="32" y="26" text-anchor="middle" font-family="Georgia, serif" font-size="18" font-weight="700" letter-spacing="1" fill="#c4a882">R</text>
-  <text x="32" y="46" text-anchor="middle" font-family="Georgia, serif" font-size="18" font-weight="400" letter-spacing="1" fill="#c4a882">A</text>
-  <line x1="18" y1="30" x2="46" y2="30" stroke="#c4a882" stroke-width="0.8" opacity="0.5"/>
+  <circle cx="32" cy="32" r="30" fill="#3a2a1a"/>
+  <!-- Trees silhouette -->
+  <polygon points="18,40 22,26 26,40" fill="#2d5a27" opacity="0.9"/>
+  <polygon points="24,40 28,22 32,40" fill="#3a7a32" opacity="0.9"/>
+  <polygon points="14,40 17,30 20,40" fill="#1e4a1e" opacity="0.8"/>
+  <!-- Sun -->
+  <circle cx="40" cy="22" r="7" fill="#c4a882" opacity="0.6"/>
+  <!-- Dog head silhouette -->
+  <path d="M34,44 C34,38 36,35 38,33 C40,31 43,30 44,28 C45,26 44,24 43,23 C44,23 46,24 47,26 C48,28 48,30 47,32 C46,34 44,36 42,38 C40,40 38,42 38,44 Z" fill="#c4a882"/>
+  <path d="M38,44 C38,42 39,40 41,38 C43,36 45,34 46,32 C47,30 47,28 46.5,27 C48,28 49,30 48,33 C47,36 44,39 42,41 C40,43 40,44 40,44 Z" fill="#a8895a"/>
+  <!-- Dog ear -->
+  <ellipse cx="42" cy="26" rx="4" ry="6" fill="#b8965c" transform="rotate(-15 42 26)"/>
+  <!-- Decorative arc -->
+  <path d="M16,44 Q32,50 48,44" stroke="#c4a882" stroke-width="1" fill="none" opacity="0.5"/>
 </svg>
