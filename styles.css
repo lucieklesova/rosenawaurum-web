@@ -183,13 +183,47 @@ button:focus:not(:focus-visible) {
   z-index: 25;
   align-self: flex-start;
   margin-top: -8px;
+  transition: margin-top 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-img {
-  height: 200px;
   width: auto;
   display: block;
   filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1));
+  transition: height 0.8s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo-img.logo-full {
+  height: 200px;
+  opacity: 1;
+}
+
+.logo-img.logo-icon {
+  height: 55px;
+  width: auto;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-header.is-scrolled .logo {
+  margin-top: 0;
+}
+
+.site-header.is-scrolled .logo-img.logo-full {
+  height: 55px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.site-header.is-scrolled .logo-img.logo-icon {
+  opacity: 1;
+}
+
+.site-header.is-scrolled {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
 }
 
 
@@ -377,7 +411,7 @@ button:focus:not(:focus-visible) {
     url("images/hero/hero-background.webp") type("image/webp"),
     url("images/hero/hero-background.png") type("image/png")
   );
-  min-height: 48vh;
+  min-height: 40vh;
   overflow: hidden;
   scroll-margin-top: 0;
 }
@@ -391,7 +425,7 @@ button:focus:not(:focus-visible) {
   animation: heroSlideUp 0.8s ease-out 0.15s both;
 }
 
-.section-hero .hero-map {
+.section-hero .hero-map-inline {
   animation: heroSlideUp 0.8s ease-out 0.25s both;
 }
 
@@ -454,7 +488,7 @@ button:focus:not(:focus-visible) {
 .hero-overlay {
   display: flex;
   align-items: center;
-  min-height: 48vh;
+  min-height: 40vh;
 }
 
 .hero-inner {
@@ -472,6 +506,7 @@ button:focus:not(:focus-visible) {
   display: flex;
   flex-direction: column;
   margin-left: auto;
+  position: relative;
 }
 
 .hero-text h1 {
@@ -481,48 +516,55 @@ button:focus:not(:focus-visible) {
   color: var(--color-dark);
 }
 
-.hero-subtitle {
+.hero-subtitle,
+.hero-subtitle-wrap {
   font-weight: 300;
   color: var(--color-text-nav);
-  margin: 0 0 2rem;
+  margin: 0 0 1.5rem;
   max-width: 500px;
   line-height: 1.85;
   font-size: 0.95rem;
 }
 
+.hero-map-inline {
+  float: right;
+  opacity: 0.75;
+  margin: 0 0 0.25rem 0.75rem;
+}
+
+.hero-map-inline svg {
+  display: block;
+}
+
+@keyframes heroHeartPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: nowrap;
-  gap: 1rem;
-  margin-top: 1.5rem;
+  gap: 1.25rem;
+  margin-top: 0.5rem;
 }
 
 .btn-paw {
   gap: 0.5rem;
 }
 
-.hero-title-row {
+.hero-scroll-hint {
   display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-
-.hero-title-row .hero-subtitle {
-  margin: 0;
-}
-
-.hero-map {
-  flex-shrink: 0;
-  opacity: 0.85;
-  display: flex;
-  align-items: center;
   justify-content: center;
-  width: 160px;
+  margin-top: 1.5rem;
+  color: var(--color-gold);
+  opacity: 0.5;
+  animation: scrollBounce 2s ease-in-out infinite;
+  text-decoration: none;
 }
 
-.hero-map svg {
-  width: 100%;
-  height: auto;
+@keyframes scrollBounce {
+  0%, 100% { transform: translateY(0); opacity: 0.5; }
+  50% { transform: translateY(6px); opacity: 0.8; }
 }
 
 .btn-icon {
@@ -826,17 +868,18 @@ button:focus:not(:focus-visible) {
 }
 
 .btn-primary {
-  background: #f5f0ea;
-  color: var(--color-text-nav);
-  border-color: var(--color-border);
-  box-shadow: 0 2px 8px rgba(80, 60, 40, 0.08);
+  background: var(--color-gold);
+  color: var(--color-dark);
+  border-color: var(--color-gold);
+  box-shadow: 0 2px 8px rgba(80, 60, 40, 0.15);
 }
 
 .btn-primary:hover {
-  background: #ede5da;
-  border-color: #d0c4b5;
+  background: var(--color-gold-dark);
+  border-color: var(--color-gold-dark);
+  color: #fff;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(80, 60, 40, 0.12);
+  box-shadow: 0 6px 16px rgba(80, 60, 40, 0.2);
 }
 
 .btn:active {
@@ -2335,7 +2378,7 @@ textarea:focus-visible {
   }
 
   .hero-overlay {
-    min-height: 50vh;
+    min-height: 40vh;
     background: linear-gradient(
       to bottom,
       rgba(255, 255, 255, 0.85) 0%,
@@ -2422,12 +2465,12 @@ textarea:focus-visible {
   }
 
   .section-hero {
-    min-height: 45vh;
+    min-height: 38vh;
     background-size: cover;
   }
 
   .hero-overlay {
-    min-height: 45vh;
+    min-height: 38vh;
     background: linear-gradient(
       to bottom,
       rgba(255, 255, 255, 0.92) 0%,
@@ -2453,7 +2496,11 @@ textarea:focus-visible {
     flex-direction: column;
   }
 
-  .hero-map {
+  .hero-map-inline {
+    display: none;
+  }
+
+  .hero-scroll-hint {
     display: none;
   }
 

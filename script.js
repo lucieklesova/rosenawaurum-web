@@ -768,6 +768,21 @@ function setupCookieBanner() {
   });
 }
 
+function setupStickyHeader() {
+  const header = document.querySelector(".site-header");
+  if (!header) return;
+  let ticking = false;
+  window.addEventListener("scroll", () => {
+    if (!ticking) {
+      requestAnimationFrame(() => {
+        header.classList.toggle("is-scrolled", window.scrollY > 60);
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }, { passive: true });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   setupLanguageSwitch();
   setupGalleryFilter();
@@ -780,5 +795,6 @@ document.addEventListener("DOMContentLoaded", () => {
   setupHamburger();
   setupScrollAnimations();
   setupCookieBanner();
+  setupStickyHeader();
 });
 
