@@ -68,6 +68,7 @@ const translations = {
     almaTitlePuppy: "Třída štěňat",
     almaTitleJunior: "Třída dorostu",
     almaTitleYoung: "Třída mladých",
+    almaTitleOpen: "Třída otevřená",
     almaTitlePrep: "v přípravě",
     almaDocsLink: "Zdravotní dokumentace →",
     almaPedigreeTitle: "Rodokmen",
@@ -231,6 +232,7 @@ const translations = {
     almaTitlePuppy: "Puppy class",
     almaTitleJunior: "Minor puppy",
     almaTitleYoung: "Junior class",
+    almaTitleOpen: "Open class",
     almaTitlePrep: "in preparation",
     almaDocsLink: "Health documentation →",
     almaPedigreeTitle: "Pedigree",
@@ -783,6 +785,25 @@ function setupStickyHeader() {
   }, { passive: true });
 }
 
+function setupShareButtons() {
+  document.querySelectorAll(".share-btn--copy").forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      const url = btn.dataset.url || window.location.href;
+      navigator.clipboard.writeText(url).then(() => {
+        btn.classList.add("share-btn--copied");
+        const label = btn.querySelector(".share-btn-label");
+        const orig = label.textContent;
+        label.textContent = "Zkopírováno!";
+        setTimeout(() => {
+          btn.classList.remove("share-btn--copied");
+          label.textContent = orig;
+        }, 2000);
+      });
+    });
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   setupLanguageSwitch();
   setupGalleryFilter();
@@ -796,5 +817,6 @@ document.addEventListener("DOMContentLoaded", () => {
   setupScrollAnimations();
   setupCookieBanner();
   setupStickyHeader();
+  setupShareButtons();
 });
 
