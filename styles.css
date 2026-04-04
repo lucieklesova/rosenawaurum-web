@@ -3091,7 +3091,9 @@ textarea:focus-visible {
 }
 
 .mobile-menu-nav a {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
   padding: 0.6rem 0.75rem;
   font-family: var(--font-display);
   font-size: 0.95rem;
@@ -3101,6 +3103,17 @@ textarea:focus-visible {
   border-radius: 6px;
   border-left: 2px solid transparent;
   transition: all 0.2s ease;
+}
+
+.mobile-menu-nav a svg {
+  flex-shrink: 0;
+  color: var(--color-gold-muted);
+  transition: color 0.2s ease;
+}
+
+.mobile-menu-nav a:hover svg,
+.mobile-menu-nav a.active svg {
+  color: var(--color-gold-dark);
 }
 
 .mobile-menu-nav a:hover {
