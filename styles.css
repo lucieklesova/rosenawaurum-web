@@ -342,6 +342,10 @@ button:focus:not(:focus-visible) {
   transform: scale(1.1);
 }
 
+.header-calc--active {
+  color: var(--color-gold-dark);
+}
+
 /* Header ornament – full-width decorative divider */
 .header-ornament {
   display: block;
