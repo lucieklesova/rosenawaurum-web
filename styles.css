@@ -189,12 +189,27 @@ button:focus:not(:focus-visible) {
 
 .logo-title {
   display: none;
+  flex-direction: column;
+  margin-left: 0.65rem;
+  line-height: 1.15;
+}
+
+.logo-title-main {
   font-family: var(--font-display);
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   font-weight: 600;
   color: var(--color-dark);
-  letter-spacing: 0.02em;
-  margin-left: 0.6rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.logo-title-sub {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--color-gold-dark);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
 .logo-img {
@@ -3263,7 +3278,7 @@ textarea:focus-visible {
   }
 
   .logo-title {
-    display: block;
+    display: flex;
   }
 
   .section-hero {
