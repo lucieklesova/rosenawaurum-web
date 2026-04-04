@@ -17,6 +17,8 @@
     <!-- Canonical & hreflang -->
     <link rel="canonical" href="https://rosenawaurum.cz/" />
     <link rel="alternate" hreflang="cs" href="https://rosenawaurum.cz/" />
+    <link rel="alternate" hreflang="en" href="https://rosenawaurum.cz/" />
+    <link rel="alternate" hreflang="x-default" href="https://rosenawaurum.cz/" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg?v=2" />
@@ -29,7 +31,7 @@
     <meta property="og:site_name" content="Rosenaw Aurum" />
     <meta property="og:locale" content="cs_CZ" />
     <meta property="og:locale:alternate" content="en_GB" />
-    <meta property="og:image" content="https://rosenawaurum.cz/images/dogs/alma-portrait.jpg" />
+    <meta property="og:image" content="https://rosenawaurum.cz/images/dogs/alma-portrait.webp" />
     <meta property="og:image:width" content="600" />
     <meta property="og:image:height" content="450" />
     <meta property="og:image:alt" content="Alma Bohemica Aurum – zlatý retrívr z chovatelské stanice Rosenaw Aurum" />
@@ -38,7 +40,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Rosenaw Aurum – chovatelská stanice zlatých retrívrů" />
     <meta name="twitter:description" content="Rodinná chovatelská stanice zlatých retrívrů FCI v Beskydech." />
-    <meta name="twitter:image" content="https://rosenawaurum.cz/images/dogs/alma-portrait.jpg" />
+    <meta name="twitter:image" content="https://rosenawaurum.cz/images/dogs/alma-portrait.webp" />
 
     <!-- Preload hero image (WebP) -->
     <link rel="preload" as="image" href="images/hero/hero-background.webp" type="image/webp" />
@@ -47,7 +49,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" integrity="sha384-GPAzSuZc0kFvdIev6wm9zg8gnafE8tLso7rsAYQfc9hAdWCpOcpcNI5W9lWkYcsd" crossorigin="anonymous" />
-    <link rel="stylesheet" href="styles.css?v=57" />
+    <link rel="stylesheet" href="styles.css?v=58" />
 
     <!-- Structured Data: LocalBusiness + WebSite -->
     <script type="application/ld+json">
@@ -83,8 +85,9 @@
             "@type": "Person",
             "name": "Lucie Klesová"
           },
-          "image": "https://rosenawaurum.cz/images/dogs/alma-portrait.jpg",
+          "image": "https://rosenawaurum.cz/images/dogs/alma-portrait.webp",
           "sameAs": [
+            "https://www.facebook.com/profile.php?id=61577460091525",
             "https://www.instagram.com/almamygoldenlove"
           ],
           "priceRange": "$$"
@@ -103,6 +106,7 @@
     </script>
   </head>
   <body>
+    <noscript><style>.main-nav{display:flex!important;position:static!important}.hamburger,.lang-switch{display:none!important}</style></noscript>
     <a href="#main-content" class="skip-link">Přejít na obsah</a>
     <!--
       Struktura / "wireframe" jedno-stránkového webu:
@@ -118,17 +122,17 @@
       - Footer: copyright + základní odkazy
       - Obrázky:
         - Hero:    images/hero/hero-background.png
-        - Psi:     images/dogs/alma-portrait.jpg, alma-outdoor.jpg
+        - Psi:     images/dogs/alma-portrait.webp, alma-outdoor.jpg
         - Galerie: images/gallery/nase-holky-1.jpg, zivot-1.jpg, vystavy-1.jpg
-        - Štěňata: images/puppies/alma-stene.jpg
+        - Štěňata: images/puppies/alma-stene.webp
         - Novinky: images/news/placeholder.svg (+ reálné fotky)
     -->
 
     <header class="site-header">
       <div class="container header-inner">
         <a href="#home" class="logo">
-          <img src="images/logo-rosenaw-aurum.svg" alt="Rosenaw Aurum" class="logo-img logo-full" />
-          <img src="images/logo_plain_opt.svg" alt="Rosenaw Aurum" class="logo-img logo-icon" />
+          <img src="images/logo-rosenaw-aurum.svg" alt="Rosenaw Aurum" class="logo-img logo-full" width="200" height="200" />
+          <img src="images/logo_plain_opt.svg" alt="Rosenaw Aurum" class="logo-img logo-icon" width="55" height="55" />
         </a>
         <nav class="main-nav" id="main-nav" aria-label="Primary">
           <a href="#home" data-i18n="navHome">Domů</a>
@@ -140,7 +144,10 @@
           <a href="#contact" data-i18n="navContact">Kontakt</a>
         </nav>
         <div class="header-right">
-          <a href="https://www.instagram.com/almamygoldenlove" target="_blank" rel="noopener noreferrer" class="header-instagram" aria-label="Instagram">
+          <a href="https://www.facebook.com/profile.php?id=61577460091525" target="_blank" rel="noopener noreferrer" class="header-social" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/almamygoldenlove" target="_blank" rel="noopener noreferrer" class="header-social" aria-label="Instagram">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
           </a>
           <div class="lang-switch" aria-label="Language switcher">
@@ -335,8 +342,8 @@
             <!-- Řádek 1: Foto + Povaha -->
             <div class="dog-profile-row">
               <figure class="dog-photo-wrapper">
-                <a href="images/dogs/alma-portrait.jpg" class="glightbox" data-gallery="dogs" data-glightbox="title: Alma Bohemica Aurum – portrét">
-                  <img class="dog-photo" src="images/dogs/alma-portrait.jpg" alt="Alma Bohemica Aurum – portrét" width="600" height="450" />
+                <a href="images/dogs/alma-portrait.webp" class="glightbox" data-gallery="dogs" data-glightbox="title: Alma Bohemica Aurum – portrét">
+                  <img class="dog-photo" src="images/dogs/alma-portrait.webp" alt="Alma Bohemica Aurum – portrét" width="600" height="450" />
                 </a>
               </figure>
               <div class="dog-profile-card" data-animate>
@@ -347,18 +354,24 @@
                   <h4 data-i18n="almaCharacterTitle">Povaha</h4>
                 </div>
                 <p class="dog-text" data-i18n="almaPersonality" data-i18n-html>
-                  <strong>Alminka</strong> je naše vysněná fenečka zlatého retrívra. Do života
-                  k nám vtrhla jako velká voda a velmi rychle se z ní stal pes
-                  do každé situace – parťák na výlety, dovolené, sport i klidné
-                  večery doma.
+                  <strong>Alminka</strong> je naše vysněná fenka zlatého retrívra. Do života k nám přišla jako velká voda a velmi rychle se stala parťačkou pro každou situaci – výlety, dovolené, sport i klidné večery doma.
+                </p>
+                <p class="dog-text" data-i18n="almaPersonality2">
+                  Má výjimečný dar vnímat energii ostatních – ať už lidí nebo psů – a přirozeně se jí přizpůsobit. Díky tomu je neuvěřitelně nekonfliktní a harmonická. Miluje všechny bez rozdílu, je přátelská a otevřená, přitom doma krásně klidná.
+                </p>
+                <p class="dog-text" data-i18n="almaPersonality3">
+                  Zároveň v sobě ale nezapře hravého „ďábla", když přijde čas na akci.
                 </p>
                 <div class="dog-traits">
                   <span class="dog-trait" data-i18n="almaTrait1">Přátelská</span>
-                  <span class="dog-trait" data-i18n="almaTrait2">Učenlivá</span>
-                  <span class="dog-trait" data-i18n="almaTrait3">Aktivní</span>
-                  <span class="dog-trait" data-i18n="almaTrait4">Klidná doma</span>
-                  <span class="dog-trait" data-i18n="almaTrait5">Miluje vodu</span>
-                  <span class="dog-trait" data-i18n="almaTrait6">Ráda aportuje</span>
+                  <span class="dog-trait" data-i18n="almaTrait2">Empatická</span>
+                  <span class="dog-trait" data-i18n="almaTrait3">Nekonfliktní</span>
+                  <span class="dog-trait" data-i18n="almaTrait4">Vnímavá</span>
+                  <span class="dog-trait" data-i18n="almaTrait5">Klidná doma</span>
+                  <span class="dog-trait" data-i18n="almaTrait6">Aktivní venku</span>
+                  <span class="dog-trait" data-i18n="almaTrait7">Miluje všechny</span>
+                  <span class="dog-trait" data-i18n="almaTrait8">Miluje vodu</span>
+                  <span class="dog-trait" data-i18n="almaTrait9">Ráda aportuje</span>
                 </div>
               </div>
             </div>
@@ -366,8 +379,8 @@
             <!-- Řádek 2: Foto + Zdraví -->
             <div class="dog-profile-row">
               <figure class="dog-photo-wrapper">
-                <a href="images/dogs/alma-outdoor.jpg" class="glightbox" data-gallery="dogs" data-glightbox="title: Alma Bohemica Aurum – venku">
-                  <img class="dog-photo" src="images/dogs/alma-outdoor.jpg" alt="Alma Bohemica Aurum – venku" width="600" height="450" />
+                <a href="images/dogs/alma-outdoor.webp" class="glightbox" data-gallery="dogs" data-glightbox="title: Alma Bohemica Aurum – venku">
+                  <img class="dog-photo" src="images/dogs/alma-outdoor.webp" alt="Alma Bohemica Aurum – venku" width="600" height="450" />
                 </a>
               </figure>
               <div class="dog-profile-card" data-animate>
@@ -411,7 +424,7 @@
             <!-- Řádek 3: Video + Výstavy a zkoušky -->
             <div class="dog-profile-row">
               <div class="dog-photo-wrapper dog-video-wrapper">
-                <video class="lazy-video" muted loop playsinline preload="none" poster="images/dogs/alma-outdoor.jpg">
+                <video class="lazy-video" muted loop playsinline preload="none" poster="images/dogs/alma-outdoor.webp">
                   <source data-src="images/dogs/alma-video.MP4" type="video/mp4" />
                 </video>
               </div>
@@ -578,8 +591,8 @@
               </div>
 
               <figure class="gallery-item puppies-photo">
-                <a href="images/puppies/alma-stene.jpg" class="glightbox" data-glightbox="title: Štěňata Golden Retriever">
-                  <img class="gallery-photo" src="images/puppies/alma-stene.jpg" alt="Štěňata Golden Retriever" loading="lazy" width="600" height="400" />
+                <a href="images/puppies/alma-stene.webp" class="glightbox" data-glightbox="title: Štěňata Golden Retriever">
+                  <img class="gallery-photo" src="images/puppies/alma-stene.webp" alt="Štěňata Golden Retriever" loading="lazy" width="600" height="400" />
                 </a>
               </figure>
             </div>
@@ -646,248 +659,248 @@
           <div class="gallery-grid">
             <!-- Fotky z almamygoldenlove.cz -->
             <figure class="gallery-item" data-gallery-category="girls">
-              <a href="images/gallery/alma/DSC03404-Edit-Edit.jpeg" class="glightbox" data-gallery="gallery">
-                <img class="gallery-photo" src="images/gallery/alma/DSC03404-Edit-Edit.jpeg" alt="Alma Bohemica Aurum – zlatý retrívr, portrét" width="600" height="400" loading="lazy" />
+              <a href="images/gallery/alma/DSC03404-Edit-Edit.webp" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/DSC03404-Edit-Edit.webp" alt="Alma Bohemica Aurum – zlatý retrívr, portrét" width="600" height="400" loading="lazy" />
               </a>
             </figure>
 
             <figure class="gallery-item" data-gallery-category="girls">
-              <a href="images/gallery/alma/DSC03327edit3.jpeg" class="glightbox" data-gallery="gallery">
-                <img class="gallery-photo" src="images/gallery/alma/DSC03327edit3.jpeg" alt="Alma Bohemica Aurum – zlatý retrívr v přírodě" width="600" height="400" loading="lazy" />
+              <a href="images/gallery/alma/DSC03327edit3.webp" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/DSC03327edit3.webp" alt="Alma Bohemica Aurum – zlatý retrívr v přírodě" width="600" height="400" loading="lazy" />
               </a>
             </figure>
 
             <figure class="gallery-item" data-gallery-category="girls">
-              <a href="images/gallery/alma/DSC03347-Edit.jpeg" class="glightbox" data-gallery="gallery">
-                <img class="gallery-photo" src="images/gallery/alma/DSC03347-Edit.jpeg" alt="Alma Bohemica Aurum – pohled zlatého retrívra" width="600" height="400" loading="lazy" />
+              <a href="images/gallery/alma/DSC03347-Edit.webp" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/DSC03347-Edit.webp" alt="Alma Bohemica Aurum – pohled zlatého retrívra" width="600" height="400" loading="lazy" />
               </a>
             </figure>
 
             <figure class="gallery-item" data-gallery-category="girls">
-              <a href="images/gallery/alma/DSC03373-Edit.jpeg" class="glightbox" data-gallery="gallery">
-                <img class="gallery-photo" src="images/gallery/alma/DSC03373-Edit.jpeg" alt="Alma Bohemica Aurum – zlatý retrívr, celé tělo" width="600" height="400" loading="lazy" />
+              <a href="images/gallery/alma/DSC03373-Edit.webp" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/DSC03373-Edit.webp" alt="Alma Bohemica Aurum – zlatý retrívr, celé tělo" width="600" height="400" loading="lazy" />
               </a>
             </figure>
 
             <figure class="gallery-item" data-gallery-category="girls">
-              <a href="images/gallery/alma/DSC03397-Edit.jpeg" class="glightbox" data-gallery="gallery">
-                <img class="gallery-photo" src="images/gallery/alma/DSC03397-Edit.jpeg" alt="Alma Bohemica Aurum – zlatý retrívr mezi stromy" width="600" height="400" loading="lazy" />
+              <a href="images/gallery/alma/DSC03397-Edit.webp" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/DSC03397-Edit.webp" alt="Alma Bohemica Aurum – zlatý retrívr mezi stromy" width="600" height="400" loading="lazy" />
               </a>
             </figure>
 
             <figure class="gallery-item" data-gallery-category="girls">
-              <a href="images/gallery/alma/DSC03527-Edit.jpeg" class="glightbox" data-gallery="gallery">
-                <img class="gallery-photo" src="images/gallery/alma/DSC03527-Edit.jpeg" alt="Alma Bohemica Aurum – zlatý retrívr v trávě" width="600" height="400" loading="lazy" />
+              <a href="images/gallery/alma/DSC03527-Edit.webp" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/DSC03527-Edit.webp" alt="Alma Bohemica Aurum – zlatý retrívr v trávě" width="600" height="400" loading="lazy" />
               </a>
             </figure>
 
             <figure class="gallery-item" data-gallery-category="girls">
-              <a href="images/gallery/alma/DSC03564-Edit.jpeg" class="glightbox" data-gallery="gallery">
-                <img class="gallery-photo" src="images/gallery/alma/DSC03564-Edit.jpeg" alt="Alma Bohemica Aurum – detailní záběr zlatého retrívra" width="600" height="400" loading="lazy" />
+              <a href="images/gallery/alma/DSC03564-Edit.webp" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/DSC03564-Edit.webp" alt="Alma Bohemica Aurum – detailní záběr zlatého retrívra" width="600" height="400" loading="lazy" />
               </a>
             </figure>
 
             <figure class="gallery-item" data-gallery-category="girls">
-              <a href="images/gallery/alma/DSC03581-Edit_1.jpeg" class="glightbox" data-gallery="gallery">
-                <img class="gallery-photo" src="images/gallery/alma/DSC03581-Edit_1.jpeg" alt="Alma Bohemica Aurum – zlatý retrívr, profil" width="600" height="400" loading="lazy" />
+              <a href="images/gallery/alma/DSC03581-Edit_1.webp" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/DSC03581-Edit_1.webp" alt="Alma Bohemica Aurum – zlatý retrívr, profil" width="600" height="400" loading="lazy" />
               </a>
             </figure>
 
             <figure class="gallery-item" data-gallery-category="girls">
-              <a href="images/gallery/alma/DSC03609-Edit-2.jpeg" class="glightbox" data-gallery="gallery">
-                <img class="gallery-photo" src="images/gallery/alma/DSC03609-Edit-2.jpeg" alt="Alma Bohemica Aurum – zlatý retrívr na louce" width="600" height="400" loading="lazy" />
+              <a href="images/gallery/alma/DSC03609-Edit-2.webp" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/DSC03609-Edit-2.webp" alt="Alma Bohemica Aurum – zlatý retrívr na louce" width="600" height="400" loading="lazy" />
               </a>
             </figure>
 
             <figure class="gallery-item" data-gallery-category="girls">
-              <a href="images/gallery/alma/DSC03609-Edit_snow.jpeg" class="glightbox" data-gallery="gallery">
-                <img class="gallery-photo" src="images/gallery/alma/DSC03609-Edit_snow.jpeg" alt="Alma Bohemica Aurum – zlatý retrívr ve sněhu" width="600" height="400" loading="lazy" />
+              <a href="images/gallery/alma/DSC03609-Edit_snow.webp" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/DSC03609-Edit_snow.webp" alt="Alma Bohemica Aurum – zlatý retrívr ve sněhu" width="600" height="400" loading="lazy" />
               </a>
             </figure>
 
             <figure class="gallery-item" data-gallery-category="girls">
-              <a href="images/gallery/alma/DSC_1485.jpeg" class="glightbox" data-gallery="gallery">
-                <img class="gallery-photo" src="images/gallery/alma/DSC_1485.jpeg" alt="Alma Bohemica Aurum – zlatý retrívr, pohled do objektivu" width="600" height="400" loading="lazy" />
+              <a href="images/gallery/alma/DSC_1485.webp" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/DSC_1485.webp" alt="Alma Bohemica Aurum – zlatý retrívr, pohled do objektivu" width="600" height="400" loading="lazy" />
               </a>
             </figure>
 
             <figure class="gallery-item" data-gallery-category="girls">
-              <a href="images/gallery/alma/DSC_1495.jpeg" class="glightbox" data-gallery="gallery">
-                <img class="gallery-photo" src="images/gallery/alma/DSC_1495.jpeg" alt="Alma Bohemica Aurum – zlatý retrívr venku v přírodě" width="600" height="400" loading="lazy" />
+              <a href="images/gallery/alma/DSC_1495.webp" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/DSC_1495.webp" alt="Alma Bohemica Aurum – zlatý retrívr venku v přírodě" width="600" height="400" loading="lazy" />
               </a>
             </figure>
 
             <figure class="gallery-item" data-gallery-category="girls">
-              <a href="images/gallery/alma/IMG_8370.jpeg" class="glightbox" data-gallery="gallery">
-                <img class="gallery-photo" src="images/gallery/alma/IMG_8370.jpeg" alt="Alma Bohemica Aurum – zlatý retrívr, letní portrét" width="600" height="400" loading="lazy" />
+              <a href="images/gallery/alma/IMG_8370.webp" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/IMG_8370.webp" alt="Alma Bohemica Aurum – zlatý retrívr, letní portrét" width="600" height="400" loading="lazy" />
               </a>
             </figure>
 
             <figure class="gallery-item" data-gallery-category="life">
-              <a href="images/gallery/alma/alma-zlaty-retrivr-na-zahrade-01.jpeg" class="glightbox" data-gallery="gallery">
-                <img class="gallery-photo" src="images/gallery/alma/alma-zlaty-retrivr-na-zahrade-01.jpeg" alt="Zlatý retrívr Alma – každodenní život" width="600" height="400" loading="lazy" />
+              <a href="images/gallery/alma/alma-zlaty-retrivr-na-zahrade-01.webp" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/alma-zlaty-retrivr-na-zahrade-01.webp" alt="Zlatý retrívr Alma – každodenní život" width="600" height="400" loading="lazy" />
               </a>
             </figure>
 
             <figure class="gallery-item" data-gallery-category="life">
-              <a href="images/gallery/alma/alma-zlaty-retrivr-na-zahrade-02.jpeg" class="glightbox" data-gallery="gallery">
-                <img class="gallery-photo" src="images/gallery/alma/alma-zlaty-retrivr-na-zahrade-02.jpeg" alt="Zlatý retrívr na výletě v Beskydech" width="600" height="400" loading="lazy" />
+              <a href="images/gallery/alma/alma-zlaty-retrivr-na-zahrade-02.webp" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/alma-zlaty-retrivr-na-zahrade-02.webp" alt="Zlatý retrívr na výletě v Beskydech" width="600" height="400" loading="lazy" />
               </a>
             </figure>
 
             <figure class="gallery-item" data-gallery-category="life">
-              <a href="images/gallery/alma/alma-zlaty-retrivr-vylet-beskydy-01.jpeg" class="glightbox" data-gallery="gallery">
-                <img class="gallery-photo" src="images/gallery/alma/alma-zlaty-retrivr-vylet-beskydy-01.jpeg" alt="Rodinný život se zlatým retrívrem" width="600" height="400" loading="lazy" />
+              <a href="images/gallery/alma/alma-zlaty-retrivr-vylet-beskydy-01.webp" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/alma-zlaty-retrivr-vylet-beskydy-01.webp" alt="Rodinný život se zlatým retrívrem" width="600" height="400" loading="lazy" />
               </a>
             </figure>
 
             <figure class="gallery-item" data-gallery-category="life">
-              <a href="images/gallery/alma/alma-zlaty-retrivr-vylet-beskydy-02.jpeg" class="glightbox" data-gallery="gallery">
-                <img class="gallery-photo" src="images/gallery/alma/alma-zlaty-retrivr-vylet-beskydy-02.jpeg" alt="Zlatý retrívr Alma – procházka v přírodě" width="600" height="400" loading="lazy" />
+              <a href="images/gallery/alma/alma-zlaty-retrivr-vylet-beskydy-02.webp" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/alma-zlaty-retrivr-vylet-beskydy-02.webp" alt="Zlatý retrívr Alma – procházka v přírodě" width="600" height="400" loading="lazy" />
               </a>
             </figure>
 
             <figure class="gallery-item" data-gallery-category="life">
-              <a href="images/gallery/alma/alma-zlaty-retrivr-rodina-03.jpeg" class="glightbox" data-gallery="gallery">
-                <img class="gallery-photo" src="images/gallery/alma/alma-zlaty-retrivr-rodina-03.jpeg" alt="Alma – zlatý retrívr při hrách venku" width="600" height="400" loading="lazy" />
+              <a href="images/gallery/alma/alma-zlaty-retrivr-rodina-03.webp" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/alma-zlaty-retrivr-rodina-03.webp" alt="Alma – zlatý retrívr při hrách venku" width="600" height="400" loading="lazy" />
               </a>
             </figure>
 
             <figure class="gallery-item" data-gallery-category="life">
-              <a href="images/gallery/alma/alma-zlaty-retrivr-rodina-04.jpeg" class="glightbox" data-gallery="gallery">
-                <img class="gallery-photo" src="images/gallery/alma/alma-zlaty-retrivr-rodina-04.jpeg" alt="Zlatý retrívr odpočívá – pohoda domácího mazlíčka" width="600" height="400" loading="lazy" />
+              <a href="images/gallery/alma/alma-zlaty-retrivr-rodina-04.webp" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/alma-zlaty-retrivr-rodina-04.webp" alt="Zlatý retrívr odpočívá – pohoda domácího mazlíčka" width="600" height="400" loading="lazy" />
               </a>
             </figure>
 
             <figure class="gallery-item" data-gallery-category="life">
-              <a href="images/gallery/alma/alma-zlaty-retrivr-u-vody-01.jpeg" class="glightbox" data-gallery="gallery">
-                <img class="gallery-photo" src="images/gallery/alma/alma-zlaty-retrivr-u-vody-01.jpeg" alt="Alma – zlatý retrívr v lese na procházce" width="600" height="400" loading="lazy" />
+              <a href="images/gallery/alma/alma-zlaty-retrivr-u-vody-01.webp" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/alma-zlaty-retrivr-u-vody-01.webp" alt="Alma – zlatý retrívr v lese na procházce" width="600" height="400" loading="lazy" />
               </a>
             </figure>
 
             <figure class="gallery-item" data-gallery-category="life">
-              <a href="images/gallery/alma/alma-zlaty-retrivr-u-vody-02.jpeg" class="glightbox" data-gallery="gallery">
-                <img class="gallery-photo" src="images/gallery/alma/alma-zlaty-retrivr-u-vody-02.jpeg" alt="Zlatý retrívr Alma – dobrodružství v přírodě" width="600" height="400" loading="lazy" />
+              <a href="images/gallery/alma/alma-zlaty-retrivr-u-vody-02.webp" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/alma-zlaty-retrivr-u-vody-02.webp" alt="Zlatý retrívr Alma – dobrodružství v přírodě" width="600" height="400" loading="lazy" />
               </a>
             </figure>
 
             <figure class="gallery-item" data-gallery-category="life">
-              <a href="images/gallery/alma/alma-zlaty-retrivr-podzim-01.jpeg" class="glightbox" data-gallery="gallery">
-                <img class="gallery-photo" src="images/gallery/alma/alma-zlaty-retrivr-podzim-01.jpeg" alt="Alma – zlatý retrívr u vody" width="600" height="400" loading="lazy" />
+              <a href="images/gallery/alma/alma-zlaty-retrivr-podzim-01.webp" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/alma-zlaty-retrivr-podzim-01.webp" alt="Alma – zlatý retrívr u vody" width="600" height="400" loading="lazy" />
               </a>
             </figure>
 
             <figure class="gallery-item" data-gallery-category="life">
-              <a href="images/gallery/alma/alma-zlaty-retrivr-podzim-02.jpeg" class="glightbox" data-gallery="gallery">
-                <img class="gallery-photo" src="images/gallery/alma/alma-zlaty-retrivr-podzim-02.jpeg" alt="Zlatý retrívr a jeho každodenní radosti" width="600" height="400" loading="lazy" />
+              <a href="images/gallery/alma/alma-zlaty-retrivr-podzim-02.webp" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/alma-zlaty-retrivr-podzim-02.webp" alt="Zlatý retrívr a jeho každodenní radosti" width="600" height="400" loading="lazy" />
               </a>
             </figure>
 
             <figure class="gallery-item" data-gallery-category="life">
-              <a href="images/gallery/alma/alma-zlaty-retrivr-zima-01.jpeg" class="glightbox" data-gallery="gallery">
-                <img class="gallery-photo" src="images/gallery/alma/alma-zlaty-retrivr-zima-01.jpeg" alt="Alma Bohemica Aurum – zlatý retrívr s rodinou" width="600" height="400" loading="lazy" />
+              <a href="images/gallery/alma/alma-zlaty-retrivr-zima-01.webp" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/alma-zlaty-retrivr-zima-01.webp" alt="Alma Bohemica Aurum – zlatý retrívr s rodinou" width="600" height="400" loading="lazy" />
               </a>
             </figure>
 
             <figure class="gallery-item" data-gallery-category="life">
-              <a href="images/gallery/alma/alma-zlaty-retrivr-zima-02.jpeg" class="glightbox" data-gallery="gallery">
-                <img class="gallery-photo" src="images/gallery/alma/alma-zlaty-retrivr-zima-02.jpeg" alt="Zlatý retrívr Alma – výlet do přírody" width="600" height="400" loading="lazy" />
+              <a href="images/gallery/alma/alma-zlaty-retrivr-zima-02.webp" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/alma-zlaty-retrivr-zima-02.webp" alt="Zlatý retrívr Alma – výlet do přírody" width="600" height="400" loading="lazy" />
               </a>
             </figure>
 
             <figure class="gallery-item" data-gallery-category="life">
-              <a href="images/gallery/alma/alma-zlaty-retrivr-prochazka-01.jpeg" class="glightbox" data-gallery="gallery">
-                <img class="gallery-photo" src="images/gallery/alma/alma-zlaty-retrivr-prochazka-01.jpeg" alt="Alma – zlatý retrívr při zimní procházce" width="600" height="400" loading="lazy" />
+              <a href="images/gallery/alma/alma-zlaty-retrivr-prochazka-01.webp" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/alma-zlaty-retrivr-prochazka-01.webp" alt="Alma – zlatý retrívr při zimní procházce" width="600" height="400" loading="lazy" />
               </a>
             </figure>
 
             <figure class="gallery-item" data-gallery-category="life">
-              <a href="images/gallery/alma/alma-zlaty-retrivr-prochazka-02.jpeg" class="glightbox" data-gallery="gallery">
-                <img class="gallery-photo" src="images/gallery/alma/alma-zlaty-retrivr-prochazka-02.jpeg" alt="Zlatý retrívr – hravé chvíle se zlatým psem" width="600" height="400" loading="lazy" />
+              <a href="images/gallery/alma/alma-zlaty-retrivr-prochazka-02.webp" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/alma-zlaty-retrivr-prochazka-02.webp" alt="Zlatý retrívr – hravé chvíle se zlatým psem" width="600" height="400" loading="lazy" />
               </a>
             </figure>
 
             <figure class="gallery-item" data-gallery-category="life">
-              <a href="images/gallery/alma/alma-zlaty-retrivr-hra-01.jpeg" class="glightbox" data-gallery="gallery">
-                <img class="gallery-photo" src="images/gallery/alma/alma-zlaty-retrivr-hra-01.jpeg" alt="Alma – zlatý retrívr na zahradě" width="600" height="400" loading="lazy" />
+              <a href="images/gallery/alma/alma-zlaty-retrivr-hra-01.webp" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/alma-zlaty-retrivr-hra-01.webp" alt="Alma – zlatý retrívr na zahradě" width="600" height="400" loading="lazy" />
               </a>
             </figure>
 
             <figure class="gallery-item" data-gallery-category="life">
-              <a href="images/gallery/alma/alma-zlaty-retrivr-hra-02.jpeg" class="glightbox" data-gallery="gallery">
-                <img class="gallery-photo" src="images/gallery/alma/alma-zlaty-retrivr-hra-02.jpeg" alt="Zlatý retrívr Alma – podzimní procházka" width="600" height="400" loading="lazy" />
+              <a href="images/gallery/alma/alma-zlaty-retrivr-hra-02.webp" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/alma-zlaty-retrivr-hra-02.webp" alt="Zlatý retrívr Alma – podzimní procházka" width="600" height="400" loading="lazy" />
               </a>
             </figure>
 
             <figure class="gallery-item" data-gallery-category="life">
-              <a href="images/gallery/alma/alma-zlaty-retrivr-odpocinek-01.jpeg" class="glightbox" data-gallery="gallery">
-                <img class="gallery-photo" src="images/gallery/alma/alma-zlaty-retrivr-odpocinek-01.jpeg" alt="Rosenaw Aurum – zlatý retrívr v každodenním životě" width="600" height="400" loading="lazy" />
+              <a href="images/gallery/alma/alma-zlaty-retrivr-odpocinek-01.webp" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/alma-zlaty-retrivr-odpocinek-01.webp" alt="Rosenaw Aurum – zlatý retrívr v každodenním životě" width="600" height="400" loading="lazy" />
               </a>
             </figure>
 
             <figure class="gallery-item" data-gallery-category="life">
-              <a href="images/gallery/alma/alma-zlaty-retrivr-odpocinek-02.jpeg" class="glightbox" data-gallery="gallery">
-                <img class="gallery-photo" src="images/gallery/alma/alma-zlaty-retrivr-odpocinek-02.jpeg" alt="Alma – zlatý retrívr, šťastný pes v rodině" width="600" height="400" loading="lazy" />
+              <a href="images/gallery/alma/alma-zlaty-retrivr-odpocinek-02.webp" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/alma-zlaty-retrivr-odpocinek-02.webp" alt="Alma – zlatý retrívr, šťastný pes v rodině" width="600" height="400" loading="lazy" />
               </a>
             </figure>
 
             <figure class="gallery-item" data-gallery-category="life">
-              <a href="images/gallery/alma/alma-zlaty-retrivr-luka-01.jpeg" class="glightbox" data-gallery="gallery">
-                <img class="gallery-photo" src="images/gallery/alma/alma-zlaty-retrivr-luka-01.jpeg" alt="Zlatý retrívr na výletě – aktivní pes v přírodě" width="600" height="400" loading="lazy" />
+              <a href="images/gallery/alma/alma-zlaty-retrivr-luka-01.webp" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/alma-zlaty-retrivr-luka-01.webp" alt="Zlatý retrívr na výletě – aktivní pes v přírodě" width="600" height="400" loading="lazy" />
               </a>
             </figure>
 
             <figure class="gallery-item" data-gallery-category="life">
-              <a href="images/gallery/alma/alma-zlaty-retrivr-luka-02.jpeg" class="glightbox" data-gallery="gallery">
-                <img class="gallery-photo" src="images/gallery/alma/alma-zlaty-retrivr-luka-02.jpeg" alt="Alma – zlatý retrívr, hravá nálada" width="600" height="400" loading="lazy" />
+              <a href="images/gallery/alma/alma-zlaty-retrivr-luka-02.webp" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/alma-zlaty-retrivr-luka-02.webp" alt="Alma – zlatý retrívr, hravá nálada" width="600" height="400" loading="lazy" />
               </a>
             </figure>
 
             <figure class="gallery-item" data-gallery-category="life">
-              <a href="images/gallery/alma/alma-zlaty-retrivr-sport-01.jpeg" class="glightbox" data-gallery="gallery">
-                <img class="gallery-photo" src="images/gallery/alma/alma-zlaty-retrivr-sport-01.jpeg" alt="Zlatý retrívr Alma – spokojený pes v přírodě" width="600" height="400" loading="lazy" />
+              <a href="images/gallery/alma/alma-zlaty-retrivr-sport-01.webp" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/alma-zlaty-retrivr-sport-01.webp" alt="Zlatý retrívr Alma – spokojený pes v přírodě" width="600" height="400" loading="lazy" />
               </a>
             </figure>
 
             <figure class="gallery-item" data-gallery-category="life">
-              <a href="images/gallery/alma/alma-zlaty-retrivr-sport-02.jpeg" class="glightbox" data-gallery="gallery">
-                <img class="gallery-photo" src="images/gallery/alma/alma-zlaty-retrivr-sport-02.jpeg" alt="Alma Bohemica Aurum – zlatý retrívr na výletě" width="600" height="400" loading="lazy" />
+              <a href="images/gallery/alma/alma-zlaty-retrivr-sport-02.webp" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/alma-zlaty-retrivr-sport-02.webp" alt="Alma Bohemica Aurum – zlatý retrívr na výletě" width="600" height="400" loading="lazy" />
               </a>
             </figure>
 
             <figure class="gallery-item" data-gallery-category="shows">
-              <a href="images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.43.jpeg" class="glightbox" data-gallery="gallery">
-                <img class="gallery-photo" src="images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.43.jpeg" alt="Alma Bohemica Aurum – výstava retrieverů" width="600" height="400" loading="lazy" />
+              <a href="images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.43.webp" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.43.webp" alt="Alma Bohemica Aurum – výstava retrieverů" width="600" height="400" loading="lazy" />
               </a>
             </figure>
 
             <figure class="gallery-item" data-gallery-category="shows">
-              <a href="images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.43_1.jpeg" class="glightbox" data-gallery="gallery">
-                <img class="gallery-photo" src="images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.43_1.jpeg" alt="Zlatý retrívr na výstavním kruhu" width="600" height="400" loading="lazy" />
+              <a href="images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.43_1.webp" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.43_1.webp" alt="Zlatý retrívr na výstavním kruhu" width="600" height="400" loading="lazy" />
               </a>
             </figure>
 
             <figure class="gallery-item" data-gallery-category="shows">
-              <a href="images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.44.jpeg" class="glightbox" data-gallery="gallery">
-                <img class="gallery-photo" src="images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.44.jpeg" alt="Alma – psí výstava, předvedení plemene" width="600" height="400" loading="lazy" />
+              <a href="images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.44.webp" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.44.webp" alt="Alma – psí výstava, předvedení plemene" width="600" height="400" loading="lazy" />
               </a>
             </figure>
 
             <figure class="gallery-item" data-gallery-category="shows">
-              <a href="images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.44_1.jpeg" class="glightbox" data-gallery="gallery">
-                <img class="gallery-photo" src="images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.44_1.jpeg" alt="Alma Bohemica Aurum – ocenění na psí výstavě" width="600" height="400" loading="lazy" />
+              <a href="images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.44_1.webp" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.44_1.webp" alt="Alma Bohemica Aurum – ocenění na psí výstavě" width="600" height="400" loading="lazy" />
               </a>
             </figure>
 
             <figure class="gallery-item" data-gallery-category="shows">
-              <a href="images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.45.jpeg" class="glightbox" data-gallery="gallery">
-                <img class="gallery-photo" src="images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.45.jpeg" alt="Zlatý retrívr Alma – bonitace a výstava" width="600" height="400" loading="lazy" />
+              <a href="images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.45.webp" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.45.webp" alt="Zlatý retrívr Alma – bonitace a výstava" width="600" height="400" loading="lazy" />
               </a>
             </figure>
 
             <figure class="gallery-item" data-gallery-category="shows">
-              <a href="images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.46.jpeg" class="glightbox" data-gallery="gallery">
-                <img class="gallery-photo" src="images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.46.jpeg" alt="Alma Bohemica Aurum – výstavní úspěchy zlatého retrívra" width="600" height="400" loading="lazy" />
+              <a href="images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.46.webp" class="glightbox" data-gallery="gallery">
+                <img class="gallery-photo" src="images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.46.webp" alt="Alma Bohemica Aurum – výstavní úspěchy zlatého retrívra" width="600" height="400" loading="lazy" />
               </a>
             </figure>
 
@@ -953,42 +966,42 @@
           <div class="blog-grid blog-grid--3">
             <a href="aktuality/provodovice.html" class="blog-card">
               <div class="blog-card-img">
-                <img src="images/news/provodovice-IMG_8986.jpeg" alt="Výstava v Provodovicích" width="600" height="400" loading="lazy" />
+                <img src="images/news/provodovice-IMG_8986.webp" alt="Výstava v Provodovicích" width="600" height="400" loading="lazy" />
               </div>
               <div class="blog-card-date">
-                <span class="blog-card-month">Bře</span>
+                <span class="blog-card-month" data-i18n="newsMonth1">Bře</span>
                 <span class="blog-card-day">28</span>
               </div>
-              <h3 class="blog-card-title">Alma poprvé v otevřené třídě – Provodovice</h3>
-              <p class="blog-card-excerpt">
+              <h3 class="blog-card-title" data-i18n="newsTitle1">Alma poprvé v otevřené třídě – Provodovice</h3>
+              <p class="blog-card-excerpt" data-i18n="newsExcerpt1">
                 Alma nastoupila poprvé do otevřené třídy a hned V1, vítěz třídy, oblastní vítěz a 3. místo ve skupině FCI 8!
               </p>
             </a>
 
             <a href="aktuality/bordovice.html" class="blog-card">
               <div class="blog-card-img">
-                <img src="images/news/bordovice-524205512.jpeg" alt="Výstava v Bordovicích" width="600" height="400" loading="lazy" />
+                <img src="images/news/bordovice-524205512.webp" alt="Výstava v Bordovicích" width="600" height="400" loading="lazy" />
               </div>
               <div class="blog-card-date">
-                <span class="blog-card-month">Čvc</span>
+                <span class="blog-card-month" data-i18n="newsMonth2">Čvc</span>
                 <span class="blog-card-day">26</span>
               </div>
-              <h3 class="blog-card-title">Alminka s maminkou na výstavě v Bordovicích</h3>
-              <p class="blog-card-excerpt">
+              <h3 class="blog-card-title" data-i18n="newsTitle2">Alminka s maminkou na výstavě v Bordovicích</h3>
+              <p class="blog-card-excerpt" data-i18n="newsExcerpt2">
                 Na oblastní klubové výstavě Hubertka 2025 se naposledy ve třídě mladých předvedla naše Alma. Hodnocení V2 a krásný posudek.
               </p>
             </a>
 
             <a href="aktuality/ovvr.html" class="blog-card">
               <div class="blog-card-img">
-                <img src="images/news/ovvr-637CA040-F7F1-42F4-AF26-5702A78FC122-5.jpeg" alt="OVVR zkouška" width="600" height="400" loading="lazy" />
+                <img src="images/news/ovvr-637CA040-F7F1-42F4-AF26-5702A78FC122-5.webp" alt="OVVR zkouška" width="600" height="400" loading="lazy" />
               </div>
               <div class="blog-card-date">
-                <span class="blog-card-month">Čvn</span>
+                <span class="blog-card-month" data-i18n="newsMonth3">Čvn</span>
                 <span class="blog-card-day">01</span>
               </div>
-              <h3 class="blog-card-title">Alminka zvládla OVVR na jedničku</h3>
-              <p class="blog-card-excerpt">
+              <h3 class="blog-card-title" data-i18n="newsTitle3">Alminka zvládla OVVR na jedničku</h3>
+              <p class="blog-card-excerpt" data-i18n="newsExcerpt3">
                 Na zkoušce vrozených vloh retrivrů v Ústí u Hranic Alminka zvládla všech šest disciplín na plný počet bodů.
               </p>
             </a>
@@ -1162,6 +1175,7 @@
             <li><a href="#news" data-i18n="navNews">Aktuality</a></li>
             <li><a href="alma-dokumenty.html" data-i18n="navDocs">Dokumenty</a></li>
             <li><a href="o-plemeni.html">O plemeni</a></li>
+            <li><a href="pruvodce-brezosti.html" data-i18n="pregBreadcrumb">Kalkulačka březosti feny</a></li>
             <li><a href="#contact" data-i18n="navContact">Kontakt</a></li>
           </ul>
         </div>
@@ -1186,12 +1200,12 @@
             Rosenaw Aurum — rodinná chovatelská stanice zlatých retrívrů v Beskydech.
             Chováme s láskou, péčí a respektem k plemeni.
           </p>
-          <img src="images/logo_plain_opt.svg" alt="Rosenaw Aurum" class="footer-logo" />
+          <img src="images/logo_plain_opt.svg" alt="Rosenaw Aurum" class="footer-logo" width="240" height="240" />
         </div>
       </div>
 
       <div class="container footer-bottom">
-        <span>&copy; 2025 Rosenaw Aurum — </span>
+        <span>&copy; 2025–2026 Rosenaw Aurum — </span>
         <span data-i18n="footerRights">Všechna práva vyhrazena.</span>
       </div>
     </footer>
@@ -1206,7 +1220,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js" integrity="sha384-MZZbZ6RXJudK43v1qY1zOWKOU2yfeBPatuFoKyHAaAgHTUZhwblRTc9CphTt4IGQ" crossorigin="anonymous"></script>
-    <script src="script.js?v=2"></script>
+    <script src="script.js?v=58"></script>
   </body>
 </html>
 

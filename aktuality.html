@@ -15,19 +15,19 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Rosenaw Aurum" />
     <meta property="og:locale" content="cs_CZ" />
-    <meta property="og:image" content="https://rosenawaurum.cz/images/dogs/alma-portrait.jpg" />
+    <meta property="og:image" content="https://rosenawaurum.cz/images/dogs/alma-portrait.webp" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=42" />
+    <link rel="stylesheet" href="styles.css?v=58" />
   </head>
   <body>
     <header class="site-header">
       <div class="container header-inner">
         <a href="index.html" class="logo">
-          <img src="images/logo-rosenaw-aurum.svg" alt="Rosenaw Aurum" class="logo-img logo-full" />
-          <img src="images/logo_plain_opt.svg" alt="Rosenaw Aurum" class="logo-img logo-icon" />
+          <img src="images/logo-rosenaw-aurum.svg" alt="Rosenaw Aurum" class="logo-img logo-full" width="200" height="200" />
+          <img src="images/logo_plain_opt.svg" alt="Rosenaw Aurum" class="logo-img logo-icon" width="55" height="55" />
         </a>
         <nav class="main-nav" aria-label="Primary">
           <a href="index.html#home" data-i18n="navHome">Domů</a>
@@ -39,7 +39,10 @@
           <a href="index.html#contact" data-i18n="navContact">Kontakt</a>
         </nav>
         <div class="header-right">
-          <a href="https://www.instagram.com/almamygoldenlove" target="_blank" rel="noopener noreferrer" class="header-instagram" aria-label="Instagram">
+          <a href="https://www.facebook.com/profile.php?id=61577460091525" target="_blank" rel="noopener noreferrer" class="header-social" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/almamygoldenlove" target="_blank" rel="noopener noreferrer" class="header-social" aria-label="Instagram">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
           </a>
           <div class="lang-switch" aria-label="Language switcher">
@@ -75,29 +78,29 @@
             <!-- 1. Provodovice -->
             <a href="aktuality/provodovice.html" class="blog-card">
               <div class="blog-card-img">
-                <img src="images/news/provodovice-IMG_8986.jpeg" alt="Výstava v Provodovicích" loading="lazy" />
+                <img src="images/news/provodovice-IMG_8986.webp" alt="Výstava v Provodovicích" loading="lazy" />
               </div>
               <div class="blog-card-date">
-                <span class="blog-card-month">Bře</span>
+                <span class="blog-card-month" data-i18n="newsListMonth1">Bře</span>
                 <span class="blog-card-day">28</span>
               </div>
-              <h3 class="blog-card-title">Alma poprvé v otevřené třídě – výstava v Provodovicích</h3>
-              <p class="blog-card-excerpt">
-                Alma nastoupila poprvé do otevřené třídy a hned V1, vítěz třídy, oblastní vítěz a 3. místo ve skupině FCI 8!
+              <h3 class="blog-card-title" data-i18n="artProvodoviceTitle">Alma poprvé v otevřené třídě – výstava v Provodovicích</h3>
+              <p class="blog-card-excerpt" data-i18n="newsListExcerptX">
+                <span data-i18n="newsListExcerpt1">Alma nastoupila poprvé do otevřené třídy</span><!--  a hned V1, vítěz třídy, oblastní vítěz a 3. místo ve skupině FCI 8!</span>
               </p>
             </a>
 
             <!-- 2. Bordovice -->
             <a href="aktuality/bordovice.html" class="blog-card">
               <div class="blog-card-img">
-                <img src="images/news/bordovice-524205512.jpeg" alt="Výstava v Bordovicích" loading="lazy" />
+                <img src="images/news/bordovice-524205512.webp" alt="Výstava v Bordovicích" loading="lazy" />
               </div>
               <div class="blog-card-date">
-                <span class="blog-card-month">Čvc</span>
+                <span class="blog-card-month" data-i18n="newsListMonth2">Čvc</span>
                 <span class="blog-card-day">26</span>
               </div>
-              <h3 class="blog-card-title">Alminka s maminkou na výstavě v Bordovicích</h3>
-              <p class="blog-card-excerpt">
+              <h3 class="blog-card-title" data-i18n="artBordoviceTitle">Alminka s maminkou na výstavě v Bordovicích</h3>
+              <p class="blog-card-excerpt" data-i18n="newsListExcerptX">
                 Na oblastní klubové výstavě Hubertka 2025 se naposledy ve třídě mladých předvedla naše Alma. Hodnocení V2 a krásný posudek.
               </p>
             </a>
@@ -105,14 +108,14 @@
             <!-- 2. OVVR -->
             <a href="aktuality/ovvr.html" class="blog-card">
               <div class="blog-card-img">
-                <img src="images/news/ovvr-637CA040-F7F1-42F4-AF26-5702A78FC122-5.jpeg" alt="OVVR zkouška" loading="lazy" />
+                <img src="images/news/ovvr-637CA040-F7F1-42F4-AF26-5702A78FC122-5.webp" alt="OVVR zkouška" loading="lazy" />
               </div>
               <div class="blog-card-date">
-                <span class="blog-card-month">Čvn</span>
+                <span class="blog-card-month" data-i18n="newsListMonth3">Čvn</span>
                 <span class="blog-card-day">01</span>
               </div>
-              <h3 class="blog-card-title">Alminka zvládla OVVR na jedničku</h3>
-              <p class="blog-card-excerpt">
+              <h3 class="blog-card-title" data-i18n="artOvvrTitle">Alminka zvládla OVVR na jedničku</h3>
+              <p class="blog-card-excerpt" data-i18n="newsListExcerptX">
                 Na zkoušce vrozených vloh retrivrů v Ústí u Hranic Alminka zvládla všech šest disciplín na plný počet bodů.
               </p>
             </a>
@@ -120,11 +123,11 @@
             <!-- 3. Genetické testy -->
             <a href="aktuality/geneticke-testy.html" class="blog-card">
               <div class="blog-card-date">
-                <span class="blog-card-month">Kvě</span>
+                <span class="blog-card-month" data-i18n="newsListMonth4">Kvě</span>
                 <span class="blog-card-day">30</span>
               </div>
-              <h3 class="blog-card-title">Máme výsledky genetických testů</h3>
-              <p class="blog-card-excerpt">
+              <h3 class="blog-card-title" data-i18n="artGenetickeTitle">Máme výsledky genetických testů</h3>
+              <p class="blog-card-excerpt" data-i18n="newsListExcerptX">
                 Kompletní genetické testy na dědičná onemocnění. Alminka je zdravý pejsek – většina výsledků N/N.
               </p>
             </a>
@@ -132,14 +135,14 @@
             <!-- 4. Humpolec -->
             <a href="aktuality/humpolec.html" class="blog-card">
               <div class="blog-card-img">
-                <img src="images/news/humpolec-WhatsApp_Image_2025-05-15_at_00.48.43_1-8.jpeg" alt="Výstava v Humpolci" loading="lazy" />
+                <img src="images/news/humpolec-WhatsApp_Image_2025-05-15_at_00.48.43_1-8.webp" alt="Výstava v Humpolci" loading="lazy" />
               </div>
               <div class="blog-card-date">
-                <span class="blog-card-month">Kvě</span>
+                <span class="blog-card-month" data-i18n="newsListMonth5">Kvě</span>
                 <span class="blog-card-day">16</span>
               </div>
-              <h3 class="blog-card-title">Alminka se předvedla v Humpolci</h3>
-              <p class="blog-card-excerpt">
+              <h3 class="blog-card-title" data-i18n="artHumpolecTitle">Alminka se předvedla v Humpolci</h3>
+              <p class="blog-card-excerpt" data-i18n="newsListExcerptX">
                 Na Klubové a Speciální výstavě retrieverů v Humpolci si Alminka oba dny odnesla hodnocení Výborná. Konkurence 30 fen!
               </p>
             </a>
@@ -147,11 +150,11 @@
             <!-- 5. RTG -->
             <a href="aktuality/rtg-vysledky.html" class="blog-card">
               <div class="blog-card-date">
-                <span class="blog-card-month">Úno</span>
+                <span class="blog-card-month" data-i18n="newsListMonth6">Úno</span>
                 <span class="blog-card-day">04</span>
               </div>
-              <h3 class="blog-card-title">Máme výsledky RTG DKK, DLK, OCD</h3>
-              <p class="blog-card-excerpt">
+              <h3 class="blog-card-title" data-i18n="artRtgTitle">Máme výsledky RTG DKK, DLK, OCD</h3>
+              <p class="blog-card-excerpt" data-i18n="newsListExcerptX">
                 Na Mezinárodní den Zlatých retrívrů jsme vyrazili na RTG. Výsledky: DKK B/B, DLK 0/0, OCD 0/0, SA a LTV clear.
               </p>
             </a>
@@ -159,14 +162,14 @@
             <!-- 6. Narozeniny -->
             <a href="aktuality/narozeniny.html" class="blog-card">
               <div class="blog-card-img">
-                <img src="images/news/narozeniny-IMG_1830_Copy.jpeg" alt="Alminka slaví 1. narozeniny" loading="lazy" />
+                <img src="images/news/narozeniny-IMG_1830_Copy.webp" alt="Alminka slaví 1. narozeniny" loading="lazy" />
               </div>
               <div class="blog-card-date">
-                <span class="blog-card-month">Led</span>
+                <span class="blog-card-month" data-i18n="newsListMonth7">Led</span>
                 <span class="blog-card-day">27</span>
               </div>
-              <h3 class="blog-card-title">Alminka slaví 1. narozeniny</h3>
-              <p class="blog-card-excerpt">
+              <h3 class="blog-card-title" data-i18n="artNarozeninyTitle">Alminka slaví 1. narozeniny</h3>
+              <p class="blog-card-excerpt" data-i18n="newsListExcerptX">
                 Dort, dárky a malá oslava s kamarády. Milá Alminko, přejeme Ti hlavně hodně zdravíčka!
               </p>
             </a>
@@ -225,6 +228,6 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=58"></script>
   </body>
 </html>

@@ -48,13 +48,18 @@ const translations = {
     almaBasic: "nar. 27. 1. 2024 • zlatý retrívr, fena • ČLP/GR/25733",
     almaCharacterTitle: "Povaha",
     almaPersonality:
-      '<strong>Alminka</strong> je naše vysněná fenečka zlatého retrívra. Do života k nám vtrhla jako velká voda a velmi rychle se z ní stal pes do každé situace – parťák na výlety, dovolené, sport i klidné večery doma.',
+      '<strong>Alminka</strong> je naše vysněná fenka zlatého retrívra. Do života k nám přišla jako velká voda a velmi rychle se stala parťačkou pro každou situaci – výlety, dovolené, sport i klidné večery doma.',
+    almaPersonality2: "Má výjimečný dar vnímat energii ostatních – ať už lidí nebo psů – a přirozeně se jí přizpůsobit. Díky tomu je neuvěřitelně nekonfliktní a harmonická. Miluje všechny bez rozdílu, je přátelská a otevřená, přitom doma krásně klidná.",
+    almaPersonality3: 'Zároveň v sobě ale nezapře hravého „ďábla", když přijde čas na akci.',
     almaTrait1: "Přátelská",
-    almaTrait2: "Učenlivá",
-    almaTrait3: "Aktivní",
-    almaTrait4: "Klidná doma",
-    almaTrait5: "Miluje vodu",
-    almaTrait6: "Ráda aportuje",
+    almaTrait2: "Empatická",
+    almaTrait3: "Nekonfliktní",
+    almaTrait4: "Vnímavá",
+    almaTrait5: "Klidná doma",
+    almaTrait6: "Aktivní venku",
+    almaTrait7: "Miluje všechny",
+    almaTrait8: "Miluje vodu",
+    almaTrait9: "Ráda aportuje",
     almaHealthTitle: "Zdraví",
     healthCatRtg: "RTG vyšetření",
     healthCatDna: "Genetické (DNA) testy",
@@ -111,9 +116,56 @@ const translations = {
     newsTitle: "Aktuality",
     newsIntro:
       "Krátké zprávy o našich psech, plánovaných vrzích, výstavách, zkouškách a drobných radostech ze společného života.",
+    newsMonth1: "Bře",
+    newsTitle1: "Alma poprvé v otevřené třídě – Provodovice",
+    newsExcerpt1: "Alma nastoupila poprvé do otevřené třídy a hned V1, vítěz třídy, oblastní vítěz a 3. místo ve skupině FCI 8!",
+    newsMonth2: "Čvc",
+    newsTitle2: "Alminka s maminkou na výstavě v Bordovicích",
+    newsExcerpt2: "Na oblastní klubové výstavě Hubertka 2025 se naposledy ve třídě mladých předvedla naše Alma. Hodnocení V2 a krásný posudek.",
+    newsMonth3: "Čvn",
+    newsTitle3: "Alminka zvládla OVVR na jedničku",
+    newsExcerpt3: "Na zkoušce vrozených vloh retrivrů v Ústí u Hranic Alminka zvládla všech šest disciplín na plný počet bodů.",
     newsAllLink: "Všechny aktuality \u2192",
     newsPageTitle: "Aktuality",
     newsBackLink: "\u2190 Zpět na hlavní stránku",
+
+    // Aktuality – společné
+    articleBack: "\u2190 Zpět na aktuality",
+    shareLabel: "Sdílet:",
+    shareCopy: "Kopírovat odkaz",
+
+    // Aktuality – jednotlivé články
+    artProvodoviceCat: "Výstavy",
+    artProvodoviceTitle: "Alma poprvé v otevřené třídě – výstava v Provodovicích",
+    artBordoviceCat: "Výstavy",
+    artBordoviceTitle: "Alminka s maminkou na výstavě v Bordovicích",
+    artOvvrCat: "Zkoušky",
+    artOvvrTitle: "Alminka zvládla OVVR na jedničku",
+    artHumpolecCat: "Výstavy",
+    artHumpolecTitle: "Alminka se předvedla v Humpolci",
+    artNarozeninyCat: "Ze života",
+    artNarozeninyTitle: "Alminka slaví 1. narozeniny",
+    artRtgCat: "Zdraví",
+    artRtgTitle: "Máme výsledky RTG DKK, DLK, OCD",
+    artGenetickeCat: "Zdraví",
+    artGenetickeTitle: "Máme výsledky genetických testů",
+
+    // Aktuality list – měsíce a excerpty
+    newsListMonth1: "Bře",
+    newsListMonth2: "Čvc",
+    newsListMonth3: "Čvn",
+    newsListMonth4: "Kvě",
+    newsListMonth5: "Kvě",
+    newsListMonth6: "Úno",
+    newsListMonth7: "Led",
+    newsListExcerpt1: "Alma nastoupila poprvé do otevřené třídy a hned V1, vítěz třídy, oblastní vítěz a 3. místo ve skupině FCI 8!",
+    newsListExcerpt2: "Na oblastní klubové výstavě Hubertka 2025 se naposledy ve třídě mladých předvedla naše Alma. Hodnocení V2 a krásný posudek.",
+    newsListExcerpt3: "Na zkoušce vrozených vloh retrivrů v Ústí u Hranic Alminka zvládla všech šest disciplín na plný počet bodů.",
+    newsListExcerpt4: "Kompletní genetické testy na dědičná onemocnění. Alminka je zdravý pejsek – většina výsledků N/N.",
+    newsListExcerpt5: "Na Klubové a Speciální výstavě retrieverů v Humpolci si Alminka oba dny odnesla hodnocení Výborná. Konkurence 30 fen!",
+    newsListExcerpt6: "Na Mezinárodní den Zlatých retrívrů jsme vyrazili na RTG. Výsledky: DKK B/B, DLK 0/0, OCD 0/0, SA a LTV clear.",
+    newsListExcerpt7: "Dort, dárky a malá oslava s kamarády. Milá Alminko, přejeme Ti hlavně hodně zdravíčka!",
+
     docsTitle: "Dokumenty",
     docsIntro:
       'Zde najdete kompletní zdravotní dokumentaci naší fenky <strong>Almy Bohemica Aurum</strong>. Transparentnost výsledků je pro nás samozřejmostí – chceme, aby si každý zájemce o štěně mohl vše ověřit.',
@@ -158,12 +210,96 @@ const translations = {
       "Odesláním zprávy souhlasíte se zpracováním uvedených údajů za účelem odpovědi na váš dotaz. Údaje neposkytujeme třetím stranám.",
     formSubmit: "Odeslat zprávu",
 
+    // Průvodce březostí
+    pregBreadcrumb: "Kalkulačka březosti feny",
+    pregTitle: "Kalkulačka březosti feny — termín porodu a vývoj štěňat",
+    pregLead: "Online kalkulačka březosti feny zdarma. Zadejte datum krytí a okamžitě zjistěte předpokládaný termín porodu, kdy na ultrazvuk, kdy na rentgen a sledujte vývoj štěňat týden po týdnu — od oplodnění až po porod.",
+    pregDateLabel: "Datum krytí",
+    pregCalculate: "Vypočítat",
+    pregDueDate: "Předpokládaný termín porodu",
+    pregWindow: "Okno porodu",
+    pregCurrentDay: "Aktuální den březosti",
+    pregCountdown: "Zbývá do porodu",
+    pregDay1: "Den 1",
+    pregDay63: "Den 63",
+    pregTimelineTitle: "Vývoj štěňat týden po týdnu",
+    pregTipLabel: "Doporučení:",
+    pregMilestoneUltrasound: "Ultrazvuk",
+    pregMilestoneXray: "Rentgen",
+    pregMilestoneBirth: "Porod!",
+    pregWeek1Title: "Týden 1", pregWeek1Days: "den 1–7",
+    pregWeek1Dev: "Po krytí dochází k oplodnění vajíček. Spermie putují vejcovodem k vajíčkům, kde probíhá oplodnění. Oplodněná vajíčka se začínají dělit.",
+    pregWeek1Tip: "Normální režim, kvalitní krmivo. Žádné zvláštní změny nejsou potřeba. Vyvarujte se očkování a chemických přípravků.",
+    pregWeek2Title: "Týden 2", pregWeek2Days: "den 8–14",
+    pregWeek2Dev: "Embrya cestují vejcovodem směrem k děloze. Buňky se dále dělí a formují se zárodečné vrstvy, ze kterých vzniknou orgány.",
+    pregWeek2Tip: "Bez výrazných změn. Zajistěte klidné prostředí, vyvarujte se stresu a nadměrné fyzické zátěže.",
+    pregWeek3Title: "Týden 3", pregWeek3Days: "den 15–21",
+    pregWeek3Dev: "Embrya se implantují do děložní stěny (kolem dne 16–20). Začíná se formovat placenta, která bude zásobovat plody živinami. Fena může mít sníženou chuť k jídlu nebo ranní nevolnost.",
+    pregWeek3Tip: "Nabízejte menší porce častěji. Pokud fena odmítá jídlo, nepanikařte – je to normální. Nadále vynechejte očkování.",
+    pregWeek4Title: "Týden 4", pregWeek4Days: "den 22–28",
+    pregWeek4Dev: "Vyvíjejí se orgány, oči a páteř. Kolem 25. dne je možné ultrazvukem potvrdit březost a detekovat srdeční tep plodů. Embrya mají asi 1,5 cm.",
+    pregWeek4Tip: "Ultrazvuk u veterináře (den 25–30) pro potvrzení březosti. Omezte skákání a hrubé hry.",
+    pregWeek5Title: "Týden 5", pregWeek5Days: "den 29–35",
+    pregWeek5Dev: "Plody rychle rostou – vyvíjejí se tlapky, drápy a vousky. Břicho feny se začíná viditelně zvětšovat. Plody měří kolem 3–4 cm.",
+    pregWeek5Tip: "Postupně zvyšujte příjem bílkovin. Začněte přecházet na kvalitnější krmivo (štěněcí řada). Kratší, ale častější procházky.",
+    pregWeek6Title: "Týden 6", pregWeek6Days: "den 36–42",
+    pregWeek6Dev: "Plody jsou plně formované – mají vyvinutou srst, pigmentaci a pohlavní orgány. Rychle přibírají na váze. Fena výrazně přibírá a její břicho je zřetelně větší.",
+    pregWeek6Tip: "Krmte 3× denně menší porce (štěněcím krmivem). Fena potřebuje více energie, ale žaludek má méně místa. Zajistěte klidné místo k odpočinku.",
+    pregWeek7Title: "Týden 7", pregWeek7Days: "den 43–49",
+    pregWeek7Dev: "Kostra plodů se mineralizuje – od 45. dne je viditelná na rentgenu. Díky tomu lze spočítat přesný počet štěňat. Plody měří kolem 7–9 cm a srst je plně vyvinutá.",
+    pregWeek7Tip: "Rentgen u veterináře (den 45–50) pro zjištění počtu štěňat. Připravte si porodní box. Omezte fyzickou aktivitu na klidné procházky.",
+    pregWeek8Title: "Týden 8", pregWeek8Days: "den 50–56",
+    pregWeek8Dev: "Štěňata jsou téměř plně vyvinutá a zaujímají porodní pozici. Fena začíná hnízdit – hledá klidné místo a může být neklidná. Mléčné žlázy se plní.",
+    pregWeek8Tip: "Porodní box by měl být připravený a fena by si na něj měla zvyknout. Začněte měřit rektální teplotu 2x denně. Připravte vše potřebné k porodu.",
+    pregWeek9Title: "Týden 9", pregWeek9Days: "den 57–65",
+    pregWeek9Dev: "Štěňata jsou připravena na svět! Fena může odmítat jídlo, být neklidná a hledat soukromí. Pokles tělesné teploty pod 37 °C signalizuje porod do 12–24 hodin. U zlatých retrívrů je typická velikost vrhu 6–10 štěňat.",
+    pregWeek9Tip: "Sledujte pokles teploty (pod 37 °C = porod do 24 hodin). Mějte po ruce číslo na veterináře. Zajistěte klid a teplo. Pokud kontrakce trvají déle než 2 hodiny bez porodu štěněte, volejte veterináře.",
+    pregWeek1Size: "~ zrnko p\u00edsku",
+    pregWeek2Size: "~ makov\u00e1 sem\u00ednka (0,5 mm)",
+    pregWeek3Size: "~ zrnko r\u00fd\u017ee (5 mm)",
+    pregWeek4Size: "~ l\u00edskovy o\u0159\u00ed\u0161ek (1,5 cm)",
+    pregWeek5Size: "~ vlask\u00fd o\u0159ech (3\u20134 cm)",
+    pregWeek6Size: "~ mandarinka (6\u20139 cm)",
+    pregWeek7Size: "~ citr\u00f3n (10\u201314 cm)",
+    pregWeek8Size: "~ mango (15\u201318 cm)",
+    pregWeek9Size: "~ mal\u00fd meloun (20 cm, 350\u2013500 g)",
+    pregKeyDatesTitle: "Kl\u00ed\u010dov\u00e1 data",
+    pregKeyMating: "Datum kryt\u00ed",
+    pregKeyUltrasound: "Ultrazvuk (den 25\u201330)",
+    pregKeyXray: "Rentgen (den 45\u201350)",
+    pregKeyBirth: "Porod (den 63)",
+    pregKeyDeparture: "Odchod do nov\u00fdch rodin (od 8. t\u00fddne)",
+    pregShowPast: "Zobrazit p\u0159edchoz\u00ed t\u00fddny",
+    pregHidePast: "Skr\u00fdt p\u0159edchoz\u00ed t\u00fddny",
+    pregVideoTitle: "V\u00fdvoj \u0161t\u011b\u0148at v b\u0159i\u0161e feny",
+    pregVideoDesc: "Fascinuj\u00edc\u00ed z\u00e1b\u011bry National Geographic ukazuj\u00edc\u00ed, jak se \u0161t\u011b\u0148ata vyv\u00edj\u00ed od oplodn\u011bn\u00ed a\u017e po porod.",
+    pregChecklistTitle: "Co p\u0159ipravit na porod",
+    pregChecklistItems: "Porodn\u00ed box (min. 120\u00d7120 cm pro zlat\u00e9ho retr\u00edvra); \u010cist\u00e9 ru\u010dn\u00edky a podlo\u017eky; Digit\u00e1ln\u00ed teplom\u011br; Dezinfekce a steriln\u00ed n\u016f\u017eky; V\u00e1ha pro v\u00e1\u017een\u00ed \u0161t\u011b\u0148at; Barevn\u00e9 obojky/stu\u017eky pro ozna\u010den\u00ed \u0161t\u011b\u0148at; Telefon na veterin\u00e1\u0159e a pohotovost; N\u00e1hradn\u00ed ml\u00e9ko pro \u0161t\u011b\u0148ata (pro p\u0159\u00edpad)",
+    pregGoldenTitle: "Specifika zlat\u00e9ho retr\u00edvra",
+    pregGoldenInfo: "D\u00e9lka b\u0159ezosti: 58\u201365 dn\u00ed (pr\u016fm\u011br 63 dn\u00ed); Typick\u00e1 velikost vrhu: 6\u201310 \u0161t\u011b\u0148at; V\u00e1ha novorozen\u00e9ho \u0161t\u011bn\u011bte: 350\u2013500 g; Zlat\u00ed retr\u00edv\u0159i jsou obecn\u011b dobr\u00e9 matky; C\u00edsa\u0159sk\u00fd \u0159ez je u tohoto plemene m\u00e9n\u011b \u010dast\u00fd; Po porodu fena pot\u0159ebuje 3\u20134\u00d7 v\u00edce energie",
+    pregFaqTitle: "Nej\u010dast\u011bj\u0161\u00ed ot\u00e1zky o b\u0159ezosti feny",
+    pregFaq1Q: "Jak dlouho trv\u00e1 b\u0159ezost feny?",
+    pregFaq1A: "B\u0159ezost feny trv\u00e1 pr\u016fm\u011brn\u011b 63 dn\u00ed (9 t\u00fddn\u016f) od data kryt\u00ed. Porod m\u016f\u017ee nastat mezi 58. a 65. dnem. U zlat\u00fdch retr\u00edvr\u016f je pr\u016fm\u011brn\u00e1 d\u00e9lka b\u0159ezosti 63 dn\u00ed.",
+    pregFaq2Q: "Kdy ud\u011blat ultrazvuk b\u0159ez\u00ed feny?",
+    pregFaq2A: "Ultrazvuk b\u0159ez\u00ed feny se prov\u00e1d\u00ed mezi 25. a 30. dnem od kryt\u00ed. V tomto obdob\u00ed lze potvrdit b\u0159ezost a detekovat srde\u010dn\u00ed tep plod\u016f.",
+    pregFaq3Q: "Kdy ud\u011blat rentgen b\u0159ez\u00ed feny?",
+    pregFaq3A: "Rentgen b\u0159ez\u00ed feny se doporu\u010duje od 45. dne b\u0159ezosti. Umo\u017e\u0148uje p\u0159esn\u011b spo\u010d\u00edtat po\u010det \u0161t\u011b\u0148at podle viditeln\u00fdch kost\u00ed.",
+    pregFaq4Q: "Kolik \u0161t\u011b\u0148at m\u00e1 zlat\u00fd retr\u00edvr?",
+    pregFaq4A: "Zlat\u00fd retr\u00edvr m\u00e1 typicky 6 a\u017e 10 \u0161t\u011b\u0148at ve vrhu. Novorozen\u00e9 \u0161t\u011bn\u011b v\u00e1\u017e\u00ed 350\u2013500 g. Velikost vrhu z\u00e1vis\u00ed na v\u011bku, zdrav\u00ed a genetice feny.",
+    pregFaq5Q: "Jak pozn\u00e1m, \u017ee fena bude rodit?",
+    pregFaq5A: "Hlavn\u00edm p\u0159\u00edznakem bl\u00ed\u017e\u00edc\u00edho se porodu je pokles t\u011blesn\u00e9 teploty feny pod 37 \u00b0C, co\u017e signalizuje porod do 12\u201324 hodin. Fena m\u016f\u017ee b\u00fdt neklidn\u00e1, odm\u00edtat j\u00eddlo a hledat \u00fakryt.",
+    pregFaq6Q: "Kdy mohou \u0161t\u011b\u0148ata odej\u00edt do nov\u00fdch rodin?",
+    pregFaq6A: "\u0160t\u011b\u0148ata mohou odej\u00edt do nov\u00fdch rodin nejd\u0159\u00edve v 8 t\u00fddnech v\u011bku (56 dn\u00ed po narozen\u00ed). Do t\u00e9 doby pot\u0159ebuj\u00ed b\u00fdt s matkou pro spr\u00e1vn\u00fd fyzick\u00fd i psychick\u00fd v\u00fdvoj.",
+    pregDisclaimer: "<strong>Upozorn\u011bn\u00ed:</strong> Tento pr\u016fvodce slou\u017e\u00ed jako orienta\u010dn\u00ed pom\u016fcka. Ka\u017ed\u00e1 b\u0159ezost je individu\u00e1ln\u00ed. V\u017edy konzultujte pr\u016fb\u011bh b\u0159ezosti s va\u0161\u00edm veterin\u00e1\u0159em a \u0159i\u010fte se jeho doporu\u010den\u00edmi.",
+    pregBackHome: "Zp\u011bt na hlavn\u00ed str\u00e1nku",
+    pregContactCta: "M\u00e1te dotaz? Napi\u0161te n\u00e1m",
+
     footerNavTitle: "Navigace",
     footerContactTitle: "Kontakt",
     footerAboutTitle: "O stanici",
     footerAboutText:
-      "Rosenaw Aurum — rodinná chovatelská stanice zlatých retrívrů v Beskydech. Chováme s láskou, péčí a respektem k plemeni.",
-    footerRights: "Všechna práva vyhrazena.",
+      "Rosenaw Aurum \u2014 rodinn\u00e1 chovatelsk\u00e1 stanice zlat\u00fdch retr\u00edvr\u016f v Beskydech. Chov\u00e1me s l\u00e1skou, p\u00e9\u010d\u00ed a respektem k plemeni.",
+    footerRights: "V\u0161echna pr\u00e1va vyhrazena.",
   },
 
   en: {
@@ -212,13 +348,18 @@ const translations = {
     almaBasic: "born 27 January 2024 • Golden Retriever, female • ČLP/GR/25733",
     almaCharacterTitle: "Temperament",
     almaPersonality:
-      '<strong>Alma</strong> is our long‑awaited Golden girl. She brought new energy and joy into our home and quickly became a dog for every occasion – a companion for trips, holidays, sports and quiet evenings on the sofa.',
+      '<strong>Alma</strong> is our dream Golden Retriever girl. She came into our lives like a whirlwind and quickly became a companion for every occasion \u2013 trips, holidays, sports and quiet evenings at home.',
+    almaPersonality2: "She has a remarkable gift for sensing the energy of others \u2013 whether people or dogs \u2013 and naturally adapting to it. This makes her incredibly non-confrontational and harmonious. She loves everyone unconditionally, is friendly and open, yet beautifully calm at home.",
+    almaPersonality3: 'At the same time, she can\u2019t hide her playful "devil" side when it\u2019s time for action.',
     almaTrait1: "Friendly",
-    almaTrait2: "Eager to learn",
-    almaTrait3: "Active",
-    almaTrait4: "Calm at home",
-    almaTrait5: "Loves water",
-    almaTrait6: "Loves to retrieve",
+    almaTrait2: "Empathetic",
+    almaTrait3: "Non-confrontational",
+    almaTrait4: "Perceptive",
+    almaTrait5: "Calm at home",
+    almaTrait6: "Active outdoors",
+    almaTrait7: "Loves everyone",
+    almaTrait8: "Loves water",
+    almaTrait9: "Loves to retrieve",
     almaHealthTitle: "Health",
     healthCatRtg: "X-ray examinations",
     healthCatDna: "Genetic (DNA) tests",
@@ -277,9 +418,56 @@ const translations = {
     newsTitle: "News",
     newsIntro:
       "Short updates about our dogs, planned litters, shows, working tests and small joys of everyday life.",
+    newsMonth1: "Mar",
+    newsTitle1: "Alma's first open class – Provodovice show",
+    newsExcerpt1: "Alma entered the open class for the first time and won V1, class winner, regional winner and 3rd place in FCI group 8!",
+    newsMonth2: "Jul",
+    newsTitle2: "Alma and mum at the Bordovice show",
+    newsExcerpt2: "At the regional club show Hubertka 2025, Alma competed in the junior class for the last time. Rating V2 with an excellent critique.",
+    newsMonth3: "Jun",
+    newsTitle3: "Alma aced the OVVR working test",
+    newsExcerpt3: "At the natural retrieving ability test in Ústí u Hranic, Alma passed all six disciplines with a perfect score.",
     newsAllLink: "All news \u2192",
     newsPageTitle: "News",
     newsBackLink: "\u2190 Back to homepage",
+
+    // Articles – common
+    articleBack: "\u2190 Back to news",
+    shareLabel: "Share:",
+    shareCopy: "Copy link",
+
+    // Articles – individual
+    artProvodoviceCat: "Shows",
+    artProvodoviceTitle: "Alma\u2019s first open class \u2013 Provodovice dog show",
+    artBordoviceCat: "Shows",
+    artBordoviceTitle: "Alma and mum at the Bordovice show",
+    artOvvrCat: "Working tests",
+    artOvvrTitle: "Alma aced the OVVR working test",
+    artHumpolecCat: "Shows",
+    artHumpolecTitle: "Alma shines at the Humpolec retriever show",
+    artNarozeninyCat: "Everyday life",
+    artNarozeninyTitle: "Alma celebrates her 1st birthday",
+    artRtgCat: "Health",
+    artRtgTitle: "X-ray results: hips, elbows & spine",
+    artGenetickeCat: "Health",
+    artGenetickeTitle: "Genetic test results are in",
+
+    // News list – months and excerpts
+    newsListMonth1: "Mar",
+    newsListMonth2: "Jul",
+    newsListMonth3: "Jun",
+    newsListMonth4: "May",
+    newsListMonth5: "May",
+    newsListMonth6: "Feb",
+    newsListMonth7: "Jan",
+    newsListExcerpt1: "Alma entered the open class for the first time and won V1, class winner, regional winner and 3rd place in FCI group 8!",
+    newsListExcerpt2: "At the regional club show Hubertka 2025, Alma competed in the junior class for the last time. Rating V2 with an excellent critique.",
+    newsListExcerpt3: "At the natural retrieving ability test in \u00dast\u00ed u Hranic, Alma passed all six disciplines with a perfect score.",
+    newsListExcerpt4: "Full genetic screening for hereditary diseases. Alma is a healthy girl \u2013 most results N/N (clear).",
+    newsListExcerpt5: "At the Club and Specialty retriever show in Humpolec, Alma received an Excellent rating both days. 30 females in her class!",
+    newsListExcerpt6: "On International Golden Retriever Day we went for X-rays. Results: hips B/B, elbows 0/0, OCD 0/0, SA & LTV clear.",
+    newsListExcerpt7: "Cake, presents and a little party with friends. Happy 1st birthday, dear Alma!",
+
     docsTitle: "Documents",
     docsIntro:
       'Here you will find the complete health documentation of our female <strong>Alma Bohemica Aurum</strong>. Transparency is a given for us – we want every potential puppy owner to be able to verify everything.',
@@ -323,6 +511,90 @@ const translations = {
     formNote:
       "By sending this message you agree that we process the provided data in order to answer your enquiry. We do not share your data with third parties.",
     formSubmit: "Send message",
+
+    // Pregnancy guide
+    pregBreadcrumb: "Dog pregnancy calculator",
+    pregTitle: "Dog pregnancy calculator — due date & puppy development",
+    pregLead: "Free online dog pregnancy calculator. Enter the mating date and instantly find out the expected whelping date, when to schedule an ultrasound and X-ray, and follow your puppies' development week by week — from fertilisation to birth.",
+    pregDateLabel: "Mating date",
+    pregCalculate: "Calculate",
+    pregDueDate: "Expected whelping date",
+    pregWindow: "Whelping window",
+    pregCurrentDay: "Current day of pregnancy",
+    pregCountdown: "Days until whelping",
+    pregDay1: "Day 1",
+    pregDay63: "Day 63",
+    pregTimelineTitle: "Puppy development week by week",
+    pregTipLabel: "Recommendation:",
+    pregMilestoneUltrasound: "Ultrasound",
+    pregMilestoneXray: "X-ray",
+    pregMilestoneBirth: "Whelping!",
+    pregWeek1Title: "Week 1", pregWeek1Days: "day 1–7",
+    pregWeek1Dev: "After mating, fertilisation occurs. Sperm travel through the oviduct to the eggs. Fertilised eggs begin to divide.",
+    pregWeek1Tip: "Normal routine, quality food. No special changes needed. Avoid vaccinations and chemical treatments.",
+    pregWeek2Title: "Week 2", pregWeek2Days: "day 8–14",
+    pregWeek2Dev: "Embryos travel through the oviduct towards the uterus. Cells continue to divide, forming germ layers that will become organs.",
+    pregWeek2Tip: "No major changes. Ensure a calm environment, avoid stress and excessive physical activity.",
+    pregWeek3Title: "Week 3", pregWeek3Days: "day 15–21",
+    pregWeek3Dev: "Embryos implant into the uterine wall (around day 16–20). The placenta begins to form, supplying nutrients to the foetuses. The dam may have reduced appetite or morning sickness.",
+    pregWeek3Tip: "Offer smaller portions more frequently. If the dam refuses food, don't panic – this is normal. Continue to skip vaccinations.",
+    pregWeek4Title: "Week 4", pregWeek4Days: "day 22–28",
+    pregWeek4Dev: "Organs, eyes and spine develop. Around day 25, pregnancy can be confirmed by ultrasound and foetal heartbeats detected. Embryos are about 1.5 cm long.",
+    pregWeek4Tip: "Ultrasound at the vet (day 25–30) to confirm pregnancy. Limit jumping and rough play.",
+    pregWeek5Title: "Week 5", pregWeek5Days: "day 29–35",
+    pregWeek5Dev: "Foetuses grow rapidly – paws, claws and whiskers develop. The dam's belly starts to visibly enlarge. Foetuses measure about 3–4 cm.",
+    pregWeek5Tip: "Gradually increase protein intake. Start transitioning to higher-quality food (puppy formula). Shorter but more frequent walks.",
+    pregWeek6Title: "Week 6", pregWeek6Days: "day 36–42",
+    pregWeek6Dev: "Foetuses are fully formed – they have developed fur, pigmentation and reproductive organs. They gain weight rapidly. The dam gains weight noticeably and her belly is clearly larger.",
+    pregWeek6Tip: "Feed 3× daily in smaller portions (puppy food). The dam needs more energy, but her stomach has less room. Provide a quiet resting area.",
+    pregWeek7Title: "Week 7", pregWeek7Days: "day 43–49",
+    pregWeek7Dev: "Foetal skeletons mineralise – visible on X-ray from day 45. This allows an accurate puppy count. Foetuses measure about 7–9 cm with fully developed coats.",
+    pregWeek7Tip: "X-ray at the vet (day 45–50) to count puppies. Prepare the whelping box. Limit physical activity to calm walks.",
+    pregWeek8Title: "Week 8", pregWeek8Days: "day 50–56",
+    pregWeek8Dev: "Puppies are nearly fully developed and move into birthing position. The dam starts 'nesting' – seeking a quiet spot and may become restless. Mammary glands fill with milk.",
+    pregWeek8Tip: "The whelping box should be ready and the dam should be accustomed to it. Start taking rectal temperature twice daily. Prepare all whelping supplies.",
+    pregWeek9Title: "Week 9", pregWeek9Days: "day 57–65",
+    pregWeek9Dev: "Puppies are ready for the world! The dam may refuse food, become restless and seek privacy. A temperature drop below 37 °C signals whelping within 12–24 hours. Golden Retrievers typically have litters of 6–10 puppies.",
+    pregWeek9Tip: "Watch for temperature drop (below 37 °C = whelping within 24 hours). Have the vet's number ready. Ensure calm and warmth. If contractions last longer than 2 hours without a puppy being born, call the vet.",
+    pregWeek1Size: "~ grain of sand",
+    pregWeek2Size: "~ poppy seeds (0.5 mm)",
+    pregWeek3Size: "~ grain of rice (5 mm)",
+    pregWeek4Size: "~ hazelnut (1.5 cm)",
+    pregWeek5Size: "~ walnut (3\u20134 cm)",
+    pregWeek6Size: "~ tangerine (6\u20139 cm)",
+    pregWeek7Size: "~ lemon (10\u201314 cm)",
+    pregWeek8Size: "~ mango (15\u201318 cm)",
+    pregWeek9Size: "~ small melon (20 cm, 350\u2013500 g)",
+    pregKeyDatesTitle: "Key dates",
+    pregKeyMating: "Mating date",
+    pregKeyUltrasound: "Ultrasound (day 25\u201330)",
+    pregKeyXray: "X-ray (day 45\u201350)",
+    pregKeyBirth: "Whelping (day 63)",
+    pregKeyDeparture: "First departure to new homes (from week 8)",
+    pregShowPast: "Show previous weeks",
+    pregHidePast: "Hide previous weeks",
+    pregVideoTitle: "Puppy development in the womb",
+    pregVideoDesc: "Fascinating National Geographic footage showing how puppies develop from fertilisation to birth.",
+    pregChecklistTitle: "What to prepare for whelping",
+    pregChecklistItems: "Whelping box (min. 120\u00d7120 cm for a Golden Retriever); Clean towels and pads; Digital thermometer; Disinfectant and sterile scissors; Scale for weighing puppies; Coloured collars/ribbons to identify puppies; Vet's and emergency phone numbers; Puppy milk replacer (just in case)",
+    pregGoldenTitle: "Golden Retriever specifics",
+    pregGoldenInfo: "Gestation length: 58\u201365 days (average 63 days); Typical litter size: 6\u201310 puppies; Newborn puppy weight: 350\u2013500 g; Golden Retrievers are generally excellent mothers; C-section is less common in this breed; After whelping the dam needs 3\u20134\u00d7 more energy",
+    pregFaqTitle: "Frequently asked questions about dog pregnancy",
+    pregFaq1Q: "How long is a dog pregnant?",
+    pregFaq1A: "A dog\u2019s pregnancy (gestation) lasts an average of 63 days (9 weeks) from the mating date. Whelping may occur between day 58 and day 65. Golden Retrievers average 63 days of gestation.",
+    pregFaq2Q: "When to do an ultrasound on a pregnant dog?",
+    pregFaq2A: "An ultrasound can be performed between day 25 and 30 after mating. At this stage the vet can confirm pregnancy and detect foetal heartbeats.",
+    pregFaq3Q: "When to do an X-ray on a pregnant dog?",
+    pregFaq3A: "An X-ray is recommended from day 45 of pregnancy. It allows accurate counting of puppies based on visible skeletal structures.",
+    pregFaq4Q: "How many puppies does a Golden Retriever have?",
+    pregFaq4A: "A Golden Retriever typically has 6 to 10 puppies per litter. A newborn puppy weighs 350\u2013500 g. Litter size depends on the dam\u2019s age, health, and genetics.",
+    pregFaq5Q: "How do I know my dog is about to give birth?",
+    pregFaq5A: "The main sign of imminent whelping is a drop in the dam\u2019s body temperature below 37 \u00b0C (98.6 \u00b0F), signalling birth within 12\u201324 hours. She may become restless, refuse food, and seek a secluded spot.",
+    pregFaq6Q: "When can puppies go to their new homes?",
+    pregFaq6A: "Puppies can leave for their new homes at the earliest at 8 weeks of age (56 days after birth). Until then they need to stay with their mother for proper physical and psychological development.",
+    pregDisclaimer: "<strong>Disclaimer:</strong> This guide is for informational purposes only. Every pregnancy is unique. Always consult your veterinarian and follow their recommendations.",
+    pregBackHome: "Back to homepage",
+    pregContactCta: "Have a question? Contact us",
 
     footerNavTitle: "Navigation",
     footerContactTitle: "Contact",
@@ -804,6 +1076,288 @@ function setupShareButtons() {
   });
 }
 
+function setupPregnancyCalculator() {
+  var btn = document.getElementById("preg-calculate");
+  var input = document.getElementById("mating-date");
+  if (!btn || !input) return;
+
+  // --- Generate vertical paw prints ---
+  // Realistic 4-legged gait: front-left, hind-right, front-right, hind-left
+  // Sinusoidal path with natural spacing
+  var pawLine = document.getElementById("preg-paw-line");
+  var pawLeft = '<svg class="paw" viewBox="0 0 32 32" fill="currentColor"><ellipse cx="16" cy="21" rx="5" ry="4"/><ellipse cx="9.5" cy="12" rx="2.5" ry="3.2"/><ellipse cx="15" cy="9.5" rx="2.2" ry="3"/><ellipse cx="21" cy="10" rx="2.3" ry="3"/><ellipse cx="25" cy="14.5" rx="2" ry="2.8"/></svg>';
+  var pawRight = '<svg class="paw" viewBox="0 0 32 32" fill="currentColor"><ellipse cx="16" cy="21" rx="5" ry="4"/><ellipse cx="22.5" cy="12" rx="2.5" ry="3.2"/><ellipse cx="17" cy="9.5" rx="2.2" ry="3"/><ellipse cx="11" cy="10" rx="2.3" ry="3"/><ellipse cx="7" cy="14.5" rx="2" ry="2.8"/></svg>';
+  var PAW_COUNT = 48;
+  var TRAIL_LEN = 6;
+  var STEP_DELAY = 220;
+  var WAVE_AMP = 6;
+  var pawWalkTimers = [];
+  var allPaws = [];
+
+  if (pawLine) {
+    pawLine.innerHTML = "";
+    for (var i = 0; i < PAW_COUNT; i++) {
+      // 4-beat gait: FL, HR, FR, HL (front-left, hind-right, front-right, hind-left)
+      var beat = i % 4;
+      var isLeftPaw = (beat === 0 || beat === 3); // FL or HL
+      var div = document.createElement("div");
+      div.innerHTML = isLeftPaw ? pawLeft : pawRight;
+      var paw = div.firstChild;
+
+      var yPct = (i / (PAW_COUNT - 1)) * 100;
+      // Sinusoidal wave — left paws go left, right paws go right
+      var wave = Math.sin((i / PAW_COUNT) * Math.PI * 4) * WAVE_AMP;
+      var sideOffset = isLeftPaw ? -3 : 3;
+      var xPx = wave + sideOffset;
+      // Slight rotation following the curve
+      var rot = 180 + (Math.cos((i / PAW_COUNT) * Math.PI * 4) * 6);
+      var scale = 0.8 + Math.sin(i * 0.9) * 0.08;
+
+      paw.style.top = yPct + "%";
+      paw.style.transform = "translateX(calc(-50% + " + xPx.toFixed(1) + "px)) rotate(" + rot.toFixed(1) + "deg) scale(" + scale.toFixed(2) + ")";
+      pawLine.appendChild(paw);
+    }
+    allPaws = pawLine.querySelectorAll(".paw");
+  }
+
+  // Walk paws animation — same pattern as hero stepper
+  function walkPawsDown(targetIdx) {
+    pawWalkTimers.forEach(function(t) { clearTimeout(t); });
+    pawWalkTimers = [];
+    allPaws.forEach(function(p) { p.classList.remove("is-visible", "is-fading"); });
+
+    for (var i = 0; i <= targetIdx; i++) {
+      (function(idx, delay) {
+        pawWalkTimers.push(setTimeout(function() {
+          allPaws[idx].classList.remove("is-fading");
+          allPaws[idx].classList.add("is-visible");
+          for (var j = 0; j < idx; j++) {
+            var age = idx - j;
+            if (age <= TRAIL_LEN) {
+              allPaws[j].classList.add("is-visible");
+              allPaws[j].classList.remove("is-fading");
+              if (age === TRAIL_LEN) {
+                allPaws[j].classList.add("is-fading");
+              }
+            } else {
+              allPaws[j].classList.remove("is-visible");
+              allPaws[j].classList.add("is-fading");
+            }
+          }
+        }, delay));
+      })(i, i * STEP_DELAY);
+    }
+
+    // After walk — let trail linger longer, then slowly fade
+    pawWalkTimers.push(setTimeout(function() {
+      allPaws.forEach(function(p) { p.classList.add("is-fading"); });
+    }, (targetIdx + 1) * STEP_DELAY + 1500));
+
+    pawWalkTimers.push(setTimeout(function() {
+      allPaws.forEach(function(p) {
+        p.classList.remove("is-visible", "is-fading");
+      });
+    }, (targetIdx + 1) * STEP_DELAY + 3500));
+  }
+
+  // Trigger paw walk when timeline scrolls into view
+  if (pawLine && allPaws.length && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    var pawObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          walkPawsDown(PAW_COUNT - 1);
+          pawObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.05 });
+    pawObserver.observe(document.getElementById("preg-timeline"));
+  } else if (allPaws.length) {
+    allPaws.forEach(function(p) { p.classList.add("is-visible"); });
+  }
+
+  // --- Scroll-triggered card animations ---
+  var weeks = document.querySelectorAll(".preg-week");
+  var prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (!prefersReduced && weeks.length) {
+    weeks.forEach(function(w) { w.classList.add("is-animatable"); });
+    var weekObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          var w = entry.target;
+          var idx = parseInt(w.dataset.week, 10);
+          setTimeout(function() {
+            w.classList.add("is-anim-visible");
+          }, (idx - 1) * 120);
+          weekObserver.unobserve(w);
+        }
+      });
+    }, { threshold: 0.15 });
+    weeks.forEach(function(w) { weekObserver.observe(w); });
+  }
+
+  // --- Past weeks toggle ---
+  var toggleBtn = document.getElementById("preg-past-toggle");
+  var pastExpanded = false;
+
+  function collapsePastWeeks(activeWeek) {
+    if (activeWeek <= 1) return;
+    toggleBtn.hidden = false;
+    pastExpanded = false;
+    toggleBtn.classList.remove("is-expanded");
+    var toggleLabel = toggleBtn.querySelector("[data-i18n]");
+
+    weeks.forEach(function(w) {
+      var wk = parseInt(w.dataset.week, 10);
+      if (wk < activeWeek) {
+        w.classList.add("is-past-hidden");
+      } else {
+        w.classList.remove("is-past-hidden");
+      }
+    });
+
+    toggleBtn.onclick = function() {
+      pastExpanded = !pastExpanded;
+      toggleBtn.classList.toggle("is-expanded", pastExpanded);
+      var lang = document.documentElement.lang || "cs";
+      if (toggleLabel) {
+        toggleLabel.textContent = pastExpanded
+          ? (lang === "en" ? "Hide previous weeks" : "Skrýt předchozí týdny")
+          : (lang === "en" ? "Show previous weeks" : "Zobrazit předchozí týdny");
+      }
+      weeks.forEach(function(w) {
+        var wk = parseInt(w.dataset.week, 10);
+        if (wk < activeWeek) {
+          w.classList.toggle("is-past-hidden", !pastExpanded);
+          if (pastExpanded) {
+            w.classList.remove("is-animatable");
+            w.classList.add("is-anim-visible");
+          }
+        }
+      });
+    };
+  }
+
+  // --- Date formatting helper ---
+  function fmt(d) {
+    var lang = document.documentElement.lang || "cs";
+    return d.toLocaleDateString(lang === "en" ? "en-GB" : "cs-CZ", {
+      day: "numeric", month: "long", year: "numeric"
+    });
+  }
+
+  function fmtShort(d) {
+    var lang = document.documentElement.lang || "cs";
+    return d.toLocaleDateString(lang === "en" ? "en-GB" : "cs-CZ", {
+      day: "numeric", month: "short"
+    });
+  }
+
+  function addDays(d, n) {
+    var r = new Date(d);
+    r.setDate(r.getDate() + n);
+    return r;
+  }
+
+  // --- Main calculate ---
+  btn.addEventListener("click", function() {
+    var matingDate = new Date(input.value);
+    if (isNaN(matingDate.getTime())) return;
+
+    // Reset state
+    toggleBtn.hidden = true;
+    weeks.forEach(function(w) { w.classList.remove("is-past-hidden", "preg-week--active", "preg-week--past"); });
+
+    var results = document.getElementById("preg-results");
+    results.hidden = false;
+
+    var dueDate = addDays(matingDate, 63);
+    var earlyDate = addDays(matingDate, 58);
+    var lateDate = addDays(matingDate, 65);
+    var ultrasoundStart = addDays(matingDate, 25);
+    var ultrasoundEnd = addDays(matingDate, 30);
+    var xrayStart = addDays(matingDate, 45);
+    var xrayEnd = addDays(matingDate, 50);
+    var departureDate = addDays(matingDate, 63 + 56); // porod + 8 tyden
+
+    var lang = document.documentElement.lang || "cs";
+
+    document.getElementById("preg-due-date").textContent = fmt(dueDate);
+    document.getElementById("preg-window").textContent = fmt(earlyDate) + " – " + fmt(lateDate);
+
+    // Key dates
+    var keyDates = document.getElementById("preg-key-dates");
+    keyDates.hidden = false;
+    document.getElementById("key-mating").textContent = fmt(matingDate);
+    document.getElementById("key-ultrasound").textContent = fmtShort(ultrasoundStart) + " – " + fmtShort(ultrasoundEnd);
+    document.getElementById("key-xray").textContent = fmtShort(xrayStart) + " – " + fmtShort(xrayEnd);
+    document.getElementById("key-birth").textContent = fmt(dueDate);
+    document.getElementById("key-departure").textContent = (lang === "en" ? "from " : "od ") + fmt(departureDate);
+
+    var today = new Date();
+    today.setHours(0, 0, 0, 0);
+    var matingMs = new Date(matingDate);
+    matingMs.setHours(0, 0, 0, 0);
+
+    var currentDay = Math.floor((today - matingMs) / (1000 * 60 * 60 * 24));
+    var daysLeft = Math.ceil((dueDate - today) / (1000 * 60 * 60 * 24));
+
+    var dayEl = document.getElementById("preg-current-day");
+    var countdownEl = document.getElementById("preg-countdown");
+    var progressEl = document.getElementById("preg-progress");
+
+    if (currentDay >= 0 && currentDay <= 65) {
+      var currentWeek = Math.ceil(currentDay / 7) || 1;
+      if (currentWeek > 9) currentWeek = 9;
+      dayEl.textContent = (lang === "en" ? "Day " : "Den ") + currentDay +
+        " (" + (lang === "en" ? "week " : "tyden ") + currentWeek + ")";
+
+      if (daysLeft > 0) {
+        countdownEl.textContent = daysLeft + (lang === "en" ? " days" : " dni");
+      } else if (daysLeft === 0) {
+        countdownEl.textContent = lang === "en" ? "Today!" : "Dnes!";
+      } else {
+        countdownEl.textContent = lang === "en" ? "Past due date" : "Po terminu";
+      }
+
+      var progress = Math.min(Math.max(currentDay / 63 * 100, 0), 100);
+      progressEl.style.width = progress + "%";
+
+      // Highlight weeks
+      weeks.forEach(function(week) {
+        var w = parseInt(week.dataset.week);
+        week.classList.remove("preg-week--active", "preg-week--past");
+        if (w === currentWeek) {
+          week.classList.add("preg-week--active");
+        } else if (w < currentWeek) {
+          week.classList.add("preg-week--past");
+        }
+      });
+
+      // Collapse past weeks
+      collapsePastWeeks(currentWeek);
+
+    } else if (currentDay < 0) {
+      dayEl.textContent = lang === "en" ? "Not started yet" : "B\u0159ezost je\u0161t\u011b neza\u010dala";
+      countdownEl.textContent = Math.abs(currentDay) + (lang === "en" ? " days until mating" : " dn\u00ed do kryt\u00ed");
+      progressEl.style.width = "0%";
+      weeks.forEach(function(week) {
+        week.classList.remove("preg-week--active", "preg-week--past", "is-past-hidden");
+      });
+      toggleBtn.hidden = true;
+    } else {
+      dayEl.textContent = lang === "en" ? "Pregnancy ended" : "B\u0159ezost skon\u010dila";
+      countdownEl.textContent = "\u2014";
+      progressEl.style.width = "100%";
+      weeks.forEach(function(week) {
+        week.classList.add("preg-week--past");
+        week.classList.remove("preg-week--active", "is-past-hidden");
+      });
+      toggleBtn.hidden = true;
+    }
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   setupLanguageSwitch();
   setupGalleryFilter();
@@ -818,5 +1372,6 @@ document.addEventListener("DOMContentLoaded", () => {
   setupCookieBanner();
   setupStickyHeader();
   setupShareButtons();
+  setupPregnancyCalculator();
 });
 
