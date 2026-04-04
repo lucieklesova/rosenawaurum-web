@@ -342,6 +342,32 @@ button:focus:not(:focus-visible) {
   transform: scale(1.1);
 }
 
+.header-calc {
+  position: relative;
+}
+
+.header-calc::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 6px;
+  padding: 0.3rem 0.6rem;
+  background: var(--color-dark);
+  color: #fdfdfd;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.7rem;
+  white-space: nowrap;
+  border-radius: 4px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+}
+
+.header-calc:hover::after {
+  opacity: 1;
+}
+
 .header-calc--active {
   color: var(--color-gold-dark);
 }

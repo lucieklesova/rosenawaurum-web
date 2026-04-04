@@ -11,6 +11,7 @@ const translations = {
     navNews: "Aktuality",
     navDocs: "Dokumenty",
     navContact: "Kontakt",
+    navCalc: "Kalkulačka březosti",
 
     heroTitle: "Zlatí retrívři vychovaní s\u00a0láskou v\u00a0srdci Beskyd.",
     heroSubtitle:
@@ -312,6 +313,7 @@ const translations = {
     navNews: "News",
     navDocs: "Documents",
     navContact: "Contact",
+    navCalc: "Pregnancy calculator",
 
     heroTitle: "Golden retrievers raised with\u00a0love in the heart of\u00a0Beskydy.",
     heroSubtitle:
