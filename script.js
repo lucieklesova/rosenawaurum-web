@@ -953,20 +953,31 @@ function setupHamburger() {
   const menu = document.getElementById("mobile-menu");
   if (!btn || !menu) return;
 
+  // Create backdrop
+  const backdrop = document.createElement("div");
+  backdrop.className = "mobile-menu-backdrop";
+  menu.parentNode.insertBefore(backdrop, menu);
+
+  function closeMenu() {
+    menu.classList.remove("is-open");
+    backdrop.classList.remove("is-visible");
+    btn.classList.remove("is-open");
+    btn.setAttribute("aria-expanded", "false");
+    document.body.style.overflow = "";
+  }
+
   btn.addEventListener("click", () => {
     const open = menu.classList.toggle("is-open");
+    backdrop.classList.toggle("is-visible", open);
     btn.classList.toggle("is-open", open);
     btn.setAttribute("aria-expanded", open);
     document.body.style.overflow = open ? "hidden" : "";
   });
 
+  backdrop.addEventListener("click", closeMenu);
+
   menu.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      menu.classList.remove("is-open");
-      btn.classList.remove("is-open");
-      btn.setAttribute("aria-expanded", "false");
-      document.body.style.overflow = "";
-    });
+    link.addEventListener("click", closeMenu);
   });
 }
 
