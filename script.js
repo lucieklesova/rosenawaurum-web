@@ -95,6 +95,7 @@ const translations = {
     puppiesPlannedText:
       "Chystáme první vrh naší Alminky. Podrobnosti o krycím pejskovi zveřejníme, jakmile budeme mít vše potvrzené.",
     puppiesPlannedCta: "Mám zájem o štěně",
+    puppiesPhotoCaption: 'Foto z mateřské chovatelské stanice <a href="https://www.bohemica-aurum.cz/kopie-z-apollo/" target="_blank" rel="noopener noreferrer">Bohemica Aurum</a> — <a href="https://www.bohemica-aurum.cz/kopie-z-apollo/" target="_blank" rel="noopener noreferrer">deníček štěňátek</a>',
     puppiesArchiveTitle: "Archiv vrhů",
     puppiesArchiveText:
       "Po jednotlivých vrzích zde najdete přehled rodičů, data narození a odkazy na fotogalerie. V tuto chvíli ještě žádné odchované vrhy nemáme.",
@@ -397,6 +398,7 @@ const translations = {
     puppiesPlannedText:
       "We are preparing Alma's first litter. Details about the sire will be announced once confirmed.",
     puppiesPlannedCta: "I'm interested in a puppy",
+    puppiesPhotoCaption: 'Photo from the maternal kennel <a href="https://www.bohemica-aurum.cz/kopie-z-apollo/" target="_blank" rel="noopener noreferrer">Bohemica Aurum</a> — <a href="https://www.bohemica-aurum.cz/kopie-z-apollo/" target="_blank" rel="noopener noreferrer">puppy diary</a>',
     puppiesArchiveTitle: "Litter archive",
     puppiesArchiveText:
       "For each litter you will find information about parents, dates of birth and links to photo galleries. At the moment we have no litters bred yet.",
