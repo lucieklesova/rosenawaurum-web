@@ -2987,8 +2987,8 @@ textarea:focus-visible {
   top: 0;
   right: 0;
   bottom: 0;
-  width: 280px;
-  max-width: 85vw;
+  width: 220px;
+  max-width: 75vw;
   z-index: 25;
   background: var(--color-bg);
   flex-direction: column;
