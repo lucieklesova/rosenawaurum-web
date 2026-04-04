@@ -949,20 +949,20 @@ function setupStepper() {
 }
 
 function setupHamburger() {
-  const btn = document.getElementById("hamburger");
-  const nav = document.getElementById("main-nav");
-  if (!btn || !nav) return;
+  const btn = document.querySelector(".hamburger");
+  const menu = document.getElementById("mobile-menu");
+  if (!btn || !menu) return;
 
   btn.addEventListener("click", () => {
-    const open = nav.classList.toggle("is-open");
+    const open = menu.classList.toggle("is-open");
     btn.classList.toggle("is-open", open);
     btn.setAttribute("aria-expanded", open);
     document.body.style.overflow = open ? "hidden" : "";
   });
 
-  nav.querySelectorAll("a").forEach((link) => {
+  menu.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
-      nav.classList.remove("is-open");
+      menu.classList.remove("is-open");
       btn.classList.remove("is-open");
       btn.setAttribute("aria-expanded", "false");
       document.body.style.overflow = "";
