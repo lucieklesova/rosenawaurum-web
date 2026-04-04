@@ -49,7 +49,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" integrity="sha384-GPAzSuZc0kFvdIev6wm9zg8gnafE8tLso7rsAYQfc9hAdWCpOcpcNI5W9lWkYcsd" crossorigin="anonymous" />
-    <link rel="stylesheet" href="styles.css?v=72" />
+    <link rel="stylesheet" href="styles.css?v=73" />
 
     <!-- Structured Data: LocalBusiness + WebSite -->
     <script type="application/ld+json">
@@ -1256,14 +1256,17 @@
     <!-- Cookie consent banner -->
     <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Cookie consent" style="display:none;">
       <div class="cookie-banner-inner">
-        <p>Tento web používá Google Fonts pro zobrazení písma a Google Maps pro mapu. Tyto služby mohou zpracovávat vaši IP adresu.
+        <p data-i18n="cookieText" data-i18n-html>Tento web používá Google Fonts a Google Maps. Tyto služby mohou zpracovávat vaši IP adresu.
           <a href="ochrana-osobnich-udaju.html">Více informací</a>.</p>
-        <button type="button" class="btn btn-primary cookie-accept" id="cookie-accept">Rozumím</button>
+        <div class="cookie-buttons">
+          <button type="button" class="btn btn-primary cookie-accept" id="cookie-accept" data-i18n="cookieAccept">Rozumím</button>
+          <button type="button" class="btn btn-outline cookie-reject" id="cookie-reject" data-i18n="cookieReject">Odmítnout</button>
+        </div>
       </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js" integrity="sha384-MZZbZ6RXJudK43v1qY1zOWKOU2yfeBPatuFoKyHAaAgHTUZhwblRTc9CphTt4IGQ" crossorigin="anonymous"></script>
-    <script src="script.js?v=72"></script>
+    <script src="script.js?v=73"></script>
   </body>
 </html>
 

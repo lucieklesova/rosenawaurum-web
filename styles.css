@@ -2432,9 +2432,28 @@ textarea:focus-visible {
   text-decoration: underline;
 }
 
-.cookie-accept {
+.cookie-buttons {
+  display: flex;
+  gap: 0.5rem;
   flex-shrink: 0;
+}
+
+.cookie-accept,
+.cookie-reject {
   white-space: nowrap;
+  font-size: 0.82rem;
+  padding: 0.5rem 1.2rem;
+}
+
+.cookie-reject {
+  border-color: var(--color-footer-text);
+  color: var(--color-footer-text);
+}
+
+.cookie-reject:hover {
+  border-color: var(--color-gold);
+  color: var(--color-gold);
+  background: transparent;
 }
 
 /* ---------------------------------------------

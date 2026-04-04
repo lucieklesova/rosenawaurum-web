@@ -12,6 +12,9 @@ const translations = {
     navDocs: "Dokumenty",
     navContact: "Kontakt",
     navCalc: "Kalkulačka březosti",
+    cookieText: 'Tento web používá Google Fonts a Google Maps. Tyto služby mohou zpracovávat vaši IP adresu. <a href="ochrana-osobnich-udaju.html">Více informací</a>.',
+    cookieAccept: "Rozumím",
+    cookieReject: "Odmítnout",
 
     heroTitle: "Zlatí retrívři vychovaní s\u00a0láskou v\u00a0srdci Beskyd.",
     heroSubtitle:
@@ -314,6 +317,9 @@ const translations = {
     navDocs: "Documents",
     navContact: "Contact",
     navCalc: "Pregnancy calculator",
+    cookieText: 'This website uses Google Fonts and Google Maps. These services may process your IP address. <a href="ochrana-osobnich-udaju.html">More info</a>.',
+    cookieAccept: "Accept",
+    cookieReject: "Reject",
 
     heroTitle: "Golden retrievers raised with\u00a0love in the heart of\u00a0Beskydy.",
     heroSubtitle:
@@ -1045,6 +1051,7 @@ function setupLazyVideos() {
 function setupCookieBanner() {
   const banner = document.getElementById("cookie-banner");
   const acceptBtn = document.getElementById("cookie-accept");
+  const rejectBtn = document.getElementById("cookie-reject");
   if (!banner || !acceptBtn) return;
 
   if (!localStorage.getItem("cookieConsent")) {
@@ -1055,6 +1062,13 @@ function setupCookieBanner() {
     localStorage.setItem("cookieConsent", "accepted");
     banner.style.display = "none";
   });
+
+  if (rejectBtn) {
+    rejectBtn.addEventListener("click", () => {
+      localStorage.setItem("cookieConsent", "rejected");
+      banner.style.display = "none";
+    });
+  }
 }
 
 function setupStickyHeader() {
