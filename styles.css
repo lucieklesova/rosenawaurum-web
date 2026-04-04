@@ -3235,6 +3235,17 @@ textarea:focus-visible {
     display: none;
   }
 
+  /* Mobile: show small logo directly, hide full logo */
+  .logo-img.logo-full {
+    height: 55px;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .logo-img.logo-icon {
+    opacity: 1;
+  }
+
   .section-hero {
     min-height: 50vh;
     background-position: left center;
