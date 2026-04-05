@@ -659,12 +659,13 @@ function setLanguage(lang) {
 }
 
 function setupLanguageSwitch() {
-  const defaultLang = "cs";
-  setLanguage(defaultLang);
+  const savedLang = localStorage.getItem("lang") || "cs";
+  setLanguage(savedLang);
 
   document.querySelectorAll(".lang-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
       const lang = btn.dataset.lang;
+      localStorage.setItem("lang", lang);
       setLanguage(lang);
     });
   });
