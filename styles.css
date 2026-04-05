@@ -683,12 +683,12 @@ button:focus:not(:focus-visible) {
 }
 
 .stepper--contact {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 .stepper--contact .stepper-line {
-  left: calc(12.5%);
-  right: calc(12.5%);
+  left: calc(10%);
+  right: calc(10%);
 }
 
 /* Horizontální propojovací linie — psí stopy */
