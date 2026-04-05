@@ -225,8 +225,9 @@ button:focus:not(:focus-visible) {
 }
 
 .logo-img.logo-icon {
-  height: 55px;
-  width: auto;
+  height: 65px;
+  width: 65px;
+  object-fit: contain;
   opacity: 0;
   position: absolute;
   top: 0;
