@@ -157,6 +157,64 @@ const translations = {
     artGenetickeCat: "Zdraví",
     artGenetickeTitle: "Máme výsledky genetických testů",
 
+    // Bordovice – body
+    artBordoviceP1: 'Sobotu 26.\u00a07.\u00a02025 jsme strávili na <strong>oblastní klubové výstavě v\u00a0Bordovicích – Hubertka 2025</strong>, kde se naposledy ve třídě mladých předvedla naše <strong>Alma Bohemica Aurum</strong>. A vedla si skvěle!',
+    artBordoviceResult: '<strong>Alma Bohemica Aurum</strong><br><em>(Brandon de Ria Vela \u00d7 Lollipop Dorado Blanco)</em><br>Třída mladých \u2022 <strong>V2</strong> \u2022 velmi pěkný posudek',
+    artBordoviceP2: 'Přestože konkurence nebyla tentokrát početná, Alma si odnesla <strong>výborný posudek</strong>, který ocenil její elegantní pohyb, proporce a klidné vystupování. V\u00a0kruhu působila vyrovnaně a bylo znát, že se cítí dobře. Navíc se potkala se svou <strong>nevlastní sestřičkou</strong>, a i to přispělo k\u00a0příjemné atmosféře celé třídy.',
+    artBordoviceP3: 'Doprovod jí dělala její maminka <strong>Lollipop Dorado Blanco</strong>, která se představila ve třídě pracovní a odnesla si krásné 3.\u00a0místo v\u00a0soutěži o\u00a0nejlepšího pracovního psa. Poprvé také Alminka strávila pár dní se svoji maminkou a nevlastní sestřičkou v\u00a0domovské chovatelské stanici – a bylo vidět, že ví, kam patří.',
+    artBordoviceP4: 'Výstava probíhala ve velmi přátelském duchu. Dorazili za námi <strong>fanoušci z\u00a0blízké i\u00a0vzdálené rodiny</strong>, což nás moc potěšilo. Jediné, co výjimečně nevyšlo podle představ, bylo počasí – <strong>déšť nás bohužel provázel celý den</strong>. Ale náladu jsme si tím zkazit nenechali.',
+    artBordoviceP5: "Děkuji:",
+    artBordoviceThanksList: "<strong>Amálce Vackové</strong> za skvělý základ naší mladé slečny a trpělivý chovatelský servis 24/7;<strong>Nataliia Romashko</strong> za profi grooming – ty pacičky jsou dokonalé",
+    artBordoviceP6: "Těšíme na další akce, kde ukáže, co v\u00a0ní je!",
+
+    // Provodovice – body
+    artProvodoviceP1: 'Tentokrát jsme se vydaly na výstavu do Provodovic – a\u00a0byl to den, na který jen tak nezapomeneme. <strong>Alma nastoupila poprvé v\u00a0životě do otevřené třídy!</strong>',
+    artProvodoviceResult: '<strong>Alma Bohemica Aurum</strong><br><em>(Brandon de Ria Vela \u00d7 Lollipop Dorado Blanco)</em><br>Otevřená třída \u2022 <strong>V1 – Výborná 1</strong> \u2022 Vítěz třídy \u2022 Oblastní vítěz<br>Postup do závěrečných soutěží \u2192 <strong>3.\u00a0místo ve skupině FCI\u00a08</strong>',
+    artProvodoviceP2: "<strong>Posudek rozhodčího:</strong>",
+    artProvodoviceQuote: '\u201eSprávná velikost, pěkná hlava, nůžkový skus, delší pevný hřbet, správný hrudník, korektní úhlení a\u00a0pěkné předvedení.\u201c',
+    artProvodoviceP3: 'Počasí nám bohužel nepřálo – <strong>zima nás provázela celý den</strong>. Přesto měla akce skvělou atmosféru a\u00a0Alma se předvedla naprosto fantasticky.',
+    artProvodoviceP4: "Děkuji:",
+    artProvodoviceThanksList: "<strong>Janě Janíčkové z\u00a0Beskyd Hill</strong> za poskytnutí zázemí;<strong>Ondrovi z\u00a0Athena Bella</strong> za podporu a\u00a0povzbuzování",
+    artProvodoviceP5: "Jsme na Almu neskutečně hrdí. Debut v\u00a0otevřené třídě nemohl dopadnout lépe!",
+
+    // OVVR – body
+    artOvvrP1: 'V\u00a0neděli 1.\u00a0června 2025, na Den dětí, jsme s\u00a0Alminkou vyrazily na naši první velkou zkoušku – <strong>OVVR</strong> (ověření vrozených vloh retrivrů) v\u00a0Ústí u\u00a0Hranic. Počasí bylo příznivé se sluncem a skvělou náladou. Sešlo se deset psů s\u00a0jejich majiteli, mnozí známí z\u00a0tréninků. A aby toho nebylo málo – zkoušek se účastnily i dvě naše trenérky!',
+    artOvvrP2: '<strong>Alminka to vzala hopem</strong> – s\u00a0lehkostí a elegancí. První disciplína posouzení povahy proběhla hladce. Alminka sedávala klidně u\u00a0nohy a chovala se uklidněně.',
+    artOvvrP3: "Druhá disciplína týkající se chování po výstřelu také proběhla bez problémů. Průvodkyně musela jen zachytit správný moment k\u00a0přivolání.",
+    artOvvrP4: 'Třetí část – <strong>dohledávka</strong> – to už mi začínal trochu bušit tep. Alminka zde excelovala, pachový dummy našla rychle a přinesla jej v\u00a0přímce. Předvedla také aport v\u00a0terénu, což zvládlo jen několik psů.',
+    artOvvrP5: "Chůze u\u00a0nohy na vodítku i volně proběhla perfektně, přestože Alminka obvykle prozkoumává terén čumákem.",
+    artOvvrP6: 'Finální disciplína, <strong>aport z\u00a0vody</strong>, byla nejvíce napínavá. Tentokrát se vyhnula otřepávání se před předáním dummy.',
+    artOvvrP7: 'Celé dopoledne byla Alminka naprosto úžasná. Mezi disciplínami si odpočívala. A výsledek? <strong>Naprosto perfektní – všechny disciplíny zvládla na plný počet bodů!</strong>',
+    artOvvrP8: "Splnily jsme všechny podmínky pro uchovnění, až na věk. Rozhodně tím nekončíme. Tohle byla první vlaštovka a my už se těšíme na další výzvy, tréninky i nové zážitky.",
+
+    // Humpolec – body
+    artHumpolecP1: 'V\u00a0sobotu a neděli (10.\u00a0a\u00a011.\u00a0května 2025) jsme vyrazili do Humpolce na <strong>Klubovou a Speciální výstavu retrieverů</strong>. Alminku jsme přihlásili do nejpočetnější kategorie <strong>Mladých</strong> (protože proč si to neudělat těžší?), kde se v\u00a0kruhu sešlo kolem 30\u00a0fen – prostě konkurence jako na castingu do psího Hollywoodu.',
+    artHumpolecP2: 'S\u00a0lehkou nervozitou a mírným optimismem jsme čekali, jak to dopadne. A dopadlo to skvěle! Alminka se rozhodně neztratila a oba dny si odnesla krásné <strong>hodnocení Výborná</strong>.',
+    artHumpolecP3: 'Na výstavě se Alminka konečně potkala i se svým bráchou <strong>Amigem</strong>, který si rovnou střihl svůj první CAC titul. Moc gratulujeme!',
+    artHumpolecP4: 'Máme doma nádherné posudky – oběma rozhodčím se obzvlášť líbila Alminčina srst a její svižný, energický pohyb. Pochvalu dostalo i předvedení v\u00a0kruhu – za to patří obrovské díky chovatelce Amálce, která z\u00a0Alminky udělala výstavního profíka.',
+    artHumpolecP5: 'Radost máme obrovskou – a jako třešnička na dortu přichází zpráva, že Alminka tímto <strong>splnila další podmínku pro uchovnění!</strong> Navíc byla na výstavě i přeměřena – je to vysoká slečna s\u00a0krásným úplným chrupem a nůžkovým skusem, jak se na správného retrievera sluší a patří.',
+    artHumpolecP6: "Teď už nám zbývá jen splnit OVVR – a pak už Alminka může začít psát vlastní kynologickou historii.",
+
+    // Narozeniny – body
+    artNarozeninyP1: "Alminka dnes oslavila svoje první narozeniny. Nesměl chybět dort, ani dárky. Dokonce si děti vyžádaly i menší oslavu, na kterou pozvaly svoje kamarády.",
+    artNarozeninyP2: "Milá Alminko, přejeme Ti hlavně hodně zdravíčka a o\u00a0to všechno ostatní se rádi postaráme.",
+    artNarozeninyP3: 'A jak to vypadalo, když se narodila, se můžete podívat do deníčku Vrhu\u00a0Áček z\u00a0chovatelské stanice <a href="https://www.bohemica-aurum.cz/" target="_blank" rel="noopener noreferrer">Bohemica Aurum</a>.',
+
+    // RTG – body
+    artRtgP1: 'Dnes na <strong>Mezinárodní den Zlatých retrívrů</strong> jsme s\u00a0Alminkou vyrazili do Opavy k\u00a0MVDr.\u00a0Pepříkovi, kde jsme nechali vyhotovit RTG snímky kyčlí a loktů – jednu z\u00a0povinných podmínek pro uchovnění. Zároveň jsme si nechali vyšetřit i páteř včetně spondylózy.',
+    artRtgP2: "Máme obrovskou radost z\u00a0výsledků a uděláme vše pro to, aby se Alminka těšila pevnému zdraví a dožila se vysokého věku.",
+    artRtgQuote: "A jak to všechno zvládla? Jako správný retrívr! Hned po probuzení z\u00a0narkózy se rozeběhla pomazlit za paní v\u00a0čekárně.",
+    artRtgResultsList: "DKK: <strong>B/B</strong>;DLK: <strong>0/0</strong>;OCD: <strong>0/0</strong>;SA: <strong>clear</strong>;LTV: <strong>clear</strong>",
+    artRtgP3: 'Výsledky jsou k\u00a0dispozici ke stažení v\u00a0sekci <a href="../alma-dokumenty.html">Dokumenty</a>.',
+
+    // Genetické testy – body
+    artGenetickeP1: 'Na poslední výstavě v\u00a0Humpolci jsme využili příležitosti a nechali jsme si udělat <strong>genetické testy</strong> na některá dědičná onemocnění, která se mohou objevit u\u00a0zlatých retrívrů.',
+    artGenetickeP2: "Testovali jsme:",
+    artGenetickeTestList: "<strong>PRA</strong> (prcd, GR-PRA1, GR-PRA2) – progresivní retinální atrofie, různé formy vedoucí ke slepotě;<strong>Ichtyóza 1 a 2</strong> – dědičná kožní onemocnění způsobující suchou, šupinatou srst;<strong>GRMD</strong> – muskulární dystrofie, vzácná porucha svalů;<strong>NCL5</strong> – porucha nervového systému postihující mladé psy, extrémně vzácná",
+    artGenetickeResultsLabel: "<strong>Výsledky:</strong>",
+    artGenetickeResultsList: "Oči (PRA-prcd, GR-PRA1, GR-PRA2): <strong>N/N</strong> – čistá;Ichtyóza 1: <strong>N/P</strong> – přenašečka;Ichtyóza 2: <strong>N/N</strong> – čistá;NCL5: <strong>N/N</strong> – čistá;GRMD: <strong>Xn/Xn</strong> – čistá",
+    artGenetickeP3: 'Máme velkou radost, že Alminka je zdravý pejsek. Většina testovaných chorob je zcela bez nálezu, a\u00a0u\u00a0jedné – kde je Alminka přenašečkou – <strong>nemá výsledek žádný vliv na její zdraví ani pohodu</strong>. Pro chov to znamená, že krycí pes musí být testován jako N/N.',
+
     // Aktuality list – měsíce a excerpty
     newsListMonth1: "Bře",
     newsListMonth2: "Čvc",
@@ -465,6 +523,64 @@ const translations = {
     artRtgTitle: "X-ray results: hips, elbows & spine",
     artGenetickeCat: "Health",
     artGenetickeTitle: "Genetic test results are in",
+
+    // Bordovice – body
+    artBordoviceP1: 'On Saturday 26 July 2025 we spent the day at the <strong>regional club show in Bordovice \u2013 Hubertka 2025</strong>, where our <strong>Alma Bohemica Aurum</strong> appeared in the junior class for the last time. And she did brilliantly!',
+    artBordoviceResult: '<strong>Alma Bohemica Aurum</strong><br><em>(Brandon de Ria Vela \u00d7 Lollipop Dorado Blanco)</em><br>Junior class \u2022 <strong>V2</strong> \u2022 very nice critique',
+    artBordoviceP2: 'Although the competition was not large this time, Alma received an <strong>excellent critique</strong> praising her elegant movement, proportions and calm demeanour. She looked composed in the ring and was clearly enjoying herself. She also met her <strong>half-sister</strong>, which added to the lovely atmosphere of the class.',
+    artBordoviceP3: 'She was accompanied by her mum <strong>Lollipop Dorado Blanco</strong>, who competed in the working class and earned a beautiful 3rd place in the Best Working Dog competition. It was also the first time Alma spent a few days with her mum and half-sister at the home kennel \u2013 and you could tell she knew exactly where she belonged.',
+    artBordoviceP4: 'The show had a wonderfully friendly atmosphere. <strong>Fans from near and far family</strong> came to support us, which we really appreciated. The only thing that did not go to plan was the weather \u2013 <strong>rain accompanied us all day long</strong>. But it certainly did not dampen our spirits.',
+    artBordoviceP5: "Thank you:",
+    artBordoviceThanksList: "<strong>Am\u00e1lka Vackov\u00e1</strong> for giving our young lady an excellent foundation and for patient breeder support 24/7;<strong>Nataliia Romashko</strong> for professional grooming \u2013 those little paws are perfect",
+    artBordoviceP6: "We look forward to more events where she can show what she\u2019s made of!",
+
+    // Provodovice – body
+    artProvodoviceP1: 'This time we headed to the dog show in Provodovice \u2013 and it turned out to be a day we will not forget any time soon. <strong>Alma entered the open class for the very first time!</strong>',
+    artProvodoviceResult: '<strong>Alma Bohemica Aurum</strong><br><em>(Brandon de Ria Vela \u00d7 Lollipop Dorado Blanco)</em><br>Open class \u2022 <strong>V1 \u2013 Excellent 1</strong> \u2022 Class winner \u2022 Regional winner<br>Qualified for final competitions \u2192 <strong>3rd place in FCI Group\u00a08</strong>',
+    artProvodoviceP2: "<strong>Judge\u2019s critique:</strong>",
+    artProvodoviceQuote: '\u201cCorrect size, nice head, scissor bite, longer firm back, correct chest, correct angulation and nice presentation.\u201d',
+    artProvodoviceP3: 'Unfortunately the weather was not on our side \u2013 <strong>it was cold the entire day</strong>. Despite that, the event had a wonderful atmosphere and Alma performed absolutely fantastically.',
+    artProvodoviceP4: "Thank you:",
+    artProvodoviceThanksList: "<strong>Jana Jan\u00ed\u010dkov\u00e1 from Beskyd Hill</strong> for providing a home base;<strong>Ondra from Athena Bella</strong> for support and encouragement",
+    artProvodoviceP5: "We are incredibly proud of Alma. Her open class debut could not have gone any better!",
+
+    // OVVR – body
+    artOvvrP1: 'On Sunday 1 June 2025, Children\u2019s Day, we set off with Alma for our first big test \u2013 <strong>OVVR</strong> (natural retrieving ability test) in \u00dast\u00ed u Hranic. The weather was lovely with sunshine and great spirits. Ten dogs and their owners gathered, many familiar from training sessions. And as a bonus \u2013 two of our trainers also took part!',
+    artOvvrP2: '<strong>Alma breezed through it</strong> \u2013 with ease and elegance. The first discipline, temperament assessment, went smoothly. Alma sat calmly at heel and behaved beautifully.',
+    artOvvrP3: "The second discipline, behaviour after a gunshot, also went without a hitch. The handler just had to catch the right moment to recall her.",
+    artOvvrP4: 'The third part \u2013 <strong>tracking</strong> \u2013 was where my heart started beating a little faster. Alma excelled here, finding the scent dummy quickly and bringing it back in a straight line. She also performed a field retrieve, which only a few dogs managed.',
+    artOvvrP5: "Heeling on and off the lead went perfectly, even though Alma usually likes to explore the terrain with her nose.",
+    artOvvrP6: 'The final discipline, <strong>water retrieve</strong>, was the most nerve-wracking. This time she resisted the urge to shake off before handing over the dummy.',
+    artOvvrP7: 'The entire morning Alma was absolutely amazing. She rested calmly between disciplines. And the result? <strong>Absolutely perfect \u2013 she passed all disciplines with a full score!</strong>',
+    artOvvrP8: "We have now met all the breeding requirements except for age. But we are certainly not stopping here. This was just the beginning and we are already looking forward to new challenges, training sessions and adventures.",
+
+    // Humpolec – body
+    artHumpolecP1: 'On Saturday and Sunday (10\u201311 May 2025) we headed to Humpolec for the <strong>Club and Specialty Retriever Show</strong>. We entered Alma in the most competitive category \u2013 <strong>Juniors</strong> (because why make it easy?), where around 30 females competed in the ring \u2013 basically a casting call for doggy Hollywood.',
+    artHumpolecP2: 'With a touch of nerves and cautious optimism, we waited to see how it would go. And it went brilliantly! Alma certainly held her own and came away both days with a lovely <strong>Excellent rating</strong>.',
+    artHumpolecP3: 'At the show, Alma also finally met her brother <strong>Amigo</strong>, who went on to win his very first CAC title. Huge congratulations!',
+    artHumpolecP4: 'We came home with beautiful critiques \u2013 both judges particularly praised Alma\u2019s coat and her lively, energetic movement. Her ring presentation was also commended \u2013 for which huge thanks go to breeder Am\u00e1lka, who turned Alma into a real show professional.',
+    artHumpolecP5: 'We are absolutely thrilled \u2013 and the cherry on top is the news that Alma has now <strong>met another requirement for breeding approval!</strong> She was also measured at the show \u2013 she is a tall lady with a beautiful complete set of teeth and a scissor bite, just as a proper retriever should be.',
+    artHumpolecP6: "All that is left now is to pass the OVVR working test \u2013 and then Alma can start writing her own chapter in breeding history.",
+
+    // Narozeniny – body
+    artNarozeninyP1: "Alma celebrated her very first birthday today. There had to be a cake, of course, and presents too. The kids even organised a little party and invited their friends.",
+    artNarozeninyP2: "Dear Alma, we wish you above all good health \u2013 and we will happily take care of everything else.",
+    artNarozeninyP3: 'If you would like to see what it looked like when she was born, take a look at the A-litter diary at the <a href="https://www.bohemica-aurum.cz/" target="_blank" rel="noopener noreferrer">Bohemica Aurum</a> kennel website.',
+
+    // RTG – body
+    artRtgP1: 'Today, on <strong>International Golden Retriever Day</strong>, we took Alma to the vet in Opava (MVDr. Pep\u0159\u00edk) to have X-rays taken of her hips and elbows \u2013 one of the mandatory requirements for breeding approval. We also had her spine examined, including a check for spondylosis.',
+    artRtgP2: "We are overjoyed with the results and will do everything we can to keep Alma in great health for many years to come.",
+    artRtgQuote: "And how did she handle it all? Like a true retriever! As soon as she woke up from anaesthesia, she ran straight over to cuddle with a lady in the waiting room.",
+    artRtgResultsList: "HD (hips): <strong>B/B</strong>;ED (elbows): <strong>0/0</strong>;OCD: <strong>0/0</strong>;SA: <strong>clear</strong>;LTV: <strong>clear</strong>",
+    artRtgP3: 'The results are available for download in the <a href="../alma-dokumenty.html">Documents</a> section.',
+
+    // Genetické testy – body
+    artGenetickeP1: 'At the last show in Humpolec, we took the opportunity to have <strong>genetic tests</strong> done for several hereditary diseases that can occur in Golden Retrievers.',
+    artGenetickeP2: "We tested for:",
+    artGenetickeTestList: "<strong>PRA</strong> (prcd, GR-PRA1, GR-PRA2) \u2013 progressive retinal atrophy, various forms leading to blindness;<strong>Ichthyosis 1 and 2</strong> \u2013 hereditary skin conditions causing dry, flaky coat;<strong>GRMD</strong> \u2013 muscular dystrophy, a rare muscle disorder;<strong>NCL5</strong> \u2013 a nervous system disorder affecting young dogs, extremely rare",
+    artGenetickeResultsLabel: "<strong>Results:</strong>",
+    artGenetickeResultsList: "Eyes (PRA-prcd, GR-PRA1, GR-PRA2): <strong>N/N</strong> \u2013 clear;Ichthyosis 1: <strong>N/P</strong> \u2013 carrier;Ichthyosis 2: <strong>N/N</strong> \u2013 clear;NCL5: <strong>N/N</strong> \u2013 clear;GRMD: <strong>Xn/Xn</strong> \u2013 clear",
+    artGenetickeP3: 'We are very happy that Alma is a healthy girl. Most of the tested conditions came back completely clear, and for the one where she is a carrier \u2013 <strong>the result has no impact on her health or well-being whatsoever</strong>. For breeding purposes, it simply means the stud dog must be tested as N/N.',
 
     // News list – months and excerpts
     newsListMonth1: "Mar",
