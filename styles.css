@@ -225,8 +225,8 @@ button:focus:not(:focus-visible) {
 }
 
 .logo-img.logo-icon {
-  height: 65px;
-  width: 65px;
+  height: 80px;
+  width: 80px;
   object-fit: contain;
   opacity: 0;
   position: absolute;
@@ -240,7 +240,7 @@ button:focus:not(:focus-visible) {
 }
 
 .site-header.is-scrolled .logo-img.logo-full {
-  height: 55px;
+  height: 80px;
   opacity: 0;
   pointer-events: none;
 }
