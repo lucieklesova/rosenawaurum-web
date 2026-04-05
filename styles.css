@@ -2292,6 +2292,18 @@ textarea:focus-visible {
   min-height: 360px;
 }
 
+.map-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 360px;
+  background: var(--color-cream);
+  color: var(--color-brown);
+  font-size: 0.95rem;
+  text-align: center;
+  padding: 2rem;
+}
+
 /* ---------------------------------------------
    FOOTER TRANSITION
 --------------------------------------------- */

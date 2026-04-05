@@ -15,6 +15,7 @@ const translations = {
     cookieText: 'Tento web používá Google Fonts a Google Maps. Tyto služby mohou zpracovávat vaši IP adresu. <a href="ochrana-osobnich-udaju.html">Více informací</a>.',
     cookieAccept: "Rozumím",
     cookieReject: "Odmítnout",
+    mapBlocked: "Pro zobrazení mapy je nutné přijmout cookies třetích stran.",
 
     heroTitle: "Zlatí retrívři vychovaní s\u00a0láskou v\u00a0srdci Beskyd.",
     heroSubtitle:
@@ -320,6 +321,7 @@ const translations = {
     cookieText: 'This website uses Google Fonts and Google Maps. These services may process your IP address. <a href="ochrana-osobnich-udaju.html">More info</a>.',
     cookieAccept: "Accept",
     cookieReject: "Reject",
+    mapBlocked: "To display the map, you need to accept third-party cookies.",
 
     heroTitle: "Golden retrievers raised with\u00a0love in the heart of\u00a0Beskydy.",
     heroSubtitle:
@@ -1048,25 +1050,77 @@ function setupLazyVideos() {
   videos.forEach(function (v) { observer.observe(v); });
 }
 
+function loadGoogleFonts() {
+  if (document.getElementById("google-fonts-link")) return;
+  const preconnect1 = document.createElement("link");
+  preconnect1.rel = "preconnect";
+  preconnect1.href = "https://fonts.googleapis.com";
+  document.head.appendChild(preconnect1);
+
+  const preconnect2 = document.createElement("link");
+  preconnect2.rel = "preconnect";
+  preconnect2.href = "https://fonts.gstatic.com";
+  preconnect2.crossOrigin = "anonymous";
+  document.head.appendChild(preconnect2);
+
+  const link = document.createElement("link");
+  link.id = "google-fonts-link";
+  link.rel = "stylesheet";
+  link.href = "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..700&family=Raleway:wght@300;400;500;600&display=swap";
+  document.head.appendChild(link);
+}
+
+function loadGoogleMap() {
+  const iframe = document.getElementById("google-map");
+  const placeholder = document.getElementById("map-placeholder");
+  if (iframe && iframe.dataset.src) {
+    iframe.src = iframe.dataset.src;
+    iframe.style.display = "";
+  }
+  if (placeholder) placeholder.style.display = "none";
+}
+
+function blockGoogleServices() {
+  const iframe = document.getElementById("google-map");
+  const placeholder = document.getElementById("map-placeholder");
+  if (iframe) iframe.style.display = "none";
+  if (placeholder) placeholder.style.display = "flex";
+}
+
+function applyConsentState(consent) {
+  if (consent === "accepted") {
+    loadGoogleFonts();
+    loadGoogleMap();
+  } else if (consent === "rejected") {
+    blockGoogleServices();
+  }
+}
+
 function setupCookieBanner() {
   const banner = document.getElementById("cookie-banner");
   const acceptBtn = document.getElementById("cookie-accept");
   const rejectBtn = document.getElementById("cookie-reject");
   if (!banner || !acceptBtn) return;
 
-  if (!localStorage.getItem("cookieConsent")) {
+  const consent = localStorage.getItem("cookieConsent");
+
+  if (!consent) {
     banner.style.display = "";
+  } else {
+    applyConsentState(consent);
   }
 
   acceptBtn.addEventListener("click", () => {
     localStorage.setItem("cookieConsent", "accepted");
     banner.style.display = "none";
+    applyConsentState("accepted");
   });
 
   if (rejectBtn) {
     rejectBtn.addEventListener("click", () => {
       localStorage.setItem("cookieConsent", "rejected");
       banner.style.display = "none";
+      applyConsentState("rejected");
     });
   }
 }
