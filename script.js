@@ -34,18 +34,19 @@ const translations = {
     whyUsContactText: "Zůstáváme v kontaktu se všemi našimi psími rodinami.",
     whyUsContactLink: "Napište nám →",
 
-    aboutTitle: "O chovatelské stanici Rosenaw Aurum",
+    aboutTitle: "Rosenaw Aurum",
     aboutIntro1:
-      'Za jménem <strong>Rosenaw Aurum</strong> stojí naše rodina a zlatí retrívři, kteří s námi sdílejí každodenní radosti i starosti. Prvním z nich byl <strong>Dexík</strong> – zlatý retrívr bez průkazu původu, který nás svou přátelskou povahou naučil, jak výjimečné toto plemeno je.',
+      'Název naší chovatelské stanice <strong>Rosenaw Aurum</strong> v sobě nese kousek místa, odkud pocházíme, i lásku k plemeni. „Rosenaw" vychází z historického názvu města Rožnov pod Radhoštěm a „Aurum" znamená v latině zlato – přesně takové, jaké pro nás zlatí retrívři jsou.',
     aboutIntro2:
-      'Po jeho odchodu k nám do života vstoupila <strong>Alma</strong>, vysněná fenečka s průkazem původu, se kterou jsme se vydali na cestu k chovu zlatých retrívrů s důrazem na <strong>zdraví, povahu, pracovní vlohy a rodinný život</strong>. Alminka je pes do každé nepohody – plave, běhá po horách, dovádí s dětmi, ale zároveň dokáže tiše ležet vedle nemocného v pelíšku.',
+      'Úplně první byl <strong>Dexík</strong>. Zlatý retrívr bez průkazu původu, ale s obrovským srdcem. Naučil nás, jak neuvěřitelně laskavé, oddané a citlivé tohle plemeno je. Díky němu jsme se zamilovali.',
+    aboutIntro3:
+      'Po jeho odchodu přišla <strong>Alma</strong>. Vysněná fenečka, která nás posunula dál – nejen k chovu, ale i k hlubšímu pochopení toho, co všechno zlatý retrívr dokáže být.',
     aboutPhilosophy:
-      'Naším cílem je odchovávat <strong>vyrovnané, zdravé a společenské psy</strong>, kteří se budou cítit stejně dobře na výstavním kruhu, při práci v poli i uprostřed rodinného obýváku. Naše chovatelská stanice Rosenaw Aurum je registrovaná u <a href="https://www.fci.be/" target="_blank" rel="noopener noreferrer">Mezinárodní kynologické federace FCI</a> pod číslem 832/23 a jsme členy <a href="https://www.kchls.cz/" target="_blank" rel="noopener noreferrer">Klubu chovatelů loveckých slídičů (KCHLS)</a> i <a href="https://www.retriever-klub.cz/" target="_blank" rel="noopener noreferrer">Retriever Klubu (RK CZ)</a>.',
-    aboutBreederTitle: "Chovatelka",
-    aboutBreederText:
-      "Jmenuji se Lucie Klesová a psi mě provázejí od dětství. Zlatí retrívři jsou pro mě kombinací klidu, radosti a nevyčerpatelné ochoty spolupracovat. V chovu se opírám o zdraví, povahu a respekt k jednotlivým psím osobnostem.",
-    aboutLinkAlma:
-      'Podrobnější příběh Almy najdete na stránce mateřské chovatelské stanice <a href="https://www.bohemica-aurum.cz/" target="_blank" rel="noopener noreferrer">Bohemica Aurum</a> a na našem <a href="https://www.instagram.com/almamygoldenlove" target="_blank" rel="noopener noreferrer">Instagramu</a>.',
+      'Jsme teprve na začátku naší chovatelské cesty. Učíme se, sbíráme zkušenosti a chceme jít tou cestou poctivě, s respektem ke psům i k plemeni.',
+    aboutGoal:
+      'Naším cílem je odchovávat vyrovnané, zdravé a společenské psy, kteří se budou cítit stejně dobře na výstavním kruhu, při práci v poli i uprostřed rodinného obýváku.',
+    aboutClubs:
+      'Rosenaw Aurum je registrovaná chovatelská stanice <a href="https://www.fci.be/" target="_blank" rel="noopener noreferrer">FCI</a> (č. 832/23), členem <a href="https://www.kchls.cz/" target="_blank" rel="noopener noreferrer">Klubu chovatelů loveckých slídičů (KCHLS)</a> a <a href="https://www.retriever-klub.cz/" target="_blank" rel="noopener noreferrer">Retriever Klubu CZ</a>.',
 
     girlsTitle: "Naše feny",
     girlsIntro:
@@ -340,18 +341,19 @@ const translations = {
     whyUsContactText: "We stay in touch with all our dog families.",
     whyUsContactLink: "Get in touch →",
 
-    aboutTitle: "About Rosenaw Aurum",
+    aboutTitle: "Rosenaw Aurum",
     aboutIntro1:
-      'It all started with <strong>Dexík</strong>, a Golden Retriever without a pedigree, whose kind nature showed us how special this breed really is. <strong>Rosenaw Aurum</strong> is all about our family and the Golden Retrievers who share everyday joys and worries with us.',
+      'The name of our kennel <strong>Rosenaw Aurum</strong> carries a piece of the place we come from and the love for the breed. "Rosenaw" comes from the historical name of the town Rožnov pod Radhoštěm and "Aurum" means gold in Latin – exactly what Golden Retrievers are to us.',
     aboutIntro2:
-      'After he passed away, <strong>Alma</strong> came into our lives – our dream girl with a pedigree, with whom we started our journey towards breeding Golden Retrievers with a focus on <strong>health, temperament, working ability and family life</strong>.',
+      'The very first was <strong>Dexík</strong>. A Golden Retriever without a pedigree, but with a huge heart. He taught us how incredibly kind, loyal and sensitive this breed is. Thanks to him, we fell in love.',
+    aboutIntro3:
+      'After he passed away, <strong>Alma</strong> came along. Our dream girl who took us further – not only towards breeding, but also towards a deeper understanding of everything a Golden Retriever can be.',
     aboutPhilosophy:
-      'Our goal is to breed <strong>well-balanced, healthy and social dogs</strong> that feel equally comfortable in the show ring, in the field and in the middle of a family living room. Our kennel Rosenaw Aurum is registered with the <a href="https://www.fci.be/" target="_blank" rel="noopener noreferrer">Fédération Cynologique Internationale (FCI)</a> under number 832/23 and we are members of <a href="https://www.kchls.cz/" target="_blank" rel="noopener noreferrer">KCHLS</a> and the <a href="https://www.retriever-klub.cz/" target="_blank" rel="noopener noreferrer">Retriever Klub CZ</a>.',
-    aboutBreederTitle: "The breeder",
-    aboutBreederText:
-      "My name is Lucie Klesová and dogs have been part of my life since childhood. Golden Retrievers combine peace, joy and an endless willingness to cooperate. In breeding I focus on health, temperament and respect for each dog's individuality.",
-    aboutLinkAlma:
-      'You can find more about Alma on the website of her home kennel <a href="https://www.bohemica-aurum.cz/" target="_blank" rel="noopener noreferrer">Bohemica Aurum</a> and on our <a href="https://www.instagram.com/almamygoldenlove" target="_blank" rel="noopener noreferrer">Instagram</a>.',
+      'We are just at the beginning of our breeding journey. We are learning, gaining experience and want to walk this path honestly, with respect for dogs and the breed.',
+    aboutGoal:
+      'Our goal is to breed well-balanced, healthy and social dogs that feel equally comfortable in the show ring, in the field and in the middle of a family living room.',
+    aboutClubs:
+      'Rosenaw Aurum is a registered kennel of <a href="https://www.fci.be/" target="_blank" rel="noopener noreferrer">FCI</a> (no. 832/23), member of <a href="https://www.kchls.cz/" target="_blank" rel="noopener noreferrer">KCHLS</a> and the <a href="https://www.retriever-klub.cz/" target="_blank" rel="noopener noreferrer">Retriever Klub CZ</a>.',
 
     girlsTitle: "Our girls",
     girlsIntro:
