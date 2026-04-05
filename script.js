@@ -12,7 +12,7 @@ const translations = {
     navDocs: "Dokumenty",
     navContact: "Kontakt",
     navCalc: "Kalkulačka březosti",
-    cookieText: 'Tento web používá Google Fonts a Google Maps. Tyto služby mohou zpracovávat vaši IP adresu. <a href="ochrana-osobnich-udaju.html">Více informací</a>.',
+    cookieText: 'Tento web používá Google Analytics, Google Fonts a Google Maps. Tyto služby mohou zpracovávat vaši IP adresu. <a href="ochrana-osobnich-udaju.html">Více informací</a>.',
     cookieAccept: "Rozumím",
     cookieReject: "Odmítnout",
     mapBlocked: "Pro zobrazení mapy je nutné přijmout cookies třetích stran.",
@@ -319,7 +319,7 @@ const translations = {
     navDocs: "Documents",
     navContact: "Contact",
     navCalc: "Pregnancy calculator",
-    cookieText: 'This website uses Google Fonts and Google Maps. These services may process your IP address. <a href="ochrana-osobnich-udaju.html">More info</a>.',
+    cookieText: 'This website uses Google Analytics, Google Fonts and Google Maps. These services may process your IP address. <a href="ochrana-osobnich-udaju.html">More info</a>.',
     cookieAccept: "Accept",
     cookieReject: "Reject",
     mapBlocked: "To display the map, you need to accept third-party cookies.",
@@ -1089,10 +1089,26 @@ function blockGoogleServices() {
   if (placeholder) placeholder.style.display = "flex";
 }
 
+function loadGoogleAnalytics() {
+  if (document.getElementById("ga-script")) return;
+  const script = document.createElement("script");
+  script.id = "ga-script";
+  script.async = true;
+  script.src = "https://www.googletagmanager.com/gtag/js?id=G-XDKPV7JGM3";
+  document.head.appendChild(script);
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { window.dataLayer.push(arguments); }
+  window.gtag = gtag;
+  gtag("js", new Date());
+  gtag("config", "G-XDKPV7JGM3");
+}
+
 function applyConsentState(consent) {
   if (consent === "accepted") {
     loadGoogleFonts();
     loadGoogleMap();
+    loadGoogleAnalytics();
   } else if (consent === "rejected") {
     blockGoogleServices();
   }
@@ -1102,9 +1118,13 @@ function setupCookieBanner() {
   const banner = document.getElementById("cookie-banner");
   const acceptBtn = document.getElementById("cookie-accept");
   const rejectBtn = document.getElementById("cookie-reject");
-  if (!banner || !acceptBtn) return;
-
   const consent = localStorage.getItem("cookieConsent");
+
+  // On subpages without banner, still apply consent (e.g. load GA)
+  if (!banner || !acceptBtn) {
+    if (consent) applyConsentState(consent);
+    return;
+  }
 
   if (!consent) {
     banner.style.display = "";
