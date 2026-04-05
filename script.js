@@ -757,11 +757,8 @@ function setupContactForm() {
           submitBtn.innerHTML = '<span class="btn-check">\u2713</span>';
           submitBtn.classList.add("btn--success");
           setTimeout(() => {
-            form.reset();
-            submitBtn.disabled = false;
-            submitBtn.textContent = originalText;
-            submitBtn.classList.remove("btn--success");
-          }, 2000);
+            window.location.href = "dekujeme.html";
+          }, 800);
         } else {
           submitBtn.disabled = false;
           submitBtn.textContent = originalText;
