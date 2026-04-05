@@ -656,6 +656,9 @@ function setLanguage(lang) {
   document.querySelectorAll(".lang-btn").forEach((btn) => {
     btn.classList.toggle("lang-btn--active", btn.dataset.lang === lang);
   });
+
+  // Remove loading class (prevents CZ flash when EN is saved)
+  document.documentElement.classList.remove("i18n-loading");
 }
 
 function setupLanguageSwitch() {
