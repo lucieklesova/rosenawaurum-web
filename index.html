@@ -48,7 +48,7 @@
     <script>
       (function(){var l=localStorage.getItem("lang");if(l&&l!=="cs"){document.documentElement.lang=l;document.documentElement.classList.add("i18n-loading")}})();
     </script>
-    <style>.i18n-loading [data-i18n]{visibility:hidden}.i18n-loading .lang-btn{visibility:hidden}</style>
+    <style>.i18n-loading body{opacity:0}.i18n-loaded body{opacity:1;transition:opacity .15s}</style>
     <!-- Google Fonts loaded dynamically based on cookie consent (see script.js) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" integrity="sha384-GPAzSuZc0kFvdIev6wm9zg8gnafE8tLso7rsAYQfc9hAdWCpOcpcNI5W9lWkYcsd" crossorigin="anonymous" />
     <link rel="stylesheet" href="styles.css?v=75" />

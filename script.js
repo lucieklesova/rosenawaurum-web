@@ -773,8 +773,9 @@ function setLanguage(lang) {
     btn.classList.toggle("lang-btn--active", btn.dataset.lang === lang);
   });
 
-  // Remove loading class (prevents CZ flash when EN is saved)
+  // Remove loading class and show page (prevents CZ flash when EN is saved)
   document.documentElement.classList.remove("i18n-loading");
+  document.documentElement.classList.add("i18n-loaded");
 }
 
 function setupLanguageSwitch() {
