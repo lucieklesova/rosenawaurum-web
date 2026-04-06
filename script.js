@@ -10,6 +10,7 @@ const translations = {
     navGallery: "Galerie",
     navNews: "Aktuality",
     navDocs: "Dokumenty",
+    navBreed: "O plemeni",
     navContact: "Kontakt",
     navCalc: "Kalkulačka březosti",
     cookieText: 'Tento web používá Google Analytics, Google Fonts a Google Maps. Tyto služby mohou zpracovávat vaši IP adresu. <a href="ochrana-osobnich-udaju.html">Více informací</a>.',
@@ -98,6 +99,7 @@ const translations = {
     puppiesPackList:
       "kupní smlouva a průkaz původu FCI; očkovací průkaz / pet pas s platným očkováním a odčervením; startovací balíček krmiva a oblíbenou hračku; podrobné informace k péči v prvních týdnech a měsících",
     puppiesPlannedLabel: "Očekáváme",
+    puppiesPlannedDate: "Jaro / léto 2027",
     puppiesPlannedText:
       "Chystáme první vrh naší Alminky. Podrobnosti o krycím pejskovi zveřejníme, jakmile budeme mít vše potvrzené.",
     puppiesPlannedCta: "Mám zájem o štěně",
@@ -365,6 +367,11 @@ const translations = {
     footerAboutText:
       "Rosenaw Aurum \u2014 rodinn\u00e1 chovatelsk\u00e1 stanice zlat\u00fdch retr\u00edvr\u016f v Beskydech. Chov\u00e1me s l\u00e1skou, p\u00e9\u010d\u00ed a respektem k plemeni.",
     footerRights: "V\u0161echna pr\u00e1va vyhrazena.",
+    thankYouTitle: "Děkujeme za Vaši zprávu!",
+    thankYouText: "Těší nás Váš zájem o chovatelskou stanici Rosenaw Aurum. Vaši zprávu jsme přijali a co nejdříve se Vám ozveme.",
+    thankYouReply: "Obvykle odpovídáme do 24 hodin.",
+    backToHome: "\u2190 Zpět na hlavní stránku",
+    notFoundText: "Tato stránka neexistuje nebo byla přesunuta.",
   },
 
   en: {
@@ -375,6 +382,7 @@ const translations = {
     navGallery: "Gallery",
     navNews: "News",
     navDocs: "Documents",
+    navBreed: "About the breed",
     navContact: "Contact",
     navCalc: "Pregnancy calculator",
     cookieText: 'This website uses Google Analytics, Google Fonts and Google Maps. These services may process your IP address. <a href="ochrana-osobnich-udaju.html">More info</a>.',
@@ -465,6 +473,7 @@ const translations = {
     puppiesStatusTitle: "Planned litter",
     puppiesStatusPill: "Spring/Summer 2027",
     puppiesPlannedLabel: "Expecting",
+    puppiesPlannedDate: "Spring / Summer 2027",
     puppiesPlannedText:
       "We are preparing Alma's first litter. Details about the sire will be announced once confirmed.",
     puppiesPlannedCta: "I'm interested in a puppy",
@@ -732,6 +741,11 @@ const translations = {
     footerAboutText:
       "Rosenaw Aurum — Golden Retriever breeding kennel in the Beskydy Mountains, Czech Republic. We breed with love, care and respect for the breed.",
     footerRights: "All rights reserved.",
+    thankYouTitle: "Thank you for your message!",
+    thankYouText: "We appreciate your interest in Rosenaw Aurum. We have received your message and will get back to you as soon as possible.",
+    thankYouReply: "We usually reply within 24 hours.",
+    backToHome: "\u2190 Back to homepage",
+    notFoundText: "This page does not exist or has been moved.",
   },
 };
 
