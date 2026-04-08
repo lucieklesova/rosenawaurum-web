@@ -20,7 +20,7 @@ const translations = {
 
     heroTitle: "Zlatí retrívři vychovaní s\u00a0láskou v\u00a0srdci Beskyd.",
     heroSubtitle:
-      "Malá rodinná chovatelská stanice FCI z\u00a0Beskyd, nedaleko Rožnova pod Radhoštěm. Štěňata vyrůstají doma, mezi lidmi, s\u00a0důrazem na zdraví, vyrovnanou povahu a\u00a0pevné zázemí.",
+      "Malá rodinná chovatelská stanice FCI z\u00a0Beskyd na\u00a0Moravě, nedaleko Rožnova pod Radhoštěm. Štěňata vyrůstají doma, mezi lidmi, s\u00a0důrazem na zdraví, vyrovnanou povahu a\u00a0pevné zázemí.",
     heroCtaAbout: "Poznat náš přístup",
     heroCtaPuppies: "Aktuální / plánovaný vrh",
 
@@ -456,7 +456,7 @@ const translations = {
 
     heroTitle: "Golden retrievers raised with\u00a0love in the heart of\u00a0Beskydy.",
     heroSubtitle:
-      "A small family FCI kennel from the Beskydy Mountains, near Rožnov pod Radhoštěm. Puppies grow up at home, among people, with focus on health, balanced temperament and a\u00a0solid foundation.",
+      "A small family FCI kennel from the Beskydy Mountains in\u00a0Moravia, near Rožnov pod Radhoštěm. Puppies grow up at home, among people, with focus on health, balanced temperament and a\u00a0solid foundation.",
     heroCtaAbout: "Our approach",
     heroCtaPuppies: "Current / planned litter",
 
