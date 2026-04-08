@@ -340,6 +340,7 @@ const translations = {
     pregHidePast: "Skr\u00fdt p\u0159edchoz\u00ed t\u00fddny",
     pregVideoTitle: "V\u00fdvoj \u0161t\u011b\u0148at v b\u0159i\u0161e feny",
     pregVideoDesc: "Fascinuj\u00edc\u00ed z\u00e1b\u011bry National Geographic ukazuj\u00edc\u00ed, jak se \u0161t\u011b\u0148ata vyv\u00edj\u00ed od oplodn\u011bn\u00ed a\u017e po porod.",
+    pregVideoBlocked: 'Pro p\u0159ehr\u00e1n\u00ed videa je nutn\u00e9 p\u0159ijmout cookies. <a href="https://www.youtube.com/watch?v=BsLfWgAFFIE" target="_blank" rel="noopener noreferrer">Sledovat na YouTube \u2192</a>',
     pregChecklistTitle: "Co p\u0159ipravit na porod",
     pregChecklistItems: "Porodn\u00ed box (min. 120\u00d7120 cm pro zlat\u00e9ho retr\u00edvra); \u010cist\u00e9 ru\u010dn\u00edky a podlo\u017eky; Digit\u00e1ln\u00ed teplom\u011br; Dezinfekce a steriln\u00ed n\u016f\u017eky; V\u00e1ha pro v\u00e1\u017een\u00ed \u0161t\u011b\u0148at; Barevn\u00e9 obojky/stu\u017eky pro ozna\u010den\u00ed \u0161t\u011b\u0148at; Telefon na veterin\u00e1\u0159e a pohotovost; N\u00e1hradn\u00ed ml\u00e9ko pro \u0161t\u011b\u0148ata (pro p\u0159\u00edpad)",
     pregGoldenTitle: "Specifika zlat\u00e9ho retr\u00edvra",
@@ -777,6 +778,7 @@ const translations = {
     pregHidePast: "Hide previous weeks",
     pregVideoTitle: "Puppy development in the womb",
     pregVideoDesc: "Fascinating National Geographic footage showing how puppies develop from fertilisation to birth.",
+    pregVideoBlocked: 'To play the video you need to accept cookies. <a href="https://www.youtube.com/watch?v=BsLfWgAFFIE" target="_blank" rel="noopener noreferrer">Watch on YouTube \u2192</a>',
     pregChecklistTitle: "What to prepare for whelping",
     pregChecklistItems: "Whelping box (min. 120\u00d7120 cm for a Golden Retriever); Clean towels and pads; Digital thermometer; Disinfectant and sterile scissors; Scale for weighing puppies; Coloured collars/ribbons to identify puppies; Vet's and emergency phone numbers; Puppy milk replacer (just in case)",
     pregGoldenTitle: "Golden Retriever specifics",
@@ -1340,11 +1342,26 @@ function loadGoogleMap() {
   if (placeholder) placeholder.style.display = "none";
 }
 
+function loadPregVideo() {
+  const iframe = document.getElementById("preg-video");
+  const placeholder = document.getElementById("preg-video-placeholder");
+  if (iframe && iframe.dataset.src) {
+    iframe.src = iframe.dataset.src;
+    iframe.style.display = "";
+  }
+  if (placeholder) placeholder.style.display = "none";
+}
+
 function blockGoogleServices() {
   const iframe = document.getElementById("google-map");
   const placeholder = document.getElementById("map-placeholder");
   if (iframe) iframe.style.display = "none";
   if (placeholder) placeholder.style.display = "flex";
+
+  const videoIframe = document.getElementById("preg-video");
+  const videoPlaceholder = document.getElementById("preg-video-placeholder");
+  if (videoIframe) videoIframe.style.display = "none";
+  if (videoPlaceholder) videoPlaceholder.style.display = "flex";
 }
 
 function loadGoogleAnalytics() {
@@ -1366,6 +1383,7 @@ function applyConsentState(consent) {
   if (consent === "accepted") {
     loadGoogleFonts();
     loadGoogleMap();
+    loadPregVideo();
     loadGoogleAnalytics();
   } else if (consent === "rejected") {
     blockGoogleServices();

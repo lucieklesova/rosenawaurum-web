@@ -14,9 +14,9 @@
       (function(){var l=localStorage.getItem("lang");if(l&&l!=="cs"){document.documentElement.lang=l;document.documentElement.classList.add("i18n-loading")}})();
     </script>
     <style>.i18n-loading body{opacity:0}.i18n-loaded body{opacity:1;transition:opacity .15s}</style>
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link rel="icon" href="favicon.ico" sizes="any" />
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=2" />
+    <link rel="icon" href="favicon.ico?v=2" sizes="any" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png?v=2" />
 
     <!-- Open Graph -->
     <meta property="og:title" content="Kalkulačka březosti feny – termín porodu + vývoj štěňat zdarma" />
@@ -580,7 +580,10 @@
             <h3 data-i18n="pregVideoTitle">Vývoj štěňat v břiše feny</h3>
             <p class="preg-video-desc" data-i18n="pregVideoDesc">Fascinující záběry National Geographic ukazující, jak se štěňata vyvíjejí od oplodnění až po porod.</p>
             <div class="preg-video-wrap">
-              <iframe src="https://www.youtube-nocookie.com/embed/BsLfWgAFFIE" title="National Geographic – Dogs in the Womb" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe id="preg-video" data-src="https://www.youtube-nocookie.com/embed/BsLfWgAFFIE" title="National Geographic – Dogs in the Womb" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+              <div id="preg-video-placeholder" class="preg-video-placeholder" style="display:none;">
+                <p data-i18n="pregVideoBlocked">Pro přehrání videa je nutné přijmout cookies. <a href="https://www.youtube.com/watch?v=BsLfWgAFFIE" target="_blank" rel="noopener noreferrer">Sledovat na YouTube &rarr;</a></p>
+              </div>
             </div>
           </div>
 
