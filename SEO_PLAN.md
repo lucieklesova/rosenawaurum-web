@@ -184,7 +184,7 @@ Přidat krátký vysvětlující text k výsledkům (co DKK B/B znamená) a odka
 3. **Přidat `dateModified`** do JSON-LD na všechny stránky – AI preferuje čerstvý obsah
 4. **Použít `HowTo` schema** na stránce o uchovnění nebo výběru chovatele
 5. **Citovatelné zdroje** – odkázat na ČMKU, FCI a klubové standardy zvyšuje autoritu
-6. **Autor a E-E-A-T** – přidat krátký bio autorky (Lucie Klesová, chovatelka FCI č. 832/23) na stránky s odborným obsahem
+6. **Autor a E-E-A-T** – přidat krátký bio autorky (Lucie Klesová, chovatelka FCI) na stránky s odborným obsahem
 
 ---
 

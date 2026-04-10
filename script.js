@@ -47,7 +47,7 @@ const translations = {
     aboutGoal:
       'Naším cílem je odchovávat vyrovnané, zdravé a společenské psy, kteří se budou cítit stejně dobře na výstavním kruhu, při práci v poli i uprostřed rodinného obýváku.',
     aboutClubs:
-      'Rosenaw Aurum je registrovaná chovatelská stanice <a href="https://www.fci.be/" target="_blank" rel="noopener noreferrer">FCI</a> (č. 832/23), členem <a href="https://www.kchls.cz/" target="_blank" rel="noopener noreferrer">Klubu chovatelů loveckých slídičů (KCHLS)</a> a <a href="https://www.retriever-klub.cz/" target="_blank" rel="noopener noreferrer">Retriever Klubu CZ</a>.',
+      'Rosenaw Aurum je registrovaná chovatelská stanice <a href="https://www.fci.be/" target="_blank" rel="noopener noreferrer">FCI</a>, členem <a href="https://www.kchls.cz/" target="_blank" rel="noopener noreferrer">Klubu chovatelů loveckých slídičů (KCHLS)</a> a <a href="https://www.retriever-klub.cz/" target="_blank" rel="noopener noreferrer">Retriever Klubu CZ</a>.',
 
     girlsTitle: "Naše feny",
     girlsIntro:
@@ -483,7 +483,7 @@ const translations = {
     aboutGoal:
       'Our goal is to breed well-balanced, healthy and social dogs that feel equally comfortable in the show ring, in the field and in the middle of a family living room.',
     aboutClubs:
-      'Rosenaw Aurum is a registered kennel of <a href="https://www.fci.be/" target="_blank" rel="noopener noreferrer">FCI</a> (no. 832/23), member of <a href="https://www.kchls.cz/" target="_blank" rel="noopener noreferrer">KCHLS</a> and the <a href="https://www.retriever-klub.cz/" target="_blank" rel="noopener noreferrer">Retriever Klub CZ</a>.',
+      'Rosenaw Aurum is a registered kennel of <a href="https://www.fci.be/" target="_blank" rel="noopener noreferrer">FCI</a>, member of <a href="https://www.kchls.cz/" target="_blank" rel="noopener noreferrer">KCHLS</a> and the <a href="https://www.retriever-klub.cz/" target="_blank" rel="noopener noreferrer">Retriever Klub CZ</a>.',
 
     girlsTitle: "Our girls",
     girlsIntro:
