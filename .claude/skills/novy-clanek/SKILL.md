@@ -13,16 +13,36 @@ Tento skill vytváří nový článek (aktualitu) na webu chovatelské stanice R
 ### 1. Zjisti obsah článku
 - Zeptej se uživatele na: **nadpis, datum, text článku, výsledky** (pokud jde o výstavu/zkoušku)
 - Pokud uživatel poskytne URL blogu (almamygoldenlove.cz), stáhni obsah pomocí WebFetch
-- Pokud jsou na blogu fotky, stáhni je do `images/news/` s prefixem názvu článku (např. `provodovice-IMG_1234.jpeg`)
+- **DŮLEŽITÉ – text:** Použij DOSLOVA originální text z blogu, slovo po slově. Nikdy text nepřepisuj, neshrnovej ani neupravuj stylisticky. Pokud WebFetch vrátí shrnutí místo přesného textu, zavolej ho znovu s promptem: „Extrahuj DOSLOVA každý odstavec článku, žádné shrnutí."
+- **DŮLEŽITÉ – obrázky:** WebFetch nevidí lazy-loaded obrázky na Webnode blogu (almamygoldenlove.cz). Vždy použij curl + grep pro extrakci z raw HTML:
+  ```bash
+  curl -s "{URL}" | grep -oE 'https?://[^"'\'']+\.(jpg|jpeg|png|webp)[^"'\'']*' | sort -u
+  ```
+  Obrázky jsou schované v JSON datech stránky (srcset, sources pole). Stáhni je pomocí curl do `images/news/` s prefixem slug:
+  ```bash
+  curl -s -o "images/news/{slug}-{nazev}.jpeg" "{cdn-url}"
+  ```
+  Pokud článek opravdu nemá žádné fotky (jen logo), nevymýšlej náhradní a nevytvárej `blog-card-img` div v kartičce.
 
 ### 2. Vytvoř detail stránku
 Soubor: `aktuality/{slug}.html`
 
-Použij jako šablonu existující článek (např. `aktuality/bordovice.html`). Klíčové prvky:
+Použij jako šablonu existující článek (např. `aktuality/provodovice.html`). Klíčové prvky:
 - Header s SVG logem (`../images/logo-rosenaw-aurum.svg` + `../images/logo-footer.webp`)
 - CSS verze: zkontroluj aktuální verzi v ostatních souborech (`styles.css?v=XX`)
 - Navigace s `class="active"` na odkazu Aktuality
 - Obsah článku v `<article class="blog-article">`
+
+**Formátování obsahu článku** (v tomto pořadí):
+1. `<p class="news-meta">` — datum + kategorie
+2. `<h1 data-i18n="...">` — nadpis
+3. `<blockquote data-i18n="...">` — perex/intro citace (pokud blog má úvodní quote)
+4. `<div class="news-results"><p data-i18n="..." data-i18n-html>` — výsledky závodů/zkoušek (jméno psa, rodiče, třída, výsledek)
+5. Odstavce `<p data-i18n="..." data-i18n-html>` — tělo článku
+6. `<p data-i18n="...">Label:</p>` + `<ul class="list" data-i18n="..." data-i18n-html>` — pro výčty (takeaways, poděkování apod.) — v script.js položky oddělovat středníkem
+7. `<div class="blog-article-photos">` s GLightbox — fotogalerie
+8. Share tlačítka
+
 - Fotogalerie v `<div class="blog-article-photos">` s GLightbox
 - **Share tlačítka** na konci článku (před `</article>`):
 

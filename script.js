@@ -125,6 +125,9 @@ const translations = {
     newsTitle: "Aktuality",
     newsIntro:
       "Krátké zprávy o našich psech, plánovaných vrzích, výstavách, zkouškách a drobných radostech ze společného života.",
+    newsMonth0: "Dub",
+    newsTitle0: "Náš první Working Test – Šilheřovice",
+    newsExcerpt0: "Alma absolvovala svůj první Working Test v Šilheřovicích. Třída E, mezinárodní rozhodčí a spousta nových zkušeností z lesa.",
     newsMonth1: "Bře",
     newsTitle1: "Alma poprvé v otevřené třídě – Provodovice",
     newsExcerpt1: "Alma nastoupila poprvé do otevřené třídy a hned V1, vítěz třídy, oblastní vítěz a 3. místo ve skupině FCI 8!",
@@ -144,6 +147,8 @@ const translations = {
     shareCopy: "Kopírovat odkaz",
 
     // Aktuality – jednotlivé články
+    artSilheroviceCat: "Zkoušky",
+    artSilheroviceTitle: "Náš první Working Test – Šilheřovice 2026",
     artProvodoviceCat: "Výstavy",
     artProvodoviceTitle: "Alma poprvé v otevřené třídě – výstava v Provodovicích",
     artBordoviceCat: "Výstavy",
@@ -217,7 +222,22 @@ const translations = {
     artGenetickeResultsList: "Oči (PRA-prcd, GR-PRA1, GR-PRA2): <strong>N/N</strong> – čistá;Ichtyóza 1: <strong>N/P</strong> – přenašečka;Ichtyóza 2: <strong>N/N</strong> – čistá;NCL5: <strong>N/N</strong> – čistá;GRMD: <strong>Xn/Xn</strong> – čistá",
     artGenetickeP3: 'Máme velkou radost, že Alminka je zdravý pejsek. Většina testovaných chorob je zcela bez nálezu, a\u00a0u\u00a0jedné – kde je Alminka přenašečkou – <strong>nemá výsledek žádný vliv na její zdraví ani pohodu</strong>. Pro chov to znamená, že krycí pes musí být testován jako N/N.',
 
+    // Šilheřovice WT – body
+    artSilherovicePerex: 'Do Šilheřovic jsme vyrazily s jasným cílem: zažít náš první Working Test. Výsledek? Dvě nuly na disciplínách. Ale taky jeden z nejpřínosnějších dní, jaké jsme s Alminkou zažily.',
+    artSilheroviceP1: 'Akci pořádal Retriever klub CZ společně s\u00a0Tréninkem s\u00a0retrívrem v\u00a0krásném šilheřovickém lese – s\u00a0bohatým podrostem, příkopy, vodními přítoky a\u00a0otevřenou loukou. Terén jako stvořený pro Working Test. Pro Almu ale taky jako stvořený pro naprosté rozptýlení od všeho, co po ní chceme.',
+    artSilheroviceP2: 'Posuzoval mezinárodní sbor rozhodčích – <strong>Maarit Saarinen</strong> (Finsko), zkušená chovatelka (Middle River\u2019s), a\u00a0<strong>Paul David Toal</strong> (Irsko), FCI rozhodčí pro field trialy i\u00a0working testy.',
+    artSilheroviceResult: '<strong>Alma Bohemica Aurum</strong><br><em>(Brandon de Ria Vela \u00d7 Lollipop Dorado Blanco)</em><br>Třída E (Elementary) \u2022 4 disciplíny \u2022 <strong>2\u00d7 0 bodů</strong>',
+    artSilheroviceP3: 'Ve třídě E nás čekaly čtyři disciplíny zaměřené na marking, memory marking a\u00a0dohledávku – průběžně se hodnotila i\u00a0chůze u\u00a0nohy. Jenže hned u\u00a0první disciplíny nás terén dostal. Alma dummy po vběhnutí do\u00a02 příkopů ztratila orientaci a\u00a0dummy nemohla najít – a\u00a0frustrace se projevila po svém. Zkrátka se vyčurala. No, stalo se a\u00a0výsledek rovná 0.',
+    artSilheroviceP4: 'Další disciplíny byly lepší, ale projevil se tlak a přetrénování a zájem o dummík nebyl tak velký jako obvykle.',
+    artSilheroviceP5: 'Byly jsme tam ale v\u00a0dobré partě – <strong>Jana s\u00a0Zoe a\u00a0Pinky</strong> a\u00a0<strong>Ondra s\u00a0Bellou</strong> – takže nálada byla i přes nuly skvělá.',
+    artSilheroviceP6: 'A co jsme si z toho odnesly? Jasný plán na trénink:',
+    artSilheroviceTakeaways: 'víc práce na <strong>steadiness</strong>;marking v\u00a0neznámém terénu;chůze u\u00a0nohy v\u00a0rozptylujícím prostředí',
+    artSilheroviceP6b: 'Rozhodčí byli po skončení ochotní a zpětná vazba k nezaplacení.',
+    artSilheroviceP7: 'Vrátíme se. S Almou to jinak nejde.',
+
     // Aktuality list – měsíce a excerpty
+    newsListMonth0: "Dub",
+    newsListExcerpt0: "Alma absolvovala svůj první Working Test v Šilheřovicích. Třída E, mezinárodní rozhodčí a spousta nových zkušeností z krásného lesa.",
     newsListMonth1: "Bře",
     newsListMonth2: "Čvc",
     newsListMonth3: "Čvn",
@@ -563,6 +583,9 @@ const translations = {
     newsTitle: "News",
     newsIntro:
       "Short updates about our dogs, planned litters, shows, working tests and small joys of everyday life.",
+    newsMonth0: "Apr",
+    newsTitle0: "Our first Working Test – Šilheřovice",
+    newsExcerpt0: "Alma completed her first Working Test in Šilheřovice. Class E, international judges and lots of new experience from the forest.",
     newsMonth1: "Mar",
     newsTitle1: "Alma's first open class – Provodovice show",
     newsExcerpt1: "Alma entered the open class for the first time and won V1, class winner, regional winner and 3rd place in FCI group 8!",
@@ -582,6 +605,8 @@ const translations = {
     shareCopy: "Copy link",
 
     // Articles – individual
+    artSilheroviceCat: "Working tests",
+    artSilheroviceTitle: "Our first Working Test \u2013 \u0160ilhe\u0159ovice 2026",
     artProvodoviceCat: "Shows",
     artProvodoviceTitle: "Alma\u2019s first open class \u2013 Provodovice dog show",
     artBordoviceCat: "Shows",
@@ -655,7 +680,22 @@ const translations = {
     artGenetickeResultsList: "Eyes (PRA-prcd, GR-PRA1, GR-PRA2): <strong>N/N</strong> \u2013 clear;Ichthyosis 1: <strong>N/P</strong> \u2013 carrier;Ichthyosis 2: <strong>N/N</strong> \u2013 clear;NCL5: <strong>N/N</strong> \u2013 clear;GRMD: <strong>Xn/Xn</strong> \u2013 clear",
     artGenetickeP3: 'We are very happy that Alma is a healthy girl. Most of the tested conditions came back completely clear, and for the one where she is a carrier \u2013 <strong>the result has no impact on her health or well-being whatsoever</strong>. For breeding purposes, it simply means the stud dog must be tested as N/N.',
 
+    // Šilheřovice WT – body
+    artSilherovicePerex: 'We headed to \u0160ilhe\u0159ovice with a clear goal: to experience our first Working Test. The result? Two zeros on the exercises. But also one of the most valuable days we have ever had with Alma.',
+    artSilheroviceP1: 'The event was organised by Retriever klub CZ together with Tr\u00e9nink s\u00a0retr\u00edvrem in the beautiful \u0160ilhe\u0159ovice forest \u2013 with dense undergrowth, ditches, water streams and an open meadow. Terrain made for a Working Test. But also, for Alma, terrain made for being completely distracted from everything we ask of her.',
+    artSilheroviceP2: 'Judging was handled by an international panel \u2013 <strong>Maarit Saarinen</strong> (Finland), an experienced breeder (Middle River\u2019s), and <strong>Paul David Toal</strong> (Ireland), FCI judge for field trials and working tests.',
+    artSilheroviceResult: '<strong>Alma Bohemica Aurum</strong><br><em>(Brandon de Ria Vela \u00d7 Lollipop Dorado Blanco)</em><br>Class E (Elementary) \u2022 4 exercises \u2022 <strong>2\u00d7 0 points</strong>',
+    artSilheroviceP3: 'In Class E, four exercises awaited us \u2013 marking, memory marking and a retrieve \u2013 with heelwork assessed throughout. But the very first exercise already got the better of us. After running into two ditches, Alma lost her bearings and could not find the dummy \u2013 and her frustration showed in its own way. Let\u2019s just say she had a wee. Well, it happened, and the score equals 0.',
+    artSilheroviceP4: 'The remaining exercises went better, but the pressure and over-training showed, and her interest in the dummy was not as strong as usual.',
+    artSilheroviceP5: 'We were there with a great group though \u2013 <strong>Jana with Zoe and Pinky</strong> and <strong>Ondra with Bella</strong> \u2013 so the mood was great despite the zeros.',
+    artSilheroviceP6: 'And what did we take away from it? A clear training plan:',
+    artSilheroviceTakeaways: 'more work on <strong>steadiness</strong>;marking in unfamiliar terrain;heelwork in distracting environments',
+    artSilheroviceP6b: 'The judges were generous with their time afterwards and the feedback was priceless.',
+    artSilheroviceP7: 'We will be back. With Alma, there is no other way.',
+
     // News list – months and excerpts
+    newsListMonth0: "Apr",
+    newsListExcerpt0: "Alma completed her first Working Test in \u0160ilhe\u0159ovice. Class E, international judges and lots of new experience from the forest.",
     newsListMonth1: "Mar",
     newsListMonth2: "Jul",
     newsListMonth3: "Jun",
