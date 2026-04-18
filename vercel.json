@@ -1,4 +1,11 @@
 {
+  "redirects": [
+    {
+      "source": "/pruvodce-brezosti.html",
+      "destination": "/kalkulacka-brezosti-feny.html",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
