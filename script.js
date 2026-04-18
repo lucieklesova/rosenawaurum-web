@@ -456,6 +456,11 @@ const translations = {
     privacyS9Title: "9. Kontakt pro uplatnění práv",
     privacyS9Text: 'Pro uplatnění jakéhokoliv z výše uvedených práv nás kontaktujte na e-mailu <a href="mailto:lucie@klesova.cz">lucie@klesova.cz</a>. Na váš požadavek odpovíme nejpozději do 30 dnů.',
     privacyUpdated: "Poslední aktualizace: 22. března 2026",
+
+    toolSpotEyebrow: "Bezplatný nástroj pro chovatele",
+    toolSpotTitle: "Kalkulačka březosti feny",
+    toolSpotText: "Zadejte datum krytí a ihned získáte termín porodu, klíčová data (ultrazvuk, rentgen) i vývoj štěňat týden po týdnu. Funguje pro všechna plemena psů.",
+    toolSpotCta: "Spustit kalkulačku →",
   },
 
   en: {
@@ -914,6 +919,11 @@ const translations = {
     privacyS9Title: "9. Contact for exercising your rights",
     privacyS9Text: 'To exercise any of the above rights, please contact us at <a href="mailto:lucie@klesova.cz">lucie@klesova.cz</a>. We will respond within 30 days at the latest.',
     privacyUpdated: "Last updated: 22 March 2026",
+
+    toolSpotEyebrow: "Free tool for breeders",
+    toolSpotTitle: "Dog pregnancy calculator",
+    toolSpotText: "Enter the mating date and instantly get the due date, key dates (ultrasound, x-ray) and puppy development week by week. Works for all dog breeds.",
+    toolSpotCta: "Launch calculator →",
   },
 };
 
@@ -960,15 +970,44 @@ function setLanguage(lang) {
   document.documentElement.classList.add("i18n-loaded");
 }
 
+// Maps CS filenames ↔ EN filenames. Add entries here when a new page gets a real EN version.
+const EN_PAGES = {
+  "index.html": "en/index.html",
+  "o-plemeni.html": "en/about-breed.html",
+};
+const CS_PAGES = Object.fromEntries(
+  Object.entries(EN_PAGES).map(([cs, en]) => [en.split("/").pop(), cs])
+);
+
+function getLangAwareTarget(targetLang) {
+  const path = window.location.pathname;
+  const inEn = /\/en\//.test(path);
+  const filename = path.split("/").pop() || "index.html";
+  if (targetLang === "en" && !inEn && EN_PAGES[filename]) {
+    return "/" + EN_PAGES[filename];
+  }
+  if (targetLang === "cs" && inEn && CS_PAGES[filename]) {
+    return "/" + CS_PAGES[filename];
+  }
+  return null; // no redirect → fall back to in-page translation
+}
+
 function setupLanguageSwitch() {
-  const savedLang = localStorage.getItem("lang") || "cs";
+  // Detect initial language from <html lang> (set statically on /en/ pages) or localStorage
+  const pageLang = document.documentElement.lang === "en" ? "en" : null;
+  const savedLang = pageLang || localStorage.getItem("lang") || "cs";
   setLanguage(savedLang);
 
   document.querySelectorAll(".lang-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
       const lang = btn.dataset.lang;
       localStorage.setItem("lang", lang);
-      setLanguage(lang);
+      const target = getLangAwareTarget(lang);
+      if (target) {
+        window.location.href = target;
+      } else {
+        setLanguage(lang);
+      }
     });
   });
 }
