@@ -28,7 +28,7 @@ Tento skill vytváří nový článek (aktualitu) na webu chovatelské stanice R
 Soubor: `aktuality/{slug}.html`
 
 Použij jako šablonu existující článek (např. `aktuality/provodovice.html`). Klíčové prvky:
-- Header s SVG logem (`../images/logo-rosenaw-aurum.svg` + `../images/logo-footer.webp`)
+- Header s SVG logem (`../images/logo-rosenaw-aurum.webp` + `../images/logo-footer.webp`)
 - CSS verze: zkontroluj aktuální verzi v ostatních souborech (`styles.css?v=XX`)
 - Navigace s `class="active"` na odkazu Aktuality
 - Obsah článku v `<article class="blog-article">`
