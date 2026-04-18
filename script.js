@@ -974,6 +974,8 @@ function setLanguage(lang) {
 const EN_PAGES = {
   "index.html": "en/index.html",
   "o-plemeni.html": "en/about-breed.html",
+  "faq.html": "en/faq.html",
+  "kalkulacka-brezosti-feny.html": "en/pregnancy-calculator.html",
 };
 const CS_PAGES = Object.fromEntries(
   Object.entries(EN_PAGES).map(([cs, en]) => [en.split("/").pop(), cs])
