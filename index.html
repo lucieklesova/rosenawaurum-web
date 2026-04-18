@@ -45,6 +45,9 @@
     <meta name="twitter:description" content="Rodinná chovatelská stanice zlatých retrívrů FCI v Beskydech." />
     <meta name="twitter:image" content="https://rosenawaurum.cz/images/dogs/alma-portrait.webp" />
 
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" title="Rosenaw Aurum – Aktuality" href="https://rosenawaurum.cz/rss.xml" />
+
     <!-- Preload hero image (WebP) -->
     <link rel="preload" as="image" href="images/hero/hero-background.webp" type="image/webp" />
 
@@ -106,6 +109,7 @@
           "alternateName": "Rosenaw Aurum – chovatelská stanice zlatých retrívrů",
           "description": "Chovatelská stanice zlatých retrívrů v Beskydech na Moravě",
           "inLanguage": ["cs", "en"],
+          "dateModified": "2026-04-17",
           "publisher": { "@id": "https://rosenawaurum.cz/#business" }
         },
         {
@@ -1022,7 +1026,7 @@
           <div class="blog-grid blog-grid--3">
             <a href="aktuality/silherovice.html" class="blog-card">
               <div class="blog-card-img">
-                <img src="images/news/silherovice-WhatsApp-2026-04-13.jpeg" alt="Working Test Šilheřovice 2026" width="600" height="400" loading="lazy" />
+                <img src="images/news/silherovice-WhatsApp-2026-04-13.webp" alt="Working Test Šilheřovice 2026" width="600" height="400" loading="lazy" />
               </div>
               <div class="blog-card-date">
                 <span class="blog-card-month" data-i18n="newsMonth0">Dub</span>
@@ -1069,6 +1073,35 @@
         </div>
       </section>
 
+      <!-- TOOL SPOTLIGHT – Kalkulačka březosti -->
+      <section id="tools" class="section-tool-spotlight" data-animate aria-labelledby="toolSpotlightTitle">
+        <div class="container">
+          <div class="tool-spotlight">
+            <div class="tool-spotlight-icon" aria-hidden="true">
+              <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="2" width="16" height="20" rx="2"/>
+                <line x1="8" y1="6" x2="16" y2="6"/>
+                <circle cx="8" cy="11" r="0.8" fill="currentColor"/>
+                <circle cx="12" cy="11" r="0.8" fill="currentColor"/>
+                <circle cx="16" cy="11" r="0.8" fill="currentColor"/>
+                <circle cx="8" cy="15" r="0.8" fill="currentColor"/>
+                <circle cx="12" cy="15" r="0.8" fill="currentColor"/>
+                <circle cx="16" cy="15" r="0.8" fill="currentColor"/>
+                <circle cx="8" cy="19" r="0.8" fill="currentColor"/>
+                <circle cx="12" cy="19" r="0.8" fill="currentColor"/>
+                <circle cx="16" cy="19" r="0.8" fill="currentColor"/>
+              </svg>
+            </div>
+            <div class="tool-spotlight-body">
+              <span class="tool-spotlight-eyebrow" data-i18n="toolSpotEyebrow">Bezplatný nástroj pro chovatele</span>
+              <h2 id="toolSpotlightTitle" data-i18n="toolSpotTitle">Kalkulačka březosti feny</h2>
+              <p data-i18n="toolSpotText">Zadejte datum krytí a ihned získáte termín porodu, klíčová data (ultrazvuk, rentgen) i vývoj štěňat týden po týdnu. Funguje pro všechna plemena psů.</p>
+            </div>
+            <a href="pruvodce-brezosti.html" class="btn btn-primary tool-spotlight-cta" data-i18n="toolSpotCta">Spustit kalkulačku &rarr;</a>
+          </div>
+        </div>
+      </section>
+
       <!-- CONTACT -->
       <section id="contact" class="section section-muted" data-animate>
         <div class="container contact-header">
@@ -1077,6 +1110,10 @@
           <p class="contact-subtitle" data-i18n="contactIntro">
             Máte zájem o štěně z našeho chovu nebo se jen chcete na něco
             zeptat? Napište nám – rádi se ozveme zpět.
+          </p>
+          <p class="contact-subtitle" style="margin-top:-0.5rem;font-size:0.92rem;">
+            <span data-i18n="contactFaqHint">Než napíšete, podívejte se také do</span>
+            <a href="faq.html" data-i18n="contactFaqLink">častých otázek</a>.
           </p>
         </div>
 
@@ -1244,6 +1281,7 @@
             <li><a href="#news" data-i18n="navNews">Aktuality</a></li>
             <li><a href="alma-dokumenty.html" data-i18n="navDocs">Dokumenty</a></li>
             <li><a href="o-plemeni.html" data-i18n="navBreed">O plemeni</a></li>
+            <li><a href="faq.html">Časté otázky</a></li>
             <li><a href="pruvodce-brezosti.html" data-i18n="pregBreadcrumb">Kalkulačka březosti feny</a></li>
             <li><a href="#contact" data-i18n="navContact">Kontakt</a></li>
           </ul>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rosenaw Aurum – Aktuality</title>
+    <link>https://rosenawaurum.cz/aktuality.html</link>
+    <atom:link href="https://rosenawaurum.cz/rss.xml" rel="self" type="application/rss+xml" />
+    <description>Novinky z chovatelské stanice zlatých retrívrů Rosenaw Aurum – výstavy, zkoušky, zdravotní testy a život s golden retrieverem v Beskydech.</description>
+    <language>cs</language>
+    <copyright>Rosenaw Aurum</copyright>
+    <lastBuildDate>Fri, 17 Apr 2026 20:00:00 +0200</lastBuildDate>
+    <image>
+      <url>https://rosenawaurum.cz/images/dogs/alma-portrait.webp</url>
+      <title>Rosenaw Aurum</title>
+      <link>https://rosenawaurum.cz/</link>
+    </image>
+
+    <item>
+      <title>Náš první Working Test – Šilheřovice 2026</title>
+      <link>https://rosenawaurum.cz/aktuality/silherovice.html</link>
+      <guid isPermaLink="true">https://rosenawaurum.cz/aktuality/silherovice.html</guid>
+      <pubDate>Sat, 11 Apr 2026 09:00:00 +0200</pubDate>
+      <description>Alma Bohemica Aurum absolvovala svůj první Working Test v Šilheřovicích. Třída E, mezinárodní rozhodčí a spousta nových zkušeností v krásném lese.</description>
+    </item>
+
+    <item>
+      <title>Alma poprvé v otevřené třídě – výstava v Provodovicích</title>
+      <link>https://rosenawaurum.cz/aktuality/provodovice.html</link>
+      <guid isPermaLink="true">https://rosenawaurum.cz/aktuality/provodovice.html</guid>
+      <pubDate>Sat, 28 Mar 2026 09:00:00 +0100</pubDate>
+      <description>Alma Bohemica Aurum poprvé v otevřené třídě na výstavě v Provodovicích – V1, vítěz třídy, oblastní vítěz a 3. místo ve skupině FCI 8.</description>
+    </item>
+
+    <item>
+      <title>Alminka s maminkou na výstavě v Bordovicích</title>
+      <link>https://rosenawaurum.cz/aktuality/bordovice.html</link>
+      <guid isPermaLink="true">https://rosenawaurum.cz/aktuality/bordovice.html</guid>
+      <pubDate>Sat, 26 Jul 2025 09:00:00 +0200</pubDate>
+      <description>Oblastní klubová výstava Hubertka 2025 v Bordovicích – Alma Bohemica Aurum ve třídě mladých, hodnocení V2.</description>
+    </item>
+
+    <item>
+      <title>Alminka zvládla OVVR na jedničku</title>
+      <link>https://rosenawaurum.cz/aktuality/ovvr.html</link>
+      <guid isPermaLink="true">https://rosenawaurum.cz/aktuality/ovvr.html</guid>
+      <pubDate>Sun, 01 Jun 2025 09:00:00 +0200</pubDate>
+      <description>OVVR zkouška vrozených vloh retrieverů v Ústí u Hranic – Alma Bohemica Aurum splnila na plný počet bodů.</description>
+    </item>
+
+    <item>
+      <title>Máme výsledky genetických testů</title>
+      <link>https://rosenawaurum.cz/aktuality/geneticke-testy.html</link>
+      <guid isPermaLink="true">https://rosenawaurum.cz/aktuality/geneticke-testy.html</guid>
+      <pubDate>Fri, 30 May 2025 09:00:00 +0200</pubDate>
+      <description>Výsledky genetických testů Almy Bohemica Aurum – PRA, ichtyóza (ICT), GRMD, NCL5. Všechny testy negativní/čistá.</description>
+    </item>
+
+    <item>
+      <title>Alminka se předvedla v Humpolci</title>
+      <link>https://rosenawaurum.cz/aktuality/humpolec.html</link>
+      <guid isPermaLink="true">https://rosenawaurum.cz/aktuality/humpolec.html</guid>
+      <pubDate>Fri, 16 May 2025 09:00:00 +0200</pubDate>
+      <description>Klubová a Speciální výstava retrieverů v Humpolci – Alma Bohemica Aurum s hodnocením Výborná v třídě mladých.</description>
+    </item>
+
+    <item>
+      <title>Máme výsledky RTG DKK, DLK, OCD</title>
+      <link>https://rosenawaurum.cz/aktuality/rtg-vysledky.html</link>
+      <guid isPermaLink="true">https://rosenawaurum.cz/aktuality/rtg-vysledky.html</guid>
+      <pubDate>Tue, 04 Feb 2025 09:00:00 +0100</pubDate>
+      <description>RTG vyšetření kyčlí (DKK), loktů (DLK) a páteře (OCD) fenky Alma Bohemica Aurum – výsledky DKK B/B, DLK 0/0, OCD 0/0.</description>
+    </item>
+
+    <item>
+      <title>Alminka slaví 1. narozeniny</title>
+      <link>https://rosenawaurum.cz/aktuality/narozeniny.html</link>
+      <guid isPermaLink="true">https://rosenawaurum.cz/aktuality/narozeniny.html</guid>
+      <pubDate>Mon, 27 Jan 2025 09:00:00 +0100</pubDate>
+      <description>Zlatý retrívr Alma Bohemica Aurum oslavila své první narozeniny – dort, dárky a spousta radosti.</description>
+    </item>
+  </channel>
+</rss>
