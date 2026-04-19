@@ -1900,6 +1900,59 @@ button:focus:not(:focus-visible) {
 }
 
 /* ---------------------------------------------
+   RELATED ARTICLES (konec blog článku)
+--------------------------------------------- */
+
+.related-articles {
+  margin: 3rem 0 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--color-border, #e8dfd3);
+}
+
+.related-title {
+  font-size: 1.25rem;
+  margin: 0 0 1.2rem;
+  color: var(--color-dark);
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.related-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1rem 1.1rem;
+  background: #f9f5f0;
+  border-left: 3px solid var(--color-gold);
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.related-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.related-card .related-meta {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--color-text-light);
+}
+
+.related-card-title {
+  font-weight: 600;
+  color: var(--color-dark);
+  line-height: 1.35;
+}
+
+/* ---------------------------------------------
    BLOG GRID (aktuality.html masonry)
 --------------------------------------------- */
 
