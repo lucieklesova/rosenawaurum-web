@@ -462,17 +462,6 @@ const translations = {
     toolSpotText: "Zadejte datum krytí a ihned získáte termín porodu, klíčová data (ultrazvuk, rentgen) i vývoj štěňat týden po týdnu. Funguje pro všechna plemena psů.",
     toolSpotCta: "Spustit kalkulačku →",
 
-    homeFaqTitle: "Nejčastější otázky",
-    homeFaqSubtitle: "Odpovědi na to, co se nás lidé ptají nejčastěji. Kompletní seznam najdete na stránce <a href=\"faq.html\">časté otázky</a>.",
-    homeFaq1Q: "Kolik stojí štěně zlatého retrívra?",
-    homeFaq1A: "Cena štěněte zlatého retrívra s průkazem původu FCI se pohybuje od 35 000 do 55 000 Kč. V ceně je průkaz původu ČMKU/FCI, očkování, odčervení, čip, veterinární prohlídka, kupní smlouva a doživotní podpora chovatele.",
-    homeFaq2Q: "Je zlatý retrívr vhodný pro rodinu s dětmi?",
-    homeFaq2A: "Ano – zlatý retrívr patří mezi nejvhodnější plemena pro rodiny s dětmi. Je přátelský, trpělivý a má vyrovnanou povahu. Štěně ze socializovaného chovu, které od narození vyrůstá v kontaktu s lidmi, je ideální volbou.",
-    homeFaq3Q: "Jak si rezervovat štěně v Rosenaw Aurum?",
-    homeFaq3A: "Napište nám e-mailem nebo zavolejte. Domluvíme osobní setkání, kde poznáte rodiče i prostředí. Konkrétní štěně vybíráme společně přibližně ve 4. týdnu věku podle temperamentu a vašich představ.",
-    homeFaq4Q: "Kde vás najdeme?",
-    homeFaq4A: "Naše chovatelská stanice sídlí ve Viganticích u Rožnova pod Radhoštěm v Beskydech (Zlínský kraj, Morava). Osobní návštěvu rádi domluvíme po předchozí dohodě.",
-    homeFaqMoreCta: "Všechny otázky a odpovědi →",
   },
 
   en: {
@@ -937,17 +926,6 @@ const translations = {
     toolSpotText: "Enter the mating date and instantly get the due date, key dates (ultrasound, x-ray) and puppy development week by week. Works for all dog breeds.",
     toolSpotCta: "Launch calculator →",
 
-    homeFaqTitle: "Frequently asked questions",
-    homeFaqSubtitle: "The most common questions we get. For the full list, visit our <a href=\"faq.html\">FAQ page</a>.",
-    homeFaq1Q: "How much does a Golden Retriever puppy cost?",
-    homeFaq1A: "A Golden Retriever puppy with an FCI pedigree costs between 35,000 and 55,000 CZK. The price includes ČMKU/FCI pedigree, vaccinations, deworming, microchip, veterinary check-up, purchase contract and lifetime breeder support.",
-    homeFaq2Q: "Is the Golden Retriever suitable for families with children?",
-    homeFaq2A: "Yes — the Golden Retriever is one of the most suitable breeds for families with children. It is friendly, patient and has a balanced temperament. A well-socialised puppy raised in contact with people from birth is an ideal choice.",
-    homeFaq3Q: "How do I reserve a puppy at Rosenaw Aurum?",
-    homeFaq3A: "Write us an email or call. We'll arrange a personal meeting where you can get to know the parents and the environment. We choose the specific puppy together at around 4 weeks of age based on temperament and your preferences.",
-    homeFaq4Q: "Where are you located?",
-    homeFaq4A: "Our kennel is based in Vigantice near Rožnov pod Radhoštěm in the Beskydy Mountains (Zlín Region, Moravia, Czech Republic). Personal visits welcome by prior appointment.",
-    homeFaqMoreCta: "All questions & answers →",
   },
 };
 
