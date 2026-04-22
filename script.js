@@ -13,9 +13,21 @@ const translations = {
     navBreed: "O plemeni",
     navContact: "Kontakt",
     navCalc: "Kalkulačka březosti",
-    cookieText: 'Tento web používá Google Analytics, Google Fonts a Google Maps. Tyto služby mohou zpracovávat vaši IP adresu. <a href="ochrana-osobnich-udaju.html">Více informací</a>.',
-    cookieAccept: "Rozumím",
-    cookieReject: "Odmítnout",
+    cookieTitle: "Cookies a soukromí",
+    cookieText: 'Používáme cookies a externí služby (Google Fonts, Google Maps, Google Analytics, vložená YouTube videa), které mohou zpracovávat vaši IP adresu. Vy rozhodujete, co chcete povolit. <a href="/ochrana-osobnich-udaju.html">Více informací</a>.',
+    cookieAccept: "Přijmout vše",
+    cookieReject: "Odmítnout vše",
+    cookieSettings: "Nastavení",
+    cookieSettingsTitle: "Nastavení cookies",
+    cookieBack: "Zpět",
+    cookieSave: "Uložit volbu",
+    cookieCatNecessary: "Nezbytné",
+    cookieCatNecessaryDesc: "Potřebné pro základní fungování webu — uložení jazyka a vaší volby cookies. Vždy zapnuté.",
+    cookieCatAnalytics: "Analytika",
+    cookieCatAnalyticsDesc: "Google Analytics — anonymní statistiky návštěvnosti, které nám pomáhají web vylepšovat.",
+    cookieCatExternal: "Externí obsah",
+    cookieCatExternalDesc: "Google Fonts pro krásnější typografii, Google Maps v kontaktu a vložená YouTube videa v článcích.",
+    cookieFooterLink: "Nastavení cookies",
     mapBlocked: "Pro zobrazení mapy je nutné přijmout cookies třetích stran.",
 
     heroTitle: "Zlatí retrívři vychovaní s\u00a0láskou v\u00a0srdci Beskyd.",
@@ -476,9 +488,21 @@ const translations = {
     navBreed: "About the breed",
     navContact: "Contact",
     navCalc: "Pregnancy calculator",
-    cookieText: 'This website uses Google Analytics, Google Fonts and Google Maps. These services may process your IP address. <a href="ochrana-osobnich-udaju.html">More info</a>.',
-    cookieAccept: "Accept",
-    cookieReject: "Reject",
+    cookieTitle: "Cookies & privacy",
+    cookieText: 'We use cookies and third-party services (Google Fonts, Google Maps, Google Analytics, embedded YouTube videos) which may process your IP address. You choose what to allow. <a href="/ochrana-osobnich-udaju.html">More info</a>.',
+    cookieAccept: "Accept all",
+    cookieReject: "Reject all",
+    cookieSettings: "Settings",
+    cookieSettingsTitle: "Cookie settings",
+    cookieBack: "Back",
+    cookieSave: "Save choices",
+    cookieCatNecessary: "Necessary",
+    cookieCatNecessaryDesc: "Required for basic site functionality — storing your language and cookie preferences. Always on.",
+    cookieCatAnalytics: "Analytics",
+    cookieCatAnalyticsDesc: "Google Analytics — anonymous usage statistics that help us improve the site.",
+    cookieCatExternal: "External content",
+    cookieCatExternalDesc: "Google Fonts for nicer typography, Google Maps on the contact page and embedded YouTube videos in articles.",
+    cookieFooterLink: "Cookie settings",
     mapBlocked: "To display the map, you need to accept third-party cookies.",
 
     heroTitle: "Golden retrievers raised with\u00a0love in the heart of\u00a0Beskydy.",
@@ -1464,48 +1488,192 @@ function loadGoogleAnalytics() {
   gtag("config", "G-XDKPV7JGM3");
 }
 
-function applyConsentState(consent) {
-  if (consent === "accepted") {
-    loadGoogleFonts();
-    loadGoogleMap();
-    loadPregVideo();
-    loadGoogleAnalytics();
-  } else if (consent === "rejected") {
-    blockGoogleServices();
+const COOKIE_CONSENT_KEY = "cookieConsent";
+const COOKIE_CONSENT_VERSION = 2;
+
+function readCookieConsent() {
+  const raw = localStorage.getItem(COOKIE_CONSENT_KEY);
+  if (!raw) return null;
+  if (raw === "accepted") return { analytics: true, external: true };
+  if (raw === "rejected") return { analytics: false, external: false };
+  try {
+    const parsed = JSON.parse(raw);
+    return { analytics: !!parsed.analytics, external: !!parsed.external };
+  } catch {
+    return null;
   }
 }
 
-function setupCookieBanner() {
-  const banner = document.getElementById("cookie-banner");
-  const acceptBtn = document.getElementById("cookie-accept");
-  const rejectBtn = document.getElementById("cookie-reject");
-  const consent = localStorage.getItem("cookieConsent");
+function writeCookieConsent(prefs) {
+  localStorage.setItem(COOKIE_CONSENT_KEY, JSON.stringify({
+    analytics: !!prefs.analytics,
+    external: !!prefs.external,
+    v: COOKIE_CONSENT_VERSION,
+    ts: Date.now(),
+  }));
+}
 
-  // On subpages without banner, still apply consent (e.g. load GA)
-  if (!banner || !acceptBtn) {
-    if (consent) applyConsentState(consent);
-    return;
-  }
-
-  if (!consent) {
-    banner.style.display = "";
+function applyConsentState(prefs) {
+  if (!prefs) return;
+  if (prefs.external) {
+    loadGoogleFonts();
+    loadGoogleMap();
+    loadPregVideo();
   } else {
-    applyConsentState(consent);
+    blockGoogleServices();
   }
+  if (prefs.analytics) loadGoogleAnalytics();
+}
 
-  acceptBtn.addEventListener("click", () => {
-    localStorage.setItem("cookieConsent", "accepted");
-    banner.style.display = "none";
-    applyConsentState("accepted");
-  });
+function buildCookieBanner() {
+  let banner = document.getElementById("cookie-banner");
+  if (banner) return banner;
+  const wrap = document.createElement("div");
+  wrap.innerHTML = `
+<div id="cookie-banner" class="cookie-banner" role="dialog" aria-labelledby="cookie-title" aria-modal="false" hidden>
+  <div class="cookie-banner-inner">
+    <div class="cookie-view" data-cookie-view="main">
+      <h3 id="cookie-title" class="cookie-heading" data-i18n="cookieTitle">Cookies a soukromí</h3>
+      <p class="cookie-text" data-i18n="cookieText" data-i18n-html>Používáme cookies a externí služby, které mohou zpracovávat vaši IP adresu. <a href="/ochrana-osobnich-udaju.html">Více informací</a>.</p>
+      <div class="cookie-buttons">
+        <button type="button" class="cookie-btn" id="cookie-reject" data-i18n="cookieReject">Odmítnout vše</button>
+        <button type="button" class="cookie-btn" id="cookie-settings-btn" data-i18n="cookieSettings">Nastavení</button>
+        <button type="button" class="cookie-btn cookie-btn--primary" id="cookie-accept" data-i18n="cookieAccept">Přijmout vše</button>
+      </div>
+    </div>
+    <div class="cookie-view cookie-view--settings" data-cookie-view="settings" hidden>
+      <h3 class="cookie-heading" data-i18n="cookieSettingsTitle">Nastavení cookies</h3>
+      <ul class="cookie-categories">
+        <li class="cookie-category">
+          <label class="cookie-toggle">
+            <span class="cookie-category-name" data-i18n="cookieCatNecessary">Nezbytné</span>
+            <span class="cookie-switch">
+              <input type="checkbox" checked disabled aria-label="Necessary">
+              <span class="cookie-switch-slider" aria-hidden="true"></span>
+            </span>
+          </label>
+          <p class="cookie-category-desc" data-i18n="cookieCatNecessaryDesc">Vždy zapnuté.</p>
+        </li>
+        <li class="cookie-category">
+          <label class="cookie-toggle">
+            <span class="cookie-category-name" data-i18n="cookieCatAnalytics">Analytika</span>
+            <span class="cookie-switch">
+              <input type="checkbox" id="cookie-cat-analytics">
+              <span class="cookie-switch-slider" aria-hidden="true"></span>
+            </span>
+          </label>
+          <p class="cookie-category-desc" data-i18n="cookieCatAnalyticsDesc">Google Analytics.</p>
+        </li>
+        <li class="cookie-category">
+          <label class="cookie-toggle">
+            <span class="cookie-category-name" data-i18n="cookieCatExternal">Externí obsah</span>
+            <span class="cookie-switch">
+              <input type="checkbox" id="cookie-cat-external">
+              <span class="cookie-switch-slider" aria-hidden="true"></span>
+            </span>
+          </label>
+          <p class="cookie-category-desc" data-i18n="cookieCatExternalDesc">Google Fonts, Google Maps, YouTube.</p>
+        </li>
+      </ul>
+      <div class="cookie-buttons">
+        <button type="button" class="cookie-btn" id="cookie-back" data-i18n="cookieBack">Zpět</button>
+        <button type="button" class="cookie-btn cookie-btn--primary" id="cookie-save" data-i18n="cookieSave">Uložit volbu</button>
+      </div>
+    </div>
+  </div>
+</div>`.trim();
+  banner = wrap.firstElementChild;
+  document.body.appendChild(banner);
+  return banner;
+}
 
-  if (rejectBtn) {
-    rejectBtn.addEventListener("click", () => {
-      localStorage.setItem("cookieConsent", "rejected");
-      banner.style.display = "none";
-      applyConsentState("rejected");
+function showCookieBanner(initialPrefs) {
+  const banner = buildCookieBanner();
+  const main = banner.querySelector('[data-cookie-view="main"]');
+  const settings = banner.querySelector('[data-cookie-view="settings"]');
+  const analyticsInput = banner.querySelector("#cookie-cat-analytics");
+  const externalInput = banner.querySelector("#cookie-cat-external");
+  analyticsInput.checked = !!(initialPrefs && initialPrefs.analytics);
+  externalInput.checked = !!(initialPrefs && initialPrefs.external);
+  main.hidden = false;
+  settings.hidden = true;
+  const lang = document.documentElement.lang === "en" ? "en" : "cs";
+  if (typeof setLanguage === "function") setLanguage(lang);
+  banner.hidden = false;
+  requestAnimationFrame(() => banner.classList.add("is-visible"));
+}
+
+function hideCookieBanner() {
+  const banner = document.getElementById("cookie-banner");
+  if (!banner) return;
+  banner.classList.remove("is-visible");
+  const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduced) banner.hidden = true;
+  else setTimeout(() => { banner.hidden = true; }, 280);
+}
+
+function injectCookieFooterLink() {
+  document.querySelectorAll(".footer-bottom").forEach((fb) => {
+    if (fb.querySelector(".cookie-settings-link")) return;
+    fb.appendChild(document.createTextNode(" — "));
+    const link = document.createElement("a");
+    link.href = "#";
+    link.className = "cookie-settings-link";
+    link.setAttribute("data-i18n", "cookieFooterLink");
+    link.textContent = "Nastavení cookies";
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      showCookieBanner(readCookieConsent() || {});
     });
+    fb.appendChild(link);
+  });
+}
+
+function setupCookieBanner() {
+  const consent = readCookieConsent();
+  if (consent) {
+    applyConsentState(consent);
+  } else {
+    showCookieBanner({});
   }
+
+  injectCookieFooterLink();
+
+  document.addEventListener("click", (e) => {
+    const t = e.target;
+    if (!(t instanceof Element)) return;
+    if (t.closest("#cookie-accept")) {
+      const prefs = { analytics: true, external: true };
+      writeCookieConsent(prefs);
+      applyConsentState(prefs);
+      hideCookieBanner();
+    } else if (t.closest("#cookie-reject")) {
+      const prefs = { analytics: false, external: false };
+      writeCookieConsent(prefs);
+      applyConsentState(prefs);
+      hideCookieBanner();
+    } else if (t.closest("#cookie-settings-btn")) {
+      const banner = document.getElementById("cookie-banner");
+      if (!banner) return;
+      banner.querySelector('[data-cookie-view="main"]').hidden = true;
+      banner.querySelector('[data-cookie-view="settings"]').hidden = false;
+    } else if (t.closest("#cookie-back")) {
+      const banner = document.getElementById("cookie-banner");
+      if (!banner) return;
+      banner.querySelector('[data-cookie-view="main"]').hidden = false;
+      banner.querySelector('[data-cookie-view="settings"]').hidden = true;
+    } else if (t.closest("#cookie-save")) {
+      const banner = document.getElementById("cookie-banner");
+      if (!banner) return;
+      const prefs = {
+        analytics: banner.querySelector("#cookie-cat-analytics").checked,
+        external: banner.querySelector("#cookie-cat-external").checked,
+      };
+      writeCookieConsent(prefs);
+      applyConsentState(prefs);
+      hideCookieBanner();
+    }
+  });
 }
 
 function setupStickyHeader() {
