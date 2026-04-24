@@ -248,6 +248,29 @@ const translations = {
     artSilheroviceP6b: 'Rozhodčí byli po skončení ochotní a zpětná vazba k nezaplacení.',
     artSilheroviceP7: 'Vrátíme se. S Almou to jinak nejde.',
 
+    // Canisterapie Klimkovice 2026
+    artCanisterapieCat: "Zkoušky",
+    artCanisterapieTitle: "Alminka složila zkoušky z canisterapie",
+    artCanisterapiePerex: "Víkend 18.–19. dubna jsme s Alminkou strávily v Sanatoriích Klimkovice – na semináři, canisterapii v praxi s dětmi a nakonec na zkouškách. A Alminka je má. Certifikát o složení zkoušky z canisterapie.",
+    artCanisterapieResult: '<strong>Alma Bohemica Aurum</strong><br><em>(Brandon de Ria Vela × Lollipop Dorado Blanco)</em><br>Certifikát o složení zkoušky z canisterapie • Sanatoria Klimkovice • 19. 4. 2026',
+    artCanisterapieP1: 'Celý víkend byl moc příjemný. Prostředí Sanatorií Klimkovice je nádherné – hned vedle areálu je krásný lesík, kde se dají dělat dlouhé procházky. Ideální pro psa i pro nás dvě, abychom mezi bloky programu mohly vypnout a nabrat dech.',
+    artCanisterapieP2: 'Sobotní program byl rozdělený na dvě části. <strong>Dopoledne</strong> probíhal seminář, kde jsme se dozvěděly spoustu zajímavostí z praxe canisterapeutů – konkrétní situace, co funguje, co se nevyplatí a jak s tím vším pracovat u psa i u klienta.',
+    artCanisterapieP3: 'Ještě přínosnější ale bylo <strong>odpoledne</strong>, kdy nás přišly navštívit děti, které se v sanatoriu léčí, a mohly jsme si canisterapii vyzkoušet v praxi. Alminka se předvedla naprosto skvěle – úplně klidně ležela na boku a nechala si na sobě odpočívat dvě i tři děti najednou. Přesně tenhle klid a vstřícnost jsou důvod, proč jsme do canisterapie šly.',
+    artCanisterapieP4: 'V <strong>neděli</strong> nás čekaly samotné zkoušky. A musím přiznat, že pro nás byly docela náročné – sešlo se tam několik méně příjemných faktorů. Součástí zkoušky bylo testování povahy v různých napjatých situacích, po kterém se měl pes zklidnit a dovolit lektorce polohování. Alminka už v tu chvíli byla trochu nejistá a nechtělo se jí úplně spolupracovat.',
+    artCanisterapieP5: 'Nakonec to ale dopadlo dobře – <strong>zkoušku jsme zdárně složily</strong> a Alminka má od té chvíle certifikát canisterapeutického týmu. Budeme se těšit, co nám canisterapie přinese dál.',
+    artCanisterapieP6: 'Ráda bych s ní šla spíš cestou edukativní – do škol. Takže první na řadě určitě budou třídy mých dětí. Uvidíme, kam nás to zavede.',
+
+    // Teasery na indexu + aktuality list
+    newsMonthCanis: "Dub",
+    newsTitleCanis: "Alminka složila zkoušky z canisterapie",
+    newsExcerptCanis: "Víkend v Sanatoriích Klimkovice: seminář, canisterapie s dětmi v praxi a úspěšně složené zkoušky. Alminka má certifikát.",
+    newsListMonthCanis: "Dub",
+    newsListExcerptCanis: "Víkend v Sanatoriích Klimkovice: seminář, canisterapie s dětmi v praxi a úspěšně složené zkoušky. Alminka má certifikát.",
+
+    // Alma – chip canisterapie
+    almaTitleCanis: "Canisterapie",
+    almaTitleCanisVal: "certifikát (Klimkovice 2026)",
+
     // Aktuality list – měsíce a excerpty
     newsListMonth0: "Dub",
     newsListExcerpt0: "Alma absolvovala svůj první Working Test v Šilheřovicích. Třída E, mezinárodní rozhodčí a spousta nových zkušeností z krásného lesa.",
@@ -724,6 +747,29 @@ const translations = {
     artSilheroviceTakeaways: 'more work on <strong>steadiness</strong>;marking in unfamiliar terrain;heelwork in distracting environments',
     artSilheroviceP6b: 'The judges were generous with their time afterwards and the feedback was priceless.',
     artSilheroviceP7: 'We will be back. With Alma, there is no other way.',
+
+    // Canis therapy Klimkovice 2026
+    artCanisterapieCat: "Trials",
+    artCanisterapieTitle: "Alma passed her canis therapy exam",
+    artCanisterapiePerex: "We spent the weekend of 18–19 April with Alma at Sanatoria Klimkovice – a seminar, canis therapy in practice with children, and finally the exam. And Alma has it. Her canis therapy certificate.",
+    artCanisterapieResult: '<strong>Alma Bohemica Aurum</strong><br><em>(Brandon de Ria Vela × Lollipop Dorado Blanco)</em><br>Canis therapy exam certificate • Sanatoria Klimkovice • 19 Apr 2026',
+    artCanisterapieP1: 'The whole weekend was lovely. The grounds of Sanatoria Klimkovice are beautiful – right next to the complex there is a gorgeous little forest for long walks. Perfect for both the dog and for us to switch off between sessions.',
+    artCanisterapieP2: 'Saturday was split in two. <strong>In the morning</strong> we had a seminar with plenty of insights from the practice of canis therapists – concrete situations, what works, what doesn’t and how to handle it all with both the dog and the client.',
+    artCanisterapieP3: 'The <strong>afternoon</strong> was even more valuable – children being treated at the sanatorium came to visit us and we got to try canis therapy hands-on. Alma was absolutely brilliant – she lay calmly on her side and let two or even three children rest on her at once. This calm and openness is exactly why we went into canis therapy.',
+    artCanisterapieP4: '<strong>Sunday</strong> brought the exam itself. And I have to admit it was pretty demanding – several less pleasant factors lined up. Part of the exam was testing the dog’s temperament in various tense situations, after which the dog had to settle and let the instructor do positioning work. By that point Alma was a little unsure and not quite willing to cooperate.',
+    artCanisterapieP5: 'In the end it all worked out – <strong>we passed the exam</strong> and Alma now holds a canis therapy team certificate. We are looking forward to where canis therapy will take us next.',
+    artCanisterapieP6: 'I would rather go the educational route with her – into schools. So the first visits will definitely be to my kids’ classrooms. Let’s see where it leads.',
+
+    // Teasers on index + aktuality list
+    newsMonthCanis: "Apr",
+    newsTitleCanis: "Alma passed her canis therapy exam",
+    newsExcerptCanis: "A weekend at Sanatoria Klimkovice: seminar, hands-on canis therapy with children and a successfully passed exam. Alma has her certificate.",
+    newsListMonthCanis: "Apr",
+    newsListExcerptCanis: "A weekend at Sanatoria Klimkovice: seminar, hands-on canis therapy with children and a successfully passed exam. Alma has her certificate.",
+
+    // Alma – canis therapy chip
+    almaTitleCanis: "Canis therapy",
+    almaTitleCanisVal: "certificate (Klimkovice 2026)",
 
     // News list – months and excerpts
     newsListMonth0: "Apr",
