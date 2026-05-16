@@ -1,4 +1,4 @@
-// Jednoduché i18n – čeština a angličtina.
+// Jednoduché i18n – čeština, angličtina a němčina.
 // Texty jsou uloženy ve dvou objektech a překládají se podle data-i18n atributu.
 
 const translations = {
@@ -332,6 +332,7 @@ const translations = {
     formNote:
       "Odesláním zprávy souhlasíte se zpracováním uvedených údajů za účelem odpovědi na váš dotaz. Údaje neposkytujeme třetím stranám.",
     formSubmit: "Odeslat zprávu",
+    formError: "Něco se pokazilo. Zkuste to znovu nebo nás kontaktujte telefonicky.",
 
     // Průvodce březostí
     pregBreadcrumb: "Kalkulačka březosti feny",
@@ -394,6 +395,15 @@ const translations = {
     pregKeyDeparture: "Odchod do nov\u00fdch rodin (od 8. t\u00fddne)",
     pregShowPast: "Zobrazit p\u0159edchoz\u00ed t\u00fddny",
     pregHidePast: "Skr\u00fdt p\u0159edchoz\u00ed t\u00fddny",
+    pregDayWord: "Den",
+    pregWeekWord: "t\u00fdden",
+    pregDaysSuffix: " dn\u00ed",
+    pregToday: "Dnes!",
+    pregPastDue: "Po term\u00ednu",
+    pregFrom: "od ",
+    pregNotStarted: "B\u0159ezost je\u0161t\u011b neza\u010dala",
+    pregDaysUntilMating: " dn\u016f do kryt\u00ed",
+    pregEnded: "B\u0159ezost skon\u010dila",
     pregVideoTitle: "V\u00fdvoj \u0161t\u011b\u0148at v b\u0159i\u0161e feny",
     pregVideoDesc: "Fascinuj\u00edc\u00ed z\u00e1b\u011bry National Geographic ukazuj\u00edc\u00ed, jak se \u0161t\u011b\u0148ata vyv\u00edj\u00ed od oplodn\u011bn\u00ed a\u017e po porod.",
     pregVideoBlocked: 'Pro p\u0159ehr\u00e1n\u00ed videa je nutn\u00e9 p\u0159ijmout cookies. <a href="https://www.youtube.com/watch?v=BsLfWgAFFIE" target="_blank" rel="noopener noreferrer">Sledovat na YouTube \u2192</a>',
@@ -832,6 +842,7 @@ const translations = {
     formNote:
       "By sending this message you agree that we process the provided data in order to answer your enquiry. We do not share your data with third parties.",
     formSubmit: "Send message",
+    formError: "Something went wrong. Please try again or contact us by phone.",
 
     // Pregnancy guide
     pregBreadcrumb: "Dog pregnancy calculator",
@@ -894,6 +905,15 @@ const translations = {
     pregKeyDeparture: "First departure to new homes (from week 8)",
     pregShowPast: "Show previous weeks",
     pregHidePast: "Hide previous weeks",
+    pregDayWord: "Day",
+    pregWeekWord: "week",
+    pregDaysSuffix: " days",
+    pregToday: "Today!",
+    pregPastDue: "Past due date",
+    pregFrom: "from ",
+    pregNotStarted: "Not started yet",
+    pregDaysUntilMating: " days until mating",
+    pregEnded: "Pregnancy ended",
     pregVideoTitle: "Puppy development in the womb",
     pregVideoDesc: "Fascinating National Geographic footage showing how puppies develop from fertilisation to birth.",
     pregVideoBlocked: 'To play the video you need to accept cookies. <a href="https://www.youtube.com/watch?v=BsLfWgAFFIE" target="_blank" rel="noopener noreferrer">Watch on YouTube \u2192</a>',
@@ -999,6 +1019,457 @@ const translations = {
     toolSpotCta: "Launch calculator →",
 
   },
+
+  de: {
+    navHome: "Startseite",
+    navAbout: "Über uns",
+    navGirls: "Unsere Hündinnen",
+    navPuppies: "Welpen",
+    navGallery: "Galerie",
+    navNews: "Aktuelles",
+    navDocs: "Dokumente",
+    navBreed: "Über die Rasse",
+    navContact: "Kontakt",
+    navCalc: "Trächtigkeitsrechner",
+    cookieTitle: "Cookies & Datenschutz",
+    cookieText: "Wir verwenden Cookies und Dienste von Drittanbietern (Google Fonts, Google Maps, Google Analytics, eingebettete YouTube-Videos), die Ihre IP-Adresse verarbeiten können. Sie entscheiden, was Sie zulassen möchten. <a href=\"/ochrana-osobnich-udaju.html\">Mehr Informationen</a>.",
+    cookieAccept: "Alle akzeptieren",
+    cookieReject: "Alle ablehnen",
+    cookieSettings: "Einstellungen",
+    cookieSettingsTitle: "Cookie-Einstellungen",
+    cookieBack: "Zurück",
+    cookieSave: "Auswahl speichern",
+    cookieCatNecessary: "Notwendig",
+    cookieCatNecessaryDesc: "Erforderlich für die Grundfunktionen der Website — Speicherung der Sprache und Ihrer Cookie-Auswahl. Immer aktiv.",
+    cookieCatAnalytics: "Analytik",
+    cookieCatAnalyticsDesc: "Google Analytics — anonyme Nutzungsstatistiken, die uns helfen, die Website zu verbessern.",
+    cookieCatExternal: "Externe Inhalte",
+    cookieCatExternalDesc: "Google Fonts für schönere Typografie, Google Maps im Kontaktbereich und eingebettete YouTube-Videos in Artikeln.",
+    cookieFooterLink: "Cookie-Einstellungen",
+    mapBlocked: "Um die Karte anzuzeigen, müssen Sie Cookies von Drittanbietern akzeptieren.",
+    heroTitle: "Golden Retriever mit Liebe im Herzen der Beskiden aufgezogen.",
+    heroSubtitle: "Eine kleine Familienzucht FCI aus den Beskiden in Mähren, nahe Rožnov pod Radhoštěm. Welpen wachsen zu Hause, unter Menschen, mit Fokus auf Gesundheit, ausgeglichenes Wesen und solide Grundlagen.",
+    heroCtaAbout: "Unser Ansatz",
+    heroCtaPuppies: "Aktueller / geplanter Wurf",
+    whyUsTitle: "Warum wir?",
+    whyUsHomeTitle: "Häusliche Umgebung",
+    whyUsHomeText: "Unsere Welpen wachsen bei uns zu Hause auf, nicht im Zwinger.",
+    whyUsHealthTitle: "Gesundheit an erster Stelle",
+    whyUsHealthText: "Gründliche Untersuchungen, tierärztliche Betreuung, verantwortungsvolle Verpaarung.",
+    whyUsHomeLink: "Mehr über Welpen →",
+    whyUsHealthLink: "Gesundheitsdokumentation →",
+    whyUsContactTitle: "Lebenslanger Kontakt",
+    whyUsContactText: "Wir bleiben mit allen unseren Hundefamilien in Kontakt.",
+    whyUsContactLink: "Schreiben Sie uns →",
+    aboutTitle: "Rosenaw Aurum",
+    aboutIntro1: "Der Name unserer Zucht <strong>Rosenaw Aurum</strong> trägt ein Stück des Ortes, aus dem wir kommen, und die Liebe zur Rasse in sich. „Rosenaw“ leitet sich vom historischen Namen der Stadt Rožnov pod Radhoštěm ab und „Aurum“ bedeutet auf Latein Gold – genau das, was Golden Retriever für uns sind.",
+    aboutIntro2: "Der allererste war <strong>Dexík</strong>. Ein Golden Retriever ohne Abstammungsnachweis, aber mit einem riesigen Herzen. Er lehrte uns, wie unglaublich liebenswert, treu und sensibel diese Rasse ist. Dank ihm haben wir uns verliebt.",
+    aboutIntro3: "Nach seinem Abschied kam <strong>Alma</strong>. Unsere Traumhündin, die uns weiterbrachte – nicht nur zur Zucht, sondern auch zu einem tieferen Verständnis dessen, was ein Golden Retriever sein kann.",
+    aboutPhilosophy: "Wir stehen erst am Anfang unserer Züchterreise. Wir lernen, sammeln Erfahrungen und möchten diesen Weg ehrlich gehen – mit Respekt vor den Hunden und der Rasse.",
+    aboutGoal: "Unser Ziel ist es, ausgeglichene, gesunde und soziale Hunde zu züchten, die sich im Ausstellungsring, auf der Jagd und mitten im Familienwohnzimmer gleichermaßen wohlfühlen.",
+    aboutClubs: "Rosenaw Aurum ist eine registrierte Zucht von <a href=\"https://www.fci.be/\" target=\"_blank\" rel=\"noopener noreferrer\">FCI</a>, Mitglied im <a href=\"https://www.kchls.cz/\" target=\"_blank\" rel=\"noopener noreferrer\">KCHLS</a> und im <a href=\"https://www.retriever-klub.cz/\" target=\"_blank\" rel=\"noopener noreferrer\">Retriever Klub CZ</a>.",
+    girlsTitle: "Unsere Hündinnen",
+    girlsIntro: "Hier finden Sie nach und nach alle unsere Golden Girls – von jungen Hoffnungsträgerinnen bis zu erfahrenen Zuchthündinnen und Senioren.",
+    almaBasic: "geb. 27. 1. 2024 • Golden Retriever, Hündin • ČLP/GR/25733",
+    almaCharacterTitle: "Wesen",
+    almaPersonality: "<strong>Alma</strong> ist unsere Traumhündin des Golden Retriever. Sie kam wie ein Wirbelwind in unser Leben und wurde schnell zur Begleiterin für jede Gelegenheit – Ausflüge, Urlaube, Sport und ruhige Abende zu Hause.",
+    almaPersonality2: "Sie hat die bemerkenswerte Gabe, die Energie anderer wahrzunehmen – ob Menschen oder Hunde – und sich ihr natürlich anzupassen. Dadurch ist sie unglaublich unkonfliktfrei und harmonisch. Sie liebt alle bedingungslos, ist freundlich und offen, und zu Hause wunderbar ruhig.",
+    almaPersonality3: "Gleichzeitig steckt in ihr der verspielte „Teufel“, wenn es Zeit für Action ist.",
+    almaTrait1: "Freundlich",
+    almaTrait2: "Empathisch",
+    almaTrait3: "Unkonfliktfrei",
+    almaTrait4: "Aufmerksam",
+    almaTrait5: "Ruhig zu Hause",
+    almaTrait6: "Aktiv draußen",
+    almaTrait7: "Liebt alle",
+    almaTrait8: "Liebt Wasser",
+    almaTrait9: "Liebt Apportieren",
+    almaHealthTitle: "Gesundheit",
+    healthCatRtg: "Röntgenuntersuchungen",
+    healthCatDna: "Genetische (DNA-)Tests",
+    healthNeg: "frei",
+    almaHeightLabel: "Widerrist:",
+    almaBiteLabel: "Gebiss:",
+    almaBiteValue: "vollständiges Scherengebiss",
+    almaTitlesTitle: "Ausstellungen & Prüfungen",
+    titlesCatShows: "Ausstellungen",
+    titlesCatTrials: "Arbeitsprüfungen",
+    almaTitlePuppy: "Welpenklasse",
+    almaTitleJunior: "Jüngstenklasse",
+    almaTitleYoung: "Jugendklasse",
+    almaTitleOpen: "Offene Klasse",
+    almaTitlePrep: "in Vorbereitung",
+    almaTitleWtPrep: "in Vorbereitung (E)",
+    almaDocsLink: "Gesundheitsdokumentation →",
+    almaPedigreeTitle: "Ahnentafel",
+    almaK9dataLink: "Vollständige Ahnentafel auf K9data.org →",
+    almaBreedingInfo: "Züchter: Ing. František Vacek, <a href=\"https://www.bohemica-aurum.cz/\" target=\"_blank\" rel=\"noopener noreferrer\">Bohemica Aurum</a> • Besitzerin: Lucie Klesová",
+    puppiesTitle: "Welpen Rosenaw Aurum",
+    puppiesIntro: "Für uns ist ein Welpe ein vollwertiges Familienmitglied. Von den ersten Tagen an ist er in engem Kontakt mit uns, unseren Kindern und dem Alltag im Haushalt, um bestmöglich auf sein neues Zuhause vorbereitet zu sein.",
+    puppiesApproachTitle: "Wie unsere Welpen aufwachsen",
+    puppiesApproachText1: "Unsere Welpen werden in familiärer Umgebung aufgezogen. Schritt für Schritt lernen sie verschiedene Geräusche, Untergründe, Menschen und Situationen kennen – von ruhigen Abenden auf dem Sofa bis zu Gartenerkundungen und kurzen Autofahrten.",
+    puppiesApproachText2: "Neuen Besitzern beraten wir gerne bei Pflege, Erziehung und Training. Unsere Welpen verlassen uns nicht mit leeren Pfoten – sie nehmen ein Stück unseres Herzens mit, und wir bleiben ihr ganzes Leben lang in Kontakt.",
+    puppiesPackTitle: "Was Ihr Welpe von uns mitbekommt",
+    puppiesPackList: "Kaufvertrag und FCI-Abstammungsnachweis; Impfpass / Heimtierausweis mit gültiger Impfung und Entwurmung; Starterpaket Futter und Lieblingsspielzeug; ausführliche Informationen zur Pflege in den ersten Wochen und Monaten",
+    puppiesStatusTitle: "Geplanter Wurf",
+    puppiesStatusPill: "Frühjahr/Sommer 2027",
+    puppiesPlannedLabel: "Erwarten",
+    puppiesPlannedDate: "Frühjahr / Sommer 2027",
+    puppiesPlannedText: "Wir bereiten Almas ersten Wurf vor. Details zum Deckrüden veröffentlichen wir, sobald alles bestätigt ist.",
+    puppiesPlannedCta: "Ich interessiere mich für einen Welpen",
+    puppiesPhotoCaption: "Foto aus der Mutterzucht <a href=\"https://www.bohemica-aurum.cz/kopie-z-apollo/\" target=\"_blank\" rel=\"noopener noreferrer\">Bohemica Aurum</a> — <a href=\"https://www.bohemica-aurum.cz/kopie-z-apollo/\" target=\"_blank\" rel=\"noopener noreferrer\">Welpentagebuch</a>",
+    puppiesArchiveTitle: "Wurfarchiv",
+    puppiesArchiveText: "Zu jedem Wurf finden Sie hier eine Übersicht der Eltern, Geburtsdaten und Links zu Fotogalerien. Derzeit haben wir noch keine aufgezogenen Würfe.",
+    galleryTitle: "Galerie",
+    galleryIntro: "Momente aus unserem Alltag, Ausflügen, Training und ersten Ausstellungen. Fotos werden nach und nach ergänzt.",
+    galleryFilterAll: "Alle",
+    galleryFilterGirls: "Unsere Hündinnen",
+    galleryFilterPuppies: "Welpen",
+    galleryFilterShows: "Ausstellungen & Prüfungen",
+    galleryFilterLife: "Leben mit uns",
+    galleryFilterVideos: "Videos",
+    galleryShowMore: "Mehr Fotos anzeigen",
+    galleryPlaceholderGirls: "Alma in Bewegung auf der Wiese",
+    galleryPlaceholderLife: "Familienfoto vom Urlaub",
+    galleryPlaceholderShows: "Ausstellungsring – Jugendklasse",
+    newsTitle: "Aktuelles",
+    newsIntro: "Kurze Nachrichten über unsere Hunde, geplante Würfe, Ausstellungen, Prüfungen und kleine Freuden des gemeinsamen Lebens.",
+    newsMonth0: "Apr",
+    newsTitle0: "Unser erster Working Test – Šilheřovice",
+    newsExcerpt0: "Alma absolvierte ihren ersten Working Test in Šilheřovice. Klasse E, internationale Richter und viele neue Erfahrungen aus dem Wald.",
+    newsMonth1: "Mär",
+    newsTitle1: "Almas erster Auftritt in der offenen Klasse – Provodovice",
+    newsExcerpt1: "Alma trat erstmals in die offene Klasse ein und gewann sofort V1, Klassensiegerin, Regionalssiegerin und 3. Platz in FCI-Gruppe 8!",
+    newsMonth2: "Jul",
+    newsTitle2: "Alma mit Mama auf der Ausstellung in Bordovice",
+    newsExcerpt2: "Bei der regionalen Klubaustellung Hubertka 2025 trat Alma zum letzten Mal in der Jugendklasse an. Bewertung V2 mit schönem Richterbericht.",
+    newsMonth3: "Jun",
+    newsTitle3: "Alma bestand die OVVR mit Bestnote",
+    newsExcerpt3: "Bei der Prüfung der angeborenen Begabung zum Apportieren in Ústí u Hranic bestand Alma alle sechs Disziplinen mit voller Punktzahl.",
+    newsAllLink: "Alle Neuigkeiten →",
+    newsPageTitle: "Aktuelles",
+    newsBackLink: "← Zurück zur Startseite",
+    articleBack: "← Zurück zu Aktuelles",
+    shareLabel: "Teilen:",
+    shareCopy: "Link kopieren",
+    artSilheroviceCat: "Arbeitsprüfungen",
+    artSilheroviceTitle: "Unser erster Working Test – Šilheřovice 2026",
+    artProvodoviceCat: "Ausstellungen",
+    artProvodoviceTitle: "Almas erster Auftritt in der offenen Klasse – Ausstellung Provodovice",
+    artBordoviceCat: "Ausstellungen",
+    artBordoviceTitle: "Alma mit Mama auf der Ausstellung in Bordovice",
+    artOvvrCat: "Arbeitsprüfungen",
+    artOvvrTitle: "Alma bestand die OVVR mit Bestnote",
+    artHumpolecCat: "Ausstellungen",
+    artHumpolecTitle: "Alma glänzte in Humpolec",
+    artNarozeninyCat: "Aus dem Leben",
+    artNarozeninyTitle: "Alma feiert ihren 1. Geburtstag",
+    artRtgCat: "Gesundheit",
+    artRtgTitle: "Röntgenergebnisse: Hüfte, Ellbogen & Wirbelsäule",
+    artGenetickeCat: "Gesundheit",
+    artGenetickeTitle: "Ergebnisse der Gentests sind da",
+    artBordoviceP1: "Am Samstag, den 26. Juli 2025, verbrachten wir den Tag auf der <strong>regionalen Klubaustellung in Bordovice – Hubertka 2025</strong>, wo sich unsere <strong>Alma Bohemica Aurum</strong> zum letzten Mal in der Jugendklasse präsentierte. Und sie machte das großartig!",
+    artBordoviceResult: "<strong>Alma Bohemica Aurum</strong><br><em>(Brandon de Ria Vela × Lollipop Dorado Blanco)</em><br>Jugendklasse • <strong>V2</strong> • sehr schöner Richterbericht",
+    artBordoviceP2: "Obwohl die Konkurrenz diesmal nicht groß war, erhielt Alma einen <strong>ausgezeichneten Richterbericht</strong>, der ihre elegante Bewegung, Proportionen und ruhiges Auftreten lobte. Im Ring wirkte sie ausgeglichen und man sah, dass sie sich wohlfühlte. Außerdem traf sie ihre <strong>Halbschwester</strong> – das trug zur schönen Atmosphäre der Klasse bei.",
+    artBordoviceP3: "Sie wurde von ihrer Mama <strong>Lollipop Dorado Blanco</strong> begleitet, die in der Arbeitsklasse antrat und einen schönen 3. Platz im Wettbewerb um den besten Arbeitsrüden errang. Zum ersten Mal verbrachte Alma auch ein paar Tage mit Mama und Halbschwester in der Heimzucht – und man sah, dass sie genau wusste, wo sie hingehört.",
+    artBordoviceP4: "Die Ausstellung verlief in sehr freundlicher Atmosphäre. <strong>Fans aus naher und ferner Familie</strong> kamen uns unterstützen, was uns sehr freute. Das Einzige, was nicht nach Plan lief, war das Wetter – <strong>Regen begleitete uns den ganzen Tag</strong>. Aber die Laune ließen wir uns dadurch nicht verderben.",
+    artBordoviceP5: "Danke:",
+    artBordoviceThanksList: "<strong>Amálka Vacková</strong> für die großartige Basis unserer jungen Dame und geduldigen Züchter-Support rund um die Uhr;<strong>Nataliia Romashko</strong> für professionelles Grooming – die Pfötchen sind perfekt",
+    artBordoviceP6: "Wir freuen uns auf weitere Veranstaltungen, bei denen sie zeigen kann, was in ihr steckt!",
+    artProvodoviceP1: "Diesmal fuhren wir zur Ausstellung nach Provodovice – und es wurde ein Tag, den wir so schnell nicht vergessen werden. <strong>Alma trat zum allerersten Mal in der offenen Klasse an!</strong>",
+    artProvodoviceResult: "<strong>Alma Bohemica Aurum</strong><br><em>(Brandon de Ria Vela × Lollipop Dorado Blanco)</em><br>Offene Klasse • <strong>V1 – Vorzüglich 1</strong> • Klassensiegerin • Regionalssiegerin<br>Qualifikation für die Endrunden → <strong>3. Platz in FCI-Gruppe 8</strong>",
+    artProvodoviceP2: "<strong>Richterbericht:</strong>",
+    artProvodoviceQuote: "„Richtige Größe, schöner Kopf, Scherengebiss, längerer fester Rücken, korrekte Brust, korrekte Winkelungen und schöne Präsentation.“",
+    artProvodoviceP3: "Leider hatten wir mit dem Wetter kein Glück – <strong>es war den ganzen Tag kalt</strong>. Trotzdem herrschte eine großartige Stimmung und Alma lief absolut fantastisch.",
+    artProvodoviceP4: "Danke:",
+    artProvodoviceThanksList: "<strong>Jana Janíčková von Beskyd Hill</strong> für die Unterkunft;<strong>Ondra von Athena Bella</strong> für Unterstützung und Ermutigung",
+    artProvodoviceP5: "Wir sind unglaublich stolz auf Alma. Ihr Debüt in der offenen Klasse hätte nicht besser laufen können!",
+    artOvvrP1: "Am Sonntag, dem 1. Juni 2025, dem Kindertag, fuhren wir mit Alma zu unserem ersten großen Test – <strong>OVVR</strong> (Prüfung der angeborenen Begabung zum Apportieren) in Ústí u Hranic. Das Wetter war herrlich, die Stimmung großartig. Zehn Hunde mit ihren Besitzern, viele bekannte Gesichter vom Training. Und als Bonus – zwei unserer Trainer nahmen ebenfalls teil!",
+    artOvvrP2: "<strong>Alma meisterte alles</strong> – mit Leichtigkeit und Eleganz. Die erste Disziplin, Wesensbeurteilung, verlief reibungslos. Alma saß ruhig an der Leine und verhielt sich vorbildlich.",
+    artOvvrP3: "Auch die zweite Disziplin, Verhalten nach Schuss, klappte ohne Probleme. Der Handler musste nur den richtigen Moment zum Abrufen finden.",
+    artOvvrP4: "Beim dritten Teil – <strong>Verfolgen</strong> – schlug mein Herz etwas schneller. Alma glänzte hier, fand den Geruchsdummy schnell und brachte ihn geradlinig zurück. Sie absolvierte auch einen Feldapport, den nur wenige Hunde schafften.",
+    artOvvrP5: "Leinen- und Freifolge liefen perfekt, obwohl Alma normalerweise gerne mit der Nase die Umgebung erkundet.",
+    artOvvrP6: "Die letzte Disziplin, <strong>Wasserapport</strong>, war am nervenaufreibendsten. Diesmal widerstand sie dem Drang, sich vor der Übergabe des Dummies abzuschütteln.",
+    artOvvrP7: "Den ganzen Vormittag war Alma absolut großartig. Zwischen den Disziplinen ruhte sie ruhig. Und das Ergebnis? <strong>Absolut perfekt – sie bestand alle Disziplinen mit voller Punktzahl!</strong>",
+    artOvvrP8: "Wir haben nun alle Zuchtvoraussetzungen erfüllt – außer dem Alter. Aber hier hören wir sicher nicht auf. Das war nur der Anfang, und wir freuen uns auf neue Herausforderungen, Training und Abenteuer.",
+    artHumpolecP1: "Am Samstag und Sonntag (10.–11. Mai 2025) fuhren wir nach Humpolec zur <strong>Klub- und Spezialausstellung der Retriever</strong>. Wir meldeten Alma in der wettbewerbsstärksten Kategorie – <strong>Jugend</strong> (warum es einfach machen?), wo rund 30 Hündinnen im Ring standen – praktisch ein Casting für das Hunde-Hollywood.",
+    artHumpolecP2: "Mit etwas Nervosität und vorsichtigem Optimismus warteten wir ab, wie es laufen würde. Und es lief brillant! Alma hielt sich wacker und holte beide Tage eine schöne <strong>Vorzüglich-Bewertung</strong>.",
+    artHumpolecP3: "Auf der Ausstellung traf Alma endlich ihren Bruder <strong>Amigo</strong>, der seinen allerersten CAC-Titel gewann. Herzlichen Glückwunsch!",
+    artHumpolecP4: "Wir kamen mit schönen Richterberichten nach Hause – beide Richter lobten besonders Almas Fell und ihre lebhafte, energiegeladene Bewegung. Auch ihre Ringpräsentation wurde gelobt – dafür ein großes Dankeschön an Züchterin Amálka, die Alma zur echten Show-Profilin gemacht hat.",
+    artHumpolecP5: "Wir sind absolut begeistert – und die Kirsche auf der Torte ist die Nachricht, dass Alma nun <strong>eine weitere Voraussetzung für die Zuchtzulassung erfüllt hat!</strong> Auf der Ausstellung wurde sie auch vermessen – sie ist eine große Dame mit schönem vollständigem Gebiss und Scherengebiss, wie es sich für einen Retriever gehört.",
+    artHumpolecP6: "Es fehlt nur noch die OVVR-Arbeitsprüfung – und dann kann Alma ihre eigene Kapitel in der Zuchtgeschichte schreiben.",
+    artNarozeninyP1: "Alma feierte heute ihren allerersten Geburtstag. Natürlich gab es Kuchen und Geschenke. Die Kinder organisierten sogar eine kleine Party und luden ihre Freunde ein.",
+    artNarozeninyP2: "Liebe Alma, wir wünschen dir vor allem Gesundheit – und um alles andere kümmern wir uns gerne.",
+    artNarozeninyP3: "Wenn Sie sehen möchten, wie es bei ihrer Geburt aussah, schauen Sie im Wurf-Tagebuch des Zwingers <a href=\"https://www.bohemica-aurum.cz/\" target=\"_blank\" rel=\"noopener noreferrer\">Bohemica Aurum</a>.",
+    artRtgP1: "Heute, am <strong>Internationalen Golden-Retriever-Tag</strong>, brachten wir Alma zum Tierarzt nach Opava (MVDr. Pepřík), um Röntgenaufnahmen von Hüfte und Ellbogen zu machen – eine der Pflichtvoraussetzungen für die Zuchtzulassung. Wir ließen auch die Wirbelsäule untersuchen, einschließlich Spondylose.",
+    artRtgP2: "Wir sind überglücklich mit den Ergebnissen und werden alles tun, damit Alma viele Jahre lang gesund bleibt.",
+    artRtgQuote: "Und wie hat sie das alles gemeistert? Wie ein echter Retriever! Sobald sie aus der Narkose erwachte, rannte sie direkt zu einer Dame im Wartezimmer zum Kuscheln.",
+    artRtgResultsList: "HD (Hüfte): <strong>B/B</strong>;ED (Ellbogen): <strong>0/0</strong>;OCD: <strong>0/0</strong>;SA: <strong>frei</strong>;LTV: <strong>frei</strong>",
+    artRtgP3: "Die Ergebnisse können im Bereich <a href=\"../alma-dokumenty.html\">Dokumente</a> heruntergeladen werden.",
+    artGenetickeP1: "Bei der letzten Ausstellung in Humpolec nutzten wir die Gelegenheit, <strong>Gentests</strong> auf mehrere Erbkrankheiten durchführen zu lassen, die bei Golden Retrievern vorkommen können.",
+    artGenetickeP2: "Wir testeten auf:",
+    artGenetickeTestList: "<strong>PRA</strong> (prcd, GR-PRA1, GR-PRA2) – progressive Netzhautdegeneration, verschiedene Formen mit Erblindung;<strong>Ichthyosis 1 und 2</strong> – erbliche Hauterkrankungen mit trockenem, schuppigem Fell;<strong>GRMD</strong> – Muskeldystrophie, seltene Muskelstörung;<strong>NCL5</strong> – Erkrankung des Nervensystems bei jungen Hunden, extrem selten",
+    artGenetickeResultsLabel: "<strong>Ergebnisse:</strong>",
+    artGenetickeResultsList: "Augen (PRA-prcd, GR-PRA1, GR-PRA2): <strong>N/N</strong> – frei;Ichthyosis 1: <strong>N/P</strong> – Träger;Ichthyosis 2: <strong>N/N</strong> – frei;NCL5: <strong>N/N</strong> – frei;GRMD: <strong>Xn/Xn</strong> – frei",
+    artGenetickeP3: "Wir freuen uns sehr, dass Alma ein gesundes Mädchen ist. Die meisten getesteten Erkrankungen ergaben vollständig frei, und bei der einen, bei der sie Träger ist – <strong>hat das Ergebnis keinerlei Auswirkungen auf ihre Gesundheit oder ihr Wohlbefinden</strong>. Für die Zucht bedeutet es einfach, dass der Deckrüde als N/N getestet sein muss.",
+    artSilherovicePerex: "Wir fuhren mit klarem Ziel nach Šilheřovice: unseren ersten Working Test zu erleben. Das Ergebnis? Zwei Nullen bei den Übungen. Aber auch einer der wertvollsten Tage, die wir je mit Alma hatten.",
+    artSilheroviceP1: "Die Veranstaltung wurde vom Retriever klub CZ zusammen mit Trénink s retrívrem im schönen Šilheřovice-Wald organisiert – mit dichtem Unterholz, Gräben, Bächen und offener Wiese. Gelände für einen Working Test. Aber für Alma auch Gelände, das sie von allem ablenkte, was wir von ihr verlangen.",
+    artSilheroviceP2: "Richtertätig waren internationale Experten – <strong>Maarit Saarinen</strong> (Finnland), erfahrene Züchterin (Middle River’s), und <strong>Paul David Toal</strong> (Irland), FCI-Richter für Feldprüfungen und Working Tests.",
+    artSilheroviceResult: "<strong>Alma Bohemica Aurum</strong><br><em>(Brandon de Ria Vela × Lollipop Dorado Blanco)</em><br>Klasse E (Elementary) • 4 Übungen • <strong>2× 0 Punkte</strong>",
+    artSilheroviceP3: "In Klasse E warteten vier Übungen – Markieren, Merkmarkieren und Apport – mit Beurteilung der Leinenführigkeit. Aber schon die erste Übung wurde uns zum Verhängnis. Nach zwei Gräben verlor Alma die Orientierung und fand den Dummy nicht – ihre Frustration zeigte sich auf ihre Weise. Sagen wir, sie machte ein Pipi. Nun ja, es passierte, und die Punktzahl ist 0.",
+    artSilheroviceP4: "Die restlichen Übungen liefen besser, aber Druck und Übertraining zeigten sich, und ihr Interesse am Dummy war nicht so stark wie sonst.",
+    artSilheroviceP5: "Wir waren aber in toller Gesellschaft – <strong>Jana mit Zoe und Pinky</strong> und <strong>Ondra mit Bella</strong> – die Stimmung war trotz der Nullen großartig.",
+    artSilheroviceP6: "Und was nehmen wir mit? Einen klaren Trainingsplan:",
+    artSilheroviceTakeaways: "mehr Arbeit an <strong>Ruhe</strong>;Markieren in unbekanntem Gelände;Leinenführigkeit in ablenkender Umgebung",
+    artSilheroviceP6b: "Die Richter nahmen sich danach großzügig Zeit, das Feedback war unbezahlbar.",
+    artSilheroviceP7: "Wir kommen wieder. Mit Alma gibt es keinen anderen Weg.",
+    artCanisterapieCat: "Prüfungen",
+    artCanisterapieTitle: "Alma bestand die Canistherapie-Prüfung",
+    artCanisterapiePerex: "Das Wochenende vom 18.–19. April verbrachten wir mit Alma in den Sanatorien Klimkovice – Seminar, Canistherapie in der Praxis mit Kindern und schließlich die Prüfung. Und Alma hat sie. Ihr Canistherapie-Zertifikat.",
+    artCanisterapieResult: "<strong>Alma Bohemica Aurum</strong><br><em>(Brandon de Ria Vela × Lollipop Dorado Blanco)</em><br>Canistherapie-Prüfungszertifikat • Sanatorien Klimkovice • 19. Apr. 2026",
+    artCanisterapieP1: "Das ganze Wochenende war wunderbar. Die Anlage der Sanatorien Klimkovice ist herrlich – direkt neben dem Areal liegt ein schöner Wald für lange Spaziergänge. Ideal für den Hund und für uns, um zwischen den Programmblöcken abzuschalten.",
+    artCanisterapieP2: "Der Samstag war in zwei Teile gegliedert. <strong>Vormittags</strong> hatten wir ein Seminar mit vielen Einblicken aus der Praxis der Canistherapeuten – konkrete Situationen, was funktioniert, was nicht und wie man mit Hund und Klient umgeht.",
+    artCanisterapieP3: "Der <strong>Nachmittag</strong> war noch wertvoller – Kinder in Behandlung im Sanatorium kamen zu Besuch und wir konnten Canistherapie ausprobieren. Alma war absolut großartig – sie lag ruhig auf der Seite und ließ zwei oder sogar drei Kinder gleichzeitig auf sich ruhen. Diese Ruhe und Offenheit sind genau der Grund, warum wir in die Canistherapie gegangen sind.",
+    artCanisterapieP4: "<strong>Am Sonntag</strong> folgte die Prüfung selbst. Ich muss zugeben, sie war ziemlich anspruchsvoll – mehrere weniger angenehme Faktoren kamen zusammen. Ein Teil der Prüfung testete das Temperament des Hundes in verschiedenen stressigen Situationen, danach musste sich der Hund beruhigen und Positionierungsarbeit zulassen. Da war Alma etwas unsicher und nicht ganz kooperativ.",
+    artCanisterapieP5: "Am Ende klappte alles – <strong>wir bestanden die Prüfung</strong> und Alma hat jetzt ein Canistherapie-Team-Zertifikat. Wir freuen uns darauf, wohin uns die Canistherapie noch führt.",
+    artCanisterapieP6: "Mit ihr möchte ich lieber den Bildungsweg gehen – in Schulen. Die ersten Besuche werden definitiv in den Klassen meiner Kinder sein. Mal sehen, wohin es führt.",
+    newsMonthCanis: "Apr",
+    newsTitleCanis: "Alma bestand die Canistherapie-Prüfung",
+    newsExcerptCanis: "Ein Wochenende in den Sanatorien Klimkovice: Seminar, Canistherapie in der Praxis mit Kindern und erfolgreich bestandene Prüfung. Alma hat ihr Zertifikat.",
+    newsListMonthCanis: "Apr",
+    newsListExcerptCanis: "Ein Wochenende in den Sanatorien Klimkovice: Seminar, Canistherapie in der Praxis mit Kindern und erfolgreich bestandene Prüfung. Alma hat ihr Zertifikat.",
+    almaTitleCanis: "Canistherapie",
+    almaTitleCanisVal: "Zertifikat (Klimkovice 2026)",
+    newsListMonth0: "Apr",
+    newsListExcerpt0: "Alma absolvierte ihren ersten Working Test in Šilheřovice. Klasse E, internationale Richter und viele neue Erfahrungen aus dem Wald.",
+    newsListMonth1: "Mär",
+    newsListMonth2: "Jul",
+    newsListMonth3: "Jun",
+    newsListMonth4: "Mai",
+    newsListMonth5: "Mai",
+    newsListMonth6: "Feb",
+    newsListMonth7: "Jan",
+    newsListExcerpt1: "Alma trat erstmals in die offene Klasse ein und gewann V1, Klassensiegerin, Regionalssiegerin und 3. Platz in FCI-Gruppe 8!",
+    newsListExcerpt2: "Bei der regionalen Klubaustellung Hubertka 2025 trat Alma zum letzten Mal in der Jugendklasse an. Bewertung V2 mit schönem Richterbericht.",
+    newsListExcerpt3: "Bei der Prüfung der angeborenen Begabung zum Apportieren in Ústí u Hranic bestand Alma alle sechs Disziplinen mit voller Punktzahl.",
+    newsListExcerpt4: "Vollständiges genetisches Screening auf Erbkrankheiten. Alma ist ein gesundes Mädchen – die meisten Ergebnisse N/N (frei).",
+    newsListExcerpt5: "Bei der Klub- und Spezialausstellung der Retriever in Humpolec erhielt Alma beide Tage eine Vorzüglich-Bewertung. 30 Hündinnen in ihrer Klasse!",
+    newsListExcerpt6: "Am Internationalen Golden-Retriever-Tag gingen wir zum Röntgen. Ergebnisse: Hüfte B/B, Ellbogen 0/0, OCD 0/0, SA & LTV frei.",
+    newsListExcerpt7: "Kuchen, Geschenke und eine kleine Party mit Freunden. Alles Gute zum 1. Geburtstag, liebe Alma!",
+    docsTitle: "Dokumente",
+    docsIntro: "Hier finden Sie die vollständige Gesundheitsdokumentation unserer Hündin <strong>Alma Bohemica Aurum</strong>. Transparenz ist für uns selbstverständlich – jeder potenzielle Welpenkäufer soll alles nachprüfen können.",
+    docsPedigreeTitle: "Ahnentafel",
+    docsPedigree: "<strong>FCI-zertifizierte Ahnentafel</strong> – Alma Bohemica Aurum, ČLP/GR/25733",
+    docsXrayTitle: "Röntgenuntersuchungen",
+    docsXrayMeta: "Untersucht am 3. Feb. 2025, MVDr Marek Pepřík, Opava",
+    docsHdEd: "<strong>HD + ED</strong> – HD B (Grenzbereich), ED 0/0 (frei)",
+    docsSaLtv: "<strong>SA + LTV</strong> – Spondylose 0 (frei), LTV 0 (frei)",
+    docsOcd: "<strong>OCD Schultergelenke</strong> – frei (beide Gliedmaßen)",
+    docsGeneticsTitle: "Gentests",
+    docsGeneticsMeta: "Labor Genomia, Pilsen, Mai 2025",
+    docsGrpra1: "<strong>GR-PRA1</strong> – N/N (frei, keine Mutation)",
+    docsGrpra2: "<strong>GR-PRA2</strong> – N/N (frei, keine Mutation)",
+    docsPra: "<strong>PRA-prcd</strong> – N/N (frei, keine Mutation)",
+    docsIct1: "<strong>ICT-1 (Ichthyosis 1)</strong> – N/P (Träger) ⚠",
+    docsIct2: "<strong>ICT-2 (Ichthyosis 2)</strong> – N/N (frei, keine Mutation)",
+    docsNcl: "<strong>NCL (neuronale Zeroidlipofuszinose)</strong> – N/N (frei, keine Mutation)",
+    docsGrmd: "<strong>GRMD (Muskeldystrophie)</strong> – Xn/Xn (frei)",
+    docsNoteTitle: "Was unsere Ergebnisse für die Zucht bedeuten",
+    docsNoteHdTitle: "HD B (Grenzbereich Hüftdysplasie)",
+    docsNoteHdText: "<strong>HD B</strong> bedeutet nahezu normale Hüftgelenke mit minimalen Unregelmäßigkeiten. Für die Zucht vollständig akzeptabel. Um die besten Ergebnisse bei Welpen zu maximieren, <strong>wählen wir ausschließlich einen Deckrüden mit HD A</strong> (frei) und idealerweise mit nachgewiesen guten Ergebnissen in seiner Linie.",
+    docsNoteIctTitle: "ICT-1 N/P (Ichthyosis-1-Träger)",
+    docsNoteIctText: "Alma ist <strong>Träger</strong> von Ichthyosis 1 – sie ist selbst völlig gesund, trägt aber eine Kopie des mutierten Gens. Ichthyosis 1 ist eine rezessive Hauterkrankung, die nur Hunde mit zwei Mutationen (P/P) betrifft. Daher <strong>muss der Deckrüde als N/N</strong> (frei) getestet sein. Bei einer Paarung N/P × N/N sind 50 % der Welpen frei (N/N) und 50 % Träger (N/P) – <strong>kein Welpe kann erkrankt sein</strong>. Mehr über Ichthyosis in einer <a href=\"https://www.bohemica-aurum.cz/l/ichtyoza-seminarni-prace/\" target=\"_blank\" rel=\"noopener noreferrer\">Seminararbeit der Züchterin von Bohemica Aurum</a> (auf Tschechisch).",
+    docsNoteStrategyTitle: "Unsere Deckrüden-Auswahlstrategie",
+    docsNoteStrategyText: "Bei der Auswahl eines Deckrüden für Alma achten wir auf: <strong>HD A</strong> (frei), <strong>ED 0/0</strong>, vollständige Gentests mit <strong>N/N für ICT-1</strong>, ausgeglichenes Wesen, qualitativ hochwertige Ahnentafel und typgerechtes Exterieur. Alle Gesundheitsergebnisse des Deckrüden veröffentlichen wir ebenfalls auf dieser Website.",
+    contactTitle: "Kontakt",
+    contactIntro: "Interesse an einem Welpen aus unserer Zucht oder einfach eine Frage? Schreiben Sie uns – wir melden uns bei Ihnen.",
+    contactPhoneLabel: "Telefon",
+    contactLocationLabel: "Standort",
+    formNameLabel: "Name",
+    formPhoneLabel: "Telefon",
+    formTopicLabel: "Betreff",
+    formTopicPuppies: "Welpenanfrage",
+    formTopicVisit: "Besuch vereinbaren",
+    formTopicOther: "Sonstige Frage",
+    formMessageLabel: "Nachricht",
+    formNote: "Mit dem Absenden dieser Nachricht stimmen Sie zu, dass wir die angegebenen Daten zur Beantwortung Ihrer Anfrage verarbeiten. Wir geben Ihre Daten nicht an Dritte weiter.",
+    formSubmit: "Nachricht senden",
+    formError: "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder kontaktieren Sie uns telefonisch.",
+    pregBreadcrumb: "Hundeträchtigkeitsrechner",
+    pregTitle: "Hundeträchtigkeitsrechner — Geburtstermin & Welpenentwicklung",
+    pregLead: "Kostenloser Online-Trächtigkeitsrechner für Hunde. Geben Sie das Deckdatum ein und erfahren Sie sofort den voraussichtlichen Geburtstermin, wann Ultraschall und Röntgen geplant werden sollten, und verfolgen Sie die Welpenentwicklung Woche für Woche — von der Befruchtung bis zur Geburt.",
+    pregDateLabel: "Deckdatum",
+    pregCalculate: "Berechnen",
+    pregDueDate: "Voraussichtlicher Geburtstermin",
+    pregWindow: "Geburtsfenster",
+    pregCurrentDay: "Aktueller Trächtigkeitstag",
+    pregCountdown: "Tage bis zur Geburt",
+    pregDay1: "Tag 1",
+    pregDay63: "Tag 63",
+    pregTimelineTitle: "Welpenentwicklung Woche für Woche",
+    pregTipLabel: "Empfehlung:",
+    pregMilestoneUltrasound: "Ultraschall",
+    pregMilestoneXray: "Röntgen",
+    pregMilestoneBirth: "Geburt!",
+    pregWeek1Title: "Woche 1",
+    pregWeek1Days: "Tag 1–7",
+    pregWeek1Dev: "Nach der Deckung erfolgt die Befruchtung. Die Spermien wandern durch den Eileiter zu den Eizellen. Befruchtete Eizellen beginnen sich zu teilen.",
+    pregWeek1Tip: "Normaler Alltag, qualitatives Futter. Keine besonderen Änderungen nötig. Impfungen und chemische Behandlungen vermeiden.",
+    pregWeek2Title: "Woche 2",
+    pregWeek2Days: "Tag 8–14",
+    pregWeek2Dev: "Embryonen wandern durch den Eileiter zur Gebärmutter. Zellen teilen sich weiter und bilden Keimblätter, aus denen Organe werden.",
+    pregWeek2Tip: "Keine großen Veränderungen. Ruhige Umgebung sicherstellen, Stress und übermäßige körperliche Aktivität vermeiden.",
+    pregWeek3Title: "Woche 3",
+    pregWeek3Days: "Tag 15–21",
+    pregWeek3Dev: "Embryonen nisten sich in die Gebärmutterwand ein (ca. Tag 16–20). Die Plazenta bildet sich und versorgt die Föten. Die Hündin kann weniger Appetit oder morgendliche Übelkeit haben.",
+    pregWeek3Tip: "Kleinere Portionen häufiger anbieten. Wenn die Hündin Futter verweigert, keine Panik – das ist normal. Weiterhin keine Impfungen.",
+    pregWeek4Title: "Woche 4",
+    pregWeek4Days: "Tag 22–28",
+    pregWeek4Dev: "Organe, Augen und Wirbelsäule entwickeln sich. Um Tag 25 kann die Trächtigkeit per Ultraschall bestätigt und fetale Herzschläge erkannt werden. Embryonen sind ca. 1,5 cm lang.",
+    pregWeek4Tip: "Ultraschall beim Tierarzt (Tag 25–30) zur Bestätigung der Trächtigkeit. Springen und wildes Spielen einschränken.",
+    pregWeek5Title: "Woche 5",
+    pregWeek5Days: "Tag 29–35",
+    pregWeek5Dev: "Föten wachsen schnell – Pfoten, Krallen und Schnurrhaare entwickeln sich. Der Bauch der Hündin wird sichtbar größer. Föten messen ca. 3–4 cm.",
+    pregWeek5Tip: "Proteinzufuhr schrittweise erhöhen. Übergang zu hochwertigerem Futter (Welpenfutter). Kürzere, aber häufigere Spaziergänge.",
+    pregWeek6Title: "Woche 6",
+    pregWeek6Days: "Tag 36–42",
+    pregWeek6Dev: "Föten sind vollständig geformt – Fell, Pigmentierung und Geschlechtsorgane entwickelt. Sie nehmen schnell an Gewicht zu. Die Hündin nimmt deutlich zu, der Bauch ist klar größer.",
+    pregWeek6Tip: "3× täglich kleinere Portionen füttern (Welpenfutter). Die Hündin braucht mehr Energie, aber der Magen hat weniger Platz. Ruhigen Ruheplatz bereitstellen.",
+    pregWeek7Title: "Woche 7",
+    pregWeek7Days: "Tag 43–49",
+    pregWeek7Dev: "Fetale Skelette mineralisieren – ab Tag 45 im Röntgen sichtbar. Ermöglicht genaue Welpenanzahl. Föten messen ca. 7–9 cm mit vollständig entwickeltem Fell.",
+    pregWeek7Tip: "Röntgen beim Tierarzt (Tag 45–50) zur Welpenzählung. Wurfkiste vorbereiten. Körperliche Aktivität auf ruhige Spaziergänge beschränken.",
+    pregWeek8Title: "Woche 8",
+    pregWeek8Days: "Tag 50–56",
+    pregWeek8Dev: "Welpen sind fast vollständig entwickelt und nehmen Geburtsposition ein. Die Hündin beginnt zu „nisten“ – sucht einen ruhigen Platz und kann unruhig werden. Zitzen füllen sich mit Milch.",
+    pregWeek8Tip: "Wurfkiste sollte bereit sein und die Hündin daran gewöhnt. Rektwärme zweimal täglich messen. Alle Geburtsutensilien bereithalten.",
+    pregWeek9Title: "Woche 9",
+    pregWeek9Days: "Tag 57–65",
+    pregWeek9Dev: "Welpen sind bereit für die Welt! Die Hündin kann Futter verweigern, unruhig werden und Ruhe suchen. Temperaturabfall unter 37 °C signalisiert Geburt innerhalb von 12–24 Stunden. Golden Retriever haben typischerweise 6–10 Welpen.",
+    pregWeek9Tip: "Auf Temperaturabfall achten (unter 37 °C = Geburt innerhalb von 24 Stunden). Tierarztnummer bereithalten. Ruhe und Wärme sicherstellen. Wenn Wehen länger als 2 Stunden ohne Welpe dauern, Tierarzt anrufen.",
+    pregWeek1Size: "~ Sandkorn",
+    pregWeek2Size: "~ Mohnsamen (0,5 mm)",
+    pregWeek3Size: "~ Reiskorn (5 mm)",
+    pregWeek4Size: "~ Haselnuss (1,5 cm)",
+    pregWeek5Size: "~ Walnuss (3–4 cm)",
+    pregWeek6Size: "~ Mandarine (6–9 cm)",
+    pregWeek7Size: "~ Zitrone (10–14 cm)",
+    pregWeek8Size: "~ Mango (15–18 cm)",
+    pregWeek9Size: "~ kleine Melone (20 cm, 350–500 g)",
+    pregKeyDatesTitle: "Wichtige Termine",
+    pregKeyMating: "Deckdatum",
+    pregKeyUltrasound: "Ultraschall (Tag 25–30)",
+    pregKeyXray: "Röntgen (Tag 45–50)",
+    pregKeyBirth: "Geburt (Tag 63)",
+    pregKeyDeparture: "Erste Abgabe in neue Familien (ab Woche 8)",
+    pregShowPast: "Vorherige Wochen anzeigen",
+    pregHidePast: "Vorherige Wochen ausblenden",
+    pregDayWord: "Tag",
+    pregWeekWord: "Woche",
+    pregDaysSuffix: " Tage",
+    pregToday: "Heute!",
+    pregPastDue: "Über Termin",
+    pregFrom: "ab ",
+    pregNotStarted: "Trächtigkeit hat noch nicht begonnen",
+    pregDaysUntilMating: " Tage bis zur Deckung",
+    pregEnded: "Trächtigkeit beendet",
+    pregVideoTitle: "Welpenentwicklung im Mutterleib",
+    pregVideoDesc: "Faszinierende National-Geographic-Aufnahmen zeigen, wie sich Welpen von der Befruchtung bis zur Geburt entwickeln.",
+    pregVideoBlocked: "Zum Abspielen des Videos müssen Sie Cookies akzeptieren. <a href=\"https://www.youtube.com/watch?v=BsLfWgAFFIE\" target=\"_blank\" rel=\"noopener noreferrer\">Auf YouTube ansehen →</a>",
+    pregChecklistTitle: "Was für die Geburt vorbereiten",
+    pregChecklistItems: "Wurfkiste (mind. 120×120 cm für Golden Retriever); Saubere Handtücher und Unterlagen; Digitales Thermometer; Desinfektionsmittel und sterile Schere; Waage zum Wiegen der Welpen; Farbige Halsbänder/Bänder zur Welpenidentifikation; Tierarzt- und Notfallnummern; Welpenmilchersatz (für alle Fälle)",
+    pregGoldenTitle: "Besonderheiten beim Golden Retriever",
+    pregGoldenInfo: "Trächtigkeitsdauer: 58–65 Tage (Durchschnitt 63 Tage); Typische Wurfgröße: 6–10 Welpen; Geburtsgewicht Welpe: 350–500 g; Golden Retriever sind in der Regel ausgezeichnete Mütter; Kaiserschnitt seltener bei dieser Rasse; Nach der Geburt braucht die Hündin 3–4× mehr Energie",
+    pregFaqTitle: "Häufige Fragen zur Hundeträchtigkeit",
+    pregFaq1Q: "Wie lange ist eine Hündin trächtig?",
+    pregFaq1A: "Die Trächtigkeit (Gestationsdauer) dauert durchschnittlich 63 Tage (9 Wochen) ab dem Deckdatum. Die Geburt kann zwischen Tag 58 und 65 erfolgen. Golden Retriever haben im Durchschnitt 63 Tage Trächtigkeit.",
+    pregFaq2Q: "Wann Ultraschall bei trächtiger Hündin?",
+    pregFaq2A: "Ein Ultraschall kann zwischen Tag 25 und 30 nach der Deckung durchgeführt werden. In dieser Phase kann der Tierarzt die Trächtigkeit bestätigen und fetale Herzschläge erkennen.",
+    pregFaq3Q: "Wann Röntgen bei trächtiger Hündin?",
+    pregFaq3A: "Ein Röntgen wird ab Tag 45 der Trächtigkeit empfohlen. Es ermöglicht die genaue Zählung der Welpen anhand sichtbarer Skelettstrukturen.",
+    pregFaq4Q: "Wie viele Welpen hat ein Golden Retriever?",
+    pregFaq4A: "Ein Golden Retriever hat typischerweise 6 bis 10 Welpen pro Wurf. Ein neugeborener Welpe wiegt 350–500 g. Die Wurfgröße hängt vom Alter, der Gesundheit und der Genetik der Hündin ab.",
+    pregFaq5Q: "Woran erkenne ich, dass meine Hündin bald wölft?",
+    pregFaq5A: "Das wichtigste Anzeichen unmittelbar bevorstehender Geburt ist ein Temperaturabfall der Hündin unter 37 °C (98,6 °F), der Geburt innerhalb von 12–24 Stunden signalisiert. Sie kann unruhig werden, Futter verweigern und einen abgeschiedenen Ort suchen.",
+    pregFaq6Q: "Wann können Welpen in neue Familien?",
+    pregFaq6A: "Welpen können frühestens mit 8 Wochen (56 Tage nach der Geburt) in neue Familien. Bis dahin müssen sie bei der Mutter bleiben für optimale körperliche und seelische Entwicklung.",
+    pregDisclaimer: "<strong>Hinweis:</strong> Dieser Leitfaden dient nur zur Information. Jede Trächtigkeit ist einzigartig. Konsultieren Sie immer Ihren Tierarzt und befolgen Sie dessen Empfehlungen.",
+    pregBackHome: "Zurück zur Startseite",
+    pregContactCta: "Frage? Kontaktieren Sie uns",
+    footerNavTitle: "Navigation",
+    footerContactTitle: "Kontakt",
+    footerAboutTitle: "Über uns",
+    footerAboutText: "Rosenaw Aurum — Golden-Retriever-Zucht in den Beskiden, Tschechien. Wir züchten mit Liebe, Sorgfalt und Respekt vor der Rasse.",
+    footerRights: "Alle Rechte vorbehalten.",
+    thankYouTitle: "Vielen Dank für Ihre Nachricht!",
+    thankYouText: "Wir freuen uns über Ihr Interesse an Rosenaw Aurum. Wir haben Ihre Nachricht erhalten und melden uns so schnell wie möglich.",
+    thankYouReply: "Wir antworten in der Regel innerhalb von 24 Stunden.",
+    backToHome: "← Zurück zur Startseite",
+    notFoundText: "Diese Seite existiert nicht oder wurde verschoben.",
+    breedSkipLink: "Zum Inhalt springen",
+    breedBreadcrumb: "Über die Rasse",
+    breedPageTitle: "Golden Retriever – alles über die Rasse",
+    breedLead: "Der Golden Retriever ist eine der beliebtesten Hunderassen der Welt. Er vereint Intelligenz, freundliches Wesen und natürliche Arbeitsfreude. Was macht ihn so besonders und was sollten Sie wissen, bevor Sie einen anschaffen?",
+    breedHistoryTitle: "Rassegeschichte",
+    breedHistoryP1: "Der Golden Retriever entstand im 19. Jahrhundert in Schottland dank Lord Tweedmouth, der systematisch Hunde kreuzte, um den idealen Jagd-Apportierhund zu schaffen. Die Rasse wurde 1913 offiziell von The Kennel Club anerkannt und hat seitdem Herzen auf der ganzen Welt erobert.",
+    breedHistoryP2: "Der ursprüngliche Zweck des Golden Retriever war das Apportieren von Wild aus Wasser und Land. Deshalb lieben diese Hunde Wasser, haben ein weiches Maul und eine außergewöhnliche Bereitschaft zur Zusammenarbeit mit Menschen.",
+    breedTemperTitle: "Wesen und Charakter",
+    breedTemperP1: "Der Golden Retriever ist bekannt für sein freundliches, ruhiges und ausgeglichenes Wesen. Er liebt Menschen – von Kindern bis Senioren – und versteht sich wunderbar mit anderen Tieren. Typische Eigenschaften:",
+    breedTemperList: "<strong>Freundlichkeit</strong> – offen allen gegenüber, idealer Familienhund, aber schlechter Wachhund;<strong>Intelligenz</strong> – laut Stanley Coren auf Platz 4 der intelligentesten Rassen;<strong>Trainierbarkeit</strong> – reagiert hervorragend auf positives Training und liebt Neues zu lernen;<strong>Geduld</strong> – erträgt Kinder und ihre Spiele mit bewundernswerter Geduld;<strong>Arbeitsfreude</strong> – braucht sinnvolle Beschäftigung, sonst findet er eigene (die dem Besitzer nicht immer gefallen);<strong>Wasserliebe</strong> – die meisten Golden Retriever lieben Schwimmen und Wasserapporte",
+    breedAppearTitle: "Aussehen und Rassestandard",
+    breedAppearP1: "Der Golden Retriever ist ein mittelgroßer, harmonisch gebauter Hund mit charakteristischem goldenem Fell. Der FCI-Standard (Nr. 111, Gruppe 8) beschreibt ihn als „symmetrischen, ausgewogenen, aktiven Hund mit freundlichem Ausdruck“.",
+    breedAppearList: "<strong>Widerristhöhe:</strong> Rüden 56–61 cm, Hündinnen 51–56 cm;<strong>Gewicht:</strong> Rüden 29–34 kg, Hündinnen 25–29 kg;<strong>Fell:</strong> glatt oder wellig mit guter wasserabweisender Unterwolle;<strong>Farbe:</strong> jeder Gold- oder Cremeton (nicht rot oder mahagoni);<strong>Lebenserwartung:</strong> 10–13 Jahre",
+    breedStandardTitle: "Detaillierter FCI-Standard",
+    breedStandardP1: "Der vollständige Standard definiert einzelne Körperteile, die Richter auf Ausstellungen bewerten. Quelle: <a href=\"https://www.retriever-klub.cz/plemena/golden-retriever/\" target=\"_blank\" rel=\"noopener noreferrer\">Retriever Klub CZ</a>.",
+    breedStandardList: "<strong>Kopf und Schädel:</strong> breiter Schädel ohne grobe Züge, gut entwickelte tiefe Schnauze, Schnauzenlänge ungefähr gleich der Schädellänge. Nase schwarz.;<strong>Augen:</strong> dunkelbraun, gut gesetzt, mit dunklen Rändern.;<strong>Ohren:</strong> mittelgroß, ungefähr auf Höhe der Augen angesetzt.;<strong>Gebiss:</strong> vollständiges, regelmäßiges und vollständiges Scherengebiss – obere Schneidezähne eng über den unteren.;<strong>Hals:</strong> gute Länge, sauber und muskulös.;<strong>Körper:</strong> ausgewogen und gut verbunden, tiefe geräumige Brust, gut gewölbte Rippen, starke gerade Rückenlinie.;<strong>Vorderhand:</strong> gerade mit gutem Knochenbau, lang zurückliegende Schultern.;<strong>Hinterhand:</strong> kräftige muskulöse Lenden, gut gewinkelte Sprunggelenke.",
+    breedHealthTitle: "Gesundheit des Golden Retriever",
+    breedHealthP1: "Wie bei den meisten reinrassigen Hunden gibt es beim Golden Retriever erbliche Gesundheitsrisiken, die verantwortungsvolle Züchter testen. Die wichtigsten:",
+    breedHealthList: "<strong>Hüftdysplasie (HD)</strong> – Röntgen beider Elterntiere ist Voraussetzung für verantwortungsvolle Zucht;<strong>Ellbogendysplasie (ED)</strong> – wie HD radiologisch beurteilt;<strong>Augenerkrankungen (PRA)</strong> – progressive Netzhautdegeneration, genetisch testbar;<strong>Ichthyosis (ICT)</strong> – erbliche Hauterkrankung, durch Gentest ausschließbar;<strong>Krebs</strong> – Golden Retriever haben leider eine höhere Veranlagung zu bestimmten Tumorarten",
+    breedHealthP2: "Deshalb ist die Wahl eines <strong>verantwortungsvollen Züchters</strong> mit umfassenden Gesundheitstests unerlässlich. In unserer Zucht <a href=\"alma-dokumenty.html\">veröffentlichen wir alle Gesundheitsergebnisse</a>.",
+    breedCareTitle: "Pflege des Golden Retriever",
+    breedCareP1: "Der Golden Retriever ist nicht besonders pflegeintensiv, benötigt aber regelmäßige Betreuung:",
+    breedCareList: "<strong>Fell</strong> – 2–3× pro Woche bürsten, täglich in der Mauserzeit. Das Fell wird nie geschoren, nur ausgebessert;<strong>Bewegung</strong> – mindestens 1–2 Stunden aktive Bewegung täglich (Spaziergänge, Schwimmen, Apportieren);<strong>Ernährung</strong> – qualitatives Futter passend zu Alter und Aktivität. Golden Retriever neigen zu Übergewicht;<strong>Geistige Beschäftigung</strong> – Nasenarbeit, Gehorsam, Agility oder Apporte halten den Hund glücklich;<strong>Tierärztliche Betreuung</strong> – regelmäßige Impfungen, Entwurmung und Kontrollen",
+    breedSuitTitle: "Für wen eignet sich der Golden Retriever?",
+    breedSuitP1: "Der Golden Retriever ist ideal für:",
+    breedSuitList: "Familien mit Kindern – geduldig und verspielt;Aktive Menschen – bewältigt Wanderungen, Laufen, Schwimmen und Radfahren;Ersthundbesitzer – leicht trainierbar, großartig als erster Hund;Menschen, die einen Therapiehund suchen – Retriever arbeiten hervorragend mit Menschen",
+    breedSuitP2: "Andererseits ist er <strong>nicht geeignet</strong> für Menschen, die den Großteil des Tages außer Haus sind, keine Zeit für Bewegung haben oder einen Wachhund suchen.",
+    breedBreederTitle: "Wie man einen verantwortungsvollen Golden-Retriever-Züchter wählt",
+    breedBreederP1: "Bei der Wahl einer Golden-Retriever-Zucht achten Sie auf:",
+    breedBreederList: "FCI-Registrierung über den nationalen Kennel Club;Vollständige Gesundheitstests beider Elterntiere (HD, ED, Augenuntersuchungen, Gentests);Transparenz – der Züchter teilt Ergebnisse bereitwillig und beantwortet Fragen;Welpensozialisierung – Welpen sollten in häuslicher Umgebung aufwachsen;Lebenslange Unterstützung – ein guter Züchter bleibt das ganze Hundeleben in Kontakt;Mitgliedschaft in Rasseclubs",
+    breedBreederP2: "In unserer Zucht <strong>Rosenaw Aurum</strong> in den Beskiden züchten wir Golden Retriever mit Fokus auf Gesundheit, Wesen und Familienleben. <a href=\"index.html#about\">Lesen Sie über unseren Ansatz</a> oder <a href=\"index.html#contact\">schreiben Sie uns</a>.",
+    breedCtaBack: "← Zurück zur Startseite",
+    breedCtaPuppies: "Welpen Rosenaw Aurum",
+    privacyBreadcrumb: "Datenschutzerklärung",
+    privacyTitle: "Datenschutzerklärung",
+    privacyLead: "Informationen zur Verarbeitung personenbezogener Daten gemäß Verordnung (EU) 2016/679 (DSGVO).",
+    privacyS1Title: "1. Verantwortlicher",
+    privacyS1Text: "<strong>Lucie Klesová</strong><br>Vigantice (bei Rožnov pod Radhoštěm), Tschechien<br>E-Mail: <a href=\"mailto:lucie@klesova.cz\">lucie@klesova.cz</a><br>Telefon: <a href=\"tel:+420724913409\">+420 724 913 409</a>",
+    privacyS2Title: "2. Welche Daten wir verarbeiten",
+    privacyS2Text: "Über das Kontaktformular auf dieser Website können wir folgende personenbezogene Daten verarbeiten:",
+    privacyS2List: "<strong>Name</strong> — zur Anrede in unserer Antwort;<strong>E-Mail-Adresse</strong> — zum Senden der Antwort;<strong>Telefonnummer</strong> (optional) — für möglichen telefonischen Kontakt;<strong>Inhalt der Nachricht</strong> — zur Bearbeitung Ihrer Anfrage",
+    privacyS3Title: "3. Zweck der Verarbeitung",
+    privacyS3Text: "Wir verarbeiten Ihre personenbezogenen Daten ausschließlich zum Zweck:",
+    privacyS3List: "Beantwortung Ihrer über das Kontaktformular gesendeten Anfrage;Kommunikation bezüglich möglichen Interesses an einem Welpen aus unserer Zucht;Vereinbarung eines Besuchs",
+    privacyS4Title: "4. Rechtsgrundlage",
+    privacyS4Text: "Wir verarbeiten personenbezogene Daten auf Grundlage des <strong>berechtigten Interesses</strong> (Art. 6 Abs. 1 lit. f DSGVO) — Beantwortung Ihrer Anfrage. Mit dem Absenden des Kontaktformulars stimmen Sie der Verarbeitung der angegebenen Daten für diesen Zweck zu.",
+    privacyS5Title: "5. Aufbewahrungsdauer",
+    privacyS5Text: "Wir bewahren Ihre personenbezogenen Daten so lange auf, wie zur Bearbeitung Ihrer Anfrage erforderlich, <strong>maximal 12 Monate</strong> ab dem letzten Kontakt. Danach werden die Daten gelöscht.",
+    privacyS6Title: "6. Weitergabe an Dritte",
+    privacyS6Text: "Wir <strong>geben Ihre personenbezogenen Daten nicht an Dritte weiter</strong>, außer:",
+    privacyS6List: "<strong>Formspree, Inc.</strong> — Anbieter des Kontaktformular-Dienstes (Auftragsverarbeiter), der Nachrichten aus dem Formular empfängt und weiterleitet. Formspree verarbeitet Daten gemäß eigener Datenschutzerklärung.",
+    privacyS7Title: "7. Cookies und Analytik",
+    privacyS7Text: "Diese Website verwendet nur <strong>technisch notwendige Cookies</strong>. Für die Schriftdarstellung nutzen wir Google Fonts, die die IP-Adresse des Besuchers verarbeiten können. Die Karte im Kontaktbereich nutzt Google Maps.",
+    privacyS8Title: "8. Ihre Rechte",
+    privacyS8Text: "Sie haben das Recht auf:",
+    privacyS8List: "<strong>Auskunft</strong> über Ihre personenbezogenen Daten;<strong>Berichtigung</strong> unrichtiger Daten;<strong>Löschung</strong> der Daten (Recht auf Vergessenwerden);<strong>Einschränkung</strong> der Verarbeitung;<strong>Datenübertragbarkeit</strong>;<strong>Widerspruch</strong> gegen die Verarbeitung;Beschwerde bei der <strong>Aufsichtsbehörde</strong> (<a href=\"https://www.uoou.cz\" target=\"_blank\" rel=\"noopener noreferrer\">www.uoou.cz</a>)",
+    privacyS9Title: "9. Kontakt zur Ausübung Ihrer Rechte",
+    privacyS9Text: "Zur Ausübung der oben genannten Rechte kontaktieren Sie uns unter <a href=\"mailto:lucie@klesova.cz\">lucie@klesova.cz</a>. Wir antworten spätestens innerhalb von 30 Tagen.",
+    privacyUpdated: "Zuletzt aktualisiert: 22. März 2026",
+    toolSpotEyebrow: "Kostenloses Tool für Züchter",
+    toolSpotTitle: "Hundeträchtigkeitsrechner",
+    toolSpotText: "Geben Sie das Deckdatum ein und erhalten Sie sofort den Geburtstermin, wichtige Termine (Ultraschall, Röntgen) und die Welpenentwicklung Woche für Woche. Funktioniert für alle Hunderassen.",
+    toolSpotCta: "Rechner starten →",
+  },
 };
 
 function setLanguage(lang) {
@@ -1032,7 +1503,7 @@ function setLanguage(lang) {
   });
 
   // Přepnout atribut lang na html
-  document.documentElement.lang = lang === "en" ? "en" : "cs";
+  document.documentElement.lang = lang === "en" || lang === "de" ? lang : "cs";
 
   // Aktivní tlačítko jazyka
   document.querySelectorAll(".lang-btn").forEach((btn) => {
@@ -1044,33 +1515,47 @@ function setLanguage(lang) {
   document.documentElement.classList.add("i18n-loaded");
 }
 
-// Maps CS filenames ↔ EN filenames. Add entries here when a new page gets a real EN version.
-const EN_PAGES = {
-  "index.html": "en/index.html",
-  "o-plemeni.html": "en/about-breed.html",
-  "faq.html": "en/faq.html",
-  "kalkulacka-brezosti-feny.html": "en/pregnancy-calculator.html",
-};
-const CS_PAGES = Object.fromEntries(
-  Object.entries(EN_PAGES).map(([cs, en]) => [en.split("/").pop(), cs])
-);
+// CS ↔ EN ↔ DE page groups. Add entries when a page gets localized copies.
+const PAGE_LOCALES = [
+  { cs: "index.html", en: "en/index.html", de: "de/index.html" },
+  { cs: "o-plemeni.html", en: "en/about-breed.html", de: "de/about-breed.html" },
+  { cs: "faq.html", en: "en/faq.html", de: "de/faq.html" },
+  {
+    cs: "kalkulacka-brezosti-feny.html",
+    en: "en/pregnancy-calculator.html",
+    de: "de/pregnancy-calculator.html",
+  },
+];
+
+function getCurrentLocale() {
+  const path = window.location.pathname;
+  if (/\/en\//.test(path)) return "en";
+  if (/\/de\//.test(path)) return "de";
+  return "cs";
+}
+
+function findPageLocaleGroup() {
+  const filename = window.location.pathname.split("/").pop() || "index.html";
+  return PAGE_LOCALES.find(
+    (g) =>
+      g.cs === filename ||
+      g.en.split("/").pop() === filename ||
+      g.de.split("/").pop() === filename
+  );
+}
 
 function getLangAwareTarget(targetLang) {
-  const path = window.location.pathname;
-  const inEn = /\/en\//.test(path);
-  const filename = path.split("/").pop() || "index.html";
-  if (targetLang === "en" && !inEn && EN_PAGES[filename]) {
-    return "/" + EN_PAGES[filename];
-  }
-  if (targetLang === "cs" && inEn && CS_PAGES[filename]) {
-    return "/" + CS_PAGES[filename];
-  }
-  return null; // no redirect → fall back to in-page translation
+  const current = getCurrentLocale();
+  if (targetLang === current) return null;
+  const group = findPageLocaleGroup();
+  if (!group || !group[targetLang]) return null;
+  return "/" + group[targetLang];
 }
 
 function setupLanguageSwitch() {
-  // Detect initial language from <html lang> (set statically on /en/ pages) or localStorage
-  const pageLang = document.documentElement.lang === "en" ? "en" : null;
+  // Detect initial language from <html lang> (set on /en/ and /de/ pages) or localStorage
+  const htmlLang = document.documentElement.lang;
+  const pageLang = htmlLang === "en" || htmlLang === "de" ? htmlLang : null;
   const savedLang = pageLang || localStorage.getItem("lang") || "cs";
   setLanguage(savedLang);
 
@@ -1181,9 +1666,8 @@ function setupContactForm() {
           submitBtn.disabled = false;
           submitBtn.textContent = originalText;
           alert(
-            document.documentElement.lang === "en"
-              ? "Something went wrong. Please try again or contact us by phone."
-              : "Něco se pokazilo. Zkuste to znovu nebo nás kontaktujte telefonicky."
+            translations[document.documentElement.lang]?.formError ||
+              "Něco se pokazilo. Zkuste to znovu nebo nás kontaktujte telefonicky."
           );
         }
       })
@@ -1191,9 +1675,8 @@ function setupContactForm() {
         submitBtn.disabled = false;
         submitBtn.textContent = originalText;
         alert(
-          document.documentElement.lang === "en"
-            ? "Something went wrong. Please try again or contact us by phone."
-            : "Něco se pokazilo. Zkuste to znovu nebo nás kontaktujte telefonicky."
+          translations[document.documentElement.lang]?.formError ||
+            "Něco se pokazilo. Zkuste to znovu nebo nás kontaktujte telefonicky."
         );
       });
   });
@@ -1643,7 +2126,9 @@ function showCookieBanner(initialPrefs) {
   externalInput.checked = !!(initialPrefs && initialPrefs.external);
   main.hidden = false;
   settings.hidden = true;
-  const lang = document.documentElement.lang === "en" ? "en" : "cs";
+  const lang = translations[document.documentElement.lang]
+    ? document.documentElement.lang
+    : "cs";
   if (typeof setLanguage === "function") setLanguage(lang);
   banner.hidden = false;
   requestAnimationFrame(() => banner.classList.add("is-visible"));
@@ -1899,11 +2384,9 @@ function setupPregnancyCalculator() {
     toggleBtn.onclick = function() {
       pastExpanded = !pastExpanded;
       toggleBtn.classList.toggle("is-expanded", pastExpanded);
-      var lang = document.documentElement.lang || "cs";
+      var dict = translations[document.documentElement.lang] || translations.cs;
       if (toggleLabel) {
-        toggleLabel.textContent = pastExpanded
-          ? (lang === "en" ? "Hide previous weeks" : "Skrýt předchozí týdny")
-          : (lang === "en" ? "Show previous weeks" : "Zobrazit předchozí týdny");
+        toggleLabel.textContent = pastExpanded ? dict.pregHidePast : dict.pregShowPast;
       }
       weeks.forEach(function(w) {
         var wk = parseInt(w.dataset.week, 10);
@@ -1919,16 +2402,21 @@ function setupPregnancyCalculator() {
   }
 
   // --- Date formatting helper ---
-  function fmt(d) {
+  function dateLocale() {
     var lang = document.documentElement.lang || "cs";
-    return d.toLocaleDateString(lang === "en" ? "en-GB" : "cs-CZ", {
+    if (lang === "en") return "en-GB";
+    if (lang === "de") return "de-DE";
+    return "cs-CZ";
+  }
+
+  function fmt(d) {
+    return d.toLocaleDateString(dateLocale(), {
       day: "numeric", month: "long", year: "numeric"
     });
   }
 
   function fmtShort(d) {
-    var lang = document.documentElement.lang || "cs";
-    return d.toLocaleDateString(lang === "en" ? "en-GB" : "cs-CZ", {
+    return d.toLocaleDateString(dateLocale(), {
       day: "numeric", month: "short"
     });
   }
@@ -1960,7 +2448,7 @@ function setupPregnancyCalculator() {
     var xrayEnd = addDays(matingDate, 50);
     var departureDate = addDays(matingDate, 63 + 56); // porod + 8 tyden
 
-    var lang = document.documentElement.lang || "cs";
+    var dict = translations[document.documentElement.lang] || translations.cs;
 
     document.getElementById("preg-due-date").textContent = fmt(dueDate);
     document.getElementById("preg-window").textContent = fmt(earlyDate) + " – " + fmt(lateDate);
@@ -1972,7 +2460,7 @@ function setupPregnancyCalculator() {
     document.getElementById("key-ultrasound").textContent = fmtShort(ultrasoundStart) + " – " + fmtShort(ultrasoundEnd);
     document.getElementById("key-xray").textContent = fmtShort(xrayStart) + " – " + fmtShort(xrayEnd);
     document.getElementById("key-birth").textContent = fmt(dueDate);
-    document.getElementById("key-departure").textContent = (lang === "en" ? "from " : "od ") + fmt(departureDate);
+    document.getElementById("key-departure").textContent = dict.pregFrom + fmt(departureDate);
 
     var today = new Date();
     today.setHours(0, 0, 0, 0);
@@ -1989,15 +2477,15 @@ function setupPregnancyCalculator() {
     if (currentDay >= 0 && currentDay <= 65) {
       var currentWeek = Math.ceil(currentDay / 7) || 1;
       if (currentWeek > 9) currentWeek = 9;
-      dayEl.textContent = (lang === "en" ? "Day " : "Den ") + currentDay +
-        " (" + (lang === "en" ? "week " : "tyden ") + currentWeek + ")";
+      dayEl.textContent = dict.pregDayWord + " " + currentDay +
+        " (" + dict.pregWeekWord + " " + currentWeek + ")";
 
       if (daysLeft > 0) {
-        countdownEl.textContent = daysLeft + (lang === "en" ? " days" : " dni");
+        countdownEl.textContent = daysLeft + dict.pregDaysSuffix;
       } else if (daysLeft === 0) {
-        countdownEl.textContent = lang === "en" ? "Today!" : "Dnes!";
+        countdownEl.textContent = dict.pregToday;
       } else {
-        countdownEl.textContent = lang === "en" ? "Past due date" : "Po terminu";
+        countdownEl.textContent = dict.pregPastDue;
       }
 
       var progress = Math.min(Math.max(currentDay / 63 * 100, 0), 100);
@@ -2018,15 +2506,15 @@ function setupPregnancyCalculator() {
       collapsePastWeeks(currentWeek);
 
     } else if (currentDay < 0) {
-      dayEl.textContent = lang === "en" ? "Not started yet" : "B\u0159ezost je\u0161t\u011b neza\u010dala";
-      countdownEl.textContent = Math.abs(currentDay) + (lang === "en" ? " days until mating" : " dn\u00ed do kryt\u00ed");
+      dayEl.textContent = dict.pregNotStarted;
+      countdownEl.textContent = Math.abs(currentDay) + dict.pregDaysUntilMating;
       progressEl.style.width = "0%";
       weeks.forEach(function(week) {
         week.classList.remove("preg-week--active", "preg-week--past", "is-past-hidden");
       });
       toggleBtn.hidden = true;
     } else {
-      dayEl.textContent = lang === "en" ? "Pregnancy ended" : "B\u0159ezost skon\u010dila";
+      dayEl.textContent = dict.pregEnded;
       countdownEl.textContent = "\u2014";
       progressEl.style.width = "100%";
       weeks.forEach(function(week) {

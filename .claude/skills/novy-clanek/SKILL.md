@@ -93,6 +93,63 @@ Pokud jde o výstavu nebo zkoušku, aktualizuj sekci "Výstavy a zkoušky" v pro
 ### 6. Čísla článků v aktuality.html
 Aktualizuj komentáře s čísly článků (`<!-- 1. Název -->`, `<!-- 2. Název -->` atd.) aby šly po sobě.
 
+### 7. Vygeneruj podklady pro Instagram + Facebook
+Soubor: `social/{YYYY-MM-DD}-{slug}.md`
+
+Cíl: Lucie si z tohoto souboru zkopíruje text do mobilní IG/FB appky a ručně nahraje fotky. Žádné API, žádná automatika — jen příprava.
+
+Struktura souboru:
+
+```markdown
+# {Nadpis} — podklad pro sociální sítě
+
+**Datum:** {YYYY-MM-DD}
+**Odkaz na web:** https://rosenawaurum.cz/aktuality/{slug}.html
+
+## Doporučené fotky
+Seřazeno od nej. IG max 10 v carouselu, FB album bez limitu.
+1. `images/news/{slug}-xxx.jpeg` — {krátký popis, proč je vhodná na úvod}
+2. `images/news/{slug}-yyy.jpeg` — {…}
+3. …
+
+---
+
+## Instagram (carousel, první fotka = hook)
+
+{Caption: 1. řádek = hook (emoji OK, ale střídmě), 2–4 věty příběh, CTA „Víc na webu — odkaz v biu".}
+
+.
+.
+.
+.
+.
+
+{Hashtagy — 8–15 kusů, mix evergreen a tématické. Evergreen: #rosenawaurum #goldenretriever #zlatyretrivr #chovatelskastanice #chsrosenawaurum. Tématické podle obsahu: #dogshow #vystava #bonitace #zkousky #stene #puppiesofinstagram apod. Lokalita pokud relevantní: #brno #provodovice ...}
+
+---
+
+## Facebook (delší příběh, žádné hashtagy)
+
+{Caption: delší, osobnější tón — 1–3 odstavce. Může začít oslovením („Krásné nedělní ráno!"), popsat zážitek, zmínit konkrétní lidi/psy (bez @tagů — Lucie doplní ručně), zakončit odkazem na web.}
+
+Celý článek: https://rosenawaurum.cz/aktuality/{slug}.html
+```
+
+**Pravidla pro texty:**
+- **IG** — kratší, energický, emoji v rozumné míře (1–3 na caption, ne víc), hook v prvním řádku (před „více" ořezem), hashtagy oddělené prázdnými řádky s tečkami (standardní IG trik, aby nebyly hned vidět)
+- **FB** — delší, vyprávěcí, jako by Lucie psala kamarádce; žádné hashtagy; konkrétní jména psů/lidí; zakončit odkazem na plný článek
+- **Tón:** Lucie je chovatelka, ne marketér — texty mají znít lidsky, hrdě ale ne pompézně. Vyhnout se frázím typu „jsme nadšeni oznámit".
+- **Výsledky výstav/zkoušek** zmínit konkrétně (jméno, třída, ocenění) — to je pro publikum nejzajímavější.
+- Pokud článek obsahuje citace/perex, můžeš z nich vyjít, ale nekopíruj 1:1 celý web text — sociální sítě chtějí jiný rytmus.
+
+**Výběr fotek:** Projdi fotky stažené v kroku 1, navrhni pořadí. První fotka je klíčová (IG cover + FB preview). Preferuj: detail psa v akci > skupinová > prostředí/pozadí.
+
+**Po vygenerování markdownu připomeň Lucii:**
+```bash
+python3 social/prepare_social.py social/{YYYY-MM-DD}-{slug}.md --copy ig
+```
+Skript resizne fotky (1080×1350 pro IG, 1200×630 + plné rozlišení pro FB) do `social/{YYYY-MM-DD}-{slug}/` a zkopíruje zvolený caption do schránky. Podrobnosti v `social/README.md`.
+
 ## Důležité
 - Canonical URL je vždy `https://rosenawaurum.cz/aktuality/{slug}.html`
 - Cesty z `aktuality/` podsložky: `../images/`, `../styles.css`, `../script.js`

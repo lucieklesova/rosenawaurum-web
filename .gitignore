@@ -1,4 +1,7 @@
 .vercel
 .env*.local
 docs
+social/*
+!social/prepare_social.py
+!social/README.md
 
