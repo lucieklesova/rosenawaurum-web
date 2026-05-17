@@ -3626,6 +3626,7 @@ textarea:focus-visible {
   .section-hero {
     min-height: 50vh;
     background-position: left center;
+    background-size: auto 100%;
   }
 
   .hero-overlay {
@@ -3721,7 +3722,8 @@ textarea:focus-visible {
 
   .section-hero {
     min-height: 38vh;
-    background-size: cover;
+    background-position: left center;
+    background-size: auto 100%;
   }
 
   .hero-overlay {
