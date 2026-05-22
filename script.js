@@ -59,7 +59,8 @@ const translations = {
     aboutGoal:
       'Naším cílem je odchovávat vyrovnané, zdravé a společenské psy, kteří se budou cítit stejně dobře na výstavním kruhu, při práci v poli i uprostřed rodinného obýváku.',
     aboutClubs:
-      'Rosenaw Aurum je registrovaná chovatelská stanice <a href="https://www.fci.be/" target="_blank" rel="noopener noreferrer">FCI</a>, členem <a href="https://www.kchls.cz/" target="_blank" rel="noopener noreferrer">Klubu chovatelů loveckých slídičů (KCHLS)</a> a <a href="https://www.retriever-klub.cz/" target="_blank" rel="noopener noreferrer">Retriever Klubu CZ</a>.',
+      'Rosenaw Aurum je mezinárodně chráněná chovatelská stanice <a href="https://www.fci.be/" target="_blank" rel="noopener noreferrer">FCI</a>, registrovaná pod číslem <strong>204/26</strong>. Jsme členem <a href="https://www.kchls.cz/" target="_blank" rel="noopener noreferrer">Klubu chovatelů loveckých slídičů (KCHLS)</a> a <a href="https://www.retriever-klub.cz/" target="_blank" rel="noopener noreferrer">Retriever Klubu CZ</a>.',
+    aboutCertificateLabel: "Uznání chovatelské stanice FCI · Reg. č. 204/26",
 
     girlsTitle: "Naše feny",
     girlsIntro:
@@ -143,7 +144,7 @@ const translations = {
     newsExcerpt0: "Alma absolvovala svůj první Working Test v Šilheřovicích. Třída E, mezinárodní rozhodčí a spousta nových zkušeností z lesa.",
     newsMonth1: "Bře",
     newsTitle1: "Alma poprvé v otevřené třídě – Provodovice",
-    newsExcerpt1: "Alma nastoupila poprvé do otevřené třídy a hned V1, vítěz třídy, oblastní vítěz a 3. místo ve skupině FCI 8!",
+    newsExcerpt1: "Alma nastoupila poprvé do otevřené třídy a hned V1, vítěz třídy, oblastní vítěz a 3. místo ve skupině FCI VIII!",
     newsMonth2: "Čvc",
     newsTitle2: "Alminka s maminkou na výstavě v Bordovicích",
     newsExcerpt2: "Na oblastní klubové výstavě Hubertka 2025 se naposledy ve třídě mladých předvedla naše Alma. Hodnocení V2 a krásný posudek.",
@@ -281,7 +282,7 @@ const translations = {
     newsListMonth5: "Kvě",
     newsListMonth6: "Úno",
     newsListMonth7: "Led",
-    newsListExcerpt1: "Alma nastoupila poprvé do otevřené třídy a hned V1, vítěz třídy, oblastní vítěz a 3. místo ve skupině FCI 8!",
+    newsListExcerpt1: "Alma nastoupila poprvé do otevřené třídy a hned V1, vítěz třídy, oblastní vítěz a 3. místo ve skupině FCI VIII!",
     newsListExcerpt2: "Na oblastní klubové výstavě Hubertka 2025 se naposledy ve třídě mladých předvedla naše Alma. Hodnocení V2 a krásný posudek.",
     newsListExcerpt3: "Na zkoušce vrozených vloh retrivrů v Ústí u Hranic Alminka zvládla všech šest disciplín na plný počet bodů.",
     newsListExcerpt4: "Kompletní genetické testy na dědičná onemocnění. Alminka je zdravý pejsek – většina výsledků N/N.",
@@ -291,7 +292,10 @@ const translations = {
 
     docsTitle: "Dokumenty",
     docsIntro:
-      'Zde najdete kompletní zdravotní dokumentaci naší fenky <strong>Almy Bohemica Aurum</strong>. Transparentnost výsledků je pro nás samozřejmostí – chceme, aby si každý zájemce o štěně mohl vše ověřit.',
+      'Zde najdete dokumenty k chovatelské stanici <strong>Rosenaw Aurum</strong> a kompletní zdravotní dokumentaci naší fenky <strong>Almy Bohemica Aurum</strong>. Transparentnost je pro nás samozřejmostí – chceme, aby si každý zájemce o štěně mohl vše ověřit.',
+    docsKennelTitle: "Chovatelská stanice",
+    docsKennelMeta: "Uznání mezinárodně chráněné chovatelské stanice FCI, vystaveno 15. 5. 2026",
+    docsKennelCertificate: '<strong>Rosenaw Aurum</strong> – Reg. číslo 204/26',
     docsPedigreeTitle: "Rodokmen",
     docsPedigree: '<strong>Průkaz původu FCI</strong> – Alma Bohemica Aurum, ČLP/GR/25733',
     docsXrayTitle: "RTG vyšetření",
@@ -433,6 +437,7 @@ const translations = {
     footerAboutTitle: "O stanici",
     footerAboutText:
       "Rosenaw Aurum \u2014 rodinn\u00e1 chovatelsk\u00e1 stanice zlat\u00fdch retr\u00edvr\u016f v Beskydech. Chov\u00e1me s l\u00e1skou, p\u00e9\u010d\u00ed a respektem k plemeni.",
+    footerFciBadge: "FCI chráněný název · Reg. č. 204/26",
     footerRights: "V\u0161echna pr\u00e1va vyhrazena.",
     thankYouTitle: "Děkujeme za Vaši zprávu!",
     thankYouText: "Těší nás Váš zájem o chovatelskou stanici Rosenaw Aurum. Vaši zprávu jsme přijali a co nejdříve se Vám ozveme.",
@@ -567,7 +572,8 @@ const translations = {
     aboutGoal:
       'Our goal is to breed well-balanced, healthy and social dogs that feel equally comfortable in the show ring, in the field and in the middle of a family living room.',
     aboutClubs:
-      'Rosenaw Aurum is a registered kennel of <a href="https://www.fci.be/" target="_blank" rel="noopener noreferrer">FCI</a>, member of <a href="https://www.kchls.cz/" target="_blank" rel="noopener noreferrer">KCHLS</a> and the <a href="https://www.retriever-klub.cz/" target="_blank" rel="noopener noreferrer">Retriever Klub CZ</a>.',
+      'Rosenaw Aurum is an internationally protected <a href="https://www.fci.be/" target="_blank" rel="noopener noreferrer">FCI</a> kennel, registered under number <strong>204/26</strong>. We are members of <a href="https://www.kchls.cz/" target="_blank" rel="noopener noreferrer">KCHLS</a> and the <a href="https://www.retriever-klub.cz/" target="_blank" rel="noopener noreferrer">Retriever Klub CZ</a>.',
+    aboutCertificateLabel: "FCI kennel certificate · Reg. no. 204/26",
 
     girlsTitle: "Our girls",
     girlsIntro:
@@ -653,7 +659,7 @@ const translations = {
     newsExcerpt0: "Alma completed her first Working Test in Šilheřovice. Class E, international judges and lots of new experience from the forest.",
     newsMonth1: "Mar",
     newsTitle1: "Alma's first open class – Provodovice show",
-    newsExcerpt1: "Alma entered the open class for the first time and won V1, class winner, regional winner and 3rd place in FCI group 8!",
+    newsExcerpt1: "Alma entered the open class for the first time and won V1, class winner, regional winner and 3rd place in FCI group VIII!",
     newsMonth2: "Jul",
     newsTitle2: "Alma and mum at the Bordovice show",
     newsExcerpt2: "At the regional club show Hubertka 2025, Alma competed in the junior class for the last time. Rating V2 with an excellent critique.",
@@ -791,7 +797,7 @@ const translations = {
     newsListMonth5: "May",
     newsListMonth6: "Feb",
     newsListMonth7: "Jan",
-    newsListExcerpt1: "Alma entered the open class for the first time and won V1, class winner, regional winner and 3rd place in FCI group 8!",
+    newsListExcerpt1: "Alma entered the open class for the first time and won V1, class winner, regional winner and 3rd place in FCI group VIII!",
     newsListExcerpt2: "At the regional club show Hubertka 2025, Alma competed in the junior class for the last time. Rating V2 with an excellent critique.",
     newsListExcerpt3: "At the natural retrieving ability test in \u00dast\u00ed u Hranic, Alma passed all six disciplines with a perfect score.",
     newsListExcerpt4: "Full genetic screening for hereditary diseases. Alma is a healthy girl \u2013 most results N/N (clear).",
@@ -801,7 +807,10 @@ const translations = {
 
     docsTitle: "Documents",
     docsIntro:
-      'Here you will find the complete health documentation of our female <strong>Alma Bohemica Aurum</strong>. Transparency is a given for us – we want every potential puppy owner to be able to verify everything.',
+      'Here you will find documents for the <strong>Rosenaw Aurum</strong> kennel and the complete health documentation of our female <strong>Alma Bohemica Aurum</strong>. Transparency is a given for us – we want every potential puppy owner to be able to verify everything.',
+    docsKennelTitle: "Kennel",
+    docsKennelMeta: "Certificate of an internationally protected FCI kennel, issued on 15 May 2026",
+    docsKennelCertificate: '<strong>Rosenaw Aurum</strong> – Reg. no. 204/26',
     docsPedigreeTitle: "Pedigree",
     docsPedigree: '<strong>FCI Certified Pedigree</strong> – Alma Bohemica Aurum, ČLP/GR/25733',
     docsXrayTitle: "X-ray examinations",
@@ -943,6 +952,7 @@ const translations = {
     footerAboutTitle: "About us",
     footerAboutText:
       "Rosenaw Aurum — Golden Retriever breeding kennel in the Beskydy Mountains, Czech Republic. We breed with love, care and respect for the breed.",
+    footerFciBadge: "FCI protected kennel name · Reg. no. 204/26",
     footerRights: "All rights reserved.",
     thankYouTitle: "Thank you for your message!",
     thankYouText: "We appreciate your interest in Rosenaw Aurum. We have received your message and will get back to you as soon as possible.",
@@ -1067,7 +1077,8 @@ const translations = {
     aboutIntro3: "Nach seinem Abschied kam <strong>Alma</strong>. Unsere Traumhündin, die uns weiterbrachte – nicht nur zur Zucht, sondern auch zu einem tieferen Verständnis dessen, was ein Golden Retriever sein kann.",
     aboutPhilosophy: "Wir stehen erst am Anfang unserer Züchterreise. Wir lernen, sammeln Erfahrungen und möchten diesen Weg ehrlich gehen – mit Respekt vor den Hunden und der Rasse.",
     aboutGoal: "Unser Ziel ist es, ausgeglichene, gesunde und soziale Hunde zu züchten, die sich im Ausstellungsring, auf der Jagd und mitten im Familienwohnzimmer gleichermaßen wohlfühlen.",
-    aboutClubs: "Rosenaw Aurum ist eine registrierte Zucht von <a href=\"https://www.fci.be/\" target=\"_blank\" rel=\"noopener noreferrer\">FCI</a>, Mitglied im <a href=\"https://www.kchls.cz/\" target=\"_blank\" rel=\"noopener noreferrer\">KCHLS</a> und im <a href=\"https://www.retriever-klub.cz/\" target=\"_blank\" rel=\"noopener noreferrer\">Retriever Klub CZ</a>.",
+    aboutClubs: "Rosenaw Aurum ist eine international geschützte <a href=\"https://www.fci.be/\" target=\"_blank\" rel=\"noopener noreferrer\">FCI</a>-Zucht, registriert unter der Nummer <strong>204/26</strong>. Wir sind Mitglied im <a href=\"https://www.kchls.cz/\" target=\"_blank\" rel=\"noopener noreferrer\">KCHLS</a> und im <a href=\"https://www.retriever-klub.cz/\" target=\"_blank\" rel=\"noopener noreferrer\">Retriever Klub CZ</a>.",
+    aboutCertificateLabel: "FCI-Zuchtstättenzertifikat · Reg.-Nr. 204/26",
     girlsTitle: "Unsere Hündinnen",
     girlsIntro: "Hier finden Sie nach und nach alle unsere Golden Girls – von jungen Hoffnungsträgerinnen bis zu erfahrenen Zuchthündinnen und Senioren.",
     almaBasic: "geb. 27. 1. 2024 • Golden Retriever, Hündin • ČLP/GR/25733",
@@ -1139,7 +1150,7 @@ const translations = {
     newsExcerpt0: "Alma absolvierte ihren ersten Working Test in Šilheřovice. Klasse E, internationale Richter und viele neue Erfahrungen aus dem Wald.",
     newsMonth1: "Mär",
     newsTitle1: "Almas erster Auftritt in der offenen Klasse – Provodovice",
-    newsExcerpt1: "Alma trat erstmals in die offene Klasse ein und gewann sofort V1, Klassensiegerin, Regionalssiegerin und 3. Platz in FCI-Gruppe 8!",
+    newsExcerpt1: "Alma trat erstmals in die offene Klasse ein und gewann sofort V1, Klassensiegerin, Regionalssiegerin und 3. Platz in FCI-Gruppe VIII!",
     newsMonth2: "Jul",
     newsTitle2: "Alma mit Mama auf der Ausstellung in Bordovice",
     newsExcerpt2: "Bei der regionalen Klubaustellung Hubertka 2025 trat Alma zum letzten Mal in der Jugendklasse an. Bewertung V2 mit schönem Richterbericht.",
@@ -1177,7 +1188,7 @@ const translations = {
     artBordoviceThanksList: "<strong>Amálka Vacková</strong> für die großartige Basis unserer jungen Dame und geduldigen Züchter-Support rund um die Uhr;<strong>Nataliia Romashko</strong> für professionelles Grooming – die Pfötchen sind perfekt",
     artBordoviceP6: "Wir freuen uns auf weitere Veranstaltungen, bei denen sie zeigen kann, was in ihr steckt!",
     artProvodoviceP1: "Diesmal fuhren wir zur Ausstellung nach Provodovice – und es wurde ein Tag, den wir so schnell nicht vergessen werden. <strong>Alma trat zum allerersten Mal in der offenen Klasse an!</strong>",
-    artProvodoviceResult: "<strong>Alma Bohemica Aurum</strong><br><em>(Brandon de Ria Vela × Lollipop Dorado Blanco)</em><br>Offene Klasse • <strong>V1 – Vorzüglich 1</strong> • Klassensiegerin • Regionalssiegerin<br>Qualifikation für die Endrunden → <strong>3. Platz in FCI-Gruppe 8</strong>",
+    artProvodoviceResult: "<strong>Alma Bohemica Aurum</strong><br><em>(Brandon de Ria Vela × Lollipop Dorado Blanco)</em><br>Offene Klasse • <strong>V1 – Vorzüglich 1</strong> • Klassensiegerin • Regionalssiegerin<br>Qualifikation für die Endrunden → <strong>3. Platz in FCI-Gruppe VIII</strong>",
     artProvodoviceP2: "<strong>Richterbericht:</strong>",
     artProvodoviceQuote: "„Richtige Größe, schöner Kopf, Scherengebiss, längerer fester Rücken, korrekte Brust, korrekte Winkelungen und schöne Präsentation.“",
     artProvodoviceP3: "Leider hatten wir mit dem Wetter kein Glück – <strong>es war den ganzen Tag kalt</strong>. Trotzdem herrschte eine großartige Stimmung und Alma lief absolut fantastisch.",
@@ -1249,7 +1260,7 @@ const translations = {
     newsListMonth5: "Mai",
     newsListMonth6: "Feb",
     newsListMonth7: "Jan",
-    newsListExcerpt1: "Alma trat erstmals in die offene Klasse ein und gewann V1, Klassensiegerin, Regionalssiegerin und 3. Platz in FCI-Gruppe 8!",
+    newsListExcerpt1: "Alma trat erstmals in die offene Klasse ein und gewann V1, Klassensiegerin, Regionalssiegerin und 3. Platz in FCI-Gruppe VIII!",
     newsListExcerpt2: "Bei der regionalen Klubaustellung Hubertka 2025 trat Alma zum letzten Mal in der Jugendklasse an. Bewertung V2 mit schönem Richterbericht.",
     newsListExcerpt3: "Bei der Prüfung der angeborenen Begabung zum Apportieren in Ústí u Hranic bestand Alma alle sechs Disziplinen mit voller Punktzahl.",
     newsListExcerpt4: "Vollständiges genetisches Screening auf Erbkrankheiten. Alma ist ein gesundes Mädchen – die meisten Ergebnisse N/N (frei).",
@@ -1257,7 +1268,10 @@ const translations = {
     newsListExcerpt6: "Am Internationalen Golden-Retriever-Tag gingen wir zum Röntgen. Ergebnisse: Hüfte B/B, Ellbogen 0/0, OCD 0/0, SA & LTV frei.",
     newsListExcerpt7: "Kuchen, Geschenke und eine kleine Party mit Freunden. Alles Gute zum 1. Geburtstag, liebe Alma!",
     docsTitle: "Dokumente",
-    docsIntro: "Hier finden Sie die vollständige Gesundheitsdokumentation unserer Hündin <strong>Alma Bohemica Aurum</strong>. Transparenz ist für uns selbstverständlich – jeder potenzielle Welpenkäufer soll alles nachprüfen können.",
+    docsIntro: "Hier finden Sie Dokumente zur Zuchtstätte <strong>Rosenaw Aurum</strong> und die vollständige Gesundheitsdokumentation unserer Hündin <strong>Alma Bohemica Aurum</strong>. Transparenz ist für uns selbstverständlich – jeder potenzielle Welpenkäufer soll alles nachprüfen können.",
+    docsKennelTitle: "Zuchtstätte",
+    docsKennelMeta: "Anerkennung einer international geschützten FCI-Zuchtstätte, ausgestellt am 15. 5. 2026",
+    docsKennelCertificate: "<strong>Rosenaw Aurum</strong> – Reg.-Nr. 204/26",
     docsPedigreeTitle: "Ahnentafel",
     docsPedigree: "<strong>FCI-zertifizierte Ahnentafel</strong> – Alma Bohemica Aurum, ČLP/GR/25733",
     docsXrayTitle: "Röntgenuntersuchungen",
@@ -1400,6 +1414,7 @@ const translations = {
     footerContactTitle: "Kontakt",
     footerAboutTitle: "Über uns",
     footerAboutText: "Rosenaw Aurum — Golden-Retriever-Zucht in den Beskiden, Tschechien. Wir züchten mit Liebe, Sorgfalt und Respekt vor der Rasse.",
+    footerFciBadge: "FCI-geschützter Zuchtstättenname · Reg.-Nr. 204/26",
     footerRights: "Alle Rechte vorbehalten.",
     thankYouTitle: "Vielen Dank für Ihre Nachricht!",
     thankYouText: "Wir freuen uns über Ihr Interesse an Rosenaw Aurum. Wir haben Ihre Nachricht erhalten und melden uns so schnell wie möglich.",
@@ -2542,4 +2557,3 @@ document.addEventListener("DOMContentLoaded", () => {
   setupShareButtons();
   setupPregnancyCalculator();
 });
-

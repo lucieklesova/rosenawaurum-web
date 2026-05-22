@@ -160,7 +160,7 @@ const DE = {
   newsMonth1: "Mär",
   newsTitle1: "Almas erster Auftritt in der offenen Klasse – Provodovice",
   newsExcerpt1:
-    "Alma trat erstmals in die offene Klasse ein und gewann sofort V1, Klassensiegerin, Regionalssiegerin und 3. Platz in FCI-Gruppe 8!",
+    "Alma trat erstmals in die offene Klasse ein und gewann sofort V1, Klassensiegerin, Regionalssiegerin und 3. Platz in FCI-Gruppe VIII!",
   newsMonth2: "Jul",
   newsTitle2: "Alma mit Mama auf der Ausstellung in Bordovice",
   newsExcerpt2:

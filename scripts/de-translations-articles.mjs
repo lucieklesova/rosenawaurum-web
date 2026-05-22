@@ -157,7 +157,7 @@ export default {
   newsListMonth6: "Feb",
   newsListMonth7: "Jan",
   newsListExcerpt1:
-    "Alma trat erstmals in die offene Klasse ein und gewann V1, Klassensiegerin, Regionalssiegerin und 3. Platz in FCI-Gruppe 8!",
+    "Alma trat erstmals in die offene Klasse ein und gewann V1, Klassensiegerin, Regionalssiegerin und 3. Platz in FCI-Gruppe VIII!",
   newsListExcerpt2:
     "Bei der regionalen Klubaustellung Hubertka 2025 trat Alma zum letzten Mal in der Jugendklasse an. Bewertung V2 mit schönem Richterbericht.",
   newsListExcerpt3:
