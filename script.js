@@ -2396,7 +2396,7 @@ function setupPregnancyCalculator() {
       }
     });
 
-    toggleBtn.onclick = function() {
+    toggleBtn.addEventListener("click", function() {
       pastExpanded = !pastExpanded;
       toggleBtn.classList.toggle("is-expanded", pastExpanded);
       var dict = translations[document.documentElement.lang] || translations.cs;
@@ -2413,7 +2413,7 @@ function setupPregnancyCalculator() {
           }
         }
       });
-    };
+    });
   }
 
   // --- Date formatting helper ---
