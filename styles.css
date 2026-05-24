@@ -196,6 +196,7 @@ button:focus:not(:focus-visible) {
   margin-left: 1.2rem;
   line-height: 1.15;
   white-space: nowrap;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-title-main {
@@ -256,6 +257,7 @@ button:focus:not(:focus-visible) {
 
 .site-header.is-scrolled .logo-title {
   display: flex;
+  transform: translateY(15px);
 }
 
 .site-header.is-scrolled {
@@ -3684,6 +3686,7 @@ textarea:focus-visible {
 
   .logo-title {
     display: flex;
+    transform: none;
   }
 
   /* Disable scroll effects on mobile — header stays the same */
