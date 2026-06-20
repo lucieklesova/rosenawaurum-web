@@ -4,6 +4,12 @@
       "source": "/pruvodce-brezosti.html",
       "destination": "/kalkulacka-brezosti-feny.html",
       "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "www.rosenawaurum.cz" }],
+      "destination": "https://rosenawaurum.cz/$1",
+      "permanent": true
     }
   ],
   "headers": [
