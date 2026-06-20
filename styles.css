@@ -3853,19 +3853,19 @@ textarea:focus-visible {
   }
 
   .hero-text h1 {
-    font-size: clamp(1.85rem, 7vw, 2.28rem);
+    font-size: clamp(1.6rem, 6vw, 2rem);
     line-height: 1.22;
-    margin-bottom: 1rem;
-    max-width: 13.5ch;
+    margin-bottom: 0.75rem;
+    max-width: none;
     text-wrap: wrap;
   }
 
   .hero-subtitle,
   .hero-subtitle-wrap {
     font-size: 0.84rem;
-    line-height: 1.62;
-    margin-bottom: 1.1rem;
-    max-width: 32ch;
+    line-height: 1.55;
+    margin-bottom: 0.9rem;
+    max-width: none;
     overflow-wrap: break-word;
   }
 
