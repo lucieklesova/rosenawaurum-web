@@ -1,5 +1,7 @@
 .vercel
 .env*.local
+.DS_Store
+**/.DS_Store
 docs
 social/*
 !social/prepare_social.py
