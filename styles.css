@@ -3694,6 +3694,10 @@ textarea:focus-visible {
     margin-top: 0;
   }
 
+  .site-header.is-scrolled .logo-title {
+    transform: none;
+  }
+
   .site-header.is-scrolled .logo-img.logo-full {
     height: 55px;
     opacity: 0;
@@ -3818,8 +3822,8 @@ textarea:focus-visible {
 
   .section-hero {
     min-height: 0;
-    padding-bottom: 240px;
-    background-position: center bottom;
+    padding-top: 240px;
+    background-position: center top;
     background-size: 110% auto;
     background-color: #fff;
   }
