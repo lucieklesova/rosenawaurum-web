@@ -1964,11 +1964,8 @@ function setupActiveNavigation() {
 
     link.classList.add("active");
 
-    const dropdownTrigger = link.closest(".nav-dropdown-trigger");
-    if (dropdownTrigger) {
-      const dropdown = dropdownTrigger.closest(".nav-dropdown");
-      if (dropdown) dropdown.classList.add("is-active");
-    }
+    const dropdown = link.closest(".nav-dropdown");
+    if (dropdown) dropdown.classList.add("is-active");
   });
 }
 
