@@ -7,6 +7,7 @@ const translations = {
     navAbout: "O nás",
     navGirls: "Naše feny",
     navPuppies: "Štěňata",
+    navFutureOwners: "Pro budoucí majitele",
     navGallery: "Galerie",
     navNews: "Aktuality",
     navDocs: "Dokumenty",
@@ -523,6 +524,7 @@ const translations = {
     navAbout: "About",
     navGirls: "Our Girls",
     navPuppies: "Puppies",
+    navFutureOwners: "For future owners",
     navGallery: "Gallery",
     navNews: "News",
     navDocs: "Documents",
@@ -1041,6 +1043,7 @@ const translations = {
     navAbout: "Über uns",
     navGirls: "Unsere Hündinnen",
     navPuppies: "Welpen",
+    navFutureOwners: "Für zukünftige Besitzer",
     navGallery: "Galerie",
     navNews: "Aktuelles",
     navDocs: "Dokumente",
@@ -1543,6 +1546,11 @@ function setLanguage(lang) {
 const PAGE_LOCALES = [
   { cs: "index.html", en: "en/index.html", de: "de/index.html" },
   { cs: "o-plemeni.html", en: "en/about-breed.html", de: "de/about-breed.html" },
+  {
+    cs: "pro-budouci-majitele.html",
+    en: "en/future-owners.html",
+    de: "de/zukuenftige-besitzer.html",
+  },
   { cs: "faq.html", en: "en/faq.html", de: "de/faq.html" },
   {
     cs: "kalkulacka-brezosti-feny.html",

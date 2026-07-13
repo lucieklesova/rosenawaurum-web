@@ -133,6 +133,36 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rosenawaurum.cz/o-plemeni.html" />
   </url>
   <url>
+    <loc>https://rosenawaurum.cz/pro-budouci-majitele.html</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://rosenawaurum.cz/pro-budouci-majitele.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://rosenawaurum.cz/en/future-owners.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://rosenawaurum.cz/de/zukuenftige-besitzer.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rosenawaurum.cz/pro-budouci-majitele.html" />
+  </url>
+  <url>
+    <loc>https://rosenawaurum.cz/en/future-owners.html</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://rosenawaurum.cz/pro-budouci-majitele.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://rosenawaurum.cz/en/future-owners.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://rosenawaurum.cz/de/zukuenftige-besitzer.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rosenawaurum.cz/pro-budouci-majitele.html" />
+  </url>
+  <url>
+    <loc>https://rosenawaurum.cz/de/zukuenftige-besitzer.html</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://rosenawaurum.cz/pro-budouci-majitele.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://rosenawaurum.cz/en/future-owners.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://rosenawaurum.cz/de/zukuenftige-besitzer.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rosenawaurum.cz/pro-budouci-majitele.html" />
+  </url>
+  <url>
     <loc>https://rosenawaurum.cz/aktuality/silherovice.html</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>yearly</changefreq>
