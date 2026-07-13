@@ -8,6 +8,7 @@ const translations = {
     navGirls: "Naše feny",
     navPuppies: "Štěňata",
     navFutureOwners: "Pro budoucí majitele",
+    navPuppiesMenuExpand: "Rozbalit podmenu Štěňata",
     navGallery: "Galerie",
     navNews: "Aktuality",
     navDocs: "Dokumenty",
@@ -525,6 +526,7 @@ const translations = {
     navGirls: "Our Girls",
     navPuppies: "Puppies",
     navFutureOwners: "For future owners",
+    navPuppiesMenuExpand: "Expand Puppies submenu",
     navGallery: "Gallery",
     navNews: "News",
     navDocs: "Documents",
@@ -1044,6 +1046,7 @@ const translations = {
     navGirls: "Unsere Hündinnen",
     navPuppies: "Welpen",
     navFutureOwners: "Für zukünftige Besitzer",
+    navPuppiesMenuExpand: "Welpen-Untermenü öffnen",
     navGallery: "Galerie",
     navNews: "Aktuelles",
     navDocs: "Dokumente",
@@ -1529,6 +1532,12 @@ function setLanguage(lang) {
     }
   });
 
+  document.querySelectorAll("[data-i18n-aria-label]").forEach((el) => {
+    const key = el.getAttribute("data-i18n-aria-label");
+    const value = dict[key];
+    if (value) el.setAttribute("aria-label", value);
+  });
+
   // Přepnout atribut lang na html
   document.documentElement.lang = lang === "en" || lang === "de" ? lang : "cs";
 
@@ -1888,6 +1897,47 @@ function setupStepper() {
 
         scrollActivated = total;
       });
+    });
+  });
+}
+
+function setupNavDropdown() {
+  const dropdowns = document.querySelectorAll(".main-nav .nav-dropdown");
+  if (!dropdowns.length) return;
+
+  dropdowns.forEach((dropdown) => {
+    const toggle = dropdown.querySelector(".nav-dropdown-toggle");
+    if (!toggle) return;
+
+    toggle.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const isOpen = dropdown.classList.toggle("is-open");
+      toggle.setAttribute("aria-expanded", String(isOpen));
+
+      dropdowns.forEach((other) => {
+        if (other === dropdown) return;
+        other.classList.remove("is-open");
+        const otherToggle = other.querySelector(".nav-dropdown-toggle");
+        if (otherToggle) otherToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+  });
+
+  document.addEventListener("click", (e) => {
+    if (e.target.closest(".main-nav .nav-dropdown")) return;
+    dropdowns.forEach((dropdown) => {
+      dropdown.classList.remove("is-open");
+      const toggle = dropdown.querySelector(".nav-dropdown-toggle");
+      if (toggle) toggle.setAttribute("aria-expanded", "false");
+    });
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key !== "Escape") return;
+    dropdowns.forEach((dropdown) => {
+      dropdown.classList.remove("is-open");
+      const toggle = dropdown.querySelector(".nav-dropdown-toggle");
+      if (toggle) toggle.setAttribute("aria-expanded", "false");
     });
   });
 }
@@ -2568,6 +2618,7 @@ document.addEventListener("DOMContentLoaded", () => {
   setupLightbox();
   setupStepper();
   setupHamburger();
+  setupNavDropdown();
   setupScrollAnimations();
   setupCookieBanner();
   setupStickyHeader();

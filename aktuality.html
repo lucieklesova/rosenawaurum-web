@@ -38,7 +38,7 @@
     <meta name="twitter:description" content="Novinky z chovatelské stanice zlatých retrívrů Rosenaw Aurum – výstavy, zkoušky, štěňata a život v Beskydech." />
     <meta name="twitter:image" content="https://rosenawaurum.cz/images/dogs/alma-portrait.webp" />
 
-    <link rel="stylesheet" href="styles.css?v=86" />
+    <link rel="stylesheet" href="styles.css?v=87" />
   </head>
   <body>
     <a href="#main-content" class="skip-link">Přejít na obsah</a>
@@ -54,10 +54,14 @@
           <a href="index.html#about" data-i18n="navAbout">O nás</a>
           <a href="index.html#girls" data-i18n="navGirls">Naše feny</a>
           <div class="nav-dropdown">
-            <span class="nav-dropdown-toggle"><span data-i18n="navPuppies">Štěňata</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
-            <div class="nav-dropdown-menu">
+            <div class="nav-dropdown-trigger">
               <a href="index.html#puppies" data-i18n="navPuppies">Štěňata</a>
-              <a href="pro-budouci-majitele.html" data-i18n="navFutureOwners">Pro budoucí majitele</a>
+              <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true" data-i18n-aria-label="navPuppiesMenuExpand" aria-label="Rozbalit podmenu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+            </div>
+            <div class="nav-dropdown-menu" role="menu">
+              <a href="pro-budouci-majitele.html" role="menuitem" data-i18n="navFutureOwners">Pro budoucí majitele</a>
             </div>
           </div>
           <a href="index.html#gallery" data-i18n="navGallery">Galerie</a>

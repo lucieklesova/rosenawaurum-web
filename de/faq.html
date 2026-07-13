@@ -42,7 +42,7 @@
     <meta name="twitter:description" content="Answers to the most common questions about Golden Retrievers and the Rosenaw Aurum kennel." />
     <meta name="twitter:image" content="https://rosenawaurum.cz/images/dogs/alma-portrait.webp" />
 
-    <link rel="stylesheet" href="../styles.css?v=86" />
+    <link rel="stylesheet" href="../styles.css?v=87" />
 
     <!-- Structured Data: FAQPage + Breadcrumb -->
     <script type="application/ld+json">
@@ -183,10 +183,14 @@
           <a href="index.html#about" data-i18n="navAbout">Über uns</a>
           <a href="index.html#girls" data-i18n="navGirls">Unsere Hündinnen</a>
           <div class="nav-dropdown">
-            <span class="nav-dropdown-toggle"><span data-i18n="navPuppies">Welpen</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
-            <div class="nav-dropdown-menu">
+            <div class="nav-dropdown-trigger">
               <a href="index.html#puppies" data-i18n="navPuppies">Welpen</a>
-              <a href="zukuenftige-besitzer.html" data-i18n="navFutureOwners">Für zukünftige Besitzer</a>
+              <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true" data-i18n-aria-label="navPuppiesMenuExpand" aria-label="Rozbalit podmenu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+            </div>
+            <div class="nav-dropdown-menu" role="menu">
+              <a href="zukuenftige-besitzer.html" role="menuitem" data-i18n="navFutureOwners">Für zukünftige Besitzer</a>
             </div>
           </div>
           <a href="index.html#gallery" data-i18n="navGallery">Galerie</a>
@@ -230,13 +234,8 @@
         <a href="index.html#home" data-i18n="navHome">Home</a>
         <a href="index.html#about" data-i18n="navAbout">About</a>
         <a href="index.html#girls" data-i18n="navGirls">Our Girls</a>
-        <div class="nav-dropdown">
-            <span class="nav-dropdown-toggle"><span data-i18n="navPuppies">Welpen</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
-            <div class="nav-dropdown-menu">
-              <a href="index.html#puppies" data-i18n="navPuppies">Welpen</a>
-              <a href="zukuenftige-besitzer.html" data-i18n="navFutureOwners">Für zukünftige Besitzer</a>
-            </div>
-          </div>
+        <a href="index.html#puppies" data-i18n="navPuppies">Welpen</a>
+        <a href="zukuenftige-besitzer.html" class="mobile-subnav" data-i18n="navFutureOwners">Für zukünftige Besitzer</a>
         <a href="index.html#gallery" data-i18n="navGallery">Gallery</a>
         <a href="../aktuality.html" data-i18n="navNews">News</a>
         <a href="index.html#contact" data-i18n="navContact">Contact</a>

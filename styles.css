@@ -274,15 +274,13 @@ button:focus:not(:focus-visible) {
   font-weight: 400;
 }
 
-.main-nav a,
-.nav-dropdown-toggle {
+.main-nav a {
   position: relative;
   padding-bottom: 0.2rem;
   color: var(--color-text-nav);
 }
 
-.main-nav a::after,
-.nav-dropdown-toggle::after {
+.main-nav a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -293,9 +291,7 @@ button:focus:not(:focus-visible) {
   transition: width 0.2s ease;
 }
 
-.main-nav a:hover::after,
-.nav-dropdown:hover .nav-dropdown-toggle::after,
-.nav-dropdown:focus-within .nav-dropdown-toggle::after {
+.main-nav a:hover::after {
   width: 100%;
 }
 
@@ -303,11 +299,54 @@ button:focus:not(:focus-visible) {
   position: relative;
 }
 
+.nav-dropdown-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.05rem;
+}
+
+.nav-dropdown-trigger > a {
+  position: relative;
+  padding-bottom: 0.2rem;
+  color: var(--color-text-nav);
+}
+
+.nav-dropdown-trigger > a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-gold);
+  transition: width 0.2s ease;
+}
+
+.nav-dropdown:hover .nav-dropdown-trigger > a::after,
+.nav-dropdown.is-open .nav-dropdown-trigger > a::after,
+.nav-dropdown:focus-within .nav-dropdown-trigger > a::after {
+  width: 100%;
+}
+
 .nav-dropdown-toggle {
   display: inline-flex;
   align-items: center;
-  gap: 0.25rem;
-  cursor: default;
+  justify-content: center;
+  padding: 0.2rem;
+  margin: 0;
+  border: none;
+  background: transparent;
+  color: var(--color-text-nav);
+  cursor: pointer;
+  border-radius: 4px;
+  line-height: 1;
+}
+
+.nav-dropdown-toggle:hover,
+.nav-dropdown-toggle:focus-visible {
+  color: var(--color-gold-dark);
+  background: rgba(196, 168, 130, 0.14);
+  outline: none;
 }
 
 .nav-dropdown-toggle svg {
@@ -317,6 +356,7 @@ button:focus:not(:focus-visible) {
 }
 
 .nav-dropdown:hover .nav-dropdown-toggle svg,
+.nav-dropdown.is-open .nav-dropdown-toggle svg,
 .nav-dropdown:focus-within .nav-dropdown-toggle svg {
   transform: rotate(180deg);
 }
@@ -357,6 +397,7 @@ button:focus:not(:focus-visible) {
 }
 
 .nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown.is-open .nav-dropdown-menu,
 .nav-dropdown:focus-within .nav-dropdown-menu {
   opacity: 1;
   pointer-events: auto;
