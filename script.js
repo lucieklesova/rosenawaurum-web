@@ -113,7 +113,7 @@ const translations = {
       "Novým majitelům rádi poradíme s péčí, výchovou i výcvikem. Naše štěňata od nás neodcházejí s prázdnou – odvážejí si kus našeho srdce a my s nimi zůstáváme v kontaktu po celý jejich život.",
     puppiesPackTitle: "Co si štěně od nás odváží",
     puppiesPackList:
-      "kupní smlouva a průkaz původu FCI; očkovací průkaz / pet pas s platným očkováním a odčervením; startovací balíček krmiva a oblíbenou hračku; podrobné informace k péči v prvních týdnech a měsících",
+      "kupní smlouva a průkaz původu FCI vystavený ČMKU; očkovací průkaz / pet pas s platným očkováním a odčervením; krmení na první týdny, základní výbava, oblíbená hračka a malé překvapení; podrobné informace k péči v prvních týdnech a měsících",
     puppiesPlannedLabel: "Očekáváme",
     puppiesPlannedDate: "Jaro / léto 2027",
     puppiesPlannedText:
@@ -629,9 +629,9 @@ const translations = {
       "Our puppies are raised in a family environment. Step by step they are introduced to different sounds, surfaces, people and situations – from quiet evenings on the sofa to exploring the garden and taking short car rides.",
     puppiesApproachText2:
       "We are happy to support new owners with advice on care, upbringing and training. Our puppies do not leave us empty‑handed – they take a piece of our hearts with them and we like to stay in touch throughout their lives.",
-    puppiesPackTitle: "What your puppy leaves with",
+    puppiesPackTitle: "What your puppy takes home",
     puppiesPackList:
-      "purchase contract and FCI pedigree; vaccination card / pet passport; starter pack of food and a favourite toy; detailed written information for the first weeks and months",
+      "purchase contract and FCI pedigree issued by ČMKU; vaccination booklet / pet passport with valid vaccinations and deworming; food for the first few weeks, basic supplies, a favourite toy and a small surprise; detailed information on care during the first weeks and months",
     puppiesStatusTitle: "Planned litter",
     puppiesStatusPill: "Spring/Summer 2027",
     puppiesPlannedLabel: "Expecting",
@@ -1133,7 +1133,7 @@ const translations = {
     puppiesApproachText1: "Unsere Welpen werden in familiärer Umgebung aufgezogen. Schritt für Schritt lernen sie verschiedene Geräusche, Untergründe, Menschen und Situationen kennen – von ruhigen Abenden auf dem Sofa bis zu Gartenerkundungen und kurzen Autofahrten.",
     puppiesApproachText2: "Neuen Besitzern beraten wir gerne bei Pflege, Erziehung und Training. Unsere Welpen verlassen uns nicht mit leeren Pfoten – sie nehmen ein Stück unseres Herzens mit, und wir bleiben ihr ganzes Leben lang in Kontakt.",
     puppiesPackTitle: "Was Ihr Welpe von uns mitbekommt",
-    puppiesPackList: "Kaufvertrag und FCI-Abstammungsnachweis; Impfpass / Heimtierausweis mit gültiger Impfung und Entwurmung; Starterpaket Futter und Lieblingsspielzeug; ausführliche Informationen zur Pflege in den ersten Wochen und Monaten",
+    puppiesPackList: "Kaufvertrag und von der ČMKU ausgestellte FCI-Ahnentafel; Impfpass / Heimtierausweis mit gültiger Impfung und Entwurmung; Futter für die ersten Wochen, Grundausstattung, Lieblingsspielzeug und eine kleine Überraschung; ausführliche Informationen zur Pflege in den ersten Wochen und Monaten",
     puppiesStatusTitle: "Geplanter Wurf",
     puppiesStatusPill: "Frühjahr/Sommer 2027",
     puppiesPlannedLabel: "Erwarten",
