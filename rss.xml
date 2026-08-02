@@ -7,12 +7,20 @@
     <description>Novinky z chovatelské stanice zlatých retrívrů Rosenaw Aurum – výstavy, zkoušky, zdravotní testy a život s golden retrieverem v Beskydech.</description>
     <language>cs</language>
     <copyright>Rosenaw Aurum</copyright>
-    <lastBuildDate>Fri, 17 Apr 2026 20:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 01 Aug 2026 20:00:00 +0200</lastBuildDate>
     <image>
       <url>https://rosenawaurum.cz/images/dogs/alma-portrait.webp</url>
       <title>Rosenaw Aurum</title>
       <link>https://rosenawaurum.cz/</link>
     </image>
+
+    <item>
+      <title>Výstavní víkend ve Splitu – Alma 3× V4</title>
+      <link>https://rosenawaurum.cz/aktuality/split-vystavy.html</link>
+      <guid isPermaLink="true">https://rosenawaurum.cz/aktuality/split-vystavy.html</guid>
+      <pubDate>Sat, 01 Aug 2026 09:00:00 +0200</pubDate>
+      <description>Alma Bohemica Aurum na 4 Night Dog Shows ve Splitu – 3× V4 v otevřené třídě. První zkušenost s BOJ u Essie z chovatelské stanice Beskyd Hill.</description>
+    </item>
 
     <item>
       <title>Náš první Working Test – Šilheřovice 2026</title>

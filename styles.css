@@ -1834,6 +1834,11 @@ button:focus:not(:focus-visible) {
   box-shadow: var(--shadow-card-hover);
 }
 
+.planned-litter--wide {
+  margin-bottom: 2.5rem;
+  padding: clamp(1.8rem, 4vw, 2.8rem);
+}
+
 .planned-litter-label {
   font-family: var(--font-body);
   font-size: 0.75rem;
@@ -1871,6 +1876,125 @@ button:focus:not(:focus-visible) {
 
 .planned-litter .btn {
   margin-top: 0.25rem;
+}
+
+.planned-litter-details {
+  width: 100%;
+  margin-top: 0.65rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(196, 168, 130, 0.36);
+  text-align: left;
+}
+
+.planned-litter--wide .planned-litter-details {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr);
+  gap: clamp(1.4rem, 4vw, 3.5rem);
+  max-width: 1040px;
+  padding-top: 1.4rem;
+}
+
+.planned-litter--wide .planned-litter-desc {
+  max-width: 600px;
+}
+
+.planned-litter-details h4 {
+  margin: 0 0 0.45rem;
+  color: var(--color-dark);
+  font-size: 1.2rem;
+}
+
+.planned-litter-details > p {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: 0.88rem;
+  line-height: 1.65;
+}
+
+.planned-litter-sire {
+  margin-top: 0.8rem !important;
+  padding-left: 0.75rem;
+  border-left: 2px solid var(--color-gold);
+}
+
+.planned-litter-timeline {
+  margin-top: 1rem;
+  padding: 0.9rem;
+  border-radius: 0.7rem;
+  background: var(--color-gold-light);
+}
+
+.planned-litter-timeline > p {
+  margin: 0 0 0.65rem;
+  color: var(--color-gold-dark);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.planned-litter-timeline ol {
+  display: grid;
+  gap: 0.65rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.planned-litter-timeline li {
+  position: relative;
+  padding-left: 1rem;
+}
+
+.planned-litter-timeline li::before {
+  position: absolute;
+  top: 0.44rem;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--color-gold-dark);
+  content: "";
+}
+
+.planned-litter-timeline strong,
+.planned-litter-timeline span {
+  display: block;
+}
+
+.planned-litter-timeline strong {
+  color: var(--color-dark);
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.planned-litter-timeline span,
+.planned-litter-timeline small {
+  color: var(--color-text-secondary);
+  font-size: 0.76rem;
+  line-height: 1.45;
+}
+
+.planned-litter-timeline small {
+  display: block;
+  margin-top: 0.75rem;
+  padding-top: 0.65rem;
+  border-top: 1px solid rgba(196, 168, 130, 0.36);
+  text-align: center;
+}
+
+.planned-litter-phone {
+  color: var(--color-gold-dark);
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.planned-litter-phone:hover {
+  color: var(--color-dark);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 /* ---------------------------------------------
@@ -2157,12 +2281,13 @@ button:focus:not(:focus-visible) {
 }
 
 /* ---------------------------------------------
-   BLOG GRID (aktuality.html masonry)
+   BLOG GRID (aktuality.html chronologicky po řádcích)
 --------------------------------------------- */
 
 .blog-grid {
-  columns: 3;
-  column-gap: 1.8rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.8rem;
 }
 
 .blog-grid--3 {
@@ -2172,11 +2297,32 @@ button:focus:not(:focus-visible) {
   gap: 1.8rem;
 }
 
+.news-year-section + .news-year-section {
+  margin-top: 3.5rem;
+}
+
+.news-year-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 0 1.8rem;
+  color: var(--color-dark);
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.news-year-title::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--color-gold);
+  opacity: 0.65;
+}
+
 .blog-card {
-  display: inline-block;
+  display: block;
   width: 100%;
-  break-inside: avoid;
-  margin-bottom: 1.8rem;
   text-decoration: none;
   color: inherit;
   text-align: center;
@@ -3956,6 +4102,9 @@ textarea:focus-visible {
     grid-template-columns: minmax(0, 1fr);
   }
 
+  .planned-litter--wide .planned-litter-details {
+    grid-template-columns: minmax(0, 1fr);
+  }
 
   .gallery-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -3972,7 +4121,7 @@ textarea:focus-visible {
   }
 
   .blog-grid {
-    columns: 2;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .preg-extras {
@@ -4120,7 +4269,7 @@ textarea:focus-visible {
   }
 
   .blog-grid {
-    columns: 1;
+    grid-template-columns: 1fr;
   }
 
   .blog-article {
