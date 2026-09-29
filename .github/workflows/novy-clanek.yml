@@ -1,0 +1,110 @@
+# Nový článek z GitHub issue → pull request s náhledem na Vercelu.
+# Spouští se, když má issue štítek "publikovat" (šablona "Nový článek" ho přidá sama).
+name: Nový článek z issue
+
+on:
+  issues:
+    types: [labeled]
+
+concurrency:
+  group: clanek-issue-${{ github.event.issue.number }}
+  cancel-in-progress: true
+
+jobs:
+  clanek:
+    if: github.event.label.name == 'publikovat' && github.event.sender.login == github.repository_owner
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+      id-token: write
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      ISSUE: ${{ github.event.issue.number }}
+      BRANCH: clanek/issue-${{ github.event.issue.number }}
+    steps:
+      - name: Potvrzení v issue
+        run: |
+          gh issue comment "$ISSUE" --repo "$GITHUB_REPOSITORY" \
+            --body "🐕 Pouštím se do článku. Za pár minut sem dám odkaz na pull request s náhledem. ([průběh](${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}))"
+
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Nástroje (Pillow, HEIC, BeautifulSoup)
+        run: pip install pillow pillow-heif beautifulsoup4
+
+      - name: Stažení textu a fotek z issue
+        run: python3 .github/scripts/stahni_fotky.py "$GITHUB_REPOSITORY" "$ISSUE"
+
+      - name: Claude připraví článek
+        uses: anthropics/claude-code-action@v1
+        with:
+          # Stačí jeden z nich: token z předplatného (claude setup-token) NEBO API klíč.
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          claude_args: |
+            --max-turns 120
+            --allowedTools "Read,Write,Edit,MultiEdit,Glob,Grep,Bash"
+          prompt: |
+            Jsi v repozitáři webu chovatelské stanice Rosenaw Aurum (statické HTML, CZ/EN/DE).
+            Vytvoř nový článek podle skillu `.claude/skills/novy-clanek/SKILL.md`,
+            konkrétně podle sekce „Režim GitHub Issue (automatický)“. Přečti si celý skill i CLAUDE.md.
+
+            Podklady od Lucie jsou v `_incoming/`:
+            - `_incoming/issue.md` – nadpis, datum, kategorie, text, výsledky, poznámky (formulář issue #${{ github.event.issue.number }})
+            - `_incoming/manifest.json` + `_incoming/fotky/*.webp` – fotky (už převedené), náhledy v `_incoming/nahled/*.jpg`
+
+            Nikoho se na nic neptej – nikdo ti neodpoví. Chybějící údaje doplň rozumně a napiš je do `_incoming/pr.md`.
+            Necommituj, nepushuj a nevytvářej PR – to udělá další krok workflow.
+            Dnešní datum zjistíš příkazem `date +%F`.
+
+      - name: Commit a pull request
+        run: |
+          if [ ! -s _incoming/pr.md ]; then
+            echo "::error::Claude nevytvořil _incoming/pr.md – článek pravděpodobně není hotový."; exit 1
+          fi
+          git config user.name "claude[bot]"
+          git config user.email "claude[bot]@users.noreply.github.com"
+          git checkout -B "$BRANCH"
+          git add -A -- . ':!_incoming'
+          if git diff --cached --quiet; then
+            echo "::error::Žádné změny k uložení."; exit 1
+          fi
+          TITLE=$(head -n1 _incoming/pr.md | sed 's/^#\+ *//')
+          git commit -m "$TITLE" -m "Z issue #$ISSUE"
+          git push -f origin "$BRANCH"
+
+          { tail -n +2 _incoming/pr.md; echo; echo "Closes #$ISSUE"; } > /tmp/pr-body.md
+          if gh pr view "$BRANCH" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh pr edit "$BRANCH" --repo "$GITHUB_REPOSITORY" --title "$TITLE" --body-file /tmp/pr-body.md
+          else
+            gh pr create --repo "$GITHUB_REPOSITORY" --base "${{ github.event.repository.default_branch }}" \
+              --head "$BRANCH" --title "$TITLE" --body-file /tmp/pr-body.md
+          fi
+          PR_URL=$(gh pr view "$BRANCH" --repo "$GITHUB_REPOSITORY" --json url -q .url)
+
+          {
+            echo "✅ Článek je připravený: $PR_URL"
+            echo
+            echo "Náhled od Vercelu se objeví v PR během minuty. Když je vše OK → **Merge**. Úpravy napiš do komentáře v PR a začni ho \`@claude\`."
+          } > /tmp/issue-comment.md
+          gh issue comment "$ISSUE" --repo "$GITHUB_REPOSITORY" --body-file /tmp/issue-comment.md
+
+          if [ -s _incoming/social.md ]; then
+            gh pr comment "$BRANCH" --repo "$GITHUB_REPOSITORY" --body-file _incoming/social.md
+          fi
+
+      - name: Oznámení chyby
+        if: failure()
+        run: |
+          gh issue comment "$ISSUE" --repo "$GITHUB_REPOSITORY" \
+            --body "⚠️ Článek se nepodařilo připravit. Detaily: ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID} – můžeš zkusit odebrat a znovu přidat štítek \`publikovat\`."

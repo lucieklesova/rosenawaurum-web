@@ -1,0 +1,58 @@
+name: 📰 Nový článek
+description: Připrav článek z mobilu – Claude z něj udělá stránku na webu a pošle ti ho ke schválení.
+title: "Článek: "
+labels: ["publikovat"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Vyplň, co máš. Po odeslání Claude do cca 10 minut připraví pull request s náhledem od Vercelu.
+        Na web se článek dostane **až když PR sloučíš** (Merge).
+  - type: input
+    id: nadpis
+    attributes:
+      label: Nadpis
+      placeholder: "Alma na výstavě v Brně – V1, CAC"
+    validations:
+      required: true
+  - type: input
+    id: datum
+    attributes:
+      label: Datum akce
+      description: Když necháš prázdné, použije se dnešek.
+      placeholder: "12. 10. 2026"
+  - type: dropdown
+    id: kategorie
+    attributes:
+      label: Kategorie
+      options:
+        - Výstavy
+        - Zkoušky
+        - Zdraví
+        - Ze života
+        - Štěňata
+    validations:
+      required: true
+  - type: textarea
+    id: text
+    attributes:
+      label: Text článku
+      description: Piš klidně volně po odstavcích. Text zůstane tvůj – Claude ho jen naformátuje a přeloží do EN a DE.
+    validations:
+      required: true
+  - type: textarea
+    id: vysledky
+    attributes:
+      label: Výsledky (nepovinné)
+      description: U výstav a zkoušek – pes, třída, ocenění, rozhodčí…
+      placeholder: "Alma Bohemica Aurum – otevřená třída – V1, CAC, BOB"
+  - type: textarea
+    id: fotky
+    attributes:
+      label: Fotky
+      description: Vlož fotky sem (ikona sponky / přetažení). První fotka bude titulní. Pod fotku můžeš napsat krátký popis.
+  - type: textarea
+    id: poznamky
+    attributes:
+      label: Poznámka pro Clauda (nepovinné)
+      description: Např. „nepřidávej do výsledků v profilu Almy“, „titulní fotka je až ta třetí“, „přidej odkaz na …“
