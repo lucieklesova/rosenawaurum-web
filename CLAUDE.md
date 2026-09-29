@@ -41,6 +41,10 @@ Images are in `images/`. The hero section background is set via CSS (`styles.css
 - **New news item**: Add an `<article class="news-item">` to the `.news-list`
 - **New litter**: Update the puppies aside card and archive section in `#puppies`
 
+## Články z mobilu
+
+Nové články mohou vznikat automaticky z GitHub issue – viz `.github/NAVOD-CLANKY.md` a sekci „Režim GitHub Issue“ ve skillu `novy-clanek`.
+
 ## Language
 
 The site content and comments are in Czech. The codebase owner (Lucie) communicates in Czech.
