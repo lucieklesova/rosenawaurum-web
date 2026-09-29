@@ -291,6 +291,21 @@ const translations = {
     splitRelatedCanisMeta: "19. 4. 2026 · Zkoušky",
     splitRelatedCanisTitle: "Alminka složila zkoušky z canisterapie",
 
+    // Návštěva školy 2026
+    artSkolaCat: "Ze života",
+    artSkolaTitle: "Alminka na návštěvě ve škole",
+    artSkolaP1: "Na konci června se byla Alminka ukázat ve škole. Postupně jsme prošly několik tříd a dětem představily svět zlatých retrívrů.",
+    artSkolaP2: "Povídali jsme si o tom, proč a k jakému účelu byli retrívři vyšlechtěni. Děti se dozvěděly, že retrívr není jen krásný, chlupatý pejsek na gauč, ale především lovecký pes, který byl vyšlechtěn k aportování ulovené zvěře a má spoustu energie, chuť pracovat a radost ze spolupráce s člověkem.",
+    artSkolaP3: "A protože o retrívrech se nejlépe vypráví přímo s retrívrem po boku, ukázaly jsme dětem také něco málo z našeho výcviku. Alminka předvedla práci s aportovacími dummy a děti tak mohly vidět, že za jejími šikovnými kousky stojí nejen vrozené vlohy, ale také trénink, trpělivost a vzájemná důvěra.",
+    artSkolaP4: "A jak návštěva dopadla? Nakonec si Alminka našla svou nejoblíbenější činnost – natáhla se na zem a nechala se ze všech stran hladit. Protože ačkoliv je to pracovitá lovecká fenka, mazlení a pozornost svých lidských kamarádů má úplně stejně ráda.",
+    artSkolaP5: "Děkujeme za krásné přijetí a milé setkání. Byl to den plný dětské radosti, nových poznatků a chlupaté pohody, na který budeme s Alminkou moc rády vzpomínat.",
+    newsMonthSkola: "Čvn",
+    newsTitleSkola: "Alminka na návštěvě ve škole",
+    newsExcerptSkola: "Alminka se na konci června byla ukázat ve škole. Dětem jsme povídaly o retrívrech, ukázaly práci s dummy – a nakonec přišlo mazlení.",
+    newsListMonthSkola: "Čvn",
+    newsListExcerptSkola: "Alminka se na konci června byla ukázat ve škole. Dětem jsme povídaly o retrívrech, ukázaly práci s dummy – a nakonec přišlo tolik vytoužené mazlení.",
+    skolaRelatedSplitMeta: "1. 8. 2026 · Výstavy",
+
     // Canisterapie Klimkovice 2026
     artCanisterapieCat: "Zkoušky",
     artCanisterapieTitle: "Alminka složila zkoušky z canisterapie",
@@ -851,6 +866,21 @@ const translations = {
     splitRelatedCanisMeta: "19 Apr 2026 · Trials",
     splitRelatedCanisTitle: "Alma passed her canis therapy exam",
 
+    // Návštěva školy 2026
+    artSkolaCat: "Everyday life",
+    artSkolaTitle: "Alma visits a school",
+    artSkolaP1: "At the end of June, Alma went to show herself off at a school. We visited several classes one after another and introduced the children to the world of Golden Retrievers.",
+    artSkolaP2: "We talked about why and for what purpose retrievers were bred. The children learned that a retriever is not just a beautiful, fluffy dog for the sofa, but above all a hunting dog, bred to retrieve shot game, with plenty of energy, a desire to work and joy in cooperating with people.",
+    artSkolaP3: "And because retrievers are best talked about with a retriever right by your side, we also showed the children a little of our training. Alma demonstrated work with retrieving dummies, so the children could see that behind her clever tricks there is not only natural talent, but also training, patience and mutual trust.",
+    artSkolaP4: "And how did the visit go? In the end Alma found her favourite activity – she stretched out on the floor and let herself be petted from all sides. Because although she is a hard-working hunting girl, she loves cuddles and the attention of her human friends just as much.",
+    artSkolaP5: "Thank you for the warm welcome and the lovely meeting. It was a day full of children’s joy, new knowledge and fluffy calm, which Alma and I will be very happy to remember.",
+    newsMonthSkola: "Jun",
+    newsTitleSkola: "Alma visits a school",
+    newsExcerptSkola: "At the end of June Alma visited a school. We told the children about retrievers, showed some dummy work – and then came the cuddles.",
+    newsListMonthSkola: "Jun",
+    newsListExcerptSkola: "At the end of June Alma visited a school. We told the children about retrievers, showed some dummy work – and then came the long-awaited cuddles.",
+    skolaRelatedSplitMeta: "1 Aug 2026 · Shows",
+
     // Canis therapy Klimkovice 2026
     artCanisterapieCat: "Trials",
     artCanisterapieTitle: "Alma passed her canis therapy exam",
@@ -1293,6 +1323,21 @@ const translations = {
     splitRelatedProvodoviceTitle: "Almas erster Auftritt in der offenen Klasse – Provodovice",
     splitRelatedCanisMeta: "19. 4. 2026 · Prüfungen",
     splitRelatedCanisTitle: "Alma bestand die Canistherapie-Prüfung",
+
+    // Návštěva školy 2026
+    artSkolaCat: "Aus dem Leben",
+    artSkolaTitle: "Alma zu Besuch in der Schule",
+    artSkolaP1: "Ende Juni besuchte Alma eine Schule. Nacheinander besuchten wir mehrere Klassen und stellten den Kindern die Welt der Golden Retriever vor.",
+    artSkolaP2: "Wir sprachen darüber, warum und zu welchem Zweck Retriever gezüchtet wurden. Die Kinder erfuhren, dass ein Retriever nicht nur ein hübscher, flauschiger Hund für das Sofa ist, sondern vor allem ein Jagdhund, der zum Apportieren erlegten Wilds gezüchtet wurde und viel Energie, Arbeitslust und Freude an der Zusammenarbeit mit dem Menschen hat.",
+    artSkolaP3: "Und weil man über Retriever am besten mit einem Retriever an der Seite erzählt, zeigten wir den Kindern auch ein wenig von unserem Training. Alma führte die Arbeit mit Apportier-Dummys vor, und die Kinder konnten sehen, dass hinter ihren geschickten Kunststücken nicht nur angeborenes Talent steht, sondern auch Training, Geduld und gegenseitiges Vertrauen.",
+    artSkolaP4: "Und wie ging der Besuch aus? Am Ende fand Alma ihre liebste Beschäftigung – sie streckte sich auf dem Boden aus und ließ sich von allen Seiten streicheln. Denn obwohl sie eine arbeitsfreudige Jagdhündin ist, mag sie Kuscheln und die Aufmerksamkeit ihrer menschlichen Freunde genauso gern.",
+    artSkolaP5: "Vielen Dank für den herzlichen Empfang und die schöne Begegnung. Es war ein Tag voller Kinderfreude, neuer Erkenntnisse und flauschiger Gelassenheit, an den Alma und ich uns sehr gern erinnern werden.",
+    newsMonthSkola: "Jun",
+    newsTitleSkola: "Alma zu Besuch in der Schule",
+    newsExcerptSkola: "Ende Juni besuchte Alma eine Schule. Wir erzählten den Kindern von Retrievern, zeigten Dummy-Arbeit – und am Ende gab es Streicheleinheiten.",
+    newsListMonthSkola: "Jun",
+    newsListExcerptSkola: "Ende Juni besuchte Alma eine Schule. Wir erzählten den Kindern von Retrievern, zeigten Dummy-Arbeit – und am Ende gab es die heiß ersehnten Streicheleinheiten.",
+    skolaRelatedSplitMeta: "1. 8. 2026 · Ausstellungen",
 
     artSilheroviceCat: "Arbeitsprüfungen",
     artSilheroviceTitle: "Unser erster Working Test – Šilheřovice 2026",
