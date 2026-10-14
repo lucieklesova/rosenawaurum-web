@@ -39,8 +39,8 @@ const translations = {
     heroCtaPuppies: "Aktuální / plánovaný vrh",
 
     litterInvitationEyebrow: "Plánovaný vrh Alminky",
-    litterInvitationTitle: "Nezávazná čekací listina je otevřená",
-    litterInvitationText: "Pokud vás Alminka oslovila, budeme rádi, když se nám ozvete už teď. Napište pár vět o sobě, o svém domově a o tom, jaký společný život si se štěnětem představujete. Rádi vás poznáme osobně – klidně se u nás ve Viganticích zastavte.",
+    litterInvitationTitle: "Čekací listina pro vážné zájemce",
+    litterInvitationText: "Hledáme především vážné zájemce, kteří mají dobře promyšlené, co obnáší život se zlatým retrívrem, a chtějí mu nabídnout milující domov na celý život. Rádi poznáme rodiny, které budou chtít se svým psem společně žít, učit se a trávit čas – ať už při běžných aktivitách, loveckém výcviku, sportu, na výstavách nebo třeba při práci.\n\nPředchozí zkušenosti ani konkrétní výcvikové cíle nejsou podmínkou. Důležitá je chuť se psovi věnovat, rozvíjet jeho přirozené vlohy a zůstat s námi v kontaktu i po odchodu do nového domova. Čekací listina je nezávazná a nepředstavuje rezervaci štěněte; o umístění budeme rozhodovat s ohledem na povahu a potřeby štěňátek i jednotlivých rodin. Pokud cítíte, že by Alma a její budoucí štěňátka mohli být součástí vašeho života, napište nám pár slov o sobě a svých představách. Rádi vás poznáme osobně, třeba při návštěvě u nás ve Viganticích.",
     litterInvitationSire: "<strong>Krycího psa už máme vybraného.</strong> Zatím ho veřejně nepředstavujeme, ale zájemcům o štěně o plánovaném spojení rádi řekneme víc.",
     litterInvitationCta: "Napsat nám pár slov",
     litterInvitationPhone: "Nebo nám zavolejte",
