@@ -272,7 +272,7 @@ const translations = {
 
     // Lidečko podzimní zkoušky 2026
     artLideckoCat: 'Zkoušky',
-    artLideckoTitle: 'Alminka úspěšně složila podzimní zkoušky v&nbsp;Lidečku',
+    artLideckoTitle: 'Alminka úspěšně složila podzimní zkoušky v MS Lidečku',
     artLideckoP1: 'Někdy člověk vyrazí na zkoušky s&nbsp;cílem získat nové zkušenosti, a&nbsp;nakonec si odveze mnohem víc, než původně čekal. Přesně takové byly naše podzimní zkoušky v&nbsp;MS Lidečko, pořádané pod záštitou OMS Vsetín. Pro Alminku to byla další důležitá zkušenost na její cestě za loveckými dovednostmi – a&nbsp;pro mě den plný nervozity, pokory a&nbsp;radosti.',
     artLideckoResult: '<strong>Alma Bohemica Aurum</strong><br><em>(Brandon de Ria Vela × Lollipop Dorado Blanco)</em><br>Podzimní zkoušky • MS Lidečko (OMS Vsetín)<br><strong>III. cena</strong>',
     artLideckoP2: 'Na podzimní zkoušky jsme se přihlásily doslova na poslední chvíli. Byla to totiž pravděpodobně naše jediná příležitost, jak letos tuto loveckou zkoušku absolvovat.',
@@ -292,7 +292,7 @@ const translations = {
     artLideckoP16: '<strong>Děkujeme pořadatelům, rozhodčím a&nbsp;všem, kteří se na přípravě a&nbsp;průběhu zkoušek podíleli. A&nbsp;Alminko? Jedeme dál. Ještě máme na čem pracovat.</strong> ❤️',
     artLideckoH2: 'Další krok na naší společné cestě',
     newsMonthLidecko: 'Říj',
-    newsTitleLidecko: 'Alminka úspěšně složila podzimní zkoušky v&nbsp;Lidečku',
+    newsTitleLidecko: 'Alminka úspěšně složila podzimní zkoušky v MS Lidečku',
     newsExcerptLidecko: 'Alminka složila podzimní zkoušky v&nbsp;MS Lidečko ve III. ceně. Nervy, pokora, první zkušenost se skutečnou zvěří – a&nbsp;jasný plán, na čem dál pracovat.',
     newsListMonthLidecko: 'Říj',
     newsListExcerptLidecko: 'Alminka složila podzimní zkoušky v&nbsp;MS Lidečko ve III. ceně. Nervy, pokora, první zkušenost se skutečnou zvěří – a&nbsp;jasný plán, na čem dál pracovat.',
