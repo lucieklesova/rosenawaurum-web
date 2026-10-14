@@ -7,12 +7,20 @@
     <description>Novinky z chovatelské stanice zlatých retrívrů Rosenaw Aurum – výstavy, zkoušky, zdravotní testy a život s golden retrieverem v Beskydech.</description>
     <language>cs</language>
     <copyright>Rosenaw Aurum</copyright>
-    <lastBuildDate>Tue, 29 Sep 2026 12:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 12:00:00 +0200</lastBuildDate>
     <image>
       <url>https://rosenawaurum.cz/images/dogs/alma-portrait.webp</url>
       <title>Rosenaw Aurum</title>
       <link>https://rosenawaurum.cz/</link>
     </image>
+
+    <item>
+      <title>Alminka úspěšně složila podzimní zkoušky v MS Lidečku</title>
+      <link>https://rosenawaurum.cz/aktuality/lidecko-zkousky.html</link>
+      <guid isPermaLink="true">https://rosenawaurum.cz/aktuality/lidecko-zkousky.html</guid>
+      <pubDate>Sat, 10 Oct 2026 09:00:00 +0200</pubDate>
+      <description>Alminka složila podzimní zkoušky v MS Lidečko (OMS Vsetín) ve III. ceně. Nervy, pokora, první zkušenost se skutečnou zvěří – a jasný plán, na čem dál pracovat.</description>
+    </item>
 
     <item>
       <title>Výstavní víkend ve Splitu – Alma 3× V4</title>
