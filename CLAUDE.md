@@ -43,7 +43,7 @@ Images are in `images/`. The hero section background is set via CSS (`styles.css
 
 ## Články z mobilu
 
-Nové články mohou vznikat automaticky z GitHub issue – viz `.github/NAVOD-CLANKY.md` a sekci „Režim GitHub Issue“ ve skillu `novy-clanek`.
+Nové články mohou vznikat automaticky z GitHub issue (Claude nebo Codex) – viz `.github/NAVOD-CLANKY.md` a skill `novy-clanek`.
 
 ## Language
 
