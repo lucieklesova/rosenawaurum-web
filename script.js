@@ -295,9 +295,9 @@ const translations = {
     artLideckoH2: 'Další krok na naší společné cestě',
     newsMonthLidecko: 'Říj',
     newsTitleLidecko: 'Alminka úspěšně složila podzimní zkoušky v MS Lidečku',
-    newsExcerptLidecko: 'Alminka složila podzimní zkoušky v&nbsp;MS Lidečko ve III. ceně. Nervy, pokora, první zkušenost se skutečnou zvěří – a&nbsp;jasný plán, na čem dál pracovat.',
+    newsExcerptLidecko: 'Alminka složila podzimní zkoušky v MS Lidečko ve III. ceně. Nervy, pokora, první zkušenost se skutečnou zvěří – a jasný plán, na čem dál pracovat.',
     newsListMonthLidecko: 'Říj',
-    newsListExcerptLidecko: 'Alminka složila podzimní zkoušky v&nbsp;MS Lidečko ve III. ceně. Nervy, pokora, první zkušenost se skutečnou zvěří – a&nbsp;jasný plán, na čem dál pracovat.',
+    newsListExcerptLidecko: 'Alminka složila podzimní zkoušky v MS Lidečko ve III. ceně. Nervy, pokora, první zkušenost se skutečnou zvěří – a jasný plán, na čem dál pracovat.',
     lideckoRelatedSilMeta: '11. 4. 2026 · Zkoušky',
     almaTitlePzVal: 'III. cena (Lidečko 2026)',
 
