@@ -2014,6 +2014,9 @@ button:focus:not(:focus-visible) {
   text-underline-offset: 3px;
 }
 
+.planned-litter-old-list { display: none; }
+.planned-litter-reservation-link { margin-top: 0.25rem; }
+
 /* ---------------------------------------------
    GALERIE
 --------------------------------------------- */
