@@ -42,7 +42,7 @@ const translations = {
     litterInvitationTitle: "Čekací listina pro vážné zájemce",
     litterInvitationIntro: "Hledáme rodiny, které chtějí zlatého retrívra jako plnohodnotného člena domácnosti a počítají s péčí, výchovou a společným životem na mnoho let.",
     litterInvitationList: "štěně bude plnohodnotným členem rodiny;bude žít v každodenním kontaktu s lidmi, ne trvale v kotci nebo izolovaně na zahradě;budete mít čas na jeho výchovu, pohyb a smysluplné zaměstnání;počítáte s odpovědností a péčí na celý život psa;budete s námi rádi v kontaktu i po odchodu do nového domova.",
-    litterInvitationNote: "Zařazení na čekací listinu není závaznou rezervací konkrétního štěněte. O umístění budeme rozhodovat podle povahy štěňat a možností jednotlivých rodin.",
+    litterInvitationNote: "Zařazení na čekací listinu není závaznou rezervací konkrétního štěněte.",
     litterReservationLink: "Jak probíhá rezervace štěněte",
     litterInvitationSire: "<strong>Krycího psa už máme vybraného.</strong> Zatím ho veřejně nepředstavujeme, ale zájemcům o štěně o plánovaném spojení rádi řekneme víc.",
     litterInvitationCta: "Napsat nám pár slov",
