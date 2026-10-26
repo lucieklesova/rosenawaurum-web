@@ -4474,6 +4474,18 @@ textarea:focus-visible {
 }
 
 /* ---------------------------------------------
+   RESERVATION PAGE
+--------------------------------------------- */
+.reservation-steps { counter-reset: reservation-step; list-style: none; padding: 0; margin: 1.5rem 0 2rem; }
+.reservation-steps li { counter-increment: reservation-step; position: relative; margin: 0; padding: 1.15rem 0 1.15rem 3.45rem; border-top: 1px solid var(--color-border-light); }
+.reservation-steps li::before { content: counter(reservation-step, decimal-leading-zero); position: absolute; left: 0; top: 1.1rem; color: var(--color-gold-dark); font-family: var(--font-display); font-size: 1.1rem; font-weight: 600; }
+.reservation-steps li:last-child { border-bottom: 1px solid var(--color-border-light); }
+.reservation-steps strong { display: block; color: var(--color-dark); margin-bottom: 0.35rem; }
+.reservation-steps span { display: block; color: var(--color-text-secondary); line-height: 1.75; }
+.reservation-note { margin: 2rem 0; padding: 1.25rem 1.4rem; border-left: 3px solid var(--color-gold); background: var(--color-gold-light); color: var(--color-text-secondary); line-height: 1.75; }
+.reservation-note strong { color: var(--color-dark); }
+
+/* ---------------------------------------------
    TOOL SPOTLIGHT (Kalkulačka březosti)
 --------------------------------------------- */
 .section-tool-spotlight {
