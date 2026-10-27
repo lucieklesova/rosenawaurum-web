@@ -5,3 +5,4 @@ Uprav článek a související soubory podle toho komentáře.
 
 Drž se skillu `.claude/skills/novy-clanek/SKILL.md` a `CLAUDE.md`.
 Nikoho se neptej. Necommituj, nepushuj a nevytvářej PR – to udělá další krok workflow.
+- Po úpravách HTML nebo překladů spusť `python3 tools/build.py` (sjednotí hlavičku/patičku z `partials/`, verze CSS/JS a překlady v HTML).

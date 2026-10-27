@@ -1,22 +1,29 @@
-## Rosenaw Aurum – statický web chovatelské stanice
+# Rosenaw Aurum – web chovatelské stanice
 
-- Stránky jsou aktuálně řešené jako **jednostránkový, plně statický web** (`index.html` + `styles.css` + `script.js`).
-- Design je minimalistický, se dvěma jazykovými mutacemi **CZ / EN** pomocí jednoduchého přepínače v pravém horním rohu.
-- Obsah vychází z příběhu a údajů o Almě z webu [Alma My Golden Love](https://www.almamygoldenlove.cz/) a bude možné jej dále rozšiřovat o další feny, vrhy a novinky.
+Statický web chovatelské stanice zlatých retrívrů [rosenawaurum.cz](https://rosenawaurum.cz) v češtině, angličtině a němčině. Běží na Vercelu, bez frameworku. Nasazuje se přímo HTML z repozitáře (push do `main` = produkce, pull request = náhled).
 
-### Struktura sekcí (informační architektura)
+## Struktura
 
-- Home (hero, rychlé karty O nás / Naše feny / Štěňata)
-- O nás – příběh stanice, filozofie, informace o chovatelce
-- Naše feny – profil Almy jako vzor pro další fenky
-- Štěňata – přístup k odchovu, plánované vrhy, archiv vrhů
-- Galerie – tematická alba (naše feny, štěňata, výstavy, ze života)
-- Novinky & blog – krátké aktuality a příběhy
-- Dokumenty – přehled dokumentů (později odkazy na PDF)
-- Kontakt – kontaktní informace a formulář
+| Složka / soubor | Obsah |
+| --- | --- |
+| `*.html`, `aktuality/` | české stránky a články |
+| `en/`, `de/` | anglické a německé stránky |
+| `partials/` | společná hlavička, mobilní menu a patička (jediný zdroj) |
+| `assets/css/`, `assets/js/`, `assets/fonts/` | styly, skripty (`translations.js` = všechny překlady), písma |
+| `images/`, `documents/` | fotky, videa, PDF |
+| `tools/` | `build.py` (sestavení), `check_links.py` (kontrola odkazů) |
+| `social/` | podklady pro Instagram a Facebook (nenasazuje se) |
+| `.github/` | automatické články z GitHub issue + kontrola webu (CI) |
+| `vercel.json` | přesměrování, bezpečnostní a cache hlavičky |
 
-### Technický směr a další rozvoj
+## Práce s webem
 
-- V této fázi je web **bez build procesu** – stačí otevřít `index.html` v prohlížeči nebo jej nahrát na libovolný statický hosting.
-- Do budoucna je možné převést obsah na framework typu **Next.js** a napojit na jednoduchý headless CMS (např. Netlify CMS, Contentful), přičemž současná struktura sekcí a textů může sloužit jako podklad pro datový model.
+```bash
+python3 -m http.server 8000      # náhled na http://localhost:8000
+python3 tools/build.py           # po úpravě partials/, CSS, JS nebo překladů
+python3 tools/check_links.py     # kontrola odkazů
+```
 
+Hlavička a patička se upravují jen v `partials/`. Texty pro všechny jazyky jsou v `assets/js/translations.js`. `tools/build.py` je propíše do všech stránek a doplní verze CSS/JS. Kontrola na GitHubu (Kontrola webu) upozorní, když se na build zapomene.
+
+Nové články vznikají z mobilu přes GitHub issue, postup je v [.github/NAVOD-CLANKY.md](.github/NAVOD-CLANKY.md).

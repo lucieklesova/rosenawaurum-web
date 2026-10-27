@@ -28,9 +28,7 @@ Tento skill vytváří nový článek (aktualitu) na webu chovatelské stanice R
 Soubor: `aktuality/{slug}.html`
 
 Použij jako šablonu existující článek (např. `aktuality/provodovice.html`). Klíčové prvky:
-- Header s SVG logem (`../images/logo-rosenaw-aurum.webp` + `../images/logo-footer.webp`)
-- CSS verze: zkontroluj aktuální verzi v ostatních souborech (`styles.css?v=XX`)
-- Navigace s `class="active"` na odkazu Aktuality
+- Hlavičku, mobilní menu, patičku a odkazy na CSS/JS **neřeš ručně** – stačí je zkopírovat ze šablony, `python3 tools/build.py` je na konci sjednotí podle `partials/`
 - Obsah článku v `<article class="blog-article">`
 
 **Formátování obsahu článku** (v tomto pořadí):
@@ -39,7 +37,7 @@ Použij jako šablonu existující článek (např. `aktuality/provodovice.html`
 3. `<blockquote data-i18n="...">` — perex/intro citace (pokud blog má úvodní quote)
 4. `<div class="news-results"><p data-i18n="..." data-i18n-html>` — výsledky závodů/zkoušek (jméno psa, rodiče, třída, výsledek)
 5. Odstavce `<p data-i18n="..." data-i18n-html>` — tělo článku
-6. `<p data-i18n="...">Label:</p>` + `<ul class="list" data-i18n="..." data-i18n-html>` — pro výčty (takeaways, poděkování apod.) — v script.js položky oddělovat středníkem
+6. `<p data-i18n="...">Label:</p>` + `<ul class="list" data-i18n="..." data-i18n-html>` — pro výčty (takeaways, poděkování apod.) — v `assets/js/translations.js` položky oddělovat středníkem
 7. `<div class="blog-article-photos">` s GLightbox — fotogalerie
 8. Share tlačítka
 
@@ -88,7 +86,7 @@ Pokud článek nemá obrázek, vynech `<div class="blog-card-img">`.
 V sekci `#news` je `<div class="blog-grid blog-grid--3">` se 3 kartičkami. Vlož novou kartu na první místo a odstraň poslední (nejstarší), aby zůstaly vždy 3.
 
 ### 5. Aktualizuj sekci výstav (pokud relevantní)
-Pokud jde o výstavu nebo zkoušku, aktualizuj sekci "Výstavy a zkoušky" v profilu Almy na `index.html` (result-chips). Nezapomeň přidat překlad nového klíče do `script.js` (cs + en).
+Pokud jde o výstavu nebo zkoušku, aktualizuj sekci "Výstavy a zkoušky" v profilu Almy na `index.html` (result-chips). Nezapomeň přidat překlad nového klíče do `assets/js/translations.js` (cs + en + de).
 
 ### 6. Čísla článků v aktuality.html
 Aktualizuj komentáře s čísly článků (`<!-- 1. Název -->`, `<!-- 2. Název -->` atd.) aby šly po sobě.
@@ -152,7 +150,7 @@ Skript resizne fotky (1080×1350 pro IG, 1200×630 + plné rozlišení pro FB) d
 
 ## Důležité
 - Canonical URL je vždy `https://rosenawaurum.cz/aktuality/{slug}.html`
-- Cesty z `aktuality/` podsložky: `../images/`, `../styles.css`, `../script.js`
-- Cesty z root stránek: `images/`, `styles.css`, `script.js`
-- Footer a header musí být konzistentní s ostatními stránkami v `aktuality/`
+- Cesty z `aktuality/` podsložky: `../images/`; z root stránek: `images/`
+- Překlady (`data-i18n`) patří do `assets/js/translations.js` – klíče pro `cs`, `en` i `de`
+- **Na závěr vždy spusť `python3 tools/build.py`** (propíše hlavičku/patičku, verze CSS/JS a překlady do HTML) a zkontroluj, že `python3 tools/build.py --check` projde
 - Obrázky pojmenovat s prefixem slug: `{slug}-{puvodni-nazev}.jpeg`

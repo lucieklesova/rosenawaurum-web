@@ -58,6 +58,9 @@ jobs:
           safety-strategy: drop-sudo
           prompt-file: .github/codex/prompts/upravy.md
 
+      - name: Sestavení webu (partials, verze CSS/JS, překlady)
+        run: python3 tools/build.py
+
       - name: Commit a push
         run: |
           git config user.name "codex[bot]"

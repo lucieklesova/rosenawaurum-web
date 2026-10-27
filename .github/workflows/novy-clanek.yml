@@ -69,6 +69,9 @@ jobs:
             Necommituj, nepushuj a nevytvářej PR – to udělá další krok workflow.
             Dnešní datum zjistíš příkazem `date +%F`.
 
+      - name: Sestavení webu (partials, verze CSS/JS, překlady)
+        run: python3 tools/build.py
+
       - name: Commit a pull request
         run: |
           if [ ! -s _incoming/pr.md ]; then

@@ -51,6 +51,9 @@ jobs:
           safety-strategy: drop-sudo
           prompt-file: .github/codex/prompts/novy-clanek.md
 
+      - name: Sestavení webu (partials, verze CSS/JS, překlady)
+        run: python3 tools/build.py
+
       - name: Commit a pull request
         run: |
           if [ ! -s _incoming/pr.md ]; then

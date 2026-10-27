@@ -12,3 +12,4 @@ Pravidla:
 - Necommituj, nepushuj a nevytvářej PR – to udělá další krok workflow.
 - Fotky už jsou stažené; nestahuj je z internetu, pokud to není nutné.
 - Dnešní datum zjistíš příkazem `date +%F`.
+- Po úpravách HTML nebo překladů spusť `python3 tools/build.py` (sjednotí hlavičku/patičku z `partials/`, verze CSS/JS a překlady v HTML).
