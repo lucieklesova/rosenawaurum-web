@@ -42,13 +42,11 @@
 <link href="https://rosenawaurum.cz/rss.xml" rel="alternate" title="Rosenaw Aurum – News" type="application/rss+xml"/>
 <!-- Preload hero image (WebP) -->
 <link as="image" href="../images/hero/hero-background.webp" rel="preload" type="image/webp"/>
-<script>
-      (function(){var l=localStorage.getItem("lang");if(l&&l!=="cs"){document.documentElement.lang=l;document.documentElement.classList.add("i18n-loading")}})();
-    </script>
-<style>.i18n-loading body{opacity:0}.i18n-loaded body{opacity:1;transition:opacity .15s}</style>
-<!-- Google Fonts loaded dynamically based on cookie consent (see script.js) -->
-<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" integrity="sha384-GPAzSuZc0kFvdIev6wm9zg8gnafE8tLso7rsAYQfc9hAdWCpOcpcNI5W9lWkYcsd" rel="stylesheet"/>
-<link href="../styles.css?v=92" rel="stylesheet"/>
+<style>.i18n-loading body{opacity:0;animation:i18n-reveal 0s 2s forwards}.i18n-loaded body{opacity:1;transition:opacity .15s}@keyframes i18n-reveal{to{opacity:1}}</style>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/glightbox@3.3.1/dist/css/glightbox.min.css" integrity="sha384-GPAzSuZc0kFvdIev6wm9zg8gnafE8tLso7rsAYQfc9hAdWCpOcpcNI5W9lWkYcsd" rel="stylesheet"/>
+<link rel="preload" href="../fonts/raleway-latin.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="../fonts/playfair-display-latin.woff2" as="font" type="font/woff2" crossorigin />
+<link href="../styles.css?v=93" rel="stylesheet"/>
 <!-- Structured Data: LocalBusiness + WebSite -->
 <script type="application/ld+json">
     {
@@ -98,7 +96,7 @@
           "name": "Rosenaw Aurum",
           "alternateName": "Rosenaw Aurum – Golden Retriever kennel",
           "description": "Golden Retriever kennel in the Beskydy Mountains, Moravia",
-          "inLanguage": ["en", "cs"],
+          "inLanguage": ["cs", "en", "de"],
           "dateModified": "2026-04-17",
           "publisher": { "@id": "https://rosenawaurum.cz/en/index.html#business" }
         },
@@ -156,14 +154,14 @@
 <img alt="Rosenaw Aurum" class="logo-img logo-icon" height="55" src="../images/logo-footer.webp" width="55"/>
 <span class="logo-title"><span class="logo-title-main">Rosenaw</span><span class="logo-title-sub">Aurum</span></span>
 </a>
-<nav class="main-nav" id="main-nav" aria-label="Primary">
+<nav class="main-nav" id="main-nav" aria-label="Main navigation">
           <a href="#home" data-i18n="navHome">Home</a>
           <a href="#about" data-i18n="navAbout">About</a>
           <a href="#girls" data-i18n="navGirls">Our Girls</a>
           <div class="nav-dropdown">
             <div class="nav-dropdown-trigger">
               <a href="#puppies" data-i18n="navPuppies">Puppies</a>
-              <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true" data-i18n-aria-label="navPuppiesMenuExpand" aria-label="Rozbalit podmenu">
+              <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true" data-i18n-aria-label="navPuppiesMenuExpand" aria-label="Expand Puppies submenu">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
               </button>
             </div>
@@ -331,7 +329,7 @@
 <p data-i18n="aboutIntro3" data-i18n-html="">After he passed away, <strong>Alma</strong> came along. Our dream girl who took us further – not only towards breeding, but also towards a deeper understanding of everything a Golden Retriever can be.</p>
 <p data-i18n="aboutPhilosophy">We are just at the beginning of our breeding journey. We are learning, gaining experience and want to walk this path honestly, with respect for dogs and the breed.</p>
 <p class="about-goal" data-i18n="aboutGoal" data-i18n-html="">Our goal is to breed well-balanced, healthy and social dogs that feel equally comfortable in the show ring, in the field and in the middle of a family living room.</p>
-<p class="about-clubs" data-i18n="aboutClubs" data-i18n-html="">Rosenaw Aurum is a registered kennel of <a href="https://www.fci.be/" rel="noopener noreferrer" target="_blank">FCI</a>, member of <a href="https://www.kchls.cz/" rel="noopener noreferrer" target="_blank">KCHLS</a> and the <a href="https://www.retriever-klub.cz/" rel="noopener noreferrer" target="_blank">Retriever Klub CZ</a>.</p>
+<p class="about-clubs" data-i18n="aboutClubs" data-i18n-html="">Rosenaw Aurum is an internationally protected <a href="https://www.fci.be/" target="_blank" rel="noopener noreferrer">FCI</a> kennel, registered under number <strong>204/26</strong>. We are members of <a href="https://www.kchls.cz/" target="_blank" rel="noopener noreferrer">KCHLS</a> and the <a href="https://www.retriever-klub.cz/" target="_blank" rel="noopener noreferrer">Retriever Klub CZ</a>.</p>
 </div>
 <div class="about-photo-wrapper">
 <img alt="Lucie Klesová with Alma Bohemica Aurum" class="about-photo" height="1856" loading="lazy" src="../images/news/silherovice-IMG_9215.webp" width="1392"/>
@@ -424,7 +422,7 @@
 <!-- Řádek 3: Video + Výstavy a zkoušky -->
 <div class="dog-profile-row">
 <div class="dog-photo-wrapper dog-video-wrapper">
-<video class="lazy-video" loop="" muted="" playsinline="" poster="images/dogs/alma-outdoor.webp" preload="none">
+<video class="lazy-video" loop="" muted="" playsinline="" poster="../images/dogs/alma-outdoor.webp" preload="none">
 <source data-src="../images/dogs/alma-video.MP4" type="video/mp4"/>
 </video>
 </div>
@@ -439,7 +437,7 @@
 <div class="result-chips result-chips--stacked">
 <div class="result-chip">
 <span class="result-chip-label" data-i18n="almaTitlePuppy">Puppy class</span>
-<span class="result-chip-value">VN1, Jubilejní vítěz</span>
+<span class="result-chip-value">VN1, Jubilee Winner</span>
 </div>
 <div class="result-chip">
 <span class="result-chip-label" data-i18n="almaTitleJunior">Minor puppy</span>
@@ -458,7 +456,7 @@
 <div class="result-chips">
 <div class="result-chip">
 <span class="result-chip-label">OVVR</span>
-<span class="result-chip-value">232 b., plný počet</span>
+<span class="result-chip-value">232 points, maximum score</span>
 </div>
 <div class="result-chip">
 <span class="result-chip-label">CT</span>
@@ -553,7 +551,7 @@
 <div class="planned-litter-copy">
 <h4 data-i18n="litterInvitationTitle">Waiting list for serious families</h4>
 <p data-i18n="litterInvitationIntro">We are looking for serious families who understand what life with a Golden Retriever involves and want to offer their dog a loving home for life. Previous experience or specific training goals are not required. We also warmly welcome families who would like to pursue gundog work, other canine activities, sport, shows or possibly breeding in the future.</p>
-<ul class="list" data-i18n="litterInvitationList"><li>the puppy will be a full member of the family,</li><li>the puppy will live in daily contact with people, not permanently in a kennel or isolated in the garden,</li><li>you will have time for training, exercise and meaningful activities,</li><li>you understand the responsibility and commitment involved for the dog's entire life,</li><li>you will be happy to stay in touch with us after the puppy moves to its new home.</li></ul>
+<ul class="list" data-i18n="litterInvitationList"><li>the puppy will be a full member of the family</li><li>the puppy will live in daily contact with people, not permanently in a kennel or isolated in the garden</li><li>you will have time for training, exercise and meaningful activities</li><li>you understand the responsibility and commitment involved for the dog's entire life</li><li>you will be happy to stay in touch with us after the puppy moves to its new home.</li></ul>
 <p data-i18n="litterInvitationNote">The waiting list is non-binding and does not reserve a puppy. We will consider each puppy's temperament and needs, as well as the situation of each family, when deciding on placement. If you feel that Alma and her future puppies could become part of your life, tell us a little about yourself and your plans. We would be happy to meet you in person, perhaps during a visit in Vigantice.</p>
 <p class="planned-litter-sire" data-i18n="litterInvitationSire" data-i18n-html=""><strong>We have already chosen the stud dog.</strong> We are not introducing him publicly just yet, but we will be happy to tell prospective puppy families more about the planned pairing.</p>
 </div>
@@ -582,8 +580,8 @@
 </div>
 <div class="puppies-sidebar">
 <figure class="gallery-item puppies-photo">
-<a rel="nofollow" class="glightbox" data-glightbox="title: Štěňata Golden Retriever" href="../images/puppies/alma-stene.webp">
-<img alt="Štěňata Golden Retriever" class="gallery-photo" height="400" loading="lazy" src="../images/puppies/alma-stene.webp" width="600"/>
+<a rel="nofollow" class="glightbox" data-glightbox="title: Golden Retriever puppies" href="../images/puppies/alma-stene.webp">
+<img alt="Golden Retriever puppies" class="gallery-photo" height="400" loading="lazy" src="../images/puppies/alma-stene.webp" srcset="../images/puppies/alma-stene-640w.webp 640w, ../images/puppies/alma-stene-1200w.webp 1200w, ../images/puppies/alma-stene.webp 1734w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 <figcaption class="puppies-photo-caption" data-i18n="puppiesPhotoCaption" data-i18n-html="">Photo from the maternal kennel <a href="https://www.bohemica-aurum.cz/kopie-z-apollo/" rel="noopener noreferrer" target="_blank">Bohemica Aurum</a> — <a href="https://www.bohemica-aurum.cz/kopie-z-apollo/" rel="noopener noreferrer" target="_blank">puppy diary</a></figcaption>
 </figure>
@@ -610,264 +608,264 @@
 <!-- Fotky z almamygoldenlove.cz -->
 <figure class="gallery-item" data-gallery-category="girls">
 <a rel="nofollow" class="glightbox" data-gallery="gallery" href="../images/gallery/alma/DSC03404-Edit-Edit.webp">
-<img alt="Alma Bohemica Aurum – Golden Retriever, portrait" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/DSC03404-Edit-Edit.webp" width="600"/>
+<img alt="Alma Bohemica Aurum – Golden Retriever, portrait" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/DSC03404-Edit-Edit.webp" srcset="../images/gallery/alma/DSC03404-Edit-Edit-640w.webp 640w, ../images/gallery/alma/DSC03404-Edit-Edit-1200w.webp 1200w, ../images/gallery/alma/DSC03404-Edit-Edit.webp 1920w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 </figure>
 <figure class="gallery-item" data-gallery-category="girls">
 <a rel="nofollow" class="glightbox" data-gallery="gallery" href="../images/gallery/alma/DSC03327edit3.webp">
-<img alt="Alma Bohemica Aurum – Golden Retriever in nature" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/DSC03327edit3.webp" width="600"/>
+<img alt="Alma Bohemica Aurum – Golden Retriever in nature" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/DSC03327edit3.webp" srcset="../images/gallery/alma/DSC03327edit3-640w.webp 640w, ../images/gallery/alma/DSC03327edit3-1200w.webp 1200w, ../images/gallery/alma/DSC03327edit3.webp 1920w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 </figure>
 <figure class="gallery-item" data-gallery-category="girls">
 <a rel="nofollow" class="glightbox" data-gallery="gallery" href="../images/gallery/alma/DSC03347-Edit.webp">
-<img alt="Alma Bohemica Aurum – pohled Golden Retriever" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/DSC03347-Edit.webp" width="600"/>
+<img alt="Alma Bohemica Aurum – Golden Retriever gaze" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/DSC03347-Edit.webp" srcset="../images/gallery/alma/DSC03347-Edit-640w.webp 640w, ../images/gallery/alma/DSC03347-Edit-1200w.webp 1200w, ../images/gallery/alma/DSC03347-Edit.webp 1920w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 </figure>
 <figure class="gallery-item" data-gallery-category="girls">
 <a rel="nofollow" class="glightbox" data-gallery="gallery" href="../images/gallery/alma/DSC03373-Edit.webp">
-<img alt="Alma Bohemica Aurum – Golden Retriever, full body" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/DSC03373-Edit.webp" width="600"/>
+<img alt="Alma Bohemica Aurum – Golden Retriever, full body" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/DSC03373-Edit.webp" srcset="../images/gallery/alma/DSC03373-Edit-640w.webp 640w, ../images/gallery/alma/DSC03373-Edit-1200w.webp 1200w, ../images/gallery/alma/DSC03373-Edit.webp 1920w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 </figure>
 <figure class="gallery-item" data-gallery-category="girls">
 <a rel="nofollow" class="glightbox" data-gallery="gallery" href="../images/gallery/alma/DSC03397-Edit.webp">
-<img alt="Alma Bohemica Aurum – Golden Retriever among the trees" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/DSC03397-Edit.webp" width="600"/>
+<img alt="Alma Bohemica Aurum – Golden Retriever among the trees" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/DSC03397-Edit.webp" srcset="../images/gallery/alma/DSC03397-Edit-640w.webp 640w, ../images/gallery/alma/DSC03397-Edit-1200w.webp 1200w, ../images/gallery/alma/DSC03397-Edit.webp 1920w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 </figure>
 <figure class="gallery-item" data-gallery-category="girls">
 <a rel="nofollow" class="glightbox" data-gallery="gallery" href="../images/gallery/alma/DSC03527-Edit.webp">
-<img alt="Alma Bohemica Aurum – Golden Retriever in the grass" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/DSC03527-Edit.webp" width="600"/>
+<img alt="Alma Bohemica Aurum – Golden Retriever in the grass" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/DSC03527-Edit.webp" srcset="../images/gallery/alma/DSC03527-Edit-640w.webp 640w, ../images/gallery/alma/DSC03527-Edit-1200w.webp 1200w, ../images/gallery/alma/DSC03527-Edit.webp 1920w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 </figure>
 <figure class="gallery-item" data-gallery-category="girls">
 <a rel="nofollow" class="glightbox" data-gallery="gallery" href="../images/gallery/alma/DSC03564-Edit.webp">
-<img alt="Alma Bohemica Aurum – close-up Golden Retriever" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/DSC03564-Edit.webp" width="600"/>
+<img alt="Alma Bohemica Aurum – Golden Retriever close-up" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/DSC03564-Edit.webp" srcset="../images/gallery/alma/DSC03564-Edit-640w.webp 640w, ../images/gallery/alma/DSC03564-Edit-1200w.webp 1200w, ../images/gallery/alma/DSC03564-Edit.webp 1920w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 </figure>
 <figure class="gallery-item" data-gallery-category="girls">
 <a rel="nofollow" class="glightbox" data-gallery="gallery" href="../images/gallery/alma/DSC03581-Edit_1.webp">
-<img alt="Alma Bohemica Aurum – Golden Retriever, profile" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/DSC03581-Edit_1.webp" width="600"/>
+<img alt="Alma Bohemica Aurum – Golden Retriever, profile" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/DSC03581-Edit_1.webp" srcset="../images/gallery/alma/DSC03581-Edit_1-640w.webp 640w, ../images/gallery/alma/DSC03581-Edit_1-1200w.webp 1200w, ../images/gallery/alma/DSC03581-Edit_1.webp 1920w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 </figure>
 <figure class="gallery-item" data-gallery-category="girls">
 <a rel="nofollow" class="glightbox" data-gallery="gallery" href="../images/gallery/alma/DSC03609-Edit-2.webp">
-<img alt="Alma Bohemica Aurum – Golden Retriever on the meadow" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/DSC03609-Edit-2.webp" width="600"/>
+<img alt="Alma Bohemica Aurum – Golden Retriever on the meadow" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/DSC03609-Edit-2.webp" srcset="../images/gallery/alma/DSC03609-Edit-2-640w.webp 640w, ../images/gallery/alma/DSC03609-Edit-2-1200w.webp 1200w, ../images/gallery/alma/DSC03609-Edit-2.webp 1920w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 </figure>
 <figure class="gallery-item" data-gallery-category="girls">
 <a rel="nofollow" class="glightbox" data-gallery="gallery" href="../images/gallery/alma/DSC03609-Edit_snow.webp">
-<img alt="Alma Bohemica Aurum – Golden Retriever in the snow" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/DSC03609-Edit_snow.webp" width="600"/>
+<img alt="Alma Bohemica Aurum – Golden Retriever in the snow" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/DSC03609-Edit_snow.webp" srcset="../images/gallery/alma/DSC03609-Edit_snow-640w.webp 640w, ../images/gallery/alma/DSC03609-Edit_snow-1200w.webp 1200w, ../images/gallery/alma/DSC03609-Edit_snow.webp 1920w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 </figure>
 <figure class="gallery-item" data-gallery-category="girls">
 <a rel="nofollow" class="glightbox" data-gallery="gallery" href="../images/gallery/alma/DSC_1485.webp">
-<img alt="Alma Bohemica Aurum – Golden Retriever, looking at the camera" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/DSC_1485.webp" width="600"/>
+<img alt="Alma Bohemica Aurum – Golden Retriever, looking at the camera" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/DSC_1485.webp" srcset="../images/gallery/alma/DSC_1485-640w.webp 640w, ../images/gallery/alma/DSC_1485-1200w.webp 1200w, ../images/gallery/alma/DSC_1485.webp 1920w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 </figure>
 <figure class="gallery-item" data-gallery-category="girls">
 <a rel="nofollow" class="glightbox" data-gallery="gallery" href="../images/gallery/alma/DSC_1495.webp">
-<img alt="Alma Bohemica Aurum – Golden Retriever outdoors in nature" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/DSC_1495.webp" width="600"/>
+<img alt="Alma Bohemica Aurum – Golden Retriever outdoors in nature" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/DSC_1495.webp" srcset="../images/gallery/alma/DSC_1495-640w.webp 640w, ../images/gallery/alma/DSC_1495-1200w.webp 1200w, ../images/gallery/alma/DSC_1495.webp 1920w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 </figure>
 <figure class="gallery-item" data-gallery-category="girls">
 <a rel="nofollow" class="glightbox" data-gallery="gallery" href="../images/gallery/alma/IMG_8370.webp">
-<img alt="Alma Bohemica Aurum – Golden Retriever, letní portrait" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/IMG_8370.webp" width="600"/>
+<img alt="Alma Bohemica Aurum – Golden Retriever, summer portrait" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/IMG_8370.webp" srcset="../images/gallery/alma/IMG_8370-640w.webp 640w, ../images/gallery/alma/IMG_8370.webp 1080w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 </figure>
 <figure class="gallery-item" data-gallery-category="life">
 <a rel="nofollow" class="glightbox" data-gallery="gallery" href="../images/gallery/alma/alma-zlaty-retrivr-na-zahrade-01.webp">
-<img alt="Golden Retriever Alma – everyday life" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-na-zahrade-01.webp" width="600"/>
+<img alt="Golden Retriever Alma – everyday life" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-na-zahrade-01.webp" srcset="../images/gallery/alma/alma-zlaty-retrivr-na-zahrade-01-640w.webp 640w, ../images/gallery/alma/alma-zlaty-retrivr-na-zahrade-01-1200w.webp 1200w, ../images/gallery/alma/alma-zlaty-retrivr-na-zahrade-01.webp 1600w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 </figure>
 <figure class="gallery-item" data-gallery-category="life">
 <a rel="nofollow" class="glightbox" data-gallery="gallery" href="../images/gallery/alma/alma-zlaty-retrivr-na-zahrade-02.webp">
-<img alt="Golden Retriever on a trip in the Beskydy Mountains" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-na-zahrade-02.webp" width="600"/>
+<img alt="Golden Retriever on a trip in the Beskydy Mountains" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-na-zahrade-02.webp" srcset="../images/gallery/alma/alma-zlaty-retrivr-na-zahrade-02-640w.webp 640w, ../images/gallery/alma/alma-zlaty-retrivr-na-zahrade-02-1200w.webp 1200w, ../images/gallery/alma/alma-zlaty-retrivr-na-zahrade-02.webp 1600w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 </figure>
 <figure class="gallery-item" data-gallery-category="life">
 <a rel="nofollow" class="glightbox" data-gallery="gallery" href="../images/gallery/alma/alma-zlaty-retrivr-vylet-beskydy-01.webp">
-<img alt="Family life with a Golden Retriever" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-vylet-beskydy-01.webp" width="600"/>
+<img alt="Family life with a Golden Retriever" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-vylet-beskydy-01.webp" srcset="../images/gallery/alma/alma-zlaty-retrivr-vylet-beskydy-01-640w.webp 640w, ../images/gallery/alma/alma-zlaty-retrivr-vylet-beskydy-01-1200w.webp 1200w, ../images/gallery/alma/alma-zlaty-retrivr-vylet-beskydy-01.webp 1600w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 </figure>
 <figure class="gallery-item" data-gallery-category="life">
 <a rel="nofollow" class="glightbox" data-gallery="gallery" href="../images/gallery/alma/alma-zlaty-retrivr-vylet-beskydy-02.webp">
-<img alt="Golden Retriever Alma – procházka in nature" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-vylet-beskydy-02.webp" width="600"/>
+<img alt="Golden Retriever Alma – walk in nature" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-vylet-beskydy-02.webp" srcset="../images/gallery/alma/alma-zlaty-retrivr-vylet-beskydy-02-640w.webp 640w, ../images/gallery/alma/alma-zlaty-retrivr-vylet-beskydy-02-1200w.webp 1200w, ../images/gallery/alma/alma-zlaty-retrivr-vylet-beskydy-02.webp 1600w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 </figure>
 <figure class="gallery-item" data-gallery-category="life">
 <a rel="nofollow" class="glightbox" data-gallery="gallery" href="../images/gallery/alma/alma-zlaty-retrivr-rodina-03.webp">
-<img alt="Alma – Golden Retriever playing outside" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-rodina-03.webp" width="600"/>
+<img alt="Alma – Golden Retriever playing outside" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-rodina-03.webp" srcset="../images/gallery/alma/alma-zlaty-retrivr-rodina-03-640w.webp 640w, ../images/gallery/alma/alma-zlaty-retrivr-rodina-03-1200w.webp 1200w, ../images/gallery/alma/alma-zlaty-retrivr-rodina-03.webp 1920w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 </figure>
 <figure class="gallery-item" data-gallery-category="life">
 <a rel="nofollow" class="glightbox" data-gallery="gallery" href="../images/gallery/alma/alma-zlaty-retrivr-rodina-04.webp">
-<img alt="Golden Retriever resting – pet at peace" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-rodina-04.webp" width="600"/>
+<img alt="Golden Retriever resting" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-rodina-04.webp" srcset="../images/gallery/alma/alma-zlaty-retrivr-rodina-04-640w.webp 640w, ../images/gallery/alma/alma-zlaty-retrivr-rodina-04-1200w.webp 1200w, ../images/gallery/alma/alma-zlaty-retrivr-rodina-04.webp 1600w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 </figure>
 <figure class="gallery-item" data-gallery-category="life">
 <a rel="nofollow" class="glightbox" data-gallery="gallery" href="../images/gallery/alma/alma-zlaty-retrivr-u-vody-01.webp">
-<img alt="Alma – Golden Retriever walking in the forest" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-u-vody-01.webp" width="600"/>
+<img alt="Alma – Golden Retriever walking in the forest" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-u-vody-01.webp" srcset="../images/gallery/alma/alma-zlaty-retrivr-u-vody-01-640w.webp 640w, ../images/gallery/alma/alma-zlaty-retrivr-u-vody-01-1200w.webp 1200w, ../images/gallery/alma/alma-zlaty-retrivr-u-vody-01.webp 1920w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 </figure>
 <figure class="gallery-item" data-gallery-category="life">
 <a rel="nofollow" class="glightbox" data-gallery="gallery" href="../images/gallery/alma/alma-zlaty-retrivr-u-vody-02.webp">
-<img alt="Golden Retriever Alma – dobrodružství in nature" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-u-vody-02.webp" width="600"/>
+<img alt="Golden Retriever Alma – adventure in nature" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-u-vody-02.webp" srcset="../images/gallery/alma/alma-zlaty-retrivr-u-vody-02-640w.webp 640w, ../images/gallery/alma/alma-zlaty-retrivr-u-vody-02-1200w.webp 1200w, ../images/gallery/alma/alma-zlaty-retrivr-u-vody-02.webp 1920w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 </figure>
 <figure class="gallery-item" data-gallery-category="life">
 <a rel="nofollow" class="glightbox" data-gallery="gallery" href="../images/gallery/alma/alma-zlaty-retrivr-podzim-01.webp">
-<img alt="Alma – Golden Retriever by the water" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-podzim-01.webp" width="600"/>
+<img alt="Alma – Golden Retriever by the water" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-podzim-01.webp" srcset="../images/gallery/alma/alma-zlaty-retrivr-podzim-01-640w.webp 640w, ../images/gallery/alma/alma-zlaty-retrivr-podzim-01-1200w.webp 1200w, ../images/gallery/alma/alma-zlaty-retrivr-podzim-01.webp 1600w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 </figure>
 <figure class="gallery-item" data-gallery-category="life">
 <a rel="nofollow" class="glightbox" data-gallery="gallery" href="../images/gallery/alma/alma-zlaty-retrivr-podzim-02.webp">
-<img alt="Golden Retriever a jeho každodenní radosti" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-podzim-02.webp" width="600"/>
+<img alt="A Golden Retriever and its everyday joys" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-podzim-02.webp" srcset="../images/gallery/alma/alma-zlaty-retrivr-podzim-02-640w.webp 640w, ../images/gallery/alma/alma-zlaty-retrivr-podzim-02-1200w.webp 1200w, ../images/gallery/alma/alma-zlaty-retrivr-podzim-02.webp 1600w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 </figure>
 <figure class="gallery-item" data-gallery-category="life">
 <a rel="nofollow" class="glightbox" data-gallery="gallery" href="../images/gallery/alma/alma-zlaty-retrivr-zima-01.webp">
-<img alt="Alma Bohemica Aurum – Golden Retriever s rodinou" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-zima-01.webp" width="600"/>
+<img alt="Alma Bohemica Aurum – Golden Retriever with the family" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-zima-01.webp" srcset="../images/gallery/alma/alma-zlaty-retrivr-zima-01-640w.webp 640w, ../images/gallery/alma/alma-zlaty-retrivr-zima-01-1200w.webp 1200w, ../images/gallery/alma/alma-zlaty-retrivr-zima-01.webp 1600w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 </figure>
 <figure class="gallery-item" data-gallery-category="life">
 <a rel="nofollow" class="glightbox" data-gallery="gallery" href="../images/gallery/alma/alma-zlaty-retrivr-zima-02.webp">
-<img alt="Golden Retriever Alma – výlet do přírody" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-zima-02.webp" width="600"/>
+<img alt="Golden Retriever Alma – trip into nature" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-zima-02.webp" srcset="../images/gallery/alma/alma-zlaty-retrivr-zima-02-640w.webp 640w, ../images/gallery/alma/alma-zlaty-retrivr-zima-02-1200w.webp 1200w, ../images/gallery/alma/alma-zlaty-retrivr-zima-02.webp 1600w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 </figure>
 <figure class="gallery-item" data-gallery-category="life">
 <a rel="nofollow" class="glightbox" data-gallery="gallery" href="../images/gallery/alma/alma-zlaty-retrivr-prochazka-01.webp">
-<img alt="Alma – Golden Retriever při zimní procházce" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-prochazka-01.webp" width="600"/>
+<img alt="Alma – Golden Retriever on a winter walk" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-prochazka-01.webp" srcset="../images/gallery/alma/alma-zlaty-retrivr-prochazka-01-640w.webp 640w, ../images/gallery/alma/alma-zlaty-retrivr-prochazka-01-1200w.webp 1200w, ../images/gallery/alma/alma-zlaty-retrivr-prochazka-01.webp 1440w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 </figure>
 <figure class="gallery-item" data-gallery-category="life">
 <a rel="nofollow" class="glightbox" data-gallery="gallery" href="../images/gallery/alma/alma-zlaty-retrivr-prochazka-02.webp">
-<img alt="Golden Retriever – playful moments with a Golden dog" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-prochazka-02.webp" width="600"/>
+<img alt="Golden Retriever – playful moments" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-prochazka-02.webp" srcset="../images/gallery/alma/alma-zlaty-retrivr-prochazka-02-640w.webp 640w, ../images/gallery/alma/alma-zlaty-retrivr-prochazka-02-1200w.webp 1200w, ../images/gallery/alma/alma-zlaty-retrivr-prochazka-02.webp 1600w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 </figure>
 <figure class="gallery-item" data-gallery-category="life">
 <a rel="nofollow" class="glightbox" data-gallery="gallery" href="../images/gallery/alma/alma-zlaty-retrivr-hra-01.webp">
-<img alt="Alma – Golden Retriever in the garden" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-hra-01.webp" width="600"/>
+<img alt="Alma – Golden Retriever in the garden" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-hra-01.webp" srcset="../images/gallery/alma/alma-zlaty-retrivr-hra-01-640w.webp 640w, ../images/gallery/alma/alma-zlaty-retrivr-hra-01-1200w.webp 1200w, ../images/gallery/alma/alma-zlaty-retrivr-hra-01.webp 2048w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 </figure>
 <figure class="gallery-item" data-gallery-category="life">
 <a rel="nofollow" class="glightbox" data-gallery="gallery" href="../images/gallery/alma/alma-zlaty-retrivr-hra-02.webp">
-<img alt="Golden Retriever Alma – autumnní procházka" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-hra-02.webp" width="600"/>
+<img alt="Golden Retriever Alma – autumn walk" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-hra-02.webp" srcset="../images/gallery/alma/alma-zlaty-retrivr-hra-02-640w.webp 640w, ../images/gallery/alma/alma-zlaty-retrivr-hra-02-1200w.webp 1200w, ../images/gallery/alma/alma-zlaty-retrivr-hra-02.webp 1600w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 </figure>
 <figure class="gallery-item" data-gallery-category="life">
 <a rel="nofollow" class="glightbox" data-gallery="gallery" href="../images/gallery/alma/alma-zlaty-retrivr-odpocinek-01.webp">
-<img alt="Rosenaw Aurum – Golden Retriever v každodenním životě" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-odpocinek-01.webp" width="600"/>
+<img alt="Rosenaw Aurum – Golden Retriever in everyday life" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-odpocinek-01.webp" srcset="../images/gallery/alma/alma-zlaty-retrivr-odpocinek-01-640w.webp 640w, ../images/gallery/alma/alma-zlaty-retrivr-odpocinek-01-1200w.webp 1200w, ../images/gallery/alma/alma-zlaty-retrivr-odpocinek-01.webp 1600w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 </figure>
 <figure class="gallery-item" data-gallery-category="life">
 <a rel="nofollow" class="glightbox" data-gallery="gallery" href="../images/gallery/alma/alma-zlaty-retrivr-odpocinek-02.webp">
-<img alt="Alma – Golden Retriever, šťastný pes v rodině" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-odpocinek-02.webp" width="600"/>
+<img alt="Alma – Golden Retriever, a happy family dog" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-odpocinek-02.webp" srcset="../images/gallery/alma/alma-zlaty-retrivr-odpocinek-02-640w.webp 640w, ../images/gallery/alma/alma-zlaty-retrivr-odpocinek-02-1200w.webp 1200w, ../images/gallery/alma/alma-zlaty-retrivr-odpocinek-02.webp 1600w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 </figure>
 <figure class="gallery-item" data-gallery-category="life">
 <a rel="nofollow" class="glightbox" data-gallery="gallery" href="../images/gallery/alma/alma-zlaty-retrivr-luka-01.webp">
-<img alt="Golden Retriever na výletě – aktivní pes in nature" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-luka-01.webp" width="600"/>
+<img alt="Golden Retriever on a trip – an active dog in nature" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-luka-01.webp" srcset="../images/gallery/alma/alma-zlaty-retrivr-luka-01-640w.webp 640w, ../images/gallery/alma/alma-zlaty-retrivr-luka-01-1200w.webp 1200w, ../images/gallery/alma/alma-zlaty-retrivr-luka-01.webp 1600w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 </figure>
 <figure class="gallery-item" data-gallery-category="life">
 <a rel="nofollow" class="glightbox" data-gallery="gallery" href="../images/gallery/alma/alma-zlaty-retrivr-luka-02.webp">
-<img alt="Alma – Golden Retriever, hravá nálada" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-luka-02.webp" width="600"/>
+<img alt="Alma – Golden Retriever in a playful mood" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-luka-02.webp" srcset="../images/gallery/alma/alma-zlaty-retrivr-luka-02-640w.webp 640w, ../images/gallery/alma/alma-zlaty-retrivr-luka-02-1200w.webp 1200w, ../images/gallery/alma/alma-zlaty-retrivr-luka-02.webp 1600w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 </figure>
 <figure class="gallery-item" data-gallery-category="life">
 <a rel="nofollow" class="glightbox" data-gallery="gallery" href="../images/gallery/alma/alma-zlaty-retrivr-sport-01.webp">
-<img alt="Golden Retriever Alma – spokojený pes in nature" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-sport-01.webp" width="600"/>
+<img alt="Golden Retriever Alma – a contented dog in nature" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-sport-01.webp" srcset="../images/gallery/alma/alma-zlaty-retrivr-sport-01-640w.webp 640w, ../images/gallery/alma/alma-zlaty-retrivr-sport-01-1200w.webp 1200w, ../images/gallery/alma/alma-zlaty-retrivr-sport-01.webp 1920w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 </figure>
 <figure class="gallery-item" data-gallery-category="life">
 <a rel="nofollow" class="glightbox" data-gallery="gallery" href="../images/gallery/alma/alma-zlaty-retrivr-sport-02.webp">
-<img alt="Alma Bohemica Aurum – Golden Retriever na výletě" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-sport-02.webp" width="600"/>
+<img alt="Alma Bohemica Aurum – Golden Retriever on a trip" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-sport-02.webp" srcset="../images/gallery/alma/alma-zlaty-retrivr-sport-02-640w.webp 640w, ../images/gallery/alma/alma-zlaty-retrivr-sport-02-1200w.webp 1200w, ../images/gallery/alma/alma-zlaty-retrivr-sport-02.webp 1600w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 </figure>
 <figure class="gallery-item" data-gallery-category="shows">
 <a rel="nofollow" class="glightbox" data-gallery="gallery" href="../images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.43.webp">
-<img alt="Alma Bohemica Aurum – výstava retrieverů" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.43.webp" width="600"/>
+<img alt="Alma Bohemica Aurum – retriever show" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.43.webp" srcset="../images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.43-640w.webp 640w, ../images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.43.webp 998w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 </figure>
 <figure class="gallery-item" data-gallery-category="shows">
 <a rel="nofollow" class="glightbox" data-gallery="gallery" href="../images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.43_1.webp">
-<img alt="Golden Retriever na výstavním kruhu" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.43_1.webp" width="600"/>
+<img alt="Golden Retriever in the show ring" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.43_1.webp" srcset="../images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.43_1-640w.webp 640w, ../images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.43_1-1200w.webp 1200w, ../images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.43_1.webp 1600w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 </figure>
 <figure class="gallery-item" data-gallery-category="shows">
 <a rel="nofollow" class="glightbox" data-gallery="gallery" href="../images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.44.webp">
-<img alt="Alma – psí výstava, předvedení plemene" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.44.webp" width="600"/>
+<img alt="Alma – dog show, breed presentation" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.44.webp" srcset="../images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.44-640w.webp 640w, ../images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.44.webp 1254w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 </figure>
 <figure class="gallery-item" data-gallery-category="shows">
 <a rel="nofollow" class="glightbox" data-gallery="gallery" href="../images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.44_1.webp">
-<img alt="Alma Bohemica Aurum – ocenění na psí výstavě" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.44_1.webp" width="600"/>
+<img alt="Alma Bohemica Aurum – award at a dog show" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.44_1.webp" srcset="../images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.44_1-640w.webp 640w, ../images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.44_1-1200w.webp 1200w, ../images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.44_1.webp 1600w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 </figure>
 <figure class="gallery-item" data-gallery-category="shows">
 <a rel="nofollow" class="glightbox" data-gallery="gallery" href="../images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.45.webp">
-<img alt="Golden Retriever Alma – bonitace a výstava" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.45.webp" width="600"/>
+<img alt="Golden Retriever Alma – breed survey and show" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.45.webp" srcset="../images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.45-640w.webp 640w, ../images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.45.webp 1000w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 </figure>
 <figure class="gallery-item" data-gallery-category="shows">
 <a rel="nofollow" class="glightbox" data-gallery="gallery" href="../images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.46.webp">
-<img alt="Alma Bohemica Aurum – výstavní úspěchy Golden Retriever" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.46.webp" width="600"/>
+<img alt="Alma Bohemica Aurum – Golden Retriever show success" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.46.webp" srcset="../images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.46-640w.webp 640w, ../images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.46-1200w.webp 1200w, ../images/gallery/alma/WhatsApp_Image_2025-05-15_at_00.48.46.webp 1600w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 </figure>
 <figure class="gallery-item" data-gallery-category="shows">
 <a rel="nofollow" class="glightbox" data-gallery="gallery" href="../images/gallery/alma/alma-zlaty-retrivr-trenink-aport-01.webp">
-<img alt="Alma Bohemica Aurum – retriever dummy training in nature" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-trenink-aport-01.webp" width="600"/>
+<img alt="Alma Bohemica Aurum – retriever dummy training in nature" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-trenink-aport-01.webp" srcset="../images/gallery/alma/alma-zlaty-retrivr-trenink-aport-01-640w.webp 640w, ../images/gallery/alma/alma-zlaty-retrivr-trenink-aport-01-1200w.webp 1200w, ../images/gallery/alma/alma-zlaty-retrivr-trenink-aport-01.webp 1539w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 </figure>
 <figure class="gallery-item" data-gallery-category="shows">
 <a rel="nofollow" class="glightbox" data-gallery="gallery" href="../images/gallery/alma/alma-zlaty-retrivr-trenink-aport-02.webp">
-<img alt="Alma Bohemica Aurum – Golden Retriever during dummy training" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-trenink-aport-02.webp" width="600"/>
+<img alt="Alma Bohemica Aurum – Golden Retriever during dummy training" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-trenink-aport-02.webp" srcset="../images/gallery/alma/alma-zlaty-retrivr-trenink-aport-02-640w.webp 640w, ../images/gallery/alma/alma-zlaty-retrivr-trenink-aport-02-1200w.webp 1200w, ../images/gallery/alma/alma-zlaty-retrivr-trenink-aport-02.webp 1540w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 </figure>
 <figure class="gallery-item" data-gallery-category="shows">
 <a rel="nofollow" class="glightbox" data-gallery="gallery" href="../images/gallery/alma/alma-zlaty-retrivr-trenink-aport-03.webp">
-<img alt="Alma Bohemica Aurum – recall and dummy training" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-trenink-aport-03.webp" width="600"/>
+<img alt="Alma Bohemica Aurum – recall and dummy training" class="gallery-photo" height="400" loading="lazy" src="../images/gallery/alma/alma-zlaty-retrivr-trenink-aport-03.webp" srcset="../images/gallery/alma/alma-zlaty-retrivr-trenink-aport-03-640w.webp 640w, ../images/gallery/alma/alma-zlaty-retrivr-trenink-aport-03-1200w.webp 1200w, ../images/gallery/alma/alma-zlaty-retrivr-trenink-aport-03.webp 1539w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="600"/>
 </a>
 </figure>
 <!-- Videa -->
 <figure class="gallery-item gallery-item--video" data-gallery-category="videos">
 <a rel="nofollow" class="glightbox" data-gallery="videos" data-glightbox="type: inline;" href="#vid1">
-<video class="gallery-video" loop="" muted="" playsinline="" preload="metadata">
+<video class="gallery-video" loop="" muted="" playsinline="" preload="none" poster="../images/gallery/videos/4232f43c-1c72-4304-bbbf-789544b5ab56-poster.webp">
 <source src="../images/gallery/videos/4232f43c-1c72-4304-bbbf-789544b5ab56.MP4" type="video/mp4"/>
 </video>
 </a>
-<div class="glightbox-video-inline" id="vid1" style="display:none;"><video controls="" loop="" playsinline="" style="width:100%;max-height:80vh;"><source src="../images/gallery/videos/4232f43c-1c72-4304-bbbf-789544b5ab56.MP4" type="video/mp4"/></video></div>
+<div class="glightbox-video-inline" id="vid1" style="display:none;"><video controls="" loop="" playsinline="" style="width:100%;max-height:80vh;" preload="none" poster="../images/gallery/videos/4232f43c-1c72-4304-bbbf-789544b5ab56-poster.webp"><source src="../images/gallery/videos/4232f43c-1c72-4304-bbbf-789544b5ab56.MP4" type="video/mp4"/></video></div>
 </figure>
 <figure class="gallery-item gallery-item--video" data-gallery-category="videos">
 <a rel="nofollow" class="glightbox" data-gallery="videos" data-glightbox="type: inline;" href="#vid2">
-<video class="gallery-video" loop="" muted="" playsinline="" preload="metadata">
+<video class="gallery-video" loop="" muted="" playsinline="" preload="none" poster="../images/gallery/videos/IMG_1405-poster.webp">
 <source src="../images/gallery/videos/IMG_1405.mp4" type="video/mp4"/>
 </video>
 </a>
-<div class="glightbox-video-inline" id="vid2" style="display:none;"><video controls="" loop="" playsinline="" style="width:100%;max-height:80vh;"><source src="../images/gallery/videos/IMG_1405.mp4" type="video/mp4"/></video></div>
+<div class="glightbox-video-inline" id="vid2" style="display:none;"><video controls="" loop="" playsinline="" style="width:100%;max-height:80vh;" preload="none" poster="../images/gallery/videos/IMG_1405-poster.webp"><source src="../images/gallery/videos/IMG_1405.mp4" type="video/mp4"/></video></div>
 </figure>
 <figure class="gallery-item gallery-item--video" data-gallery-category="videos">
 <a rel="nofollow" class="glightbox" data-gallery="videos" data-glightbox="type: inline;" href="#vid3">
-<video class="gallery-video" loop="" muted="" playsinline="" preload="metadata">
+<video class="gallery-video" loop="" muted="" playsinline="" preload="none" poster="../images/gallery/videos/IMG_8712-poster.webp">
 <source src="../images/gallery/videos/IMG_8712.mp4" type="video/mp4"/>
 </video>
 </a>
-<div class="glightbox-video-inline" id="vid3" style="display:none;"><video controls="" loop="" playsinline="" style="width:100%;max-height:80vh;"><source src="../images/gallery/videos/IMG_8712.mp4" type="video/mp4"/></video></div>
+<div class="glightbox-video-inline" id="vid3" style="display:none;"><video controls="" loop="" playsinline="" style="width:100%;max-height:80vh;" preload="none" poster="../images/gallery/videos/IMG_8712-poster.webp"><source src="../images/gallery/videos/IMG_8712.mp4" type="video/mp4"/></video></div>
 </figure>
 <figure class="gallery-item gallery-item--video" data-gallery-category="videos">
 <a rel="nofollow" class="glightbox" data-gallery="videos" data-glightbox="type: inline;" href="#vid4">
-<video class="gallery-video" loop="" muted="" playsinline="" preload="metadata">
+<video class="gallery-video" loop="" muted="" playsinline="" preload="none" poster="../images/gallery/videos/IMG_9435-poster.webp">
 <source src="../images/gallery/videos/IMG_9435.mp4" type="video/mp4"/>
 </video>
 </a>
-<div class="glightbox-video-inline" id="vid4" style="display:none;"><video controls="" loop="" playsinline="" style="width:100%;max-height:80vh;"><source src="../images/gallery/videos/IMG_9435.mp4" type="video/mp4"/></video></div>
+<div class="glightbox-video-inline" id="vid4" style="display:none;"><video controls="" loop="" playsinline="" style="width:100%;max-height:80vh;" preload="none" poster="../images/gallery/videos/IMG_9435-poster.webp"><source src="../images/gallery/videos/IMG_9435.mp4" type="video/mp4"/></video></div>
 </figure>
 <figure class="gallery-item gallery-item--video" data-gallery-category="videos">
 <a rel="nofollow" class="glightbox" data-gallery="videos" data-glightbox="type: inline;" href="#vid5">
-<video class="gallery-video" loop="" muted="" playsinline="" preload="metadata">
+<video class="gallery-video" loop="" muted="" playsinline="" preload="none" poster="../images/gallery/videos/IMG_9711-poster.webp">
 <source src="../images/gallery/videos/IMG_9711.mp4" type="video/mp4"/>
 </video>
 </a>
-<div class="glightbox-video-inline" id="vid5" style="display:none;"><video controls="" loop="" playsinline="" style="width:100%;max-height:80vh;"><source src="../images/gallery/videos/IMG_9711.mp4" type="video/mp4"/></video></div>
+<div class="glightbox-video-inline" id="vid5" style="display:none;"><video controls="" loop="" playsinline="" style="width:100%;max-height:80vh;" preload="none" poster="../images/gallery/videos/IMG_9711-poster.webp"><source src="../images/gallery/videos/IMG_9711.mp4" type="video/mp4"/></video></div>
 </figure>
 </div>
 <button class="gallery-show-more btn btn-outline" data-i18n="galleryShowMore" type="button">Show more photos</button>
@@ -883,7 +881,7 @@
 <div class="blog-grid blog-grid--3">
 <a class="blog-card" href="../aktuality/lidecko-zkousky.html">
 <div class="blog-card-img">
-<img alt="Lucie with a wet, happy Alma on a forest path at the autumn trials in Lidečko" height="1920" loading="lazy" src="../images/news/lidecko-zkousky-cesta.webp" width="1440"/>
+<img alt="Lucie with a wet, happy Alma on a forest path at the autumn trials in Lidečko" height="1920" loading="lazy" src="../images/news/lidecko-zkousky-cesta.webp" srcset="../images/news/lidecko-zkousky-cesta-640w.webp 640w, ../images/news/lidecko-zkousky-cesta-1200w.webp 1200w, ../images/news/lidecko-zkousky-cesta.webp 1440w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="1440"/>
 </div>
 <div class="blog-card-date">
 <span class="blog-card-month" data-i18n="newsMonthLidecko">Oct</span>
@@ -894,7 +892,7 @@
 </a>
 <a class="blog-card" href="../aktuality/split-vystavy.html">
 <div class="blog-card-img">
-<img alt="Alma Bohemica Aurum at the Night Dog Show in Split" height="1440" loading="lazy" src="../images/news/split-alma-postoj.webp" width="1920"/>
+<img alt="Alma Bohemica Aurum at the Night Dog Show in Split" height="1440" loading="lazy" src="../images/news/split-alma-postoj.webp" srcset="../images/news/split-alma-postoj-640w.webp 640w, ../images/news/split-alma-postoj-1200w.webp 1200w, ../images/news/split-alma-postoj.webp 1920w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="1920"/>
 </div>
 <div class="blog-card-date">
 <span class="blog-card-month" data-i18n="newsMonthSplit">Aug</span>
@@ -905,7 +903,7 @@
 </a>
 <a class="blog-card" href="../aktuality/skola-navsteva.html">
 <div class="blog-card-img">
-<img alt="Lucie leads Alma in front of a class of children during a school visit" height="960" loading="lazy" src="../images/news/skola-navsteva-05.webp" width="1280"/>
+<img alt="Lucie leads Alma in front of a class of children during a school visit" height="960" loading="lazy" src="../images/news/skola-navsteva-05.webp" srcset="../images/news/skola-navsteva-05-640w.webp 640w, ../images/news/skola-navsteva-05.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 360px" width="1280"/>
 </div>
 <div class="blog-card-date">
 <span class="blog-card-month" data-i18n="newsMonthSkola">Jun</span>
@@ -927,8 +925,8 @@
 <span class="section-header-line"></span>
 <p class="contact-subtitle" data-i18n="contactIntro">Interested in a puppy from our kennel or just want to ask something? Send us a message – we will get back to you.</p>
 <p class="contact-subtitle" style="margin-top:-0.5rem;font-size:0.92rem;">
-<span data-i18n="contactFaqHint">Než napíšete, podívejte se také do</span>
-<a data-i18n="contactFaqLink" href="faq.html">častých otázek</a>.
+<span data-i18n="contactFaqHint">Before you write, take a look at our</span>
+<a data-i18n="contactFaqLink" href="faq.html">frequently asked questions</a>.
           </p>
 </div>
 <div class="container">
@@ -1073,7 +1071,7 @@
 <span data-i18n="footerRights">All rights reserved.</span>
 </div>
 </footer>
-<script crossorigin="anonymous" integrity="sha384-MZZbZ6RXJudK43v1qY1zOWKOU2yfeBPatuFoKyHAaAgHTUZhwblRTc9CphTt4IGQ" src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-<script src="../script.js?v=88" defer></script>
+<script crossorigin="anonymous" integrity="sha384-MZZbZ6RXJudK43v1qY1zOWKOU2yfeBPatuFoKyHAaAgHTUZhwblRTc9CphTt4IGQ" src="https://cdn.jsdelivr.net/npm/glightbox@3.3.1/dist/js/glightbox.min.js"></script>
+<script src="../script.js?v=89" defer></script>
 </body>
 </html>

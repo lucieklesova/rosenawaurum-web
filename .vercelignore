@@ -1,0 +1,17 @@
+# Interní soubory, které se nemají nasazovat na web
+.agents
+.claude
+.github
+.vscode
+scripts
+tools
+social
+docs
+CLAUDE.md
+README.md
+SEO_PLAN.md
+skills-lock.json
+*.mhtml
+**/__pycache__
+**/.DS_Store
+.env*

@@ -12,10 +12,7 @@
     <link rel="alternate" hreflang="en" href="https://rosenawaurum.cz/en/faq.html" />
     <link rel="alternate" hreflang="de" href="https://rosenawaurum.cz/de/faq.html" />
     <link rel="alternate" hreflang="x-default" href="https://rosenawaurum.cz/faq.html" />
-    <script>
-      (function(){var l=localStorage.getItem("lang");if(l&&l!=="en"){document.documentElement.lang=l;document.documentElement.classList.add("i18n-loading")}})();
-    </script>
-    <style>.i18n-loading body{opacity:0}.i18n-loaded body{opacity:1;transition:opacity .15s}</style>
+    <style>.i18n-loading body{opacity:0;animation:i18n-reveal 0s 2s forwards}.i18n-loaded body{opacity:1;transition:opacity .15s}@keyframes i18n-reveal{to{opacity:1}}</style>
     <link rel="manifest" href="../site.webmanifest" />
     <link rel="icon" type="image/svg+xml" href="../favicon.svg?v=3" />
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png?v=3" />
@@ -42,7 +39,9 @@
     <meta name="twitter:description" content="Answers to the most common questions about Golden Retrievers and the Rosenaw Aurum kennel." />
     <meta name="twitter:image" content="https://rosenawaurum.cz/images/dogs/alma-portrait.webp" />
 
-    <link rel="stylesheet" href="../styles.css?v=92" />
+    <link rel="preload" href="../fonts/raleway-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="../fonts/playfair-display-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="../styles.css?v=93" />
 
     <!-- Structured Data: FAQPage + Breadcrumb -->
     <script type="application/ld+json">
@@ -178,14 +177,14 @@
           <img src="../images/logo-footer.webp" alt="Rosenaw Aurum" class="logo-img logo-icon" width="55" height="55" />
           <span class="logo-title"><span class="logo-title-main">Rosenaw</span><span class="logo-title-sub">Aurum</span></span>
         </a>
-        <nav class="main-nav" id="main-nav" aria-label="Primary">
+        <nav class="main-nav" id="main-nav" aria-label="Main navigation">
           <a href="index.html#home" data-i18n="navHome">Home</a>
           <a href="index.html#about" data-i18n="navAbout">About</a>
           <a href="index.html#girls" data-i18n="navGirls">Our Girls</a>
           <div class="nav-dropdown">
             <div class="nav-dropdown-trigger">
               <a href="index.html#puppies" data-i18n="navPuppies">Puppies</a>
-              <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true" data-i18n-aria-label="navPuppiesMenuExpand" aria-label="Rozbalit podmenu">
+              <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true" data-i18n-aria-label="navPuppiesMenuExpand" aria-label="Expand Puppies submenu">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
               </button>
             </div>
@@ -388,8 +387,8 @@
           <p>Vigantice (near Rožnov pod Radhoštěm), Czech Republic</p>
         </div>
         <div class="footer-col">
-          <h4 data-i18n="footerAboutTitle">About the kennel</h4>
-          <p data-i18n="footerAboutText">Rosenaw Aurum — a Golden Retriever kennel in the Beskydy Mountains. We breed with love, care and respect for the breed.</p>
+          <h4 data-i18n="footerAboutTitle">About us</h4>
+          <p data-i18n="footerAboutText">Rosenaw Aurum — Golden Retriever breeding kennel in the Beskydy Mountains, Czech Republic. We breed with love, care and respect for the breed.</p>
           <img src="../images/logo-footer.webp" alt="Rosenaw Aurum" class="footer-logo" width="240" height="223" />
         </div>
       </div>
@@ -399,6 +398,6 @@
       </div>
     </footer>
 
-    <script src="../script.js?v=88" defer></script>
+    <script src="../script.js?v=89" defer></script>
   </body>
 </html>

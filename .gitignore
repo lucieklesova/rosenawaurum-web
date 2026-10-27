@@ -7,3 +7,5 @@ social/*
 !social/prepare_social.py
 !social/README.md
 
+*.mhtml
+__pycache__/

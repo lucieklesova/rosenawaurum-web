@@ -16,7 +16,7 @@ const translations = {
     navContact: "Kontakt",
     navCalc: "Kalkulačka březosti",
     cookieTitle: "Cookies a soukromí",
-    cookieText: 'Používáme cookies a externí služby (Google Fonts, Google Maps, Google Analytics, vložená YouTube videa), které mohou zpracovávat vaši IP adresu. Vy rozhodujete, co chcete povolit. <a href="/ochrana-osobnich-udaju.html">Více informací</a>.',
+    cookieText: 'Používáme cookies a externí služby (Google Maps, Google Analytics, vložená YouTube videa), které mohou zpracovávat vaši IP adresu. Vy rozhodujete, co chcete povolit. <a href="/ochrana-osobnich-udaju.html">Více informací</a>.',
     cookieAccept: "Přijmout vše",
     cookieReject: "Odmítnout vše",
     cookieSettings: "Nastavení",
@@ -28,7 +28,7 @@ const translations = {
     cookieCatAnalytics: "Analytika",
     cookieCatAnalyticsDesc: "Google Analytics — anonymní statistiky návštěvnosti, které nám pomáhají web vylepšovat.",
     cookieCatExternal: "Externí obsah",
-    cookieCatExternalDesc: "Google Fonts pro krásnější typografii, Google Maps v kontaktu a vložená YouTube videa v článcích.",
+    cookieCatExternalDesc: "Google Maps v kontaktu a vložená YouTube videa v článcích.",
     cookieFooterLink: "Nastavení cookies",
     mapBlocked: "Pro zobrazení mapy je nutné přijmout cookies třetích stran.",
 
@@ -593,13 +593,13 @@ const translations = {
     privacyS6Text: 'Vaše osobní údaje <strong>nepředáváme třetím stranám</strong> s výjimkou:',
     privacyS6List: '<strong>Formspree, Inc.</strong> — poskytovatel služby kontaktního formuláře (zpracovatel), který přijímá a přeposílá zprávy z formuláře. Formspree zpracovává údaje v souladu se svými zásadami ochrany osobních údajů.',
     privacyS7Title: "7. Cookies a analytika",
-    privacyS7Text: 'Tyto stránky používají pouze <strong>technicky nezbytné cookies</strong>. Pro zobrazení fontů využíváme službu Google Fonts, která může zpracovávat IP adresu návštěvníka. Mapa v kontaktní sekci využívá Google Maps.',
+    privacyS7Text: 'Bez vašeho souhlasu ukládáme v prohlížeči pouze <strong>technicky nezbytné údaje</strong> (zvolený jazyk a vaši volbu cookies). Písma jsou uložena přímo na tomto webu. <strong>Google Analytics</strong> (měření návštěvnosti) a <strong>externí obsah</strong> (Google Maps, vložená YouTube videa), které mohou zpracovávat vaši IP adresu, se načítají až po vašem souhlasu. Souhlas můžete kdykoli změnit nebo odvolat odkazem „Nastavení cookies“ v patičce.',
     privacyS8Title: "8. Vaše práva",
     privacyS8Text: "Máte právo:",
     privacyS8List: 'Na <strong>přístup</strong> ke svým osobním údajům;Na <strong>opravu</strong> nepřesných údajů;Na <strong>výmaz</strong> údajů (právo být zapomenut);Na <strong>omezení zpracování</strong>;Na <strong>přenositelnost</strong> údajů;<strong>Vznést námitku</strong> proti zpracování;Podat <strong>stížnost</strong> u Úřadu pro ochranu osobních údajů (<a href="https://www.uoou.cz" target="_blank" rel="noopener noreferrer">www.uoou.cz</a>)',
     privacyS9Title: "9. Kontakt pro uplatnění práv",
     privacyS9Text: 'Pro uplatnění jakéhokoliv z výše uvedených práv nás kontaktujte na e-mailu <a href="mailto:lucie@klesova.cz">lucie@klesova.cz</a>. Na váš požadavek odpovíme nejpozději do 30 dnů.',
-    privacyUpdated: "Poslední aktualizace: 22. března 2026",
+    privacyUpdated: "Poslední aktualizace: 27. října 2026",
 
     toolSpotEyebrow: "Bezplatný nástroj pro chovatele",
     toolSpotTitle: "Kalkulačka březosti feny",
@@ -622,7 +622,7 @@ const translations = {
     navContact: "Contact",
     navCalc: "Pregnancy calculator",
     cookieTitle: "Cookies & privacy",
-    cookieText: 'We use cookies and third-party services (Google Fonts, Google Maps, Google Analytics, embedded YouTube videos) which may process your IP address. You choose what to allow. <a href="/ochrana-osobnich-udaju.html">More info</a>.',
+    cookieText: 'We use cookies and third-party services (Google Maps, Google Analytics, embedded YouTube videos) which may process your IP address. You choose what to allow. <a href="/ochrana-osobnich-udaju.html">More info</a>.',
     cookieAccept: "Accept all",
     cookieReject: "Reject all",
     cookieSettings: "Settings",
@@ -634,7 +634,7 @@ const translations = {
     cookieCatAnalytics: "Analytics",
     cookieCatAnalyticsDesc: "Google Analytics — anonymous usage statistics that help us improve the site.",
     cookieCatExternal: "External content",
-    cookieCatExternalDesc: "Google Fonts for nicer typography, Google Maps on the contact page and embedded YouTube videos in articles.",
+    cookieCatExternalDesc: "Google Maps on the contact page and embedded YouTube videos in articles.",
     cookieFooterLink: "Cookie settings",
     mapBlocked: "To display the map, you need to accept third-party cookies.",
 
@@ -1201,13 +1201,13 @@ const translations = {
     privacyS6Text: 'We <strong>do not share your personal data with third parties</strong> except:',
     privacyS6List: '<strong>Formspree, Inc.</strong> — the contact form service provider (processor) that receives and forwards messages from the form. Formspree processes data in accordance with its own privacy policy.',
     privacyS7Title: "7. Cookies and analytics",
-    privacyS7Text: 'This website uses only <strong>technically necessary cookies</strong>. For font rendering we use Google Fonts, which may process the visitor\'s IP address. The map in the contact section uses Google Maps.',
+    privacyS7Text: 'Without your consent we only store <strong>technically necessary data</strong> in your browser (your language and cookie choice). Fonts are hosted directly on this website. <strong>Google Analytics</strong> (visitor statistics) and <strong>external content</strong> (Google Maps, embedded YouTube videos), which may process your IP address, are loaded only after you consent. You can change or withdraw your consent at any time via the “Cookie settings” link in the footer.',
     privacyS8Title: "8. Your rights",
     privacyS8Text: "You have the right to:",
     privacyS8List: '<strong>Access</strong> your personal data;<strong>Rectification</strong> of inaccurate data;<strong>Erasure</strong> of data (right to be forgotten);<strong>Restriction</strong> of processing;<strong>Data portability</strong>;<strong>Object</strong> to processing;Lodge a <strong>complaint</strong> with the supervisory authority (<a href="https://www.uoou.cz" target="_blank" rel="noopener noreferrer">www.uoou.cz</a>)',
     privacyS9Title: "9. Contact for exercising your rights",
     privacyS9Text: 'To exercise any of the above rights, please contact us at <a href="mailto:lucie@klesova.cz">lucie@klesova.cz</a>. We will respond within 30 days at the latest.',
-    privacyUpdated: "Last updated: 22 March 2026",
+    privacyUpdated: "Last updated: 27 October 2026",
 
     toolSpotEyebrow: "Free tool for breeders",
     toolSpotTitle: "Dog pregnancy calculator",
@@ -1230,7 +1230,7 @@ const translations = {
     navContact: "Kontakt",
     navCalc: "Trächtigkeitsrechner",
     cookieTitle: "Cookies & Datenschutz",
-    cookieText: "Wir verwenden Cookies und Dienste von Drittanbietern (Google Fonts, Google Maps, Google Analytics, eingebettete YouTube-Videos), die Ihre IP-Adresse verarbeiten können. Sie entscheiden, was Sie zulassen möchten. <a href=\"/ochrana-osobnich-udaju.html\">Mehr Informationen</a>.",
+    cookieText: "Wir verwenden Cookies und Dienste von Drittanbietern (Google Maps, Google Analytics, eingebettete YouTube-Videos), die Ihre IP-Adresse verarbeiten können. Sie entscheiden, was Sie zulassen möchten. <a href=\"/ochrana-osobnich-udaju.html\">Mehr Informationen</a>.",
     cookieAccept: "Alle akzeptieren",
     cookieReject: "Alle ablehnen",
     cookieSettings: "Einstellungen",
@@ -1242,7 +1242,7 @@ const translations = {
     cookieCatAnalytics: "Analytik",
     cookieCatAnalyticsDesc: "Google Analytics — anonyme Nutzungsstatistiken, die uns helfen, die Website zu verbessern.",
     cookieCatExternal: "Externe Inhalte",
-    cookieCatExternalDesc: "Google Fonts für schönere Typografie, Google Maps im Kontaktbereich und eingebettete YouTube-Videos in Artikeln.",
+    cookieCatExternalDesc: "Google Maps im Kontaktbereich und eingebettete YouTube-Videos in Artikeln.",
     cookieFooterLink: "Cookie-Einstellungen",
     mapBlocked: "Um die Karte anzuzeigen, müssen Sie Cookies von Drittanbietern akzeptieren.",
     heroTitle: "Golden Retriever mit Liebe im Herzen der Beskiden aufgezogen.",
@@ -1751,13 +1751,13 @@ const translations = {
     privacyS6Text: "Wir <strong>geben Ihre personenbezogenen Daten nicht an Dritte weiter</strong>, außer:",
     privacyS6List: "<strong>Formspree, Inc.</strong> — Anbieter des Kontaktformular-Dienstes (Auftragsverarbeiter), der Nachrichten aus dem Formular empfängt und weiterleitet. Formspree verarbeitet Daten gemäß eigener Datenschutzerklärung.",
     privacyS7Title: "7. Cookies und Analytik",
-    privacyS7Text: "Diese Website verwendet nur <strong>technisch notwendige Cookies</strong>. Für die Schriftdarstellung nutzen wir Google Fonts, die die IP-Adresse des Besuchers verarbeiten können. Die Karte im Kontaktbereich nutzt Google Maps.",
+    privacyS7Text: "Ohne Ihre Einwilligung speichern wir in Ihrem Browser nur <strong>technisch notwendige Daten</strong> (gewählte Sprache und Ihre Cookie-Auswahl). Die Schriftarten werden direkt auf dieser Website gehostet. <strong>Google Analytics</strong> (Besucherstatistik) und <strong>externe Inhalte</strong> (Google Maps, eingebettete YouTube-Videos), die Ihre IP-Adresse verarbeiten können, werden erst nach Ihrer Einwilligung geladen. Sie können Ihre Einwilligung jederzeit über den Link „Cookie-Einstellungen“ in der Fußzeile ändern oder widerrufen.",
     privacyS8Title: "8. Ihre Rechte",
     privacyS8Text: "Sie haben das Recht auf:",
     privacyS8List: "<strong>Auskunft</strong> über Ihre personenbezogenen Daten;<strong>Berichtigung</strong> unrichtiger Daten;<strong>Löschung</strong> der Daten (Recht auf Vergessenwerden);<strong>Einschränkung</strong> der Verarbeitung;<strong>Datenübertragbarkeit</strong>;<strong>Widerspruch</strong> gegen die Verarbeitung;Beschwerde bei der <strong>Aufsichtsbehörde</strong> (<a href=\"https://www.uoou.cz\" target=\"_blank\" rel=\"noopener noreferrer\">www.uoou.cz</a>)",
     privacyS9Title: "9. Kontakt zur Ausübung Ihrer Rechte",
     privacyS9Text: "Zur Ausübung der oben genannten Rechte kontaktieren Sie uns unter <a href=\"mailto:lucie@klesova.cz\">lucie@klesova.cz</a>. Wir antworten spätestens innerhalb von 30 Tagen.",
-    privacyUpdated: "Zuletzt aktualisiert: 22. März 2026",
+    privacyUpdated: "Zuletzt aktualisiert: 27. Oktober 2026",
     toolSpotEyebrow: "Kostenloses Tool für Züchter",
     toolSpotTitle: "Hundeträchtigkeitsrechner",
     toolSpotText: "Geben Sie das Deckdatum ein und erhalten Sie sofort den Geburtstermin, wichtige Termine (Ultraschall, Röntgen) und die Welpenentwicklung Woche für Woche. Funktioniert für alle Hunderassen.",
@@ -1927,10 +1927,12 @@ function setupGalleryVideos() {
   document.querySelectorAll(".gallery-item--video").forEach((item) => {
     const video = item.querySelector("video");
     if (!video) return;
-    item.addEventListener("mouseenter", () => video.play());
+    // play() vrací Promise – při rychlém odjetí myší ji pause() zamítne
+    const play = () => video.play().catch(() => {});
+    item.addEventListener("mouseenter", play);
     item.addEventListener("mouseleave", () => { video.pause(); video.currentTime = 0; });
     item.addEventListener("click", () => {
-      if (video.paused) video.play(); else video.pause();
+      if (video.paused) play(); else video.pause();
     });
   });
 }
@@ -1940,6 +1942,13 @@ function setupContactForm() {
   if (!form) return;
 
   let lastSubmit = 0;
+
+  // Chybová hláška přímo u formuláře (místo alert), oznámí ji i čtečka obrazovky
+  const status = document.createElement("p");
+  status.className = "form-status";
+  status.setAttribute("role", "alert");
+  status.hidden = true;
+  form.appendChild(status);
 
   form.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -1951,8 +1960,17 @@ function setupContactForm() {
 
     const submitBtn = form.querySelector('button[type="submit"]');
     const originalText = submitBtn.textContent;
+    const lang = translations[document.documentElement.lang] ? document.documentElement.lang : "cs";
     submitBtn.disabled = true;
     submitBtn.innerHTML = '<span class="btn-spinner"></span>';
+    status.hidden = true;
+
+    const showError = () => {
+      submitBtn.disabled = false;
+      submitBtn.textContent = originalText;
+      status.textContent = translations[lang].formError;
+      status.hidden = false;
+    };
 
     fetch(form.action, {
       method: "POST",
@@ -1960,29 +1978,16 @@ function setupContactForm() {
       headers: { Accept: "application/json" },
     })
       .then((response) => {
-        if (response.ok) {
-          submitBtn.innerHTML = '<span class="btn-check">\u2713</span>';
-          submitBtn.classList.add("btn--success");
-          setTimeout(() => {
-            window.location.href = "dekujeme.html";
-          }, 800);
-        } else {
-          submitBtn.disabled = false;
-          submitBtn.textContent = originalText;
-          alert(
-            translations[document.documentElement.lang]?.formError ||
-              "Něco se pokazilo. Zkuste to znovu nebo nás kontaktujte telefonicky."
-          );
-        }
+        if (!response.ok) return showError();
+        submitBtn.innerHTML = '<span class="btn-check">\u2713</span>';
+        submitBtn.classList.add("btn--success");
+        // Děkovací stránka existuje jen v kořeni – jazyk jí předáme přes localStorage
+        localStorage.setItem("lang", lang);
+        setTimeout(() => {
+          window.location.href = "/dekujeme.html";
+        }, 800);
       })
-      .catch(() => {
-        submitBtn.disabled = false;
-        submitBtn.textContent = originalText;
-        alert(
-          translations[document.documentElement.lang]?.formError ||
-            "Něco se pokazilo. Zkuste to znovu nebo nás kontaktujte telefonicky."
-        );
-      });
+      .catch(showError);
   });
 }
 
@@ -2304,6 +2309,7 @@ function setupGalleryShowMore() {
 function setupLazyVideos() {
   var videos = document.querySelectorAll("video.lazy-video");
   if (!videos.length) return;
+  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var observer = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
       if (entry.isIntersecting) {
@@ -2314,32 +2320,21 @@ function setupLazyVideos() {
           s.removeAttribute("data-src");
         });
         video.load();
-        video.play();
+        // Při omezení animací nespouštět automaticky – stačí ovládací prvky
+        if (reduceMotion) video.controls = true;
+        else video.play().catch(() => {});
         observer.unobserve(video);
       }
     });
   }, { rootMargin: "200px" });
-  videos.forEach(function (v) { observer.observe(v); });
-}
-
-function loadGoogleFonts() {
-  if (document.getElementById("google-fonts-link")) return;
-  const preconnect1 = document.createElement("link");
-  preconnect1.rel = "preconnect";
-  preconnect1.href = "https://fonts.googleapis.com";
-  document.head.appendChild(preconnect1);
-
-  const preconnect2 = document.createElement("link");
-  preconnect2.rel = "preconnect";
-  preconnect2.href = "https://fonts.gstatic.com";
-  preconnect2.crossOrigin = "anonymous";
-  document.head.appendChild(preconnect2);
-
-  const link = document.createElement("link");
-  link.id = "google-fonts-link";
-  link.rel = "stylesheet";
-  link.href = "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..700&family=Raleway:wght@300;400;500;600&display=swap";
-  document.head.appendChild(link);
+  videos.forEach(function (v) {
+    observer.observe(v);
+    // Smyčku musí jít zastavit (WCAG 2.2.2)
+    v.addEventListener("click", function () {
+      if (v.controls) return;
+      if (v.paused) v.play().catch(() => {}); else v.pause();
+    });
+  });
 }
 
 function loadGoogleMap() {
@@ -2375,6 +2370,7 @@ function blockGoogleServices() {
 }
 
 function loadGoogleAnalytics() {
+  window["ga-disable-G-XDKPV7JGM3"] = false;
   if (document.getElementById("ga-script")) return;
   const script = document.createElement("script");
   script.id = "ga-script";
@@ -2387,6 +2383,19 @@ function loadGoogleAnalytics() {
   window.gtag = gtag;
   gtag("js", new Date());
   gtag("config", "G-XDKPV7JGM3");
+}
+
+// Při odvolání souhlasu zastavit měření a smazat cookies _ga
+function disableGoogleAnalytics() {
+  window["ga-disable-G-XDKPV7JGM3"] = true;
+  const host = location.hostname.replace(/^www\./, "");
+  document.cookie.split(";").forEach((c) => {
+    const name = c.split("=")[0].trim();
+    if (!/^_ga/.test(name)) return;
+    [host, "." + host, ""].forEach((domain) => {
+      document.cookie = name + "=; Max-Age=0; path=/" + (domain ? "; domain=" + domain : "");
+    });
+  });
 }
 
 const COOKIE_CONSENT_KEY = "cookieConsent";
@@ -2417,13 +2426,13 @@ function writeCookieConsent(prefs) {
 function applyConsentState(prefs) {
   if (!prefs) return;
   if (prefs.external) {
-    loadGoogleFonts();
     loadGoogleMap();
     loadPregVideo();
   } else {
     blockGoogleServices();
   }
   if (prefs.analytics) loadGoogleAnalytics();
+  else disableGoogleAnalytics();
 }
 
 function buildCookieBanner() {
@@ -2473,7 +2482,7 @@ function buildCookieBanner() {
               <span class="cookie-switch-slider" aria-hidden="true"></span>
             </span>
           </label>
-          <p class="cookie-category-desc" data-i18n="cookieCatExternalDesc">Google Fonts, Google Maps, YouTube.</p>
+          <p class="cookie-category-desc" data-i18n="cookieCatExternalDesc">Google Maps, YouTube.</p>
         </li>
       </ul>
       <div class="cookie-buttons">
